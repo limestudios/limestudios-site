@@ -1,0 +1,20 @@
+language: node_js
+node_js:
+- '0.11'
+branches:
+  only:
+  - master
+  - /^deploy-.*$/
+before_install:
+- npm install -g grunt-cli bower
+install:
+- npm install
+- bower install
+script: grunt build
+after_script:
+- echo -e "All done for now\n"
+notifications:
+  email:
+    recepients:
+    - studios.lime@gmail.com
+    - patrick@pburtchaell.com
