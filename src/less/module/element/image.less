@@ -1,0 +1,45 @@
+/*
+ * Image styles
+ */
+.img-portrait,
+.img-fill {
+  float: none;
+  clear: none;
+  max-width: 100%;
+  margin: -1rem auto 3rem auto;
+  display: block;
+}
+.img-portrait { border-radius: 100%; }
+.img-fill { margin: 0 auto; width: 100%; }
+img {
+  float: left;
+  clear: both;
+  height: auto;
+  max-width: 40%;
+  margin: 1rem;
+}
+
+/*figure {
+  .small();
+  line-height: 1.7;
+  img {
+
+  }
+  figcaption {
+    padding: 0.5rem;
+    text-transform: uppercase;
+    dt {
+      font-family: @type-secondary-bold;
+    }
+    dd {
+      font-family: @type-secondary;
+    }
+  }
+}*/
+
+
+@media screen and (max-width: 350px) {
+  img {
+    max-width: 100%;
+  }
+}
