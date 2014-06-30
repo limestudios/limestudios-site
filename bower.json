@@ -4,9 +4,9 @@
   "homepage": "https://github.com/Limestudios/limestudios-site",
   "authors": [
     "Patrick Burtchaell <patrick@pburtchaell.com> (http://pburtchaell.com)",
-    "Liam Craver <email> (website)"
+    "Liam Craver <studios.lime@gmail.com> (http://limestudios.net)"
   ],
-  "description": "The main site for limestudios",
+  "description": "The main site for Lime Studios.",
   "license": "MIT",
   "private": true,
   "dependencies": {
