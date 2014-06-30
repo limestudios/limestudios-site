@@ -1,0 +1,255 @@
+@import 'font';
+
+html {
+  font-size: 16px; /* root = 14px */
+  line-height: 1.8;
+}
+
+p {
+
+  font-size: 1rem; /* => 17px */
+  line-height: 1.8; /* don't use REM here, unit-less line-height: http:// */
+  margin: 0.25rem 0 0.75rem 0;
+  hyphens: auto;
+
+  aside { margin: 1rem; }
+
+  code {
+    background: fadeOut(@dark-grey, 95%);
+    display: inline-block;
+    line-height: 1.0;
+  }
+
+}
+
+.small() {
+  font-size: 0.775rem;
+  line-height: 2.205;
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+small {
+  .small();
+}
+
+.title { margin-bottom: 0; }
+.subtitle {
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 0.275rem;
+  margin: 0;
+  opacity: 0.9;
+}
+
+/* Headings */
+h1 {
+  font: 2rem @type-secondary; /* 2rem: root*2 */
+  margin: 1rem 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+h2, h3, h4, h5, h6 {
+  font-family: @type-secondary-bold;
+  text-transform: uppercase;
+  margin: 2.5rem 0 0.125rem 0;
+  line-height: 1.4;
+  &.rst { margin: 0 0 0.125rem 0; }
+}
+h2 {
+  font: 1.50rem @type-secondary;
+  text-align: center;
+  text-transform: none;
+  margin: 3.5rem 0 1rem 0;
+}
+h3 {
+  font-size: 1.25rem;
+  margin: 2.5rem auto 0.125rem auto;
+  letter-spacing: 0.125rem;
+  text-align: center;
+  max-width: @base*12;
+}
+h4 {
+  font: 1.20rem @type-secondary;
+  letter-spacing: 0.075rem;
+  text-align: center;
+}
+h5 {
+  font-size: 1.15rem;
+  text-transform: none;
+}
+h6 {
+  font: 1rem @type-secondary;
+}
+small {
+  h2, h3, h4, h5, h6 {
+    font-size: 85%;
+    margin: 0 0 1.25rem 0;
+  }
+}
+strong, b {
+  h1,h2,h3,h4,h5,h6 {
+    
+  }
+}
+h1,h2,h3,h4,h5,h6 {
+  strong, b {
+    
+  }
+}
+
+em, i {
+  strong, b {
+  }
+}
+
+strong, b {
+}
+
+strike {
+  opacity: 0.5;
+}
+
+.centered {
+  text-align: center;
+}
+
+time {
+  font-family: @type-secondary;
+}
+
+/* deafult horizontal rule styles */
+hr {
+
+  border: 0.125rem solid;
+  left: 50%;
+  margin: 0 0 0 -@base/2;
+  width: @base;
+
+  &.small { margin: 0 }
+  &.ctr { margin: 1.1rem auto }
+  &.rst { color: @light-grey @important }
+
+  &.large {
+    min-width: 550px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+  }
+
+}
+
+/* default link styles */
+a {
+  text-decoration: none;
+  color: @dark-grey;
+  .transition();
+}
+
+/* special link styles */
+.article-content a,
+.article-content a:active,
+.default.page a,
+.default.page a:active,
+a.line,
+a.line:visited {
+
+  @color: rgb(0,169,198);
+  color: @color;
+  border-bottom: 2px solid transparent;
+
+  // on :hover fadeout the line and add padding
+  &:hover,
+  &:active {
+    border-bottom: 2px solid;
+  }
+
+  &.btn { color: @dark-grey; border: none; }
+
+}
+
+/* default abbreviations styles */
+abbr,
+acronym {
+  text-transform: uppercase;
+  border-bottom: 1px dashed;
+  cursor: help;
+}
+abbr {
+  text-transform: none;
+}
+
+/* default blockquotes styles */
+blockquote {
+  font-family: @type-italic;
+  margin: 2rem auto;
+  padding: 0 0 0 1rem;
+  border-left: 0.25rem solid;
+  opacity: 0.65;
+  max-width: 650px;
+  strong {
+    font-family: 'opensans-italic-bold', sans-serif;
+  }
+  &.color-green {
+    color: darken(@green,40%);
+    background: fadeOut(@green,70%);
+  }
+  &.color-blue {
+    color: darken(@blue,40%);
+    background: fadeOut(@blue,70%)
+  }
+  &.color-red {
+    color: darken(@red,30%);
+    background: fadeOut(@red,70%);
+  }
+}
+
+cite {
+
+  margin: 0.25rem 0 0 0;
+  display: block;
+  text-align: right;
+  font-style: normal;
+  font-family: 'opensans-italic', sans-serif;
+
+  &.rst { text-align: left; }
+
+  &:before {
+    content: "\2014 \0020";
+  }
+
+}
+
+/* default list styles */
+ul, ol {
+  margin: 1rem;
+  line-height: 1.8;
+  ul, ol {
+    margin: 0.25rem 0 1rem 0 @important;
+    list-style: lower-alpha;
+    font-size: 0.95rem;
+  }
+  li { margin: 0.5rem 0 0.5rem 2rem }
+}
+
+ol li { list-style: decimal; }
+ul li { list-style: disc; }
+
+.table-of-contents {
+  padding: 1rem;
+  background: fadeOut(@light-grey,75%);
+  li { list-style: upper-roman;
+    li { list-style: upper-alpha;
+      li { list-style: lower-roman;
+      }
+    }
+  }
+}
+
+/* small screen properties and values */
+@media screen and (max-width: 768px) {
+  p { text-align: left; }
+  h1 { font-size: calc(2.00rem/ 1.4); }
+  h2 { font-size: calc(1.50rem/ 1.25);}
+  h3 { font-size: calc(1.25rem/ 1.2); }
+  h4 { font-size: calc(1.20rem/ 1.2); }
+  h5 { font-size: calc(1.15rem/ 1.2); }
+  code { font-size: 0.95rem; }
+}

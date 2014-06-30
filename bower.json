@@ -1,0 +1,17 @@
+{
+  "name": "limestudios-site",
+  "version": "0.0.0",
+  "homepage": "https://github.com/Limestudios/limestudios-site",
+  "authors": [
+    "Patrick Burtchaell <patrick@pburtchaell.com> (http://pburtchaell.com)",
+    "Liam Craver <email> (website)"
+  ],
+  "description": "The main site for limestudios",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "html5shiv": "*",
+    "respond": "*",
+    "fastclick": "*"
+  }
+}

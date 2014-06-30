@@ -1,0 +1,33 @@
+# SITE AUTHOR INFOMATION
+name:
+  first : Liam
+  last  : Craver
+
+# GENERAL BIOGRAPHY
+bio    : # I am Patrick Burtchaell a graphic design and computer science student at Loyola University New Orleans.
+url    : # http://pburtchaell.com/
+email  : # patrick@pburtchaell.com
+
+# SOCIAL MEDIA/WEBSITE LINKS
+# keep what you need...
+behance  : 
+codepen  : 
+codewall : http://codewall.com/
+dribbble : http://dribbble.com/
+exposure : http://.exposure.so
+facebook : http://facebook.com/
+github   : http://github.com/
+instagram: http://instagram.com/
+linkedin : http://linkedin.com/in/
+medium   : http://medium.com/@
+reddit   : http://reddit.com/user/
+soundcloud: http://soundcloud.com/
+twitter  : http://twitter.com/
+vimeo    : http://vimeo.com/
+vsco     : http://vsco.co/
+
+dogecoin:
+  primary:
+
+bitcoin:
+  primary:

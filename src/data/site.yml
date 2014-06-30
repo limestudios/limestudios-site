@@ -1,0 +1,19 @@
+# GENERAL SITE DATA
+
+# SITE DIRECTORIES
+# Don't change these w/o changing them in grunt as well... it will mess up Grunt.
+production   : ./dist/compressed
+development  : ./dist/development
+source       : ./src
+plugins      : ./src/plugins
+templates    : ./tpl
+content      : ./tpl/pages
+extension    : .html
+components   : ./bower_components
+
+# GENERAL SITE DATA
+title        : # Patrick Burtchaell
+tagline      : # Web and print design from New Orleans
+description  : # Web and print designer, CSS developer, and front-end expert from New Orleans currently available for work on projects of all size.
+keywords     : # New Orleans,Patrick Burtchaell,web design,print design,graphic design,front end,HTML,CSS
+copyright    : # 2014 Patrick Burtchaell

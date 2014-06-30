@@ -1,0 +1,30 @@
+{
+  "author": "",
+  "thanks": [
+    {
+      "name": "Assemble Core Team",
+      "website": "http://assemble.io",
+      "twitter": "@assemblejs"
+    },
+    {
+      "name": "Grunt.js Core Team",
+      "website": "http://gruntjs.com",
+      "twitter": "@gruntjs"
+    },
+    {
+      "name": "Bower Core Team",
+      "website": "http://bower.io",
+      "twitter": "@bower"
+    }
+  ],
+  "site": [
+    {
+      "version": "<%=pkg.version%>",
+      "homepage": "<%=pkg.homepage%>",
+      "repository": "<%=pkg.repository.url%>",
+      "keywords": "<%=site.keywords%>",
+      "language": "English",
+      "technology": ""
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "name": "limestudios-site",
+  "version": "0.0.0",
+  "description": "The main site for limestudios",
+  "main": "./",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Limestudios/limestudios-site.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Limestudios/limestudios-site/issues"
+  },
+  "homepage": "https://github.com/Limestudios/limestudios-site",
+  "devDependencies": {
+    "assemble": "^0.4.40",
+    "assemble-contrib-anchors": "latest",
+    "assemble-contrib-permalinks": "latest",
+    "assemble-contrib-sitemap": "latest",
+    "assemble-contrib-toc": "latest",
+    "assemble-contrib-wordcount": "latest",
+    "assemble-less": "latest",
+    "grunt": "latest",
+    "grunt-autoprefixer": "latest",
+    "grunt-contrib-clean": "latest",
+    "grunt-contrib-compress": "latest",
+    "grunt-contrib-connect": "latest",
+    "grunt-contrib-copy": "latest",
+    "grunt-contrib-less": "latest",
+    "grunt-contrib-uglify": "latest",
+    "grunt-contrib-watch": "latest",
+    "grunt-humans-txt": "latest",
+    "grunt-recess": "latest",
+    "grunt-robots-txt": "latest",
+    "grunt-sitemap": "latest",
+    "handlebars-helper-compose": "latest",
+    "handlebars-helper-inarray": "^0.1.0",
+    "handlebars-helper-moment": "latest",
+    "handlebars-helpers": "^0.5.5",
+    "highlight.js": "latest"
+  }
+}

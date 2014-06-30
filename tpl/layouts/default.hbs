@@ -1,0 +1,20 @@
+{{> open-inc ~}}
+{{> header-inc}}
+<main role=main>
+  <section class="page page-default">
+
+    <header class=default-header>
+      <h1 class=default-title>{{title}}</h1>
+    </header><!-- /default-header -->
+
+    <section class=default-content>
+      {{#markdown}}
+        {{> body }}
+      {{/markdown ~}}
+      {{> hire}}  
+    </section><!-- /default-content -->
+    
+  </section><!-- /.default.page -->
+</main>
+{{> footer-inc}}
+{{> close-inc }}
