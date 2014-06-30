@@ -4,7 +4,7 @@
 
 ## About
 
-Meh
+This is the main branch of the Lime Studios static website.
 
 Built with love in New Orleans | Source [licensed MIT](LICENSE)
 
