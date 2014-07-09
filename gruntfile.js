@@ -37,7 +37,24 @@ module.exports = function(grunt) {
     pkg: grunt.file.readJSON('package.json'),
     site: grunt.file.readYAML('src/data/site.yml'),
     vendor: grunt.file.readJSON('bower.json'),
-
+      
+    /*
+     * Uploads to FTP server.
+     */
+    'ftp-deploy': {
+  build: {
+    auth: {
+      host: 'limestudios.net',
+      port: 21,
+      authKey: 'key1'
+    },
+    src: opt.dev,
+    dest: '/public_html',
+    //exclusions: ['path/to/source/folder/**/.DS_Store', 'path/to/source/folder/**/Thumbs.db', 'path/to/dist/tmp']
+  }
+},
+      
+      
     /*
      * Remove all old files before creating the new files.
      */
@@ -355,6 +372,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-recess');
   grunt.loadNpmTasks('grunt-robots-txt');
   grunt.loadNpmTasks('grunt-sitemap');
+  grunt.loadNpmTasks('grunt-ftp-deploy');
   
   /**
    * Grunt CLI Tasks:
@@ -375,6 +393,7 @@ module.exports = function(grunt) {
    *   - If the "--serve" option is added, a connect 
    *     web server will run at localhost:8000
    */
+  grunt.registerTask('default', ['ftp-deploy']);
   grunt.registerTask('default', ['build']);
   grunt.registerTask('test', ['recess']); 
   grunt.registerTask('styles', ['less','autoprefixer']); 

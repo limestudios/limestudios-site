@@ -32,6 +32,8 @@
     "grunt-contrib-less": "latest",
     "grunt-contrib-uglify": "latest",
     "grunt-contrib-watch": "latest",
+    "grunt-ftp": "^0.2.0",
+    "grunt-ftp-deploy": "^0.1.3",
     "grunt-humans-txt": "latest",
     "grunt-recess": "latest",
     "grunt-robots-txt": "latest",
