@@ -9,9 +9,9 @@
 }
 nav.push-menu-left {
     top: 0;
-    width: 300px;
+    width: 16rem;
     height: 100%;
-    background-color: @light-grey;
+    background-color: @dark-grey;
 }
 nav.push-menu-left li {
     display: block;
@@ -19,7 +19,7 @@ nav.push-menu-left li {
     border-bottom: solid 1px @white;
     //border-top: solid 1px;
     margin: 0 2rem;
-    padding: 1rem 1rem 1rem 1rem;
+    //padding: 1rem 1rem 1rem 1rem;
 }
 nav.push-menu-left li:first-child {
     border-top: none
@@ -30,7 +30,7 @@ nav.push-menu-left li:last-child {
 nav.push-menu-left a {
     display: block;
     //padding: 10px;
-    font-size: 18px;
+    //font-size: 18px;
     color: @white;
     text-transform: uppercase;
 }
@@ -39,13 +39,13 @@ nav.push-menu-left button.close-menu {
     color: @white;
 }
 nav.push-menu-left {
-    left: -300px
+    left: -16rem
 }
 body.pml-open nav.push-menu-left {
-    left: 0
+    left: 0rem;
 }
 body.pml-open #wrapper {
-    left: 300px
+    left: 16rem
 }
 .mask {
     transition: all 0.2s;
@@ -71,16 +71,6 @@ nav.menu ul {
     margin: 0;
     padding: 0;
 }
-nav.menu a {
-    font-weight: 300;
-}
-button.close-menu {
-    background: #605F61;
-    
-}
-button.close-menu:focus {
-    outline: none
-}
 #wrapper {
     position: absolute;
     z-index: 10;
@@ -93,19 +83,36 @@ button.close-menu:focus {
 .toggle-push-left {
     position: absolute;
     top: 0;
-    width: 128px;
-    height: 128px;
-    margin: 0 0 0 16px;
+    margin: 16px 16px 16px 18px;
     padding: 0;
+    opacity: 0.5;
+    transition: all 0.2s;
+    text-transform: uppercase;
+    background-color: @light-grey;
 }
 
+.toggle-push-left:hover {
+    opacity: 1;
+}
+
+a.nav {
+    font-family: @type-primary;
+    text-transform: uppercase;
+    padding: 1.5rem 0;
+    line-height: 1.4;
+}
+/* small screen properties and values */
 @media screen and (max-width: 768px) {
-  .toggle-push-left {
-    position: absolute;
-    top: 0;
-    width: 64px;
-    height: 64px;
-    margin: 8px 0 0 16px;
-    padding: 0;
-  }
+    nav.push-menu-left {width: 16rem}
+    nav.push-menu-left {left: -16rem}
+    body.pml-open nav.push-menu-left {left: 0rem;}
+    body.pml-open #wrapper {left: 16rem}
+    .toggle-push-left{margin: 8px 8px 8px 9px}
+}
+/* Large screens ----------- */
+@media only screen and (min-width : 1824px) {
+    nav.push-menu-left {width: 16rem}
+    nav.push-menu-left {left: -16rem}
+    body.pml-open nav.push-menu-left {left: 0rem;}
+    body.pml-open #wrapper {left: 16rem}
 }
