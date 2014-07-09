@@ -117,7 +117,8 @@ module.exports = function(grunt) {
         files: {
           '<%=site.development%>/assets/js/components.js': [
             // Array of scripts to concatenate into components.js
-            opt.vendor + '/fastclick/lib/fastclick.js'
+            opt.vendor + '/fastclick/lib/fastclick.js'//,
+            //opt.src + '/js/vendor/nav.js'
           ]
         }
       },
@@ -325,7 +326,8 @@ module.exports = function(grunt) {
           hostname: opt.devHostname,
           port: opt.devPort,
           open: {
-            target: devTarget
+            target: devTarget,
+            appName: 'chrome'
           },
           base: opt.dev
         }
