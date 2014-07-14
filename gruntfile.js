@@ -26,7 +26,7 @@ module.exports = function(grunt) {
     projects: './projects',
     vendor: './bower_components',
     expand: true,
-    devPort: 8000,
+    devPort: 80,
     devHostname: 'localhost'
   },
   opt = options,

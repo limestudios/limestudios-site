@@ -10,6 +10,7 @@ templates    : ./tpl
 content      : ./tpl/pages
 extension    : .html
 components   : ./bower_components
+img          : /assets/img/site/
 
 # GENERAL SITE DATA
 title        : Lime Studios
