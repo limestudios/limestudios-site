@@ -6,3 +6,20 @@
   font-size: 0.775rem;
   line-height: 2.205;
 }
+
+.font-small(@color: @dark-grey, @size: 16px) {
+    color: @color;
+    font-size: @size !important;
+    text-transform: uppercase;
+    font-family: @type-primary-bold;
+    //letter-spacing: 0.075em;
+}
+
+.font-small-bold(@color: @dark-grey, @size: 16px) {
+    color: @color;
+    font-size: @size !important;
+    font-weight: 700 !important;
+    text-transform: uppercase;
+    font-family: @type-primary-bold;
+    //letter-spacing: 0.075em;
+}

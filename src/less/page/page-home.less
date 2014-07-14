@@ -1,0 +1,130 @@
+.face-lockup {
+    max-width: 780px;
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-around;
+    padding: 80px 0 40px;
+    font-size: 0;
+}
+
+.face-lockup br {
+    display: none;
+}
+
+.face-lockup .face-img {
+    .square(200px) !important;
+    border-radius: 50%;
+    background: url(/assets/img/site/liam.jpg) center center;
+    background-size: cover;
+    order: 3;
+}
+
+[class^="icon-"] {
+    .square(100px);
+    background: @light-grey;
+    border-radius: 50%;
+}
+
+[class^="icon-"] svg {
+    fill: @dark-grey;
+}
+
+.icon-pencil {
+    order: 1;
+}
+
+.icon-code {
+    order: 2;
+}
+
+.icon-browser {
+    order: 4;
+}
+
+.icon-video {
+    order: 5;
+}
+
+.blurb {
+    max-width: 620px;
+    padding: 0 10px;
+    margin: 50px auto;
+}
+
+.blurb p {
+    //padding-left: 32px;
+    font-size: 20px;
+    text-transform: none;
+}
+
+.skill-lockup {
+    max-width: 620px;
+    margin: 100px auto;
+    padding: 0 10px;
+    color: @light-grey;
+    .clearfix();
+}
+
+.skill-lockup .skill-unit {
+    width: 310px;
+    float: left;
+}
+
+.skill-lockup .skill-icon {
+    font-size: 0;
+    margin: 0 0 30px;
+}
+
+.skill-lockup .skill-icon span {
+    display: inline-block;
+    .square(14px);
+    background-color: @dark-grey;
+    margin-right: 5px;
+    border-radius: 50%;
+}
+
+.skill-lockup .skill-icon span:after {
+    content: '';
+    display: block;
+    .square(10px);
+    background: @white;
+    border-radius: 50%;
+    margin: 2px;
+}
+
+.generate-skills(10);
+
+.generate-skills(@n, @i: 1, @j: 2) when (@i =< @n) {
+  .skill-lockup .skill-@{i} span:nth-child(n+@{j}) {
+    background: @light-grey;
+  }
+  .generate-skills(@n, (@i + 1), (@j + 1));
+}
+
+@media screen and (max-width: 650px) {
+    .face-lockup {
+        display: block;
+        text-align: center;
+    }
+    
+    .face-lockup div {
+        display: inline-block;
+    }
+    
+    .face-lockup .face-img {
+        display: block;
+        background-position: center center;
+        background-repeat: no-repeat;
+        width: auto;
+        margin: 0px auto 20px auto;
+    }
+    
+    [class^="icon-"] {
+        margin: 10px;
+    }
+    
+    .blurb p {
+        padding-left: 0;
+    }
+}

@@ -1,24 +1,48 @@
-/*
- * Site-wide, global footer
- */
-.page-footer {
-  .small();
-  padding: 2rem;
-  padding-bottom: 0;
-  text-align: center;
-  letter-spacing: 1px;
-  .transition();
-  &:hover {
-    .page-footer-legal { opacity: 1; }
-  }
-  p { margin: 0; }
-  &.article {
-    padding-top: 3rem;
-    .page-footer-legal {
-      display: block;
-    }
-  }
+footer {
+    background: #ccc;
+    background-size: cover;
 }
+
+footer .lockup {
+    padding: 64px 30px;
+    .clearfix();
+}
+
+footer .lockup .logo {
+    .square(64px);
+    float: left;
+    margin-right: 10px;
+}
+
+footer .lockup .logo path{
+    fill: @dark-grey;
+    opacity: 0.7;
+}
+
+footer .lockup .content-wrap {
+    margin-top: 4px;
+    float:left;
+}
+
+footer .lockup .content-wrap nav {
+    margin: 0;
+}
+
+footer .lockup .content-wrap nav a {
+    .font-small-bold(@light-grey);
+    margin-right: 10px;
+}
+
+footer .lockup .content-wrap nav a:hover {
+    color: black;
+}
+
+footer .lockup .content-wrap .copyright {
+    margin: 0;
+    .font-small();
+}
+
+
 
 // SVG heart & legal links
 .page-footer-span {
