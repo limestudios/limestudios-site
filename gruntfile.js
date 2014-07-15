@@ -201,7 +201,7 @@ module.exports = function(grunt) {
           'handlebars-helper-compose',
           'handlebars-helper-moment',
           'handlebars-helper-inarray',
-          './src/js/helpers/*.js' // Custom helpers
+          './tpl/helpers/*.js' // Custom helpers
         ],
         assets: '<%=site.development%>/assets',
         partials: [opt.tpl + '/partials/**/*.{hbs,md}', opt.tpl + '/snippets/**/*.{hbs,md}'],
