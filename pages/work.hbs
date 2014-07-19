@@ -1,0 +1,27 @@
+---
+title: Work
+css: work
+subtitle: my past projects
+layout: default.hbs
+---
+
+<section class="{{page.title}}">
+    
+    <div class="thumb-container">
+    
+        {{#each settings.projects}}
+        
+        <a href="/{{this.folder}}" class="thumb-unit" style="background-image: url(/assets/img/site/projects/{{this.folder}}/thumb.png)">
+        
+            <div class="thumb-overlay">
+                <strong>{{this.name}}</strong>
+                <div class="test-icon">{{this.thumb}}</div>
+            </div>
+            
+        </a>
+        
+        {{/each}}
+        
+    </div>
+    
+</section>

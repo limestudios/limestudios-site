@@ -1,0 +1,141 @@
+// HEADER / FOOTER
+
+section.arrhythmia header {
+    background: @arrhythmia-accent !important;
+}
+
+footer {
+    //background: lighten(@about-accent, 5%) !important;
+}
+
+// PAGE
+
+section.arrhythmia h2.quote {
+    //background: @light-grey;
+    padding: 20px 0 20px;
+    color: @arrhythmia-accent;
+    font-size: 24px;
+}
+
+section.arrhythmia .blurb {
+    max-width: 620px;
+    padding: 0 10px;
+    margin: 50px auto 20px;
+}
+
+section.arrhythmia .blurb strong {
+    color: lighten(@arrhythmia-accent, 0%);
+}
+
+section.arrhythmia .blurb p {
+    //padding-left: 32px;
+    font-size: 20px;
+    text-transform: none;
+    color: @black;
+}
+
+section.arrhythmia .blurb p a {
+    color: lighten(@arrhythmia-accent, 0%);
+    .transition();
+    font-family: @type-primary-bold;
+}
+
+section.arrhythmia .blurb p a:hover {
+    color: darken(@arrhythmia-accent, 10%);
+    border-bottom: 2px solid;
+}
+
+section.arrhythmia section.trailer {
+    margin: 0 auto;
+    width: 640px;
+    padding: 40px 0;
+}
+
+section.arrhythmia section.trailer iframe {
+    width: 640px;
+}
+
+.right-laurel-branch {
+    display: inline-block;
+    float: left;
+}
+
+.right-laurel-branch svg {
+    height: 128px;
+    width: 64px;
+}
+
+.awards {
+    max-width: 780px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0 40px;
+    font-size: 0;
+}
+
+.awards article {
+    text-align: center;
+    margin: 20px auto;
+}
+
+.awards article p {
+    float: left;
+    text-align: center;
+    line-height: 18px;
+}
+
+.awards article p span.h1 {
+    font-size: 12px;
+}
+
+.awards article p span.h2 {
+    font-size: 14px;
+}
+
+.awards article p span.h3 {
+    font-size: 16px;
+}
+
+.left-laurel-branch {
+    display: inline-block;
+    float: left;
+}
+
+.left-laurel-branch svg {
+    height: 128px;
+    width: 64px;
+}
+
+@media screen and (max-width: 650px) {
+    .awards {
+        display: block;
+        text-align: center;
+        padding: 20px 0 20px;
+    }
+    
+    .awards article {
+        display: inline-block;
+    }
+    
+    .blurb {
+        margin-top: 20px;
+    }
+    
+    .blurb p {
+        padding-left: 0;
+    }
+    
+    section.arrhythmia section.trailer {
+        width: 400px;
+        height: 225px;
+        padding: 20px 0;
+    }
+
+    section.arrhythmia section.trailer iframe {
+        width: 400px;
+        height: 225px;
+    }
+}

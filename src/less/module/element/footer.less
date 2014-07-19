@@ -1,16 +1,20 @@
 footer {
     background: #ccc;
     background-size: cover;
+    display: flex;
+    align-items: center;
+    
 }
 
 footer .lockup {
+    margin: 0 auto;
     padding: 64px 30px;
     .clearfix();
 }
 
 footer .lockup .logo {
     .square(64px);
-    float: left;
+    //float: left;
     margin-right: 10px;
 }
 
@@ -20,29 +24,55 @@ footer .lockup .logo path{
 }
 
 footer .lockup .content-wrap {
-    margin-top: 4px;
-    float:left;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    //margin-top: 4px;
+    //float:left;
 }
 
-footer .lockup .content-wrap nav {
-    margin: 0;
+footer nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    //margin: 0;
 }
 
-footer .lockup .content-wrap nav a {
+footer nav a:last-child {
+    margin-right: 0px;
+}
+
+footer nav a {
+    white-space: nowrap;
+    //display: inline-block;
     .font-small-bold(@light-grey);
-    margin-right: 10px;
+    //margin-right: 20px;
 }
 
-footer .lockup .content-wrap nav a:hover {
+footer nav a:hover {
     color: black;
 }
 
 footer .lockup .content-wrap .copyright {
     margin: 0;
     .font-small();
+    white-space: nowrap;
 }
 
-
+@media screen and (max-width: 650px) {
+    footer nav a {
+        font-size: 12px !important;
+    }
+    
+    footer .lockup .content-wrap .copyright {
+        font-size: 14px !important;
+    }
+    
+    footer .lockup .logo {
+        .square(32px);
+    }
+}
 
 // SVG heart & legal links
 .page-footer-span {

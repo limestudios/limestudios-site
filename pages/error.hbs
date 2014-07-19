@@ -1,19 +1,11 @@
 ---
 title: 404 Error
+css: error
 shortName: error
 description: This, kids, is called a 404.
-layout: none
+layout: error.hbs
 ---
-{{> open }}
-<link rel=stylesheet href=/assets/css/error.css>
-<body>
-<main role=main class=error-page>
-  <section class=error-intro>
-    <div class=wrapper>
-      <h1 class="animated hinge">GAME OVER</h1>
-      <br>
-      <em>Head on <a href=/ class=line>home</a> and everything will be alright.</em>
-    </div>
-  </section><!-- /.error-intro -->
-</main>
-{{> close }}
+
+<h1><span>{{page.title}}</span></h1>
+
+<p class="subtitle">It's ok something probably didn't explode...or anything...probably. Still you shouldn't hang around too long, why don't you head on [home](/).</p>

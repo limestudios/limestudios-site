@@ -11,8 +11,13 @@ table { border-collapse: collapse; border-spacing: 0; }
 blockquote, q { quotes: none; }	
 ol, ul { list-style: none; }	
 
-body { 
+html, body, header, nav, main, footer {
+    overflow-x: hidden;
+}
+
+html, body { 
   height        : 100%;
+  width         : 100%;
   direction     : ltr;
   font-family   : @type-primary;
   color         : @dark-grey; 

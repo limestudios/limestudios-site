@@ -1,16 +1,12 @@
 {{> open ~}}
-<main role=main>
+<main role=main class="{{page.css}}">
   <section class="page page-default {{page.css}}">
-      
-    {{> header}}
 
-    <section class=default-content>
       {{#markdown}}
         {{> body }}
       {{/markdown ~}}
-    </section><!-- /default-content -->
     
   </section><!-- /.default.page -->
-</main>
 {{> footer}}
+</main>
 {{> close ~}}

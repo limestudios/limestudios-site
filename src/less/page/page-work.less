@@ -1,0 +1,89 @@
+// HEADER / FOOTER
+
+section.work header {
+    background: @work-accent !important;
+}
+
+footer {
+    //background: lighten(@about-accent, 5%) !important;
+}
+
+// WORK
+
+.work .thumb-container {
+    max-width: 960px;
+    margin: 60px auto 60px;
+    background: @light-grey;
+    .clearfix();
+}
+
+.work .thumb-container .thumb-unit {
+    display: block;
+    width: 25%;
+    //height: 150px;
+    background: pink;
+    float: left;
+    position: relative;
+    padding-top: 16%;
+    overflow: hidden;
+    
+    background: url(/assets/img/site/projects/test.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media screen and (max-width: 540px) {
+    .work .thumb-container .thumb-unit {
+        width: 100%;
+        padding-top: 45%;
+    }
+    
+    section.default-content {
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 720px) and (min-width: 540px) {
+    .work .thumb-container .thumb-unit {
+        width: 50%;
+        padding-top: 25%;
+    }
+    
+    section.default-content {
+        padding: 0;
+    }
+}
+
+.work .thumb-container .thumb-unit .thumb-overlay {
+    .transition(0.2s);
+    position: absolute;
+    top: 100%;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 100%;
+    background: fade(@work-accent, 80%);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.work .thumb-container .thumb-unit:hover .thumb-overlay {
+    position: absolute;
+    top: 0%;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+.work .thumb-container .thumb-unit .thumb-overlay strong {
+    display: block;
+    padding: 0px 20px;
+    color: @white;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 24px;
+    line-height: 1.2;
+}

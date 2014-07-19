@@ -1,16 +1,9 @@
-<nav class="menu push-menu-left">
-    <ul>
-        <!-- <li><button class="close-menu">&#10006</button></li> -->
-        <li><a class="nav" href="/">Home</a></li>
-        <li><a class="nav" href="/about">About</a></li>
-        <li><a class="nav" href="#">Work</a></li>
-        <li><a class="nav" href="#">Arrhythmia</a></li>
-        <li><a class="nav" href="#">Contact</a></li>
-    </ul>
-</nav><!-- /slide menu left -->
-
-<div id="wrapper">
-
-<!-- <img class="toggle-push-left" src=/assets/img/site/lime.png> -->
+<nav>
     
-<div class="toggle-push-left"><div class="hamburger"></div></div>
+    {{#each settings.nav}}
+    
+        <a href="{{this.link}}">{{this.name}}</a>
+    
+    {{/each}}
+    
+</nav>

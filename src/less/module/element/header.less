@@ -1,5 +1,5 @@
 header {
-    height: 350px;
+    //height: 350px;
     background: @grey;
     //background: lightgreen;
     //background: url(http://www.gratisography.com/pictures/79.jpg) center center;
@@ -13,7 +13,7 @@ header .logo {
     width: 64px;
     //background: #999;
     float: left;
-    margin: 10px 0 0 30px;
+    margin: 10px 0 0 14px;
 }
 
 header polygon {
@@ -41,10 +41,14 @@ header nav a {
     margin-right: 20px;
     
     .font-small-bold(@dark-grey);
+    .transition();
+    
+    border-bottom: 0px solid;
 }
 
 header nav a:hover {
-    color: rgba(0,0,0,1);
+    color: darken(@dark-grey, 25%);
+    border-bottom: 2px solid;
 }
 
 header h1 {
@@ -74,11 +78,12 @@ header .subtitle {
     color: @white;
     line-height: 1;
     font-family: @type-primary;
+    padding-bottom: 40px;
 }
 
 @media screen and (max-width: 650px) {
     header {
-        height: 320px;
+        //height: 220px;
     }
     
     header .logo {
@@ -100,5 +105,12 @@ header .subtitle {
     
     header h1 {
         padding-top: 20px;
+        font-size: 32px !important;
+        white-space: nowrap;
+    }
+    
+    header .subtitle {
+        font-size: 14px !important;
+        padding-bottom: 20px;
     }
 }

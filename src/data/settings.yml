@@ -1,0 +1,47 @@
+#---------------------------
+# NAVIGATION
+
+nav:
+- {name: About Me, link: '/'}
+- {name: Work, link: '/work'}
+- {name: Arrhythmia, link: '/arrhythmia'}
+- {name: Contact, link: '/contact'}
+
+#---------------------------
+# ABOUT SECTION
+
+skill-icons:
+- {link: pencil}
+- {link: code}
+- {link: browser}
+- {link: video}
+
+skills:
+- {name: Programming, level: 9}
+- {name: Visual Design, level: 8}
+- {name: UX Design, level: 7}
+- {name: Learning, level: 9}
+- {name: Planning, level: 7}
+- {name: Organization, level: 6}
+- {name: Teaching, level: 5}
+- {name: Communication, level: 7}
+
+#---------------------------
+# WORK SECTION
+
+projects:
+- {name: Arrhythmia, thumb: , background: , folder: 'Arrhythmia'}
+- {name: LimeWorks, thumb: , background: , folder: 'LimeWorks'}
+- {name: Sketch A Day, thumb: , background: , folder: 'Sketch-A-Day'}
+- {name: Project 4, thumb: , background: , folder: 'proj-4'}
+- {name: Project 5, thumb: , background: , folder: 'proj-5'}
+- {name: Project 6, thumb: , background: , folder: 'proj-6'}
+- {name: Project 7, thumb: , background: , folder: 'proj-7'}
+- {name: Project 8, thumb: , background: , folder: 'proj-8'}
+
+#---------------------------
+# ARRHYTHMIA SECTION
+
+arrhythmia-awards:
+- {line1: Official Winner, line2: "ARRHYTHMIA", line3: Liam Craver, line4: Silver Metal Winner, line5: Scholastic Art & Writing, line6: 2014}
+- {line1: Official Winner, line2: "ARRHYTHMIA", line3: Liam Craver, line4: Gold Key Winner, line5: Scholastic Art & Writing, line6: 2014}
