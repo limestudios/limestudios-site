@@ -1,4 +1,4 @@
-# limestudios-site [![Build Status](https://travis-ci.org/Limestudios/limestudios-site.svg?branch=master)](https://travis-ci.org/Limestudios/limestudios-site)
+# limestudios-site [![Build Status](https://travis-ci.org/LimeStudios/limestudios-site.svg?branch=master)](https://travis-ci.org/Limestudios/limestudios-site)
 
 [![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/)
 
