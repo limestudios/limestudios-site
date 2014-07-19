@@ -30,9 +30,9 @@ skills:
 # WORK SECTION
 
 projects:
-- {name: Arrhythmia, thumb: , background: , folder: 'Arrhythmia'}
-- {name: LimeWorks, thumb: , background: , folder: 'LimeWorks'}
-- {name: Sketch A Day, thumb: , background: , folder: 'Sketch-A-Day'}
+- {name: Arrhythmia, thumb: , background: , folder: 'arrhythmia'}
+- {name: LimeWorks, thumb: , background: , folder: 'lime-works'}
+- {name: Sketch A Day, thumb: , background: , folder: 'sketch-a-day'}
 - {name: Project 4, thumb: , background: , folder: 'proj-4'}
 - {name: Project 5, thumb: , background: , folder: 'proj-5'}
 - {name: Project 6, thumb: , background: , folder: 'proj-6'}

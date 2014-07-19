@@ -212,7 +212,7 @@ module.exports = function(grunt) {
           './tpl/helpers/*.js' // Custom helpers
         ],
         assets: '<%=site.development%>/assets',
-        partials: [opt.tpl + '/partials/**/*.{hbs,md}', opt.tpl + '/snippets/**/*.{hbs,md}'],
+        partials: [opt.tpl + '/partials/**/*.{hbs,md}', opt.tpl + '/svgs/**/*.{hbs,md}'],
         layoutdir: opt.tpl + '/layouts',
         layout: 'default.hbs',
         collections: [
