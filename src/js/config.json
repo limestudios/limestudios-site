@@ -1,0 +1,12 @@
+[
+  { 
+    "source": [ 
+      "./bower_components/html5shiv/dist/html5shiv.js",
+      "./bower_components/respond/dest/respond.min.js",
+      "./bower_components/placeholder/dist/placeholder.min.js",
+      "./bower_components/REM-unit-polyfill/js/rem.js"
+    ],
+    "filename": "ie.js",
+    "description": "Provides support to IE 8 and IE 9."
+  },
+]

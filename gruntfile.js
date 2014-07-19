@@ -54,6 +54,14 @@ module.exports = function(grunt) {
   }
 },
       
+    browserify: {
+        dist: {
+            files: {
+                '<%=site.development%>/assets/js/bundle.js': ['./src/js/main.js'] 
+            }
+        }
+    },
+      
       
     /*
      * Remove all old files before creating the new files.
@@ -373,6 +381,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-robots-txt');
   grunt.loadNpmTasks('grunt-sitemap');
   grunt.loadNpmTasks('grunt-ftp-deploy');
+  grunt.loadNpmTasks('grunt-browserify');
   
   /**
    * Grunt CLI Tasks:
