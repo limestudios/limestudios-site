@@ -1,0 +1,17 @@
+{
+  "pages": [
+    {
+      "subtitle" : "Subtitle testing",
+      "image-file" : "/assets/img/site/projects/sketch-a-day/thumb.png",
+      "description" : "This is foo!"
+    },
+    {
+      "subtitle" : "Subtitle testing",
+      "description": "This is bar."
+    },
+    {
+      "subtitle" : "Subtitle testing",
+      "description": "This is baz."
+    }
+  ]
+}

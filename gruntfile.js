@@ -2,6 +2,27 @@ module.exports = function(grunt) {
 
   'use strict';
   
+  var _ = require('lodash');
+  var path = require('path');
+  
+  //Function for creating an array of files from each node in a JSON file
+  function createPages(datasrc,template) {
+    var data = grunt.file.readJSON(datasrc);
+    var pageArray = [];
+
+    for (var i = 0; i < data.pages.length; i++) { 
+      pageArray.push({
+        // the filename will determine how the page is named later
+        filename: "" + i, //turn number into string for filename
+        // the data for the current step from the json file
+        data: data.pages[i],
+        // add the template as the page content
+        content: grunt.file.read(template)
+      });
+    }
+    return _.flatten(pageArray);
+  }
+  
   var banner = function (alt) {
     var grunt = '<%=grunt.template.today("yyyy-mm-dd")%>', // get the current date
       version = ' - v<%=pkg.version%> - ', // get the version number from package.json
@@ -42,17 +63,17 @@ module.exports = function(grunt) {
      * Uploads to FTP server.
      */
     'ftp-deploy': {
-  build: {
-    auth: {
-      host: 'limestudios.net',
-      port: 21,
-      authKey: 'key1'
+        build: {
+          auth: {
+            host: 'limestudios.net',
+            port: 21,
+            authKey: 'key1'
+          },
+        src: opt.dev,
+        dest: '/public_html',
+      //exclusions: ['path/to/source/folder/**/.DS_Store', 'path/to/source/folder/**/Thumbs.db', 'path/to/dist/tmp']
+        }
     },
-    src: opt.dev,
-    dest: '/public_html',
-    //exclusions: ['path/to/source/folder/**/.DS_Store', 'path/to/source/folder/**/Thumbs.db', 'path/to/dist/tmp']
-  }
-},
       
     browserify: {
         dist: {
@@ -139,13 +160,13 @@ module.exports = function(grunt) {
     uglify: {
       options: { banner: banner('Primary JS components') },
       assets: {
-        files: {
-          '<%=site.development%>/assets/js/components.js': [
-            // Array of scripts to concatenate into components.js
-            opt.vendor + '/fastclick/lib/fastclick.js'//,
-            //opt.src + '/js/vendor/nav.js'
-          ]
-        }
+        files: [{ 
+            cwd: opt.src + '/js/page-specific/',
+            src: '**/*.js',
+            dest:  opt.dev + '/assets/js/page-specific',
+            flatten: true,
+            expand: true
+        }]
       },
       ie: {
         options: { banner: banner('Provides IE 8 support when needed') },
@@ -245,6 +266,16 @@ module.exports = function(grunt) {
             src: opt.pages + '/*.{hbs,md}',
             dest: opt.dev + '/'
           }
+        ]
+      },
+      
+      'sketch-a-day': {
+        options: {
+          //Create page object using function we defined above
+          pages: createPages(opt.src + '/data/sketch-a-day.json','tpl/partials/sketch-a-day.hbs')
+        },
+        files: [
+          { dest: '<%=site.development%>/sketch-a-day/', src: '!*' } //We need to trick assemble here using !* as the src
         ]
       },
 
@@ -409,6 +440,14 @@ module.exports = function(grunt) {
   grunt.registerTask('scripts', ['uglify']);
   grunt.registerTask('content', ['assemble','humans_txt','robotstxt']);
   grunt.registerTask('assets', ['copy']);
+    
+grunt.registerTask('ftp', 'A sample task that logs stuff.', function(arg1) {
+  if (arguments.length === 0) {
+    grunt.log.writeln(this.name + ", no args");
+  } else {
+    grunt.log.writeln(this.name + ", " + arg1 + " " + arg2);
+  }
+});
   
   grunt.registerTask('dev', 'Grunt enters dev mode and watches source files for changes.', function(n) {
     
@@ -431,6 +470,6 @@ module.exports = function(grunt) {
     
   });
   
-  grunt.registerTask('build', ['content','styles','scripts','assets','compress']);
+  grunt.registerTask('build', ['content','styles','scripts','assets','compress','sketch-a-day']);
 
 }

@@ -4,7 +4,14 @@
     
     {{> nav}}
     
-    <h1><span>{{page.title}}</span></h1>
+    <h1><span>
+      {{page.title}}
+      
+      {{#if title-addon}}
+        {{page.title-addon}}
+      {{/if}}
+      
+      </span></h1>
     <p class="subtitle">{{page.subtitle}}</p>
 
 </header>
