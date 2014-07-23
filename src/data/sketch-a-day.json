@@ -1,9 +1,9 @@
 {
   "pages": [
     {
-      "subtitle" : "Subtitle testing",
+      "subtitle" : "Subtitle testing 1",
       "image-file" : "/assets/img/site/projects/sketch-a-day/thumb.png",
-      "description" : "This is foo!"
+      "description" : "~~**This is foo!**~~ {{md tpl/svgs/icon-video.hbs}} "
     },
     {
       "subtitle" : "Subtitle testing",

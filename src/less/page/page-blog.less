@@ -1,0 +1,30 @@
+// HEADER / FOOTER
+
+section.blog header {
+    background: @blog-accent !important;
+}
+
+footer {
+    //background: lighten(@about-accent, 5%) !important;
+}
+
+section.blog section.default-content{
+  max-width: 960px;
+}
+
+section.blog div.blog-posts article {
+  margin: 0 auto;
+  padding: 16px;
+  text-align: center;
+}
+
+section.blog a .blog-label {
+    color: lighten(@blog-accent, 0%);
+    .transition();
+    font-family: @type-primary-bold;
+}
+
+section.blog a:hover .blog-label{
+    color: darken(@blog-accent, 10%);
+    border-bottom: 2px solid;
+}

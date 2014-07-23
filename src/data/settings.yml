@@ -4,7 +4,7 @@
 nav:
 - {name: About Me, link: '/'}
 - {name: Work, link: '/work'}
-- {name: Arrhythmia, link: '/arrhythmia'}
+- {name: Blog, link: '/blog'}
 - {name: Contact, link: '/contact'}
 
 #---------------------------

@@ -7,7 +7,7 @@ module.exports = function(grunt) {
   
   //Function for creating an array of files from each node in a JSON file
   function createPages(datasrc,template) {
-    var data = grunt.file.readJSON(datasrc);
+    var data = grunt.file.readYAML(datasrc);
     var pageArray = [];
 
     for (var i = 0; i < data.pages.length; i++) { 
@@ -241,7 +241,7 @@ module.exports = function(grunt) {
             name: 'post',
             sortby: 'date',
             sortorder: 'descending',
-            pages: [opt.posts]
+            pages: [opt.posts + '/**/*.{hbs,md}']
           }
         ],
         marked: {
@@ -259,6 +259,16 @@ module.exports = function(grunt) {
           cwd: opt.posts
         }
       },
+      
+      /*blog: {
+        options: {
+          //Create page object using function we defined above
+          pages: createPages(opt.src + '/data/blog.yml','tpl/partials/blog.hbs')
+        },
+        files: [
+          { dest: '<%=site.development%>/blog/', src: '!*' } //We need to trick assemble here using !* as the src
+        ]
+      },*/
 
       pages: {
         files: [
@@ -266,16 +276,6 @@ module.exports = function(grunt) {
             src: opt.pages + '/*.{hbs,md}',
             dest: opt.dev + '/'
           }
-        ]
-      },
-      
-      'sketch-a-day': {
-        options: {
-          //Create page object using function we defined above
-          pages: createPages(opt.src + '/data/sketch-a-day.json','tpl/partials/sketch-a-day.hbs')
-        },
-        files: [
-          { dest: '<%=site.development%>/sketch-a-day/', src: '!*' } //We need to trick assemble here using !* as the src
         ]
       },
 
@@ -470,6 +470,6 @@ grunt.registerTask('ftp', 'A sample task that logs stuff.', function(arg1) {
     
   });
   
-  grunt.registerTask('build', ['content','styles','scripts','assets','compress','sketch-a-day']);
+  grunt.registerTask('build', ['content','styles','scripts','assets','compress']);
 
 }
