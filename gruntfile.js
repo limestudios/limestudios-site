@@ -240,7 +240,8 @@ module.exports = function(grunt) {
           {
             name: 'post',
             sortby: 'date',
-            sortorder: 'descending'
+            sortorder: 'descending',
+            pages: [opt.posts]
           }
         ],
         marked: {
@@ -257,16 +258,6 @@ module.exports = function(grunt) {
         compose: {
           cwd: opt.posts
         }
-      },
-      
-      'blog': {
-        options: {
-          //Create page object using function we defined above
-          pages: createPages(opt.src + '/data/blog.yml','tpl/partials/blog.hbs')
-        },
-        files: [
-          { dest: '<%=site.development%>/blog/', src: '!*' } //We need to trick assemble here using !* as the src
-        ]
       },
 
       pages: {
