@@ -20,7 +20,7 @@
         <h6 class=rst>Written By<br>
         <strong intemprop=name class=rst>{{#with author ~}}{{name.first}} {{name.last}}{{~/with~}}</strong></h6>
         <p class=article-author-bio><small>
-          I am Patrick Burtchaell, a <span itemprop=title>graphic design and computer science student</span>
+          {{#with author ~}}{{bio}}{{~/with~}}
           <span itemscope itemprop=address itemtype=http://data-vocabulary.org/Address>
             at <span itemprop=locality>Loyola University New Orleans</span>.<br>
             <a href="https://twitter.com/intent/user?screen_name={{author.twitter}}" class="line rst">@pburtchaell</a> on Twitter

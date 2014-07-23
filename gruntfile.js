@@ -240,8 +240,7 @@ module.exports = function(grunt) {
           {
             name: 'post',
             sortby: 'date',
-            sortorder: 'descending',
-            pages: [opt.posts + '/**/*.{hbs,md}']
+            sortorder: 'descending'
           }
         ],
         marked: {
@@ -260,7 +259,7 @@ module.exports = function(grunt) {
         }
       },
       
-      /*blog: {
+      'blog': {
         options: {
           //Create page object using function we defined above
           pages: createPages(opt.src + '/data/blog.yml','tpl/partials/blog.hbs')
@@ -268,7 +267,7 @@ module.exports = function(grunt) {
         files: [
           { dest: '<%=site.development%>/blog/', src: '!*' } //We need to trick assemble here using !* as the src
         ]
-      },*/
+      },
 
       pages: {
         files: [
