@@ -31,7 +31,7 @@ skills:
 
 projects:
 - {title: Arrhythmia, subtitle: The Video Game, icon: arrhythmia, folder: 'arrhythmia'}
-- {title: LimeWorks, subtitle: An XNA game engine, icon: , folder: 'lime-works'}
+- {title: LimeWorks, subtitle: An XNA game engine, svg: logo-circle, folder: 'lime-works'}
 - {title: Sketch A Day, subtitle: Collection of my sketches, icon: , folder: 'sketch-a-day'}
 - {title: Design A Day, subtitle: Collection of my random designs, icon: , folder: 'design-a-day'}
 - {title: Project 5, subtitle: The Video Game, icon: , folder: 'proj-5'}
