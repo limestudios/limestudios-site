@@ -22,7 +22,11 @@ js-close:
               {{#if this.icon}}
                 <img class="icon" src="/assets/img/site/icons/{{this.icon}}.png"></img>
               {{else}}
-                <div class="icon">{{firstChar this.title}}</div>
+                {{#if this.svg}} 
+                  <img class="icon" src="/assets/img/site/icons/{{this.svg}}.svg"></img>
+                {{else}}
+                  <div class="icon">{{firstChar this.title}}</div>
+                {{/if}}
               {{/if}}
 
               <p class="info">

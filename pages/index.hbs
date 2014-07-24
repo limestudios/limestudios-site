@@ -14,9 +14,13 @@ icons: ./assets/img/site/icons/
       <a href="{{findURL this.dest 'dist/development' ''}}" rel=prefetch role=link class=line>
         
         {{#if this.data.icon}}
-          <img class="icon" src="./assets/img/site/icons/{{this.data.icon}}.png"></img>
+          <img class="icon" src="/assets/img/site/icons/{{this.data.icon}}.png"></img>
         {{else}}
-          <div class="icon">{{firstChar this.data.title}}</div>
+          {{#if this.data.svg}} 
+            <img class="icon" src="/assets/img/site/icons/{{this.data.svg}}.svg"></img>
+          {{else}}
+            <div class="icon">{{firstChar this.data.title}}</div>
+          {{/if}}
         {{/if}}
 
         <p class="info">
