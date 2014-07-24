@@ -9,36 +9,48 @@ js-close:
 - {name: work-belt}
 ---
 
-<section class="{{page.title}}">
-    
-    <div class="work-belt">
-  
-        <div class="thumb-wrap">
-            <div class="thumb-container">
-            {{#each settings.projects}}
-                <!--<a href="/{{this.folder}}" class="thumb-unit" style="background-image: url(/assets/img/site/projects/{{this.folder}}/thumb.png)">-->
-                <a href="#div.work-container" class="thumb-unit" style="background-image: url(/assets/img/site/projects/{{this.folder}}/thumb.png)">
-                    <div class="thumb-overlay">
-                        <strong>{{this.name}}</strong>
-                        <div class="test-icon">{{this.thumb}}</div>
-                    </div>
-                </a>
-            {{/each}}  
-        </div>
-        </div>
+{{/markdown}}
 
-        <div class="work-wrap">
-            <div class="work-container">
-              <div class="work-return">{{> icon-return}}</div>
-              <h4>Arrhythmia</h4>
-              <img style="width:500px; height:500px; background:#ccc;"></img>
-              <p>Hey what's up this is where all the work will go like the descriptions and stuff</p>
-              <img style="width:500px; height:500px; background:#ccc;"></img>
-              <p>Hey what's up this is where all the work will go like the descriptions and stuff</p>
-              <p>Hey what's up this is where all the work will go like the descriptions and stuff</p>
-            </div>
-        </div>
-      
+  <div class="work-belt">
+
+    <div class="thumb-wrap">
+        <div class="thumb-container">
+          {{#each settings.projects}}
+
+            <a href="{{this.folder}}" rel=prefetch role=link class="project line">
+
+              {{#if this.icon}}
+                <img class="icon" src="/assets/img/site/icons/{{this.icon}}.png"></img>
+              {{else}}
+                <div class="icon">{{firstChar this.title}}</div>
+              {{/if}}
+
+              <p class="info">
+                {{this.title}}
+                <br>
+                <small>
+                  {{this.subtitle}}
+                </small>
+              </p>
+
+            </a>
+
+          {{/each}}
+      </div>
     </div>
-    
-</section>
+
+    <div class="work-wrap">
+        <div class="work-container">
+          <div class="work-return">{{> icon-return}}</div>
+          <h4>Arrhythmia</h4>
+          <img style="width:500px; height:500px; background:#ccc;"></img>
+          <p>Hey what's up this is where all the work will go like the descriptions and stuff</p>
+          <img style="width:500px; height:500px; background:#ccc;"></img>
+          <p>Hey what's up this is where all the work will go like the descriptions and stuff</p>
+          <p>Hey what's up this is where all the work will go like the descriptions and stuff</p>
+        </div>
+    </div>
+
+  </div>
+
+{{#markdown}}

@@ -1,18 +1,41 @@
 ---
 title: Blog
+subtitle: Read stuff I've written
 layout: default.hbs
 css: blog
+icons: ./assets/img/site/icons/
 ---
 
-{{#withSort post 'this.data.date'}}
-  {{#each this.pages}}
-  <article>
-    <header>
+{{/markdown}}
+
+  {{#withSort post 'this.data.date'}}
+    {{#each this.pages}}
+
       <a href="{{findURL this.dest 'dist/development' ''}}" rel=prefetch role=link class=line>
-        <em><span class=article-feed-title>{{this.data.title}}</span></em>
+        
+        {{#if this.data.icon}}
+          <img class="icon" src="./assets/img/site/icons/{{this.data.icon}}.png"></img>
+        {{else}}
+          <div class="icon">{{firstChar this.data.title}}</div>
+        {{/if}}
+
+        <p class="info">
+          {{this.data.title}}
+          &mdash;
+          <small>
+            <time class=article-feed-time>
+              {{prettyDate this.data.date}}
+            </time>
+          </small>
+          <br>
+          <small>
+            {{this.data.subtitle}}
+          </small>
+        </p>
+        
       </a>
-      <small><time class=article-feed-time>{{prettyDate this.data.date}}</time></small>
-    </header>
-  </article>
-  {{/each ~}}
-{{/withSort ~}}
+
+    {{/each ~}}
+  {{/withSort ~}}
+
+{{#markdown}}

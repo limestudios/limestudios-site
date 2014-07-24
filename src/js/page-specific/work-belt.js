@@ -1,7 +1,8 @@
 (function($) {
   $(function() {
   
-    $('.thumb-unit').click(function() {
+    $('a.project').click(function(event) {
+      event.preventDefault();
       $('.work-belt').css('left','-100%');
       $('.work-container').show();
     });

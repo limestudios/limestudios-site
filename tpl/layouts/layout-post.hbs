@@ -1,35 +1,18 @@
 {{> open ~}}
-{{> header}}
-<main role=main id=main>
-  <article itemscope itemtype=http://data-vocabulary.org/Article class="article page">
+<main role=main>
+  <section class="page page-default {{page.css}}">
+      
+    {{> header}}
 
-    <header class=article-header>
-      <h1 class=article-title itemprop=name>{{page.title}}</h1>
-      <!--<time>{{prettyDate this.page.data.date}}</time>-->
-    </header><!-- /article-header -->
-
-    <section class=article-content>
+    <section class=default-content>
       {{#markdown}}
         {{> body }}
       {{/markdown ~}}
-    </section><!-- /article-content -->
-
-    <footer class=article-footer>
-      <img class=article-author-img src="" height=100px width=100px>
-      <div class=article-author-info itemscope itemtype=http://data-vocabulary.org/Person itemprop=author>
-        <h6 class=rst>Written By<br>
-        <strong intemprop=name class=rst>{{#with author ~}}{{name.first}} {{name.last}}{{~/with~}}</strong></h6>
-        <p class=article-author-bio><small>
-          {{#with author ~}}{{bio}}{{~/with~}}
-          <span itemscope itemprop=address itemtype=http://data-vocabulary.org/Address>
-            at <span itemprop=locality>Loyola University New Orleans</span>.<br>
-            <a href="https://twitter.com/intent/user?screen_name={{author.twitter}}" class="line rst">@pburtchaell</a> on Twitter
-          </span></small>
-        </p>
-      </div><!-- /article-author -->
-    </footer><!-- /article-footer -->
-
-  </article><!-- /.article.page -->
-</main><!-- /main -->
+    </section><!-- /default-content -->
+    
+    {{> author}}
+    
+  </section><!-- /.default.page -->
+</main>
 {{> footer}}
 {{> close ~}}

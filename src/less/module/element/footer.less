@@ -1,10 +1,11 @@
 footer {
-    background: @white-grey;
+    background: @light-grey;
     background-size: cover;
     display: flex;
     align-items: center; 
-    min-height: 20vh;
+    min-height: 128px;
     overflow: hidden;
+    max-height: 10vh;
 }
 
 footer .lockup {
@@ -21,7 +22,7 @@ footer .lockup .logo {
 }
 
 footer .lockup .logo path{
-    fill: @dark-grey;
+    fill: @white;
     opacity: 0.7;
 }
 
@@ -58,7 +59,10 @@ footer nav a:hover {
 
 footer .lockup .content-wrap .copyright {
     margin: 0;
-    .font-small();
+    font-family: @type-primary-bold;
+  text-transform: uppercase;
+  font-weight: 500 !important;
+  color: @white;
     white-space: nowrap;
 }
 
@@ -72,7 +76,7 @@ footer .lockup .content-wrap .copyright {
     }
     
     footer .lockup .logo {
-        .square(32px);
+        //.square(32px);
     }
 }
 

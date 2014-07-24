@@ -30,14 +30,14 @@ skills:
 # WORK SECTION
 
 projects:
-- {name: Arrhythmia, thumb: , background: , folder: 'arrhythmia'}
-- {name: LimeWorks, thumb: , background: , folder: 'lime-works'}
-- {name: Sketch A Day, thumb: , background: , folder: 'sketch-a-day'}
-- {name: Project 4, thumb: , background: , folder: 'proj-4'}
-- {name: Project 5, thumb: , background: , folder: 'proj-5'}
-- {name: Project 6, thumb: , background: , folder: 'proj-6'}
-- {name: Project 7, thumb: , background: , folder: 'proj-7'}
-- {name: Project 8, thumb: , background: , folder: 'proj-8'}
+- {title: Arrhythmia, subtitle: The Video Game, icon: arrhythmia, folder: 'arrhythmia'}
+- {title: LimeWorks, subtitle: An XNA game engine, icon: , folder: 'lime-works'}
+- {title: Sketch A Day, subtitle: Collection of my sketches, icon: , folder: 'sketch-a-day'}
+- {title: Design A Day, subtitle: Collection of my random designs, icon: , folder: 'design-a-day'}
+- {title: Project 5, subtitle: The Video Game, icon: , folder: 'proj-5'}
+- {title: Project 6, subtitle: The Video Game, icon: , folder: 'proj-6'}
+- {title: Project 7, subtitle: The Video Game, icon: , folder: 'proj-7'}
+- {title: Project 8, subtitle: The Video Game, icon: , folder: 'proj-8'}
 
 #---------------------------
 # ARRHYTHMIA SECTION

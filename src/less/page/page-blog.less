@@ -1,30 +1,97 @@
 // HEADER / FOOTER
 
 section.blog header {
-    background: @blog-accent !important;
+  background: @blog-accent !important;
 }
 
-footer {
-    //background: lighten(@about-accent, 5%) !important;
+body.blog footer {
+  //background: @blog-accent !important;
 }
 
-section.blog section.default-content{
+section.blog section.default-content {
   max-width: 960px;
+  .clearfix();
+  margin: 25px auto;
+  padding: 0px;
 }
 
-section.blog div.blog-posts article {
-  margin: 0 auto;
-  padding: 16px;
+section.blog section.default-content a {
+  margin: 1%;
+  padding: 2% 1%;
+  //text-align: center;
+  float: left;
+  width: 46%;
+  //.clearfix();
+  background: @light-white-grey;
+  display: flex;
+  align-items: center;
+  color: @grey;
+}
+
+section.blog section.default-content a:hover {
+  background: @light-grey;
+  //color: @white;
+}
+
+section.blog section.default-content img.icon {
+  .square(64px);
+  margin-right: 24px;
+}
+
+section.blog section.default-content div.icon {
+  .square(64px);
+  margin: 16px;
+  margin-right: 24px;
+  background: @blog-accent;
+  color: @white;
+  font-family: @type-primary-bold;
+  font-size: 36px;
+  text-transform: uppercase;
+  vertical-align: middle;
   text-align: center;
 }
 
-section.blog a .blog-label {
-    color: lighten(@blog-accent, 0%);
-    .transition();
-    font-family: @type-primary-bold;
+section.blog section.default-content p.info {
+  margin: 0;
 }
 
-section.blog a:hover .blog-label{
-    color: darken(@blog-accent, 10%);
+/*section.blog article a {
+    display: inline-block;
+    //margin-right: 20px;
+    .transition();
+    color: @blog-accent !important;
+    border-bottom: 2px solid transparent;
+    white-space: nowrap;
+}
+
+section.blog article a:hover {
+    color: darken(@blog-accent, 25%);
     border-bottom: 2px solid;
+}*/
+
+section.blog a small time {
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 650px) {
+   section.blog section.default-content {
+    margin: 25px auto;
+  }
+  
+  section.blog section.default-content a {
+    width: 94%;
+    margin: 2% 2% 0 2%;
+  }
+  
+  section.blog section.default-content a:last-child {
+    margin-bottom: 2%;
+  }
+  
+  section.blog section.default-content a:nth-child(odd) {
+    background: @white-grey;
+  }
+  
+  section.blog section.default-content a:nth-child(odd):hover {
+    background: @light-grey;
+  }
 }
