@@ -40,14 +40,15 @@ js-close:
     </div>
 
     <div class="work-wrap">
-        <div class="work-container">
-          <div class="work-return">{{> icon-return}}</div>
-          <h4>Arrhythmia</h4>
-          <img style="width:500px; height:500px; background:#ccc;"></img>
-          <p>Hey what's up this is where all the work will go like the descriptions and stuff</p>
-          <img style="width:500px; height:500px; background:#ccc;"></img>
-          <p>Hey what's up this is where all the work will go like the descriptions and stuff</p>
-          <p>Hey what's up this is where all the work will go like the descriptions and stuff</p>
+        <div class="work-container" id="work">
+          {{#each settings.projects}}
+          <div class="work-return {{this.folder}}" back="{{this.folder}}">{{> icon-return}}</div>
+            <article class="{{this.folder}}">
+              <h4>{{this.title}}</h4>
+              <img style="width:500px; height:500px; background:#ccc;"></img>
+              <p>Hey what's up this is where all the work will go like the descriptions and stuff</p>
+            </article>
+          {{/each}}
         </div>
     </div>
 
