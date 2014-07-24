@@ -430,6 +430,7 @@ module.exports = function(grunt) {
   grunt.registerTask('scripts', ['uglify']);
   grunt.registerTask('content', ['assemble','humans_txt','robotstxt']);
   grunt.registerTask('assets', ['copy']);
+  grunt.registerTask('prep-ftp', ['clean','copy','build']);
     
 grunt.registerTask('ftp', 'A sample task that logs stuff.', function(arg1) {
   if (arguments.length === 0) {
