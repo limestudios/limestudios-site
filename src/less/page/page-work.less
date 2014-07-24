@@ -38,6 +38,8 @@ section.work .default-content {
     margin: 0 auto;
     //background: @light-grey;
     .clearfix();
+  .transition(0.25s);
+  opacity: 1;
 }
 
 .work .thumb-container a {
@@ -85,8 +87,16 @@ section.work .default-content {
     margin: 32px auto 32px;
     //background: @light-grey;
     .clearfix();
-    display: none;
     .transition(0.25s);
+    opacity: 0;
+}
+
+.work .work-container div.work-return {
+  display: none;
+}
+
+.work .work-container article {
+  display: none;
 }
 
 .work .work-container h4 {
@@ -104,6 +114,7 @@ section.work .default-content {
   max-width: 100%;
   padding: 0;
   margin: 0 auto;
+  float: none;
 }
 
 .work .work-return {
@@ -123,7 +134,7 @@ section.work .default-content {
   .square(48px);
   position: relative;
   left: -64px;
-  top: -10px;
+  top: -7px;
   .transition(0.25s);
 }
 
@@ -132,7 +143,7 @@ section.work .default-content {
     fill: @grey;
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 960px) {
   .work .thumb-container a {
     width: 94%;
     margin: 2% 2% 0 2%;
@@ -148,6 +159,11 @@ section.work .default-content {
   
   .work .thumb-container a:nth-child(odd):hover {
     background: @light-grey;
+  }
+  
+  .work .work-container {
+    width: 94%;
+    margin: 2% 2% 0 2%;
   }
 }
 
