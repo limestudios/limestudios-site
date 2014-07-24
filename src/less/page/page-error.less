@@ -13,9 +13,12 @@ main.error {
 
 section.error {
     background: @arrhythmia-accent;
-    padding: 80px 0;
     display: table-row;
     height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  justify-content: center;
 }
 
 section.error h1 {
@@ -25,7 +28,6 @@ section.error h1 {
     color: @white;
     text-transform: uppercase;
     letter-spacing: 0.05em;
-    padding: 40px 10px;
 }
 
 section.error h1 span {
@@ -47,20 +49,13 @@ section.error .subtitle {
     //white-space: nowrap;
     margin: 0 auto;
     //width: 450px;
-    padding: 0px 8px 60px 8px;
     max-width: 550px;
+    margin-top: 64px;
 }
 
 section.error .subtitle a {
     color: lighten(@white, 10%);
-    .transition();
     font-family: @type-primary-bold;
-    border-bottom: 0px solid;
-}
-
-section.error p.subtitle a:hover {
-    color: lighten(@white, 20%);
-    border-bottom: 2px solid;
 }
 
 section.error footer {
