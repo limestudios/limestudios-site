@@ -66,20 +66,6 @@ footer .lockup .content-wrap .copyright {
     white-space: nowrap;
 }
 
-@media screen and (max-width: 650px) {
-    footer nav a {
-        font-size: 12px !important;
-    }
-    
-    footer .lockup .content-wrap .copyright {
-        font-size: 14px !important;
-    }
-    
-    footer .lockup .logo {
-        //.square(32px);
-    }
-}
-
 // SVG heart & legal links
 .page-footer-span {
   display: block;
@@ -99,9 +85,11 @@ footer .lockup .content-wrap .copyright {
   fill: @design;
   top: -1px;
   svg {
+    .square(0.75rem);
     animation: pulse 3s infinite;
     .transition();
   }
+  margin: 0 2px;
 }
 
 .page-footer-legal {
@@ -110,6 +98,26 @@ footer .lockup .content-wrap .copyright {
   opacity: 0.3;
   .transition();
   display: none;
+}
+
+@media screen and (max-width: 650px) {
+    footer nav a {
+        font-size: 12px !important;
+    }
+    
+    footer .lockup .content-wrap .copyright {
+        font-size: 14px !important;
+    }
+    
+    footer .lockup .logo {
+        //.square(32px);
+    }
+  
+    .page-footer-heart {
+      svg {
+        .square(10px) !important;
+      }
+    }
 }
 
 // pulsing animation for hearts
