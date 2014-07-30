@@ -47,7 +47,7 @@ module.exports = function(grunt) {
     projects: './projects',
     vendor: './bower_components',
     expand: true,
-    devPort: 8000,
+    devPort: 80,
     devHostname: 'localhost'
   },
   opt = options,
@@ -265,6 +265,10 @@ module.exports = function(grunt) {
           {
             src: opt.pages + '/*.{hbs,md}',
             dest: opt.dev + '/'
+          },
+          {
+            src: opt.pages + '/work/*.{hbs,md}',
+            dest: opt.dev + '/work/'
           }
         ]
       },
@@ -430,7 +434,7 @@ module.exports = function(grunt) {
   grunt.registerTask('scripts', ['uglify']);
   grunt.registerTask('content', ['assemble','humans_txt','robotstxt']);
   grunt.registerTask('assets', ['copy']);
-  grunt.registerTask('prep-ftp', ['clean','copy','build']);
+  grunt.registerTask('prep-ftp', ['clean','copy','content','styles','scripts','assets','compress']);
     
 grunt.registerTask('ftp', 'A sample task that logs stuff.', function(arg1) {
   if (arguments.length === 0) {
