@@ -17,7 +17,7 @@ js-close:
         <div class="thumb-container">
           {{#each settings.projects}}
 
-            <a href="{{this.folder}}" rel=prefetch role=link class="project line">
+            <a href="" data-folder="{{this.folder}}" class="project line">
 
               {{#if this.icon}}
                 <img class="icon" src="/assets/img/site/icons/{{this.icon}}.png"></img>
@@ -25,12 +25,16 @@ js-close:
                 {{#if this.svg}} 
                   <img class="icon" src="/assets/img/site/icons/{{this.svg}}.svg"></img>
                 {{else}}
-                  <div class="icon">{{firstChar this.title}}</div>
+                    {{#if this.letter}} 
+                      <div class="icon">{{this.letter}}</div>
+                    {{else}}
+                      <div class="icon">{{firstChar this.title}}</div>
+                    {{/if}}
                 {{/if}}
               {{/if}}
 
               <p class="info">
-                {{this.title}}
+                <span class="title">{{this.title}}</span>
                 <br>
                 <small>
                   {{this.subtitle}}
@@ -44,15 +48,10 @@ js-close:
     </div>
 
     <div class="work-wrap">
-        <div class="work-container" id="work">
-          {{#each settings.projects}}
-          <div class="work-return {{this.folder}}" back="{{this.folder}}">{{> icon-return}}</div>
-            <article class="{{this.folder}}">
-              <h4>{{this.title}}</h4>
-              <img style="width:500px; height:500px; background:#ccc;"></img>
-              <p>Hey what's up this is where all the work will go like the descriptions and stuff</p>
-            </article>
-          {{/each}}
+        <div class="work-container">
+          <div class="work-return">{{> icon-return2}}</div>
+          <h4 class="project-title"></h4>
+          <div class="project-load">
         </div>
     </div>
 

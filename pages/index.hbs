@@ -19,7 +19,11 @@ icons: ./assets/img/site/icons/
           {{#if this.data.svg}} 
             <img class="icon" src="/assets/img/site/icons/{{this.data.svg}}.svg"></img>
           {{else}}
-            <div class="icon">{{firstChar this.data.title}}</div>
+            {{#if this.data.letter}} 
+              <div class="icon">{{this.data.letter}}</div>
+            {{else}}
+              <div class="icon">{{firstChar this.data.title}}</div>
+            {{/if}}
           {{/if}}
         {{/if}}
 
