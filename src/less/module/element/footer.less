@@ -9,8 +9,8 @@ footer {
 }
 
 footer .lockup {
-    margin: 0 auto;
-    padding: 32px 30px;
+    //margin: 0 auto;
+    padding: 32px 20px;
     .clearfix();
     overflow: hidden;
 }
@@ -18,7 +18,11 @@ footer .lockup {
 footer .lockup .logo {
     .square(64px);
     //float: left;
-    margin-right: 10px;
+    margin-right: 24px;
+}
+
+footer .lockup .logo svg {
+    .square(64px);
 }
 
 footer .lockup .logo path{
@@ -61,7 +65,7 @@ footer .lockup .content-wrap .copyright {
     margin: 0;
     font-family: @type-primary-bold;
   text-transform: uppercase;
-  font-weight: 500 !important;
+  font-weight: 300 !important;
   color: @white;
     white-space: nowrap;
 }
@@ -117,6 +121,10 @@ footer .lockup .content-wrap .copyright {
       svg {
         .square(10px) !important;
       }
+    }
+  
+    footer .lockup {
+      padding: 32px 5%;
     }
 }
 
