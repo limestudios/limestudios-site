@@ -1,29 +1,42 @@
 (function($) {
   $(function() {
+    workBelt();
+    workLoad();
+  });
   
+  function workBelt() {
     $('a.project').click(function(event) {
       event.preventDefault();
-      var class = $(this).attr('href');
       $('.work-belt').css('left','-100%');
-      $('.thumb-container').css('opacity','0');
-      $('.work-container div.' + class).show();
-      $('.work-container article.' + class).show();
-      $('.work-container').css('opacity','1');
-      $('html, body').animate({
-        screenTop: ($("article").first().offset().top)
-      }, 1000);
+      $('.work-container').show(200);
+      $('footer').fadeOut(100).fadeIn(500);
     });
 
     $('.work-return').click(function(event) {
       event.preventDefault();
-      var class = $(this).attr('back');
       $('.work-belt').css('left','0%');
-      $('.thumb-container').css('opacity','1');
-      $('.work-container div.' + class).hide(500);
-      $('.work-container article.' + class).hide(500);
-      $('.work-container').css('opacity','0');
-      console.log('.work-container article.' + class);
+      $('.work-container').hide(200);
+      $('footer').fadeOut(100).fadeIn(500);
     });
+  }
+  
+  function workLoad() {
+    
+    $.ajaxSetup ({ cache: true });
+    
+    $('a.project').click(function() {
+      
+      var $this = $(this),
+          newTitle = $this.find('p.info span.title').text(),
+          newFolder = $this.data('folder'),
+          spinner = '<div class="loader">Loading...</div>',
+          newHTML = '/work/'+ newFolder +'/index.html';
+      
+      $('.project-load').html(spinner).load(newHTML);
+      $('.project-title').text(newTitle);
+      
+    });
+    
+  }
 
-  });
 }) ( jQuery );
