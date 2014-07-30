@@ -88,15 +88,7 @@ section.work .default-content {
     //background: @light-grey;
     .clearfix();
     .transition(0.25s);
-    opacity: 0;
-}
-
-.work .work-container div.work-return {
-  display: none;
-}
-
-.work .work-container article {
-  display: none;
+    //opacity: 0;
 }
 
 .work .work-container h4 {
@@ -105,7 +97,7 @@ section.work .default-content {
   font-size: 24px;
   text-transform: uppercase;
   text-align: left;
-  margin: 0;
+  margin: 0 !important;
   padding: 0 0 20px;
   .transition(0.25s);
 }
@@ -134,8 +126,9 @@ section.work .default-content {
   .square(48px);
   position: relative;
   left: -64px;
-  top: -7px;
+  top: -8px;
   .transition(0.25s);
+  transform: rotate(90deg);
 }
 
 .work .work-return svg path {
@@ -173,7 +166,7 @@ section.work .default-content {
   }
   
   .work .work-container h4 {
-    margin-left: 64px;
+    margin-left: 64px !important;
   }
   
   .work .work-return svg {
