@@ -1,0 +1,74 @@
+.block-panel {
+  margin: 1%;
+  padding: 2% 1%;
+  float: left;
+  width: 46%;
+  //.clearfix();
+  background: @light-white-grey;
+  display: flex;
+  align-items: center;
+  color: @grey;
+  border-bottom: 2px solid transparent;
+  
+  &:hover,
+  &:active {
+    background: @light-grey;
+    border-bottom: 2px solid;
+  }
+  
+  img.icon {
+    .square(64px);
+    min-width: 64px;
+    margin-right: 24px;
+  }
+
+  div.icon {
+    .square(64px);
+    min-width: 64px;
+    margin: 16px;
+    margin-right: 24px;
+    background: @work-accent;
+    color: @white;
+    font-size: 36px;
+    text-transform: uppercase;
+    vertical-align: middle;
+    text-align: center;
+  }
+  
+  p.info {
+    margin: 0;
+  }
+
+  p.info span.title {
+    margin: 0;
+    .font-panel-title();
+    
+    time {
+      .font-panel-time();
+    }
+  }
+  
+  p.info span.subtitle {
+    margin: 0;
+    .font-panel-subtitle();
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .block-panel {
+    width: 94%;
+    margin: 2% 2% 0 2%;
+  }
+  
+  .block-panel:last-child {
+    margin-bottom: 2%;
+  }
+  
+  .block-panel:nth-child(odd) {
+    background: @white-grey;
+  }
+  
+  .block-panel:nth-child(odd):hover {
+    background: @light-grey;
+  }
+}
