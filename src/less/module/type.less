@@ -42,7 +42,7 @@ small {
 
 /* Headings */
 h1 {
-  font: 3rem @type-primary-bold; /* 2rem: root*2 */
+  font: 3rem @font; /* 2rem: root*2 */
   //margin: 1.1rem auto;
   //padding: 1rem 0;
   //text-align: center;
@@ -50,14 +50,14 @@ h1 {
   //color: @white;
 }
 h2, h3, h4, h5, h6 {
-  font-family: @type-secondary-bold;
+  font-family: @font;
   text-transform: uppercase;
   margin: 2.5rem 0 0.125rem 0;
   line-height: 1.4;
   &.rst { margin: 0 0 0.125rem 0; }
 }
 h2 {
-  font: 1.50rem @type-secondary;
+  font: 1.50rem @font;
   text-align: center;
   text-transform: none;
   margin: 3.5rem 0 1rem 0;
@@ -70,7 +70,7 @@ h3 {
   max-width: @base*12;
 }
 h4 {
-  font: 1.20rem @type-secondary;
+  font: 1.20rem @font;
   letter-spacing: 0.075rem;
   text-align: center;
 }
@@ -79,7 +79,7 @@ h5 {
   text-transform: none;
 }
 h6 {
-  font: 1rem @type-secondary;
+  font: 1rem @font;
 }
 small {
   h2, h3, h4, h5, h6 {
@@ -115,7 +115,7 @@ strike {
 }
 
 time {
-  font-family: @type-secondary;
+  font-family: @font;
 }
 
 /* deafult horizontal rule styles */
@@ -153,8 +153,8 @@ a {
 a.line,
 a.line:visited {
 
-  @color: rgb(0,169,198);
-  color: @color;
+  //@color: rgb(0,169,198);
+  //color: @color;
   border-bottom: 2px solid transparent;
 
   // on :hover fadeout the line and add padding
@@ -180,7 +180,7 @@ abbr {
 
 /* default blockquotes styles */
 blockquote {
-  font-family: @type-italic;
+  font-family: @font;
   margin: 2rem auto;
   padding: 0 0 0 1rem;
   border-left: 0.25rem solid;
