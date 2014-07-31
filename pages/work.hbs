@@ -17,7 +17,7 @@ js-close:
         <div class="thumb-container">
           {{#each settings.projects}}
 
-            <a href="" data-folder="{{this.folder}}" class="project line">
+            <a href="" data-folder="{{this.folder}}" class="block-panel">
 
               {{#if this.icon}}
                 <img class="icon" src="/assets/img/site/icons/{{this.icon}}.png"></img>
@@ -34,11 +34,13 @@ js-close:
               {{/if}}
 
               <p class="info">
-                <span class="title">{{this.title}}</span>
+                <span class="title">
+                  {{this.title}}
+                </span>
                 <br>
-                <small>
+                <span class="subtitle">
                   {{this.subtitle}}
-                </small>
+                </span>
               </p>
 
             </a>
