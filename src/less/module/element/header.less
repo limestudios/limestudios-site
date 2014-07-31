@@ -38,12 +38,8 @@ header nav a:last-child {
 
 header nav a {
     display: inline-block;
+    .font-nav();
     margin-right: 20px;
-    
-    font-family: @type-primary-bold;
-    font-size: 16px;
-    text-transform: uppercase;
-    font-weight: 300 !important;
     white-space: nowrap;
     color: @white !important;
 }
@@ -52,11 +48,9 @@ header nav a:hover {
 }
 
 header h1 {
+    .font-header();
     text-align: center;
-    font-size: 48px !important;
-    font-weight: 700 !important;
     color: @white;
-    text-transform: uppercase;
     letter-spacing: 0.05em;
     margin-bottom: 20px;
     clear: both;
@@ -73,14 +67,11 @@ header h1 span {
 
 header .subtitle {
     text-align: center;
-    font-size: 16px;
-    //font-weight: 700;
-    text-transform: uppercase;
     letter-spacing: 0.15em;
     color: @white;
     line-height: 1;
-    font-family: @type-primary;
     padding-bottom: 40px;
+    .font-subtitle();
 }
 
 @media screen and (max-width: 650px) {

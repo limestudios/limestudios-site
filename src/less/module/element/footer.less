@@ -6,6 +6,7 @@ footer {
     min-height: 128px;
     overflow: hidden;
     max-height: 10vh;
+    opacity: 1;
 }
 
 footer .lockup {
@@ -39,69 +40,37 @@ footer .lockup .content-wrap {
     //float:left;
 }
 
-footer nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    //margin: 0;
-}
-
-footer nav a:last-child {
-    margin-right: 0px;
-}
-
-footer nav a {
-    white-space: nowrap;
-    //display: inline-block;
-    .font-small-bold(@light-grey);
-    //margin-right: 20px;
-}
-
 footer nav a:hover {
     color: black;
 }
 
 footer .lockup .content-wrap .copyright {
     margin: 0;
-    font-family: @type-primary-bold;
-  text-transform: uppercase;
-  font-weight: 300 !important;
-  color: @white;
+    color: @white;
     white-space: nowrap;
 }
 
-// SVG heart & legal links
-.page-footer-span {
-  display: block;
-  margin: 0 auto;
-  width: 225px;
-  height: auto;
-  text-transform: uppercase;
-  border: 1px solid @light-grey;
-  background: @white;
-  line-height: 1.0;
-  padding: 5px;
-  font-family: @type-secondary;
-  user-select: none;
+footer .lockup .content-wrap .copyright span.main {
+    .font-footer-main();
 }
 
-.page-footer-heart {
+footer .lockup .content-wrap .copyright span.sub {
+    .font-footer-sub();
+}
+
+// SVG heart
+footer .lockup .heart {
   fill: @design;
-  top: -1px;
-  svg {
-    .square(0.75rem);
-    animation: pulse 3s infinite;
-    .transition();
-  }
+  top: 2.25px;
   margin: 0 2px;
+  position: relative;
 }
 
-.page-footer-legal {
-  max-width: 350px;
-  margin: 0 auto 1rem auto;
-  opacity: 0.3;
+footer .lockup svg.heart {
+  .square(0.75rem);
+  animation: pulse 3s infinite;
   .transition();
-  display: none;
+  position: relative;
 }
 
 @media screen and (max-width: 650px) {
@@ -109,18 +78,8 @@ footer .lockup .content-wrap .copyright {
         font-size: 12px !important;
     }
     
-    footer .lockup .content-wrap .copyright {
-        font-size: 14px !important;
-    }
-    
     footer .lockup .logo {
         //.square(32px);
-    }
-  
-    .page-footer-heart {
-      svg {
-        .square(10px) !important;
-      }
     }
   
     footer .lockup {
