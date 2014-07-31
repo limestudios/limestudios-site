@@ -5,7 +5,7 @@
   });
   
   function workBelt() {
-    $('a.project').click(function(event) {
+    $('a.block-panel').click(function(event) {
       event.preventDefault();
       $('.work-belt').css('left','-100%');
       $('.work-container').show(200);
@@ -24,7 +24,7 @@
     
     $.ajaxSetup ({ cache: true });
     
-    $('a.project').click(function() {
+    $('a.block-panel').click(function() {
       
       var $this = $(this),
           newTitle = $this.find('p.info span.title').text(),
