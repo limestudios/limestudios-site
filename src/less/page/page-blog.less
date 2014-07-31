@@ -15,48 +15,6 @@ section.blog section.default-content {
   padding: 0px;
 }
 
-section.blog section.default-content a {
-  margin: 1%;
-  padding: 2% 1%;
-  //text-align: center;
-  float: left;
-  width: 46%;
-  //.clearfix();
-  background: @light-white-grey;
-  display: flex;
-  align-items: center;
-  color: @grey;
-}
-
-section.blog section.default-content a:hover {
-  background: @light-grey;
-  //color: @white;
-}
-
-section.blog section.default-content img.icon {
-  .square(64px);
-  margin-right: 24px;
-  min-width: 64px;
-}
-
-section.blog section.default-content div.icon {
-  .square(64px);
-  margin: 16px;
-  min-width: 64px;
-  margin-right: 24px;
-  background: @blog-accent;
-  color: @white;
-  font-family: @type-primary-bold;
-  font-size: 36px;
-  text-transform: uppercase;
-  vertical-align: middle;
-  text-align: center;
-}
-
-section.blog section.default-content p.info {
-  margin: 0;
-}
-
 /*section.blog article a {
     display: inline-block;
     //margin-right: 20px;
@@ -78,22 +36,5 @@ section.blog a small time {
 @media screen and (max-width: 960px) {
    section.blog section.default-content {
     margin: 25px auto;
-  }
-  
-  section.blog section.default-content a {
-    width: 94%;
-    margin: 2% 2% 0 2%;
-  }
-  
-  section.blog section.default-content a:last-child {
-    margin-bottom: 2%;
-  }
-  
-  section.blog section.default-content a:nth-child(odd) {
-    background: @white-grey;
-  }
-  
-  section.blog section.default-content a:nth-child(odd):hover {
-    background: @light-grey;
   }
 }
