@@ -11,7 +11,7 @@ icons: ./assets/img/site/icons/
   {{#withSort post 'this.data.date'}}
     {{#each this.pages}}
 
-      <a href="{{findURL this.dest 'dist/development' ''}}" rel=prefetch role=link class=line>
+      <a href="{{findURL this.dest 'dist/development' ''}}" rel=prefetch role=link class="block-panel">
         
         {{#if this.data.icon}}
           <img class="icon" src="/assets/img/site/icons/{{this.data.icon}}.png"></img>
@@ -28,17 +28,17 @@ icons: ./assets/img/site/icons/
         {{/if}}
 
         <p class="info">
-          {{this.data.title}}
-          &mdash;
-          <small>
-            <time class=article-feed-time>
+          <span class="title">
+            {{this.data.title}}
+            &mdash;
+            <time>
               {{prettyDate this.data.date}}
             </time>
-          </small>
+          </span>
           <br>
-          <small>
+          <span class="subtitle">
             {{this.data.subtitle}}
-          </small>
+          </span>
         </p>
         
       </a>
