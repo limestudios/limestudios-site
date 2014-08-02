@@ -318,7 +318,7 @@ module.exports = function(grunt) {
           permalinks: {
             structure: ':year/:basename/index.html'
           },
-          feed: {
+          rss: {
             debug: true,
             prettify: true,
             dest: 'rss.xml'
