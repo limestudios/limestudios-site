@@ -2,9 +2,9 @@
 # NAVIGATION
 
 nav:
-- {name: About Me, link: '/about'}
-- {name: Work, link: '/work'}
 - {name: Blog, link: '/'}
+- {name: Work, link: '/work'}
+- {name: About, link: '/about'}
 - {name: Contact, link: '/contact'}
 
 #---------------------------
