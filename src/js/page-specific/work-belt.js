@@ -17,6 +17,7 @@
       $('.work-belt').css('left','0%');
       $('.work-container').hide(200);
       $('footer').fadeOut(100).fadeIn(500);
+      window.setTimeout(function(){$('.project-load').attr('class','project-load');}, 500);
     });
   }
   
@@ -32,7 +33,7 @@
           spinner = '<div class="loader">Loading...</div>',
           newHTML = '/work/'+ newFolder +'/index.html';
       
-      $('.project-load').html(spinner).load(newHTML);
+      $('.project-load').html(spinner).load(newHTML).addClass(newFolder);
       $('.project-title').text(newTitle);
       
     });
