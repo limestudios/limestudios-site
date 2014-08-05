@@ -57,21 +57,16 @@
   p.info span.subtitle {
     margin: 0;
     .font-panel-subtitle();
+    padding-right: 16px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;  
   }
 }
 
 @media screen and (max-width: 960px) and (min-width: 650px) {
-  p.info {
-    text-overflow: ellipsis;
-  }
-  
-  p.info .title time::before {
-    display: block !important;
-    content: '' !important;
-  }
-  
   p.info .subtitle {
-    display: none;
+    -webkit-line-clamp: 1 !important;
   }
 }
 
@@ -91,5 +86,9 @@
   
   .block-panel:nth-child(odd):hover {
     background: @light-grey;
+  }
+  
+  p.info .subtitle {
+    -webkit-line-clamp: 1 !important;
   }
 }
