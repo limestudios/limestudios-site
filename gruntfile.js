@@ -69,10 +69,49 @@ module.exports = function(grunt) {
             port: 21,
             authKey: 'key1'
           },
-        src: opt.dev,
-        dest: '/public_html',
-      //exclusions: ['path/to/source/folder/**/.DS_Store', 'path/to/source/folder/**/Thumbs.db', 'path/to/dist/tmp']
-        }
+          src: opt.dev,
+          dest: '/public_html'
+        },
+        css: {
+            auth: {
+              host: 'limestudios.net',
+              port: 21,
+              authKey: 'key1'
+            },
+          src: opt.dev + '/assets/css/',
+          dest: '/public_html/assets/css/',
+          exclusions: [opt.dev + '/assets/css/fonts']
+        },
+        fonts: {
+            auth: {
+              host: 'limestudios.net',
+              port: 21,
+              authKey: 'key1'
+            },
+          src: opt.dev + '/assets/css/fonts',
+          dest: '/public_html/assets/css/fonts',
+          //exclusions: [opt.dev + '/assets/css/fonts']
+        },
+        js: {
+            auth: {
+              host: 'limestudios.net',
+              port: 21,
+              authKey: 'key1'
+            },
+          src: opt.dev + '/assets/js/',
+          dest: '/public_html/assets/js/',
+          //exclusions: [opt.dev + '/assets/css/fonts']
+        },
+        pages: {
+            auth: {
+              host: 'limestudios.net',
+              port: 21,
+              authKey: 'key1'
+            },
+          src: opt.dev,
+          dest: '/public_html',
+          exclusions: [opt.dev + '/assets/css',opt.dev + '/assets/js']
+        },
     },
       
     browserify: {
