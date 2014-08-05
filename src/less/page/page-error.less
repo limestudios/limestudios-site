@@ -21,23 +21,27 @@ body.error {
     padding:0 0;
     margin:0 0;
     height: 100%;
-    background:grey;
+    background: @blog-accent;
 }
 
 main.error {
     display:table;
-    height:100%;
-    width:100%;
+    height:100vh;
+    width:100vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
 }
 
 section.error {
     background: @blog-accent;
     display: table-row;
-    height: 100%;
     display: flex;
     align-items: center;
     flex-direction: column;
-  justify-content: center;
+    justify-content: center;
+    //min-height: 100vh;
 }
 
 section.error h1 {
@@ -53,6 +57,10 @@ section.error h1 span {
     display: inline-block;
     //padding: 0.3em 0.5em;
     border: @white solid 10px;
+    width: 480px;
+    height: 120px;
+    .font-error();
+    line-height: 120px;
 }
 
 section.error .subtitle {
@@ -78,4 +86,22 @@ section.error .subtitle a {
 
 section.error footer {
     display: table-row;
+}
+
+@media screen and (max-width: 960px) and (min-width: 650px) {
+  section.error h1 span {
+    width: 480px;
+    height: 120px;
+    .font-error();
+    line-height: 120px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  section.error h1 span {
+    width: 256px;
+    height: 64px;
+    .font-error-mobile();
+    line-height: 64px;
+  }
 }
