@@ -10,124 +10,141 @@ footer {
 
 // PAGE
 
-section.arrhythmia h2.quote {
-    //background: @light-grey;
-    padding: 20px 16px;
-    color: @arrhythmia-accent;
-    font-size: 24px;
-}
+div.arrhythmia {
+  
+  max-width: 650px;
+  margin: 0 auto;
+  //background: @light-white-grey;
+  
+  h2.quote {
+      //background: @light-grey;
+      margin: 0 auto;
+      padding: 20px 16px;
+      .font-body-h2();
+      text-align: left;
+      background: @grey;
+      color: @white;
+  }
 
-section.arrhythmia .blurb {
-    max-width: 620px;
-    padding: 0 16px;
-    margin: 50px auto 20px;
-}
+  .blurb {
+      max-width: 650px;
+      padding: 50px 16px;
+      margin: 0 auto;
+      background: @white-grey;
+  }
 
-section.arrhythmia .blurb strong {
-    color: lighten(@arrhythmia-accent, 0%);
-}
+  .blurb strong {
+      color: lighten(@arrhythmia-accent, 0%);
+  }
 
-section.arrhythmia .blurb p {
-    //padding-left: 32px;
-    font-size: 20px;
-    text-transform: none;
-    color: @black;
-}
+  .blurb p {
+      //padding-left: 32px;
+      text-transform: none;
+      .font-body-h3();
+  }
 
-section.arrhythmia .blurb p a {
-    color: lighten(@arrhythmia-accent, 0%);
-    .transition();
-}
+  .blurb p a {
+      color: lighten(@arrhythmia-accent, 0%);
+      .transition();
+  }
 
-section.arrhythmia .blurb p a:hover {
-    color: darken(@arrhythmia-accent, 10%);
-    border-bottom: 2px solid;
-}
+  .blurb p a:hover {
+      color: darken(@arrhythmia-accent, 10%);
+      border-bottom: 2px solid;
+  }
 
-section.arrhythmia section.trailer {
-    max-width: 620px;
-    padding: 64px;
-    margin: 0 auto;
-}
+  section.trailer {
+      padding: 64px 0;
+      margin: 0 auto;
+  }
 
-.right-laurel-branch {
-    display: inline-block;
-    float: left;
-}
+  .right-laurel-branch {
+      display: inline-block;
+      float: left;
+  }
 
-.right-laurel-branch svg {
-    height: 128px;
-    width: 64px;
-}
+  .right-laurel-branch svg {
+      height: 128px;
+      width: 64px;
+      fill: @white;
+  }
 
-.awards {
-    max-width: 780px;
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0 auto;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px 0 40px;
-    font-size: 0;
-}
+  .awards {
+      max-width: 780px;
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0 auto;
+      align-items: center;
+      justify-content: space-between;
+      padding: 32px 0 32px;
+      font-size: 0;
+      background: @grey;
+      color: @white;
+  }
 
-.awards article {
-    text-align: center;
-    margin: 20px auto;
-}
+  .awards article {
+      text-align: center;
+      margin: 20px auto;
+  }
 
-.awards article p {
-    float: left;
-    text-align: center;
-    line-height: 18px;
-}
+  .awards article p {
+      float: left;
+      text-align: center;
+      line-height: 18px;
+  }
 
-.awards article p span.h1 {
-    font-size: 12px;
-    white-space: nowrap;
-}
+  .awards article p span.h1 {
+      font-size: 12px;
+      white-space: nowrap;
+      line-height: 22px !important;
+  }
 
-.awards article p span.h2 {
-    font-size: 14px;
-    white-space: nowrap;
-}
+  .awards article p span.h2 {
+      font-size: 14px;
+      white-space: nowrap;
+      line-height: 22px !important;
+  }
 
-.awards article p span.h3 {
-    font-size: 16px;
-    white-space: nowrap;
-}
+  .awards article p span.h3 {
+      font-size: 16px;
+      white-space: nowrap;
+      line-height: 20px !important;
+  }
 
-.left-laurel-branch {
-    display: inline-block;
-    float: left;
-}
+  .left-laurel-branch {
+      display: inline-block;
+      float: left;
+  }
 
-.left-laurel-branch svg {
-    height: 128px;
-    width: 64px;
+  .left-laurel-branch svg {
+      height: 128px;
+      width: 64px;
+      fill: @white;
+  }
 }
 
 @media screen and (max-width: 650px) {
+  div.arrhythmia {
+    
+    h2.quote {
+      margin: 0 auto;
+    }
+    
     .awards {
         display: block;
         text-align: center;
         padding: 20px 0 20px;
     }
-    
+
     .awards article {
         display: inline-block;
     }
-    
-    .blurb {
-        margin-top: 20px;
-    }
-    
+
     .blurb p {
         padding-left: 0;
     }
-    
-    section.arrhythmia section.trailer {
-        max-width: 620px;
-        padding: 16px;
+
+    section.trailer {
     }
+  }
 }
