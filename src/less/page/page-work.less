@@ -58,9 +58,9 @@ section.work .default-content {
 }
 
 .work .work-container h4 {
-  color: @work-accent;
-  font-weight: 300;
-  font-size: 24px;
+  //color: @work-accent;
+  color: @grey;
+  .font-body-h2();
   text-transform: uppercase;
   text-align: left;
   margin: 0 !important;
@@ -99,12 +99,12 @@ section.work .default-content {
 
 .work .work-return svg path {
     //fill: lighten(@work-accent, 20%);
-    fill: @grey;
+    fill: @work-accent;
 }
 
 @media screen and (max-width: 960px) {
   .work .work-container {
-    width: 94%;
+    width: 96%;
     margin: 2% 2% 0 2%;
   }
 }
