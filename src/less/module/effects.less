@@ -1,0 +1,89 @@
+.glitch {
+  //color: white;
+  position: relative;
+  width: 120px;
+  margin: 0 auto;
+  animation: noise-anim-3 2s infinite linear alternate-reverse;
+}
+
+@keyframes noise-anim {
+  .generate-keyframes(20);
+  
+  .generate-keyframes(@n, @i: 1) when (@i =< @n) {
+    @per: percentage(@i*(1/@n));
+    
+    @{per}
+    {
+      @randX: `(Math.random()*100)+0`;
+      @randY: `(Math.random()*100)+0`;
+      clip: rect(~"@{randX}px",9999px,~"@{randY}px",0);
+    }
+    .generate-keyframes(@n, (@i + 1));
+  }
+}
+
+@keyframes noise-anim-2 {
+  .generate-keyframes(20);
+  
+  .generate-keyframes(@n, @i: 1) when (@i =< @n) {
+    @per: percentage(@i*(1/@n));
+    
+    @{per}
+    {
+      @randX: `(Math.random()*100)+0`;
+      @randY: `(Math.random()*100)+0`;
+      clip: rect(~"@{randX}px",9999px,~"@{randY}px",0);
+    }
+    .generate-keyframes(@n, (@i + 1));
+  }
+}
+
+@keyframes noise-anim-3 {
+  0%,
+  3%,
+  5%,
+  42%,
+  44%,
+  100% {
+    opacity: 1;
+    transform: scaleY(1);
+  }  
+  4.3% {
+    opacity: 0.5;
+    transform: scaleY(1.7);
+  }
+  43% {
+    opacity: 1;
+    transform: scaleX(1.5);
+  }
+}
+
+.glitch:after {
+  content: attr(data-text);
+  position: absolute;
+  left: 2px;
+  text-shadow: -1px 0 red;
+  top: 0;
+  //color: white;
+  //background: black;
+  overflow: hidden;
+  clip: rect(0, 900px, 0, 0);
+  animation: noise-anim 2s infinite linear alternate-reverse;
+  width: 100%;
+  height: 100%;
+}
+
+.glitch:before {
+  content: attr(data-text);
+  position: absolute;
+  left: -2px;
+  text-shadow: 1px 0 blue;
+  top: 0;
+  //color: white;
+  //background: black;
+  overflow: hidden;
+  clip: rect(0, 900px, 0, 0);
+  animation: noise-anim-2 3s infinite linear alternate-reverse;
+  width: 100%;
+  height: 100%;
+}
