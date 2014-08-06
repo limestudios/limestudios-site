@@ -12,7 +12,7 @@
       $('footer').fadeOut(100).fadeIn(500);
     });
 
-    $('.work-return').click(function(event) {
+    $('span.work-return').click(function(event) {
       event.preventDefault();
       $('.work-belt').css('left','0%');
       $('.work-container').hide(200);
@@ -34,7 +34,7 @@
           newHTML = '/work/'+ newFolder +'/index.html';
       
       $('.project-load').html(spinner).load(newHTML).addClass(newFolder);
-      $('.project-title').text(newTitle);
+      $('span.project-title').text(newTitle);
       
     });
     
