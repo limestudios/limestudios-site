@@ -23,6 +23,8 @@ body.prices {
     justify-content: center;
     
     label {
+      .transition(0.25s);
+      opacity: 0.5;
       display: block;
       float: left;
       width: 100px !important;
@@ -30,14 +32,21 @@ body.prices {
       background: @grey;
       margin: 10px;
       padding: 10px;
+      outline: 4px solid transparent;
+      background: @prices-accent;
       
       svg {
         fill: @white !important;
       }
     }
     
+    label:hover {
+      opacity: 0.8
+    }
+    
     label.active {
       outline: 4px solid black;
+      opacity: 0.8;
     }
   }
   
