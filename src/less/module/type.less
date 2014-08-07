@@ -151,10 +151,11 @@ a {
 .default.page a,
 .default.page a:active,
 a.line,
-a.line:visited {
-
-  //@color: rgb(0,169,198);
-  //color: @color;
+a.line:visited, 
+.default-content a,
+.default-content a:active {
+  color: @grey;
+  font-weight: @font-weight-medium;
   border-bottom: 2px solid transparent;
 
   // on :hover fadeout the line and add padding
@@ -164,7 +165,6 @@ a.line:visited {
   }
 
   &.btn { color: @dark-grey; border: none; }
-
 }
 
 /* default abbreviations styles */
