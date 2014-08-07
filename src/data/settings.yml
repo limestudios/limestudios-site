@@ -9,6 +9,7 @@ music: http://youtu.be/ohdLiyiY-Nw
 nav:
 - {name: Blog, link: '/'}
 - {name: Work, link: '/work'}
+- {name: Prices, link: '/prices'}
 - {name: About, link: '/about'}
 - {name: Contact, link: '/contact'}
 
