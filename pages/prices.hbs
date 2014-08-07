@@ -1,0 +1,52 @@
+---
+title: Prices
+subtitle: how much does my stuff cost
+layout: default.hbs
+css: prices
+js-close:
+- {name: jquery}
+- {name: price-calculator}
+---
+
+<h2>Select Category</h2>
+
+<div class="category-selection">
+  <label class="active">
+    <input type="button" value="Web" />
+    {{> icon-browser}}
+  </label>
+  <label>
+    <input type="button" value="Art" name="Art" />
+    {{> icon-pencil}}
+  </label>
+  <label>
+    <input type="button" value="Video" />
+    {{> icon-video}}
+  </label>
+  <label>
+    <input type="button" value="Code" />
+    {{> icon-code}}
+  </label>
+</div>
+  
+<h2 class="category-name">Web</h2>
+
+<div class="category-sections">
+
+  <section class="Art">
+    Here is where all the Art stuff goes!
+  </section>
+  
+  <section class="Web active">
+    Here is where all the Web stuff goes!
+  </section>
+  
+  <section class="Video">
+    Here is where all the Video stuff goes!
+  </section>
+  
+  <section class="Code">
+    Here is where all the Code stuff goes!
+  </section>
+
+</div>
