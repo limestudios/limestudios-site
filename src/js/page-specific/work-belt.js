@@ -30,7 +30,7 @@
       var $this = $(this),
           newTitle = $this.find('p.info span.title').text(),
           newFolder = $this.data('folder'),
-          spinner = '<div class="loader">Loading...</div>',
+          spinner = '<div class="loader"></div>',
           newHTML = '/work/'+ newFolder +'/index.html';
       
       $('.project-load').html(spinner).load(newHTML).addClass(newFolder);
