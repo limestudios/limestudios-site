@@ -11,7 +11,7 @@ footer {
 // PAGE
 
 .face-lockup {
-    max-width: 650px;
+    max-width: 960px;
     margin: 0 auto;
     font-size: 0;
 }
@@ -72,7 +72,7 @@ p.break {
 }
 
 section.about .blurb {
-    max-width: 620px;
+    max-width: 960px;
     padding: 0 10px;
     margin: 50px auto;
 }
@@ -91,7 +91,7 @@ section.about .blurb p {
 }
 
 .skill-lockup {
-    max-width: 620px;
+    max-width: 650px;
     margin: 100px auto;
     padding: 0 10px;
     color: @grey;
@@ -99,8 +99,9 @@ section.about .blurb p {
 }
 
 .skill-lockup .skill-unit {
-    width: 300px;
+    width: 230px;
     float: left;
+    margin: 0 47.5px;
 }
 
 .skill-lockup .skill-label{
@@ -118,6 +119,7 @@ section.about .blurb p {
     background-color: @about-accent;
     margin-right: 5px;
     //border-radius: 50%;
+    opacity: 0.8;
 }
 
 .skill-lockup .skill-icon span:after {
@@ -172,8 +174,13 @@ section.about .blurb p {
   
   .skill-lockup {
         margin: 50px auto;
+      width: 230px;
   }
-  .skill-lockup {
-      width: 226px;
+}
+
+@media screen and (max-width: 800px) {
+  .skill-lockup .skill-unit {
+    float: none;
+    margin: 0 auto;
   }
 }
