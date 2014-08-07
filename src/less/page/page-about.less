@@ -11,12 +11,8 @@ footer {
 // PAGE
 
 .face-lockup {
-    max-width: 780px;
-    display: flex;
+    max-width: 650px;
     margin: 0 auto;
-    align-items: center;
-    justify-content: space-between;
-    padding: 80px 0 40px;
     font-size: 0;
 }
 
@@ -25,17 +21,18 @@ footer {
 }
 
 .face-lockup .face-img {
-    .square(200px) !important;
+    .square(128px) !important;
     border-radius: 50%;
     background: url(/assets/img/site/liam.jpg) center center;
     background-size: cover;
     order: 3;
+  margin: 0 auto !important;
 }
 
 [class^="icon-"] {
-    .square(100px);
+    .square(80px);
     background: @about-accent;
-    border-radius: 50%;
+    //border-radius: 50%;
 }
 
 [class^="icon-"] svg {
@@ -62,6 +59,10 @@ footer {
     order: 2;
 }
 
+p.break {
+  display: none;
+}
+
 .icon-browser {
     order: 4;
 }
@@ -78,7 +79,7 @@ section.about .blurb {
 
 section.about .blurb strong {
     font-weight: @font-weight-medium;
-    color: lighten(@about-accent, 0%);
+    color: @grey;
 }
 
 section.about .blurb p {
@@ -86,25 +87,14 @@ section.about .blurb p {
     font-size: 20px;
     text-transform: none;
     color: @dark-grey;
-    .font-body-h3;
-}
-
-section.about .blurb p a {
-    color: lighten(@about-accent, 0%);
-    .transition();
-    border-bottom: 2px solid transparent;
-}
-
-section.about .blurb p a:hover {
-    color: darken(@about-accent, 10%);
-    border-bottom: 2px solid;
+    .font-body-h3();
 }
 
 .skill-lockup {
     max-width: 620px;
     margin: 100px auto;
     padding: 0 10px;
-    color: @dark-grey;
+    color: @grey;
     .clearfix();
 }
 
@@ -114,28 +104,28 @@ section.about .blurb p a:hover {
 }
 
 .skill-lockup .skill-label{
-    .font-panel-title();
+    .font-body-h3();
 }
 
 .skill-lockup .skill-icon {
     font-size: 0;
-    margin: 0 0 30px;
+    margin: 10px 0 10px;
 }
 
 .skill-lockup .skill-icon span {
     display: inline-block;
-    .square(14px);
-    background-color: lighten(@about-accent, 10%);
+    .square(18px);
+    background-color: @about-accent;
     margin-right: 5px;
-    border-radius: 50%;
+    //border-radius: 50%;
 }
 
 .skill-lockup .skill-icon span:after {
-    content: '';
+    //content: '';
     display: block;
     .square(10px);
     background: @white;
-    border-radius: 50%;
+    //border-radius: 50%;
     margin: 2px;
 }
 
@@ -148,35 +138,30 @@ section.about .blurb p a:hover {
   .generate-skills(@n, (@i + 1), (@j + 1));
 }
 
-@media screen and (max-width: 700px) {
-    .skill-lockup {
-        width: 180px;
-    }
-}
-
-@media screen and (max-width: 650px) {
     .face-lockup {
         display: block;
         text-align: center;
         padding: 20px 0 0;
+        .clearfix();
     }
     
     .face-lockup div {
         display: inline-block;
+      //float: left;
     }
     
     .face-lockup .face-img {
         display: block;
         background-position: center center;
         background-repeat: no-repeat;
-        width: auto;
-        margin: 0px auto 20px auto;
+        margin: 0px auto;
     }
     
     [class^="icon-"] {
-        margin: 10px;
+        margin: 20px;
     }
-    
+
+@media screen and (max-width: 700px) {
     .blurb {
         margin-top: 20px;
     }
@@ -184,8 +169,11 @@ section.about .blurb p a:hover {
     .blurb p {
         padding-left: 0;
     }
-    
-    .skill-lockup {
+  
+  .skill-lockup {
         margin: 50px auto;
-    }
+  }
+  .skill-lockup {
+      width: 226px;
+  }
 }
