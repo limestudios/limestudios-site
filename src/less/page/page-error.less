@@ -65,23 +65,19 @@ section.error h1 span {
 
 section.error .subtitle {
     text-align: center;
-    font-size: 18px;
-    //font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 0.15em;
     color: @white;
-    line-height: 1;
-    //padding-bottom: 40px;
-    //white-space: nowrap;
     margin: 0 auto;
-    //width: 450px;
-    max-width: 550px;
     margin-top: 64px;
     padding: 0 16px;
+    .font-body-h3();
+    //text-transform: uppercase;
+    max-width: 650px;
 }
 
 section.error .subtitle a {
     color: lighten(@white, 10%);
+    font-weight: @font-weight-medium;
+    text-transform: uppercase;
 }
 
 section.error footer {
