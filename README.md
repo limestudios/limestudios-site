@@ -6,9 +6,9 @@
 
 This is the main branch of the Lime Studios static website. Originally based on the artist theme by [DevTips](https://www.youtube.com/user/DevTipsForDesigners)
 
-The live version of the site is located at [here](http://limestudios.net/)
+The live version of the site is located at [HERE](http://limestudios.net/)
 
-Also my AMAZING 404 page can be found [here](http://limestudios.net/error)
+Also my AMAZING 404 page can be found [HERE](http://limestudios.net/error).
 
 Built with love in New Orleans | Source [licensed MIT](LICENSE)
 
