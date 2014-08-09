@@ -4,7 +4,9 @@
 
 ## About
 
-This is the main branch of the Lime Studios static website.
+This is the main branch of the Lime Studios static website. Originally based on the artist theme by [DevTips](https://www.youtube.com/user/DevTipsForDesigners)
+
+The live version of the site is located at [here](http://limestudios.net/)
 
 Built with love in New Orleans | Source [licensed MIT](LICENSE)
 
