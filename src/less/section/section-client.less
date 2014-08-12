@@ -1,0 +1,149 @@
+section.clients {
+  
+  //overflow: hidden;
+  position: relative;
+  
+  h2 {
+    .font-body-h2();
+    font-weight: @font-weight-medium;
+    color: @grey;
+    margin-bottom: 48px;
+  }
+  
+  .client-controls {
+    
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    
+    div {
+      .square(64px);
+      margin-top: -32px;
+      cursor: pointer;
+      z-index: 1;
+    }
+    
+    svg {
+      .square(64px);
+      fill: @grey;
+    }
+    
+    .client-control-prev {
+      position: absolute;
+      top: 50%;
+      right: 32px;
+      bottom: null;
+      left: null;
+    }
+    
+    .client-control-next {
+      position: absolute;
+      top: 50%;
+      right: null;
+      bottom: null;
+      left: 32px;
+    }
+  }
+  
+  .clients-belt {
+  
+    width: 100%;
+    position: relative;
+    
+    .client-unit {
+      
+      max-width: 960px;
+      margin: 0 auto 50px;
+      display: flex;
+     
+      .client-face {
+        min-width: 300px;
+        text-align: center;
+        color: @dark-grey;
+        
+        img {
+          float: none;
+          clear: none;
+          max-width: 128px;
+          border-radius: 50%;
+          margin: 0;
+        }
+        
+        .client-name {
+          color: @grey;
+          display: block;
+          .font-body-h3();
+          font-weight: @font-weight-medium;
+          text-transform: uppercase;
+          letter-spacing: 1px;
+        }
+        
+        .client-title {
+          .font-body-h5();
+          font-style: normal;
+        }
+      }
+      
+      .client-content {
+        color: @dark-grey;
+        .font-body-h3();
+        line-height: 48px;
+        margin-top: -10px;
+        position: relative;
+        z-index: 1;
+        
+        strong {
+          color: @grey;
+          .font-body-h3();
+          font-weight: @font-weight-medium;
+        }
+        
+        .client-quote-mark {
+          position: absolute;
+          top: -16px;
+          right: null;
+          bottom: null;
+          left: -16px;
+          .square(60px);
+          .font-body-h1();
+          font-size: 128px;
+          line-height: 1;
+          z-index: -1;
+          color: @about-accent;
+          opacity: 0.3;
+        }
+      }
+    }
+  }
+  
+  .clients-logos {
+    
+    position: relative;
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 32px;
+    
+    .client-logo {
+      height: 80px;
+      min-width: 200px;
+      background-image: url(/assets/img/site/clients/logo1.png);
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+      cursor: pointer;
+      margin: 0 16px;
+      opacity: 0.5;
+      
+      &.active-client {
+        box-shadow: 0px 4px 0px 0px @about-accent;
+        opacity: 0.75;
+      }
+    }
+    
+  }
+}
