@@ -308,6 +308,10 @@ module.exports = function(grunt) {
           {
             src: opt.pages + '/work/*.{hbs,md}',
             dest: opt.dev + '/work/'
+          },
+          {
+            src: opt.pages + '/clients/*.{hbs,md}',
+            dest: opt.dev + '/clients/'
           }
         ]
       },
