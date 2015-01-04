@@ -1,0 +1,82 @@
+body { 
+  background: white;
+  color: black; 
+  font-size: 12px;  
+}
+
+code {
+  margin: 5px;
+  background: none;
+}
+
+p code, 
+li code { 
+  background: none;
+  color: black;
+  font-size: 0.9rem;
+}
+
+pre {
+  background: none; 
+  border-left: 1px dashed black;
+  font-size: 12px;
+  overflow: visible;
+  color: black;
+}
+
+main {
+  margin: 1rem;
+  
+  &:after {
+    display: block;
+    width: 100%;
+    text-align: center;
+    content: "Copyright 2014 Patrick Burtchaell <patrick@pburtchaell.com> (http://pburtchaell.com)";
+  }
+}
+
+.default-header { 
+  margin: 0; 
+  padding: 0; 
+}
+
+.article.page > hr {
+  display: none; 
+}
+
+.article-header { 
+  margin: 0 auto;
+  padding: 0;
+}
+
+.article-content { 
+  margin: 0 auto 
+}
+
+.article-footer {
+  display: none; 
+}
+
+.page-header, 
+.page-footer { 
+  display: none; 
+}
+
+a:link {
+  &:after { 
+    content: '('attr(href)')'; 
+  }
+}
+
+p { 
+  text-align: left;
+  font-size: 0.75rem !important;
+}
+
+.btn { display: none; }
+
+h2, h3, 
+h4, h5, 
+h6 {
+  margin: 0.25rem auto;
+}

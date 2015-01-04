@@ -1,0 +1,157 @@
+.code-title {
+  font-family: 'DIN Pro';
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: .125rem;
+  color: darken(@light-grey, 20%);
+  margin-top: 2rem;
+  padding: 0 1rem 0 2rem;
+  & ~ pre {
+    margin-top: 0;
+  }
+}
+
+pre {
+  white-space: pre;
+  word-wrap: normal;
+  overflow: auto;
+  margin: 2rem 0;
+  padding: 0 1rem 0 2rem;
+  color: fadeOut(@dark-grey, 20%);
+  background: @light-grey;
+  &::-webkit-scrollbar { height: 0.5rem;}
+  &::-webkit-scrollbar-track-piece  { border: none; }
+  &::-webkit-scrollbar-thumb:horizontal { background: darken(@light-grey,10%);}
+}
+
+code {
+  font: 1rem Courier, monospace;
+  line-height: 1.6;
+  font-weight: 400;
+}
+
+li code,
+p code {
+  padding: 2px;
+  margin: 0 !important;
+  color: fadeOut(@dark-grey, 20%);
+  background: fadeOut(@dark-grey, 97%);
+}
+
+pre code {
+  display: block;
+  padding: 0.5rem;
+  margin: 1.25rem 0;
+  font-size: 1rem;
+}
+
+.hljs-comment,
+.hljs-template_comment,
+.diff .hljs-header,
+.hljs-javadoc {
+  color: #998;
+  font-style: italic;
+}
+
+.hljs-keyword,
+.css .rule .hljs-keyword,
+.hljs-winutils,
+.nginx .hljs-title,
+.hljs-subst,
+.hljs-request,
+.hljs-status {
+  color: #333;
+  font-weight: bold;
+}
+
+.hljs-number,
+.hljs-hexcolor,
+.ruby .hljs-constant {
+  color: #008080;
+}
+
+.hljs-string,
+.hljs-tag .hljs-value,
+.hljs-phpdoc,
+.hljs-dartdoc,
+.tex .hljs-formula {
+  color: #d14;
+}
+
+.hljs-title,
+.hljs-id,
+.scss .hljs-preprocessor {
+  color: #900;
+  font-weight: bold;
+}
+
+.hljs-list .hljs-keyword,
+.hljs-subst {
+  font-weight: normal;
+}
+
+.hljs-class .hljs-title,
+.hljs-type,
+.vhdl .hljs-literal,
+.tex .hljs-command {
+  color: #458;
+  font-weight: bold;
+}
+
+.hljs-tag,
+.hljs-tag .hljs-title,
+.hljs-rules .hljs-property,
+.django .hljs-tag .hljs-keyword {
+  color: #000080;
+  font-weight: normal;
+}
+
+.hljs-attribute,
+.hljs-variable,
+.lisp .hljs-body {
+  color: #008080;
+}
+
+.hljs-regexp {
+  color: #009926;
+}
+
+.hljs-symbol,
+.ruby .hljs-symbol .hljs-string,
+.lisp .hljs-keyword,
+.clojure .hljs-keyword,
+.scheme .hljs-keyword,
+.tex .hljs-special,
+.hljs-prompt {
+  color: #990073;
+}
+
+.hljs-built_in {
+  color: #0086b3;
+}
+
+.hljs-preprocessor,
+.hljs-pragma,
+.hljs-pi,
+.hljs-doctype,
+.hljs-shebang,
+.hljs-cdata {
+  color: #999;
+  font-weight: bold;
+}
+
+.hljs-deletion {
+  background: #fdd;
+}
+
+.hljs-addition {
+  background: #dfd;
+}
+
+.diff .hljs-change {
+  background: #0086b3;
+}
+
+.hljs-chunk {
+  color: #aaa;
+}

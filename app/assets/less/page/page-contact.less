@@ -1,0 +1,91 @@
+// HEADER / FOOTER
+
+section.contact {
+  header {
+        background: @contact-accent !important;
+    }
+
+    footer {
+        //background: lighten(@about-accent, 5%) !important;
+    }
+
+  // PAGE
+  section.default-content {
+
+    form {
+      max-width: 960px;
+      margin: 0 auto 50px;
+      .font-body-h3();
+      color: @dark-grey;
+
+      input, textarea {
+        margin: 8px 0 0 0;
+        border: 3px solid @contact-accent;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 10px;
+        background: @white;
+
+        &:focus {
+          outline: none;
+          border-color: darken(@contact-accent, 10%)
+        }
+      }
+
+      .submit-wrap {
+        text-align: right;
+      }
+
+      [type="submit"] {
+        background: @contact-accent;
+        color: @white;
+        .font-body-h2();
+        text-transform: uppercase;
+        width: 33%;
+
+        &:hover {
+          background: darken(@contact-accent, 10%)
+        }
+      }
+
+      textarea {
+        height: 10em;
+      }
+
+      .contact-info-group {
+
+        label {
+          width: 50%;
+          float: left;
+          box-sizing: border-box;
+        }
+
+        label:nth-child(1) {
+            padding-right: 10px;
+        }
+
+        label:nth-child(2) {
+            padding-left: 10px;
+        }
+
+      }
+
+      label {
+        display: block;
+        box-sizing: border-box;
+        margin-bottom: 20px;
+
+        span {
+          display: block;
+        }
+      } 
+    }
+
+    p {
+      .font-body-h3();
+      color: @dark-grey;
+      text-align: center;
+    }
+  }
+}
+

@@ -1,0 +1,114 @@
+[data-rst=true],
+.rst {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+html {
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.8;
+  margin: 0.25rem 0 0.75rem 0;
+  -webkit-hyphens: auto;
+     -moz-hyphens: auto;
+      -ms-hyphens: auto;
+          hyphens: auto;
+
+  aside { 
+    margin: 1rem; 
+  }
+
+  code {
+    background: fadeOut(@dark-grey, 95%);
+    display: inline-block;
+    line-height: 1.0;
+  }
+}
+
+.small() {
+  font-size: 0.775rem;
+  line-height: 2.205;
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+
+small {
+  .small();
+}
+
+.title { 
+  margin-bottom: 0; 
+}
+
+.subtitle {
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: .275rem;
+  margin: 0;
+  opacity: 0.9;
+}
+
+em, i {
+  strong, b {
+    font-weight: 600;
+    font-style: italic;
+  }
+}
+
+strike {
+  opacity: 0.5;
+}
+
+.centered {
+  text-align: center;
+}
+
+time {
+  font-family: 'DIN Pro', @font-stack;
+}
+
+/* deafult horizontal rule styles */
+hr {
+
+  border: 0.125rem solid;
+  left: 50%;
+  margin: 0 0 0 -@base/2;
+  width: @base;
+
+  &.small { margin: 0 }
+  &.ctr { margin: 1.1rem auto }
+  &.rst { color: @light-grey @important }
+
+  &.large {
+    min-width: 550px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+  }
+
+}
+
+/* default abbreviations styles */
+abbr,
+acronym {
+  text-transform: uppercase;
+  border-bottom: 1px dashed;
+  cursor: help;
+}
+abbr {
+  text-transform: none;
+}
+
+/* small screen properties and values */
+@media screen and (max-width: 768px) {
+  p { text-align: left; }
+  h1 { font-size: calc(2.00rem/ 1.4); }
+  h2 { font-size: calc(1.50rem/ 1.25);}
+  h3 { font-size: calc(1.25rem/ 1.2); }
+  h4 { font-size: calc(1.20rem/ 1.2); }
+  h5 { font-size: calc(1.15rem/ 1.2); }
+  code { font-size: 0.95rem; }
+}

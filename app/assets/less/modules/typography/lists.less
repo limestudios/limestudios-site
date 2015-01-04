@@ -1,0 +1,24 @@
+ul, ol {
+  margin: 1rem;
+  line-height: 1.8;
+  ul, ol {
+    margin: 0.25rem 0 1rem 0 @important;
+    list-style: lower-alpha;
+    font-size: 0.95rem;
+  }
+  li { margin: 0.5rem 0 0.5rem 2rem }
+}
+
+ol li { list-style: decimal; }
+ul li { list-style: disc; }
+
+.table-of-contents {
+  padding: 1rem;
+  background: fadeOut(@light-grey,75%);
+  li { list-style: upper-roman;
+    li { list-style: upper-alpha;
+      li { list-style: lower-roman;
+      }
+    }
+  }
+}

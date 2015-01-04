@@ -1,0 +1,143 @@
+@media screen and (min-width: 117em) { .wrapper { max-width: 900px; } }
+@media screen and (min-width: 720px) { .wrapper { max-width: 800px; } }
+
+/**
+ * @class row
+ * @description Container class for the grid; adds padding and a max-width.
+ */
+.row,
+.wrapper {
+
+  width: 100%;
+  max-width: 550px;
+  margin: 0 auto;
+  padding: 0;
+  *zoom: 1;
+
+  &:before, 
+  &:after {
+    content: " ";
+    display: table; 
+  }
+
+  &:after {
+    clear: both;
+  }
+
+  &.row-small { 
+    max-width: @screen-small;
+  }
+  &.row-medium { 
+    max-width: @screen-medium; 
+  }
+  &.row-large { 
+    max-width: @screen-large; 
+  }
+  &.row-full-width { 
+    max-width: 100%; 
+  }
+
+}
+
+/**
+ * @class col
+ * @description A column of the grid.
+ */
+.col {
+  position: relative;
+  width: 100%;
+  max-width: none;
+  padding: 0 1rem;
+  float: left;
+  .box-sizing();
+}
+[class*='col'] + 
+[class*='col']:last-child { 
+  //float: right; 
+}
+
+/**
+ * @function grid-small
+ * @description Generate classes for each of the columns of the small grid.
+ * @param {number} n The number of columns to generate
+ * @param {number} i 
+ */
+.grid-small(@n,@i:1) when (@i =< @n) {
+  .col-s-@{i} {
+    width: (@i * 100% / @n);
+  }
+  .col-pull-s-@{i} {
+    margin-left: (@i * 100% / @n);
+  }
+  .col-push-s-@{i} {
+    margin-right: (@i * 100% / @n);
+  }
+  .grid-small(@n, (@i + 1));
+}
+
+/**
+ * @function grid-medium
+ * @description Generate classes for each of the columns of the large grid.
+ * @param {number} n The number of columns to generate
+ * @param {number} i 
+ */
+.grid-medium(@n,@i:1) when (@i =< @n) {
+  .col-m-@{i} {
+    width: (@i * 100% / @n);
+  }
+  .col-pull-m-@{i} {
+    margin-left: (@i * 100% / @n);
+  }
+  .col-push-m-@{i} {
+    margin-right: (@i * 100% / @n);
+  }
+  .grid-medium(@n, (@i + 1));
+}
+
+/**
+ * @function grid-large
+ * @description Generate classes for each of the columns of the large grid.
+ * @param {number} n The number of columns to generate
+ * @param {number} i 
+ */
+.grid-large(@n,@i:1) when (@i =< @n) {
+  .col-l-@{i} {
+    width: (@i * 100% / @n);
+  }
+  .col-pull-l-@{i} {
+    margin-left: (@i * 100% / @n);
+  }
+  .col-push-l-@{i} {
+    margin-right: (@i * 100% / @n);
+  }
+  .grid-large(@n, (@i + 1));
+}
+
+@media only screen and (min-width: 0) and (max-width: @screen-small) {
+  .grid-small(12);
+  .hide-on-small {
+    display: none;
+  }
+  .show-on-small {
+    display: block;
+  }
+}
+@media only screen and (min-width: @screen-small) and (max-width: @screen-medium) {
+  .grid-small(12);
+  .hide-on-small {
+    display: none;
+  }
+  .show-on-small {
+    display: block;
+  }
+}
+@media only screen and (min-width: @screen-medium) and (max-width: @screen-large) {
+  .grid-medium(12);
+  .hide-on-medium { display: none; }
+  .show-on-medium { display: block; }
+}
+@media only screen and (min-width: @screen-large) {
+  .grid-large(12);
+  .hide-on-large { display: none; }
+  .show-on-large { display: block; }
+}

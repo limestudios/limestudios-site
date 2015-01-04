@@ -1,0 +1,44 @@
+header {
+	//background: url(/assets/img/bg.png) repeat right;
+	background-color: @primary-color;
+
+	padding-bottom: @header-height !important;
+	transition: .25s ease;
+
+	.bar {
+		background-color: @dark-primary-color;
+		height: @headerbar-height;
+		margin-bottom: @header-height !important;
+		transition: .25s ease;
+		font-size: 24px;
+		color: @text-normal-color;
+		text-align: right;
+
+		a {
+			font-size: 24px;
+			color: @text-normal-color;
+			line-height: @headerbar-height;
+			vertical-align: middle;
+			margin-right: 12px;
+		}
+	}
+
+	h1 {
+		color: @text-normal-color;
+	}
+
+	h2 {
+		padding-top: 5px;
+		color: @light-primary-color;
+	}
+
+	/* small screen properties and values */
+	@media screen and (max-width: @screen-small) {
+		padding-bottom: @header-height-mobile !important;
+
+		.bar {
+			height: @headerbar-height-mobile;
+			margin-bottom: @header-height-mobile !important;
+		}
+	}
+}

@@ -1,0 +1,91 @@
+.social {
+	padding-top: 64px;
+	.clearfix();
+
+	div {
+
+		height: 128px;
+		padding: 0;
+
+		a {
+			div {
+				transition: .25s ease;
+				background-color: @accent-color;
+				border: 2px solid @accent-color;
+				height: 112px;
+				width: 112px;
+				margin: 0 auto;
+				border-radius: 100%;
+
+				svg {
+					height: 64px;
+					width: 64px;
+					padding: 24px;
+
+					fill: @text-normal-color;
+				}
+
+				&.facebook:hover {
+					transition: .25s ease;
+					background-color: rgb(59,89,152);
+					border: 8px solid @text-normal-color;
+				}
+
+				&.linkedin:hover {
+					transition: .25s ease;
+					background-color: rgb(0,123,182);
+					border: 8px solid @text-normal-color;
+				}
+
+				&.instagram:hover {
+					transition: .25s ease;
+					background-color: rgb(81,127,164);
+					border: 8px solid @text-normal-color;
+				}
+
+				&.email:hover {
+					transition: .25s ease;
+					background-color: rgb(0,172,237);
+					border: 8px solid @text-normal-color;
+				}
+			}
+
+			/* small screen properties and values */
+			@media screen and (max-width: @screen-small) {
+				div {
+					height: 96px;
+					width: 96px;
+
+					&.instagram {
+						margin-top: 24px;
+					}
+
+					&.email {
+						margin-top: 24px;
+					}
+
+					svg {
+						height: 48px;
+						width: 48px;
+						padding: 24px;
+
+						fill: @text-normal-color;
+					}
+				}
+			}
+
+			/* small screen properties and values */
+			@media screen and (max-width: @screen-medium) {
+				div {
+					&.instagram {
+						margin-top: 16px;
+					}
+
+					&.email {
+						margin-top: 16px;
+					}
+				}
+			}
+		}
+	}
+}

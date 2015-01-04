@@ -1,0 +1,66 @@
+/**
+ * @element body
+ * @description Enable flexbox layout on the page.
+ */
+body { 
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: @type-primary;
+  color: @dark-grey; 
+  background: @white;
+  overflow-x: hidden; 
+  cursor: default;
+  text-rendering: optimizeLegibility; 
+  -webkit-font-smoothing: antialiased;
+  -webkit-appearance: none;
+  -moz-appearance: none;   
+}
+
+/**
+ * @class disable-hover
+ * @description Disable pointer events to enforce 60 FPS scroll.
+ * @extends body
+ */
+.disable-hover,
+.disable-hover *,
+.body--disable-hover,
+.body--disable-hover * {
+  pointer-events: none !important;
+}
+
+/**
+ * @class theme-dark
+ * @description Enable a dark UI theme.
+ * @extends body
+ */
+.theme-dark {
+  background: @dark-grey;
+  color: @light-grey;
+  p {
+    opacity: .9; 
+  }
+  .nav-item {
+    a { 
+      color: @white !important; 
+    }
+  }
+  pre {
+    color: @light-grey;
+    background: darken(@dark-grey,5%);
+    &::-webkit-scrollbar-thumb:horizontal { background: darken(@dark-grey,10%);}
+  }
+  p code,
+  li code {
+   color: @light-grey;
+   background: darken(@dark-grey,5%); 
+  } 
+  .article-footer {
+    background: none; 
+  }
+  .page-footer-span {
+    background: none;
+    border: none;
+    color: @light-grey;
+  }
+}

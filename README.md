@@ -1,3 +1,4 @@
-# limestudios-site 
+assemble-website-base
+=====================
 
-Depreciated.
+The base for all Assemble websites we make.

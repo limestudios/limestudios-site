@@ -1,0 +1,184 @@
+/* Mixin to generate random number;
+   int should be 0 or 1, 1 being to make it an integer 
+*/
+.makeRandom(@min: 0, @max: @min+1, @int: 0) { 
+  .checkInt() {
+    @getNum: `Math.random() * (@{max} - @{min} + @{int})`;
+    @base: unit(`@{int} == 1 ? Math.floor(@{getNum}) : @{getNum}`);
+  }
+  .checkInt();
+  @return: @base + @min;
+}
+
+/* Mixin to generate random number;
+   int should be 0 or 1, 1 being to make it an integer 
+*/
+.randomInt(@min: 0, @max: @min+1, @int: 0) { 
+  .checkInt() {
+    @getNum: `Math.random() * (@{max} - @{min} + @{int})`;
+    @base: unit(`@{int} == 1 ? Math.floor(@{getNum}) : @{getNum}`);
+  }
+  .checkInt();
+  @return: 10;
+}
+
+.transition (@i: 0.5s) {
+  transition: @i ease;
+}
+
+.small() {
+  font-size: 0.775rem;
+  line-height: 2.205;
+}
+
+.font-nav() {
+  font-family: @font;
+  font-weight: @font-weight-light;
+  font-size: @font-size-nav;
+  text-transform: uppercase;
+}
+
+.font-nav-mobile() {
+  font-family: @font;
+  font-weight: @font-weight-light;
+  font-size: @font-size-nav-mobile;
+  text-transform: uppercase;
+}
+
+.font-header() {
+  font-family: @font;
+  font-weight: @font-weight-medium;
+  font-size: @font-size-header;
+  text-transform: uppercase;
+}
+
+.font-header-mobile() {
+  font-family: @font;
+  font-weight: @font-weight-medium;
+  font-size: @font-size-header-mobile;
+  text-transform: uppercase;
+}
+
+.font-subtitle() {
+  font-family: @font;
+  font-weight: @font-weight-light;
+  font-size: @font-size-subtitle;
+  text-transform: lowercase;
+}
+
+.font-subtitle-mobile() {
+  font-family: @font;
+  font-weight: @font-weight-light;
+  font-size: @font-size-subtitle-mobile;
+  text-transform: lowercase;
+}
+
+.font-body-h1() {
+  font-family: @font;
+  font-weight: @font-weight-light;
+  font-size: @font-size-body-h1;
+}
+
+.font-body-h2() {
+  font-family: @font;
+  font-weight: @font-weight-light;
+  font-size: @font-size-body-h2;
+}
+
+.font-body-h3() {
+  font-family: @font;
+  font-weight: @font-weight-light;
+  font-size: @font-size-body-h3;
+}
+
+.font-body-h4() {
+  font-family: @font;
+  font-weight: @font-weight-light;
+  font-size: @font-size-body-h4;
+}
+
+.font-body-h5() {
+  font-family: @font;
+  font-weight: @font-weight-light;
+  font-size: @font-size-body-h5;
+}
+
+.font-panel-title() {
+  font-family: @font;
+  font-weight: @font-weight-light;
+  font-size: @font-size-panel-title;
+}
+
+.font-panel-time() {
+  font-family: @font;
+  font-weight: @font-weight-light;
+  font-size: @font-size-panel-time;
+  text-transform: uppercase;
+  vertical-align: text-bottom;
+}
+
+.font-panel-subtitle() {
+  font-family: @font;
+  font-weight: @font-weight-light;
+  font-size: @font-size-panel-subtitle;
+}
+
+.font-footer-main() {
+  font-family: @font;
+  font-weight: @font-weight-light;
+  font-size: @font-size-footer-main;
+}
+
+.font-footer-sub() {
+  font-family: @font;
+  font-weight: @font-weight-light;
+  font-size: @font-size-footer-sub;
+}
+
+.font-error() {
+  font-family: @font;
+  font-weight: @font-weight-regular;
+  font-size: @font-size-error;
+  text-transform: uppercase;
+}
+
+.font-error-mobile() {
+  font-family: @font;
+  font-weight: @font-weight-regular;
+  font-size: @font-size-error-mobile;
+  text-transform: uppercase;
+}
+
+.box-sizing(@value: border-box) {
+  -webkit-box-sizing: @value;
+     -moz-box-sizing: @value;
+          box-sizing: @value;
+}
+
+// Clearfix
+// --------
+// For clearing floats like a boss h5bp.com/q
+.clearfix {
+  *zoom: 1;
+  &:before,
+  &:after {
+    display: table;
+    content: "";
+    // Fixes Opera/contenteditable bug:
+    // http://nicolasgallagher.com/micro-clearfix-hack/#comment-36952
+    line-height: 0;
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+// Sizing shortcuts
+// -------------------------
+.size(@height, @width) {
+  width: @width;
+  height: @height;
+}
+.square(@size) {
+  .size(@size, @size);
+}
