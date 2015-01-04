@@ -1,15 +1,14 @@
 <!-- Header -->
 <header>
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <img class="img-responsive" src="img/profile.png" alt="">
-                <div class="intro-text">
-                    <span class="name">{{site.title}}</span>
-                    <hr class="star-light">
-                    <span class="skills">Web Developer - Graphic Artist - User Experience Designer</span>
-                </div>
+    <div class="col col-l-12 header">
+        <div class="logo-wrapper">
+            <div class="logo"> 
+                {{> logo-circle}}
             </div>
+        </div>
+        <div class="header-text">
+            <div class="title">{{site.title}}</div>
+            <div class="skills">{{site.skills}}</div>
         </div>
     </div>
 </header>
