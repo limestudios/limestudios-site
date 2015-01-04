@@ -1,44 +1,35 @@
 header {
-	//background: url(/assets/img/bg.png) repeat right;
-	background-color: @primary-color;
+	font-family: @type-primary;
+	.clearfix();
+	padding-top: 200px;
+	padding-bottom: 100px;
+	background-color: @light-primary-color;
 
-	padding-bottom: @header-height !important;
-	transition: .25s ease;
-
-	.bar {
-		background-color: @dark-primary-color;
-		height: @headerbar-height;
-		margin-bottom: @header-height !important;
-		transition: .25s ease;
-		font-size: 24px;
-		color: @text-normal-color;
-		text-align: right;
-
-		a {
-			font-size: 24px;
-			color: @text-normal-color;
-			line-height: @headerbar-height;
-			vertical-align: middle;
-			margin-right: 12px;
+	.logo-wrapper {
+		.logo {
+			margin: 0 auto;
+			width: 256px;
+			height: 256px;
+			background-color: @text-icons-color;
+			border-radius: 100%;
+			svg {
+				fill: @primary-color;
+				height: 256px;
+				width: 256px;
+			}
 		}
 	}
 
-	h1 {
-		color: @text-normal-color;
-	}
+	.header-text {
+		.title {
+			color: @text-icons-color;
+			font-size: 64px;
+			text-transform: uppercase;
+			letter-spacing: 0.3em;
+		}
 
-	h2 {
-		padding-top: 5px;
-		color: @light-primary-color;
-	}
-
-	/* small screen properties and values */
-	@media screen and (max-width: @screen-small) {
-		padding-bottom: @header-height-mobile !important;
-
-		.bar {
-			height: @headerbar-height-mobile;
-			margin-bottom: @header-height-mobile !important;
+		.skills {
+			color: @text-icons-color;
 		}
 	}
 }
