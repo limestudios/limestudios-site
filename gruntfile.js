@@ -143,11 +143,21 @@ module.exports = function (grunt) {
           }
         ]
       },
+      prod: {
+        files: [
+          {
+            expand: opt.expand,
+            cwd: opt.dev,
+            src: ['**/**'],
+            dest: 'C:/Users/limestudios/Documents/Web Docs/limestudios.github.io'
+          }
+        ]
+      },
       assets: {
         files: [
           {
             expand: opt.expand,
-            cwd: opt.src + '/assets/',
+            cwd: opt.src + '/assets/less',
             src: ['fonts/**'],
             dest: opt.dev + '/assets/css'
           },
