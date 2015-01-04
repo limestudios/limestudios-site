@@ -1,0 +1,52 @@
+nav {
+
+	font-family: @type-primary;
+
+	&.navbar {
+
+		transition: all .25s ease;
+
+		background-color: @text-icons-color;
+		.navbar-branding {
+
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+
+			.logo {
+				line-height: 64px;
+				height: 48px;
+				width: 48px;
+				margin-right: 16px;
+
+				svg {
+					fill: @primary-color;
+					height: 48px;
+					width: 48px;
+				}
+			}
+
+			.title {
+				color: @primary-color;
+				line-height: 64px;
+				font-size: 32px;
+				font-weight: 400;
+			}
+		}
+	}
+
+	&.navbar-shrink {
+		background-color: @primary-color;
+		.navbar-branding {
+			.logo {
+				svg {
+					fill: @text-icons-color;
+				}
+			}
+
+			.title {
+				color: @text-icons-color;
+			}
+		}
+	}
+}
