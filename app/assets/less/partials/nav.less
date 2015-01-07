@@ -3,12 +3,11 @@ nav {
 	font-family: @type-primary;
 
 	&.navbar {
-
-		transition: all .25s ease;
-
+		padding: 32px 0;
+		transition: all .15s ease;
 		background-color: @text-icons-color;
 		.navbar-branding {
-
+			float: left;
 			display: flex;
 			align-items: center;
 			justify-content: space-between;
@@ -29,13 +28,16 @@ nav {
 			.title {
 				color: @primary-color;
 				line-height: 64px;
-				font-size: 32px;
+				font-size: 24px;
 				font-weight: 400;
+				letter-spacing: 0.3em;
+				text-transform: uppercase;;
 			}
 		}
 	}
 
 	&.navbar-shrink {
+		padding: 0;
 		background-color: @primary-color;
 		.navbar-branding {
 			.logo {
@@ -48,5 +50,47 @@ nav {
 				color: @text-icons-color;
 			}
 		}
+
+		.nav {
+	    	li {
+	    		a {
+	    			color: @text-icons-color;
+	    		}
+	    	}
+		}
+	}
+
+	&.navbar-fixed-top {
+		position: fixed;
+		right: 0;
+		left: 0;
+		z-index: 1030;
+	}
+
+	.nav {
+		float: right;
+		list-style: none;
+		margin: 0 2rem 0 0;
+
+    	li {
+    		color: @primary-color;
+    		line-height: 64px;
+			font-size: 16px;
+			font-weight: 400;
+			letter-spacing: 0.3em;
+			text-transform: uppercase;;
+    		float: left;
+    		list-style: none;
+    		margin: 0 0 0 2rem;
+
+    		&.hidden {
+    			display: none;
+    		}
+
+    		a {
+    			padding-top: 19.5px;
+    			padding-bottom: 19.5px;
+    		}
+    	}
 	}
 }

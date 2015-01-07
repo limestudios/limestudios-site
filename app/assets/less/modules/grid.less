@@ -50,6 +50,8 @@
   padding: 0 1rem;
   float: left;
   .box-sizing();
+  .clearfix();
+  outline: solid @debug-border black;
 }
 [class*='col'] + 
 [class*='col']:last-child { 
@@ -65,11 +67,13 @@
 .grid-small(@n,@i:1) when (@i =< @n) {
   .col-s-@{i} {
     width: (@i * 100% / @n);
-  }
-  .col-pull-s-@{i} {
-    margin-left: (@i * 100% / @n);
+    outline: solid @debug-border red;
+    float:left;
   }
   .col-push-s-@{i} {
+    margin-left: (@i * 100% / @n);
+  }
+  .col-pull-s-@{i} {
     margin-right: (@i * 100% / @n);
   }
   .grid-small(@n, (@i + 1));
@@ -84,11 +88,13 @@
 .grid-medium(@n,@i:1) when (@i =< @n) {
   .col-m-@{i} {
     width: (@i * 100% / @n);
-  }
-  .col-pull-m-@{i} {
-    margin-left: (@i * 100% / @n);
+    outline: solid @debug-border green;
+    float:left;
   }
   .col-push-m-@{i} {
+    margin-left: (@i * 100% / @n);
+  }
+  .col-pull-m-@{i} {
     margin-right: (@i * 100% / @n);
   }
   .grid-medium(@n, (@i + 1));
@@ -103,11 +109,13 @@
 .grid-large(@n,@i:1) when (@i =< @n) {
   .col-l-@{i} {
     width: (@i * 100% / @n);
-  }
-  .col-pull-l-@{i} {
-    margin-left: (@i * 100% / @n);
+    outline: solid @debug-border blue;
+    float:left;
   }
   .col-push-l-@{i} {
+    margin-left: (@i * 100% / @n);
+  }
+  .col-pull-l-@{i} {
     margin-right: (@i * 100% / @n);
   }
   .grid-large(@n, (@i + 1));
@@ -116,7 +124,7 @@
 @media only screen and (min-width: 0) and (max-width: @screen-small) {
   .grid-small(12);
   .hide-on-small {
-    display: none;
+    display: none @important;
   }
   .show-on-small {
     display: block;
@@ -125,7 +133,7 @@
 @media only screen and (min-width: @screen-small) and (max-width: @screen-medium) {
   .grid-small(12);
   .hide-on-small {
-    display: none;
+    display: none @important;
   }
   .show-on-small {
     display: block;
@@ -133,11 +141,19 @@
 }
 @media only screen and (min-width: @screen-medium) and (max-width: @screen-large) {
   .grid-medium(12);
-  .hide-on-medium { display: none; }
-  .show-on-medium { display: block; }
+  .hide-on-medium {
+    display: none @important;
+  }
+  .show-on-medium {
+    display: block;
+  }
 }
 @media only screen and (min-width: @screen-large) {
   .grid-large(12);
-  .hide-on-large { display: none; }
-  .show-on-large { display: block; }
+  .hide-on-large {
+    display: none @important;
+  }
+  .show-on-large {
+    display: block;
+  }
 }

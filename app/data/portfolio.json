@@ -1,0 +1,14 @@
+"works" : [
+	{
+		"title" : "Project Arrhythmia",
+		"description" : "A game all about music.",
+		"client" : {
+			"name" : "Lime Studios",
+			"link" : "",
+	date: Ongoing,
+	service: Game Development
+	}
+	- {title: Simply Susan, description: A game all about music., client: SimplySusan, date: Dev 2014, service: Web Development}
+	- {title: Table Flip Podcast, description: A game all about music., client: Lime Studios, date: Ongoing, service: Game Development}
+	- {title: Youtube, description: A game all about music., client: Lime Studios, date: Ongoing, service: Game Development}
+]
