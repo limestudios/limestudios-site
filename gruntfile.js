@@ -223,4 +223,5 @@ module.exports = function (grunt) {
   //grunt.registerTask('default', ['less', 'autoprefixer', 'watch']);
   grunt.registerTask('styles', ['less', 'autoprefixer','watch']);
   grunt.registerTask('dev', ['connect']);
+  grunt.registerTask('deploy-prod', ['copy:prod'])
 };
