@@ -22,6 +22,6 @@ The Lime Studios site is powered by Assemble deployed to github's static website
 Assemble was created by [@jonschlinkert](https://github.com/jonschlinkert) and [@doowb](https://github.com/doowb) to get designers and developers on the same page.
 
 ---
-Built with love in New Orleans, [licensed MIT](mit-license.org)
+Built with love in New Orleans, [licensed MIT](https://github.com/limestudios/limestudios-site/blob/master/LICENSE)
 
 All content [copyright 2014 Liam Craver](LICENSE)
