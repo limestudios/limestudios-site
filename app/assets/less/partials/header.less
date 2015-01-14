@@ -1,47 +1,32 @@
-header {
-	font-family: @type-primary;
-	.clearfix();
-	padding-top: 200px;
-	padding-bottom: 100px;
-	background-color: @light-primary-color;
+.main-header {
+
+	background-color: blue;
+	width: 100vw;
+	height: 100vh;
+	display: flex;
 
 	.logo-wrapper {
-		.logo {
-			margin: 0 auto;
-			width: 256px;
-			height: 256px;
-			background-color: @text-icons-color;
-			border-radius: 100%;
+		z-index:10;
+    	position:relative;
+		align-self: center;
+		padding-bottom: 64px;
+		.logo-svg {
 			svg {
-				fill: @primary-color;
-				height: 256px;
-				width: 256px;
+				fill: @primary-color @important;
 			}
 		}
-	}
 
-	.header-text {
-		.title {
-			color: @text-icons-color;
-			font-size: 6.4rem;
-			text-transform: uppercase;
-			letter-spacing: 0.3em;
-			text-align: center;
-			margin-bottom: 32px;
-		}
-
-		hr {
-			margin: 0 auto;
-			width: 25%;
-			color: @text-icons-color;
-			margin-bottom: 16px;
-		}
-
-		.skills {
-			color: @text-icons-color;
-			font-size: 22px;
-			letter-spacing: 0.1em;
-			text-align: center;
+		.description {
+			background-color: fade(@divider-color, 75%);
+			padding: 8px;
 		}
 	}
+}
+
+.header-filter {
+	width: 100vw;
+	height: 100vh;
+	position: absolute;
+
+	filter: saturate(0.25) opacity(0.75);
 }

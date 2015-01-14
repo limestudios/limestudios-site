@@ -1,14 +1,22 @@
 <!-- Header -->
-<header>
-    <div class="col col-l-12 header">
-        <div class="logo-wrapper">
-            <div class="logo"> 
-                {{> logo-circle}}
-            </div>
+<div class="img-change header-filter"></div>
+<header class="col-l-12 col-m-12 col-s-12 main-header">
+    <section class="logo-wrapper col-l-12 col-m-12 col-s-12">
+        <!--<div class="logo-svg col-push-l-2 col-l-4 col-push-m-1 col-m-5">
+            {{> logo-circle}}
         </div>
-        <div class="header-text">
-            <div class="title">{{site.title}}</div>
-            <div class="skills">{{site.tagline}}</div>
+        <div class="description col-l-4 col-pull-l-2 col-m-5 col-pull-m-1">
+            Hi, I'm <strong>Liam Craver</strong>.
+            <br>
+            {{site.tagline}}
+        </div>-->
+        <div class="logo-svg col-push-l-4 col-l-4 col-pull-1-4">
+            {{> logo-circle}}
         </div>
-    </div>
+        <div class="description col-push-l-4 col-l-4 col-pull-1-4">
+            Hi, I'm <strong>Liam Craver</strong>.
+            <br>
+            {{site.tagline}}
+        </div>
+    </section>
 </header>

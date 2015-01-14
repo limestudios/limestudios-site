@@ -47,7 +47,7 @@
   position: relative;
   width: 100%;
   max-width: none;
-  padding: 0 1rem;
+  //padding: 0 1rem;
   float: left;
   .box-sizing();
   .clearfix();
@@ -67,7 +67,8 @@
 .grid-small(@n,@i:1) when (@i =< @n) {
   .col-s-@{i} {
     width: (@i * 100% / @n);
-    outline: solid @debug-border red;
+    //outline: solid @debug-border red;
+    box-shadow:inset 0px 0px 0px @debug-border red;
     float:left;
   }
   .col-push-s-@{i} {
@@ -88,7 +89,8 @@
 .grid-medium(@n,@i:1) when (@i =< @n) {
   .col-m-@{i} {
     width: (@i * 100% / @n);
-    outline: solid @debug-border green;
+    //outline: solid @debug-border green;
+    box-shadow:inset 0px 0px 0px @debug-border green;
     float:left;
   }
   .col-push-m-@{i} {
@@ -109,7 +111,8 @@
 .grid-large(@n,@i:1) when (@i =< @n) {
   .col-l-@{i} {
     width: (@i * 100% / @n);
-    outline: solid @debug-border blue;
+    //outline: solid @debug-border blue;
+    box-shadow:inset 0px 0px 0px @debug-border blue;
     float:left;
   }
   .col-push-l-@{i} {

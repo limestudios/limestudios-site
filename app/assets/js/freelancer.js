@@ -5,14 +5,19 @@
  */
 
 // jQuery for page scrolling feature - requires jQuery Easing plugin
-$(function() {
-    $('.page-scroll a').bind('click', function(event) {
-        var $anchor = $(this);
-        $('html, body').stop().animate({
-            scrollTop: $($anchor.attr('href')).offset().top
-        }, 1500, 'easeInOutExpo');
-        event.preventDefault();
-    });
+/*$(function() {
+  $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
 });
 
 // Floating label headings for the contact form
@@ -35,3 +40,14 @@ $('body').scrollspy({
 $('.navbar-collapse ul li a').click(function() {
     $('.navbar-toggle:visible').click();
 });
+*/
+
+function imageLoader() {
+  var el = document.querySelector(".img-change");
+  var rand = Math.floor(Math.random()*6)
+  el.style.background = 'url(./assets/img/gifolio/'+rand+'.png) 50% 50% / cover no-repeat';
+}
+
+window.setInterval(function(){
+  imageLoader();
+}, 1000);

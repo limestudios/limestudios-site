@@ -2,43 +2,67 @@
 	"works" : [
 		{
 			"title" : "Project Arrhythmia",
+			"ref" : "arrhythmia",
 			"description" : "A game all about music.",
 			"client" : {
 				"name" : "Lime Studios",
-				"link" : ""
+				"link" : "http://limestudios.net/arrhythmia"
 			},
 			"date" : "Ongoing",
-			"service" : "Game Development"
+			"service" : "Game Development",
+			"display" : {
+				"width-l" : "6",
+				"width-m" : "6",
+				"width-s" : "12"
+			}
 		},
 		{
 			"title" : "Simply Susan",
-			"description" : "A game all about music.",
+			"ref" : "simplysusan",
+			"description" : "Organizing Solutions for your Home and Office.",
 			"client" : {
-				"name" : "Lime Studios",
-				"link" : ""
+				"name" : "Simply Susan",
+				"link" : "http://simplysusansite.com/"
 			},
-			"date" : "Ongoing",
-			"service" : "Game Development"
+			"date" : "Dec 2014",
+			"service" : "Web Development",
+			"display" : {
+				"width-l" : "3",
+				"width-m" : "6",
+				"width-s" : "12"
+			}
 		},
 		{
 			"title" : "Table Flip Podcast",
-			"description" : "A game all about music.",
+			"ref" : "tableflip",
+			"description" : "A PODCAST ON DESIGN, TECHNOLOGY AND WEB DEVELOPMENT.",
 			"client" : {
 				"name" : "Lime Studios",
-				"link" : ""
+				"link" : "http://tableflip.ninja"
 			},
 			"date" : "Ongoing",
-			"service" : "Game Development"
+			"service" : "Web Development / Podcast",
+			"display" : {
+				"width-l" : "3",
+				"width-m" : "6",
+				"width-s" : "12"
+			}
 		},
 		{
 			"title" : "Youtube",
-			"description" : "A game all about music.",
+			"ref" : "youtube",
+			"description" : "My personal Youtube channel where I post updates on all my current projects.",
 			"client" : {
 				"name" : "Lime Studios",
-				"link" : ""
+				"link" : "https://www.youtube.com/user/studioslime"
 			},
 			"date" : "Ongoing",
-			"service" : "Game Development"
+			"service" : "Game Development / Web Development / Misc",
+			"display" : {
+				"width-l" : "3",
+				"width-m" : "6",
+				"width-s" : "12"
+			}
 		}
 	]
 }

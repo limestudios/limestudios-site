@@ -1,34 +1,29 @@
 <!-- Navigation -->
-<nav class="navbar navbar-fixed-top">
-    <div class="col col-push-l-1 col-l-10">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="page-scroll">
-            <a class="navbar-branding show-on-large hide-on-medium hide-on-small" href="#page-top">
-                <div class="logo">
-                    {{> logo-square}}
-                </div>
-                <div class="title">
-                    {{site.title}}
-                </div>
-            </a>
-        </div>
-
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <ul class="nav">
-            <li class="hidden">
-                <a href="#page-top"></a>
-            </li>
-            <li class="page-scroll">
-                <a href="#portfolio">Portfolio</a>
-            </li>
-            <li class="page-scroll">
-                <a href="#about">About</a>
-            </li>
-            <li class="page-scroll">
-                <a href="#contact">Contact</a>
-            </li>
-        </ul>
-        <!-- /.navbar-collapse -->
+<nav class="nav-main col-l-12 col-m-12 col-s-12 background-white fixed-nav-bar">
+    <div class="logo">
+        {{> logo-square}}
     </div>
-    <!-- /.container-fluid -->
+    <ul class="menu hide-on-small">
+        {{#each site.nav}}
+            <li>
+                <a href="{{this.link}}" class="text-button nav-item">{{this.name}}</a>
+            </li>
+        {{/each}}
+    </ul>
+    <ul class="menu-small hide-on-medium hide-on-large">
+        <li>
+            <a href="#" class="hamburger-menu">{{> hamburger-menu}}</a>
+            <div class="nav-content">
+                <div class="nav-sub">
+                    <ul>
+                        {{#each site.nav}}
+                            <li>
+                                <a href="{{this.link}}" class="text-button">{{this.name}}</a>
+                            </li>
+                        {{/each}}
+                    </ul>
+                </div>
+            </div>
+        </li>
+    </ul>
 </nav>

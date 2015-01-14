@@ -4,14 +4,13 @@
         <h2>Portfolio</h2>
     </div>
     {{#each portfolio.works}}
-    <div class="col-l-3 col-m-6 col-s-12">
-        <a href="#portfolioModal{{@index}}" class="portfolio-link" data-toggle="modal">
-            <img src="./assets/img/portfolio/{{this.title}}.png" class="img-responsive img-centered" alt="">
-            <div class="caption">
+    <a href="#portfolioModal{{@index}}" class="portfolio-link" data-toggle="modal">
+        <div class="col-l-{{this.display.width-l}} col-m-{{this.display.width-m}} col-s-{{this.display.width-s}} portfolio-image" style="background: url(./assets/img/portfolio/{{this.ref}}.png) 50% 50% / cover no-repeat;">
+            <div class="title">
                 {{this.title}}
             </div>
-        </a>
-    </div>
+        </div>
+    </a>
     {{/each}}
 </section>
 
@@ -25,30 +24,30 @@
                 </div>
             </div>
         </div>
-            <div class="col">
-                <div class="col-push-l-2 col-l-8">
-                    <div class="modal-body">
-                        <h2>{{this.title}}</h2>
-                        <img src="./assets/img/portfolio/{{this.title}}.png" class="img-responsive img-centered" alt="">
-                        <p>{{this.description}}</p>
-                        <ul class="list-inline item-details">
-                            <li>Client:
-                                <strong><a href="http://startbootstrap.com">{{this.client}}</a>
-                                </strong>
-                            </li>
-                            <li>Date:
-                                <strong><a href="http://startbootstrap.com">{{this.date}}</a>
-                                </strong>
-                            </li>
-                            <li>Service:
-                                <strong><a href="http://startbootstrap.com">{{this.service}}</a>
-                                </strong>
-                            </li>
-                        </ul>
-                        <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                    </div>
+        <div class="col">
+            <div class="col-push-l-2 col-l-8">
+                <div class="modal-body">
+                    <h2>{{this.title}}</h2>
+                    <img src="./assets/img/portfolio/{{this.ref}}.png" class="img-responsive img-centered" alt="{{this.title}}">
+                    <p>{{this.description}}</p>
+                    <section class="modal-footer">
+                        <div>
+                            Client:
+                            <a href="{{this.client.link}}">{{this.client.name}}</a>
+                        </div>
+                        <div>
+                            Date:
+                            <a href="{{this.client.link}}">{{this.date}}</a>
+                        </div>
+                        <div>
+                            Service:
+                            <a href="{{this.client.link}}">{{this.service}}</a>
+                        </div>
+                    </section>
+                    <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                 </div>
             </div>
+        </div>
     </div>
 </div>
 {{/each}}
