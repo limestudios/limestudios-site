@@ -118,7 +118,7 @@ module.exports = function (grunt) {
     */
     autoprefixer: {
       options: {
-        browsers: ['> 5%, last 2 version' ]
+        browsers: ['last 5 version' ]
       },
       styles: {
         expand: true,
