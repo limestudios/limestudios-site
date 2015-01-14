@@ -1,4 +1,4 @@
-# Lime Studios [![Build Status](https://travis-ci.org/limestudios/limestudios-site.svg?branch=master)](https://magnum.travis-ci.com/limestudios/limestudios-site)[![Dependencies](https://david-dm.org/limestudios/limestudios-site.svg)]
+# Lime Studios [[![Build Status](https://travis-ci.org/limestudios/limestudios-site.svg?branch=master)](https://magnum.travis-ci.com/limestudios/limestudios-site)][![Dependencies](https://david-dm.org/limestudios/limestudios-site.svg)]
 
 Source code for [limestudios.net](http://limestudios.net).
 
