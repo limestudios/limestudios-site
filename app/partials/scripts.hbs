@@ -1,5 +1,5 @@
 <!-- jQuery -->
-<!--<script src="./assets/js/jquery.js"></script>
+<script src="./assets/js/jquery.js"></script>
 
 <!-- Bootstrap Core JavaScript -->
 <!--<script src="./assets/js/bootstrap.js"></script>
@@ -37,5 +37,18 @@
 				//"./assets/img/gifolio/5.png"
 			//)
 		//--><!]]>
+
+		$("a[href*=#]:not([href=#])").click(function() {
+			if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+				var target = $(this.hash);
+				target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+				if (target.length) {
+					$('html,body').animate({
+						scrollTop: target.offset().top //- ($(window).height() / 10)
+					}, 1000);
+					return false;
+				}
+			}
+		});
 	</script>
 </div>
