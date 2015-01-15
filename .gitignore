@@ -29,3 +29,8 @@ node_modules
 
 # Releases directory
 releases
+releases/dev-release/test2.html
+releases/dev-release/index.html
+releases/dev-release/blog/test2.html
+releases/dev-release/blog/test.html
+releases/dev-release/assets/css/styles.css
