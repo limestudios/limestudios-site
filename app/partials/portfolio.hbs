@@ -1,15 +1,48 @@
 <!-- Portfolio Grid Section -->
-<section id="portfolio" class="col col-l-12 portfolio">
-    <div class="col-l-12">
-        <h2>Portfolio</h2>
-    </div>
+<section id="portfolio" class="portfolio">
     {{#each portfolio.works}}
     <a href="#portfolioModal{{@index}}" class="portfolio-link" data-toggle="modal">
-        <div class="col-l-{{this.display.width-l}} col-m-{{this.display.width-m}} col-s-{{this.display.width-s}} portfolio-image" style="background: url(./assets/img/portfolio/{{this.ref}}.png) 50% 50% / cover no-repeat;">
-            <div class="title">
-                {{this.title}}
+        {{#is this.display 'left'}}
+            <div class="col-l-4 col-m-12 col-s-12 portfolio-image" style="background: url(./assets/img/portfolio/{{this.ref}}.png) 50% 50% / cover no-repeat;">
+                <div class="title">
+                    {{this.title}}
+                </div>
             </div>
-        </div>
+            <div class="col-l-8 col-m-12 col-s-12 portfolio-image" style="background: url(./assets/img/portfolio/{{this.ref}}.png) 50% 50% / cover no-repeat;">
+                <div class="title">
+                    {{this.title}}
+                </div>
+            </div>
+        {{/is}}
+        {{#is this.display 'middle'}}
+            <div class="col-l-4 col-m-12 col-s-12 portfolio-image" style="background: url(./assets/img/portfolio/{{this.ref}}.png) 50% 50% / cover no-repeat;">
+                <div class="title">
+                    {{this.title}}
+                </div>
+            </div>
+            <div class="col-l-4 col-m-12 col-s-12 portfolio-image" style="background: url(./assets/img/portfolio/{{this.ref}}.png) 50% 50% / cover no-repeat;">
+                <div class="title">
+                    {{this.title}}
+                </div>
+            </div>
+            <div class="col-l-4 col-m-12 col-s-12 portfolio-image" style="background: url(./assets/img/portfolio/{{this.ref}}.png) 50% 50% / cover no-repeat;">
+                <div class="title">
+                    {{this.title}}
+                </div>
+            </div>
+        {{/is}}
+        {{#is this.display 'right'}}
+            <div class="col-l-8 col-m-12 col-s-12 portfolio-image" style="background: url(./assets/img/portfolio/{{this.ref}}.png) 50% 50% / cover no-repeat;">
+                <div class="title">
+                    {{this.title}}
+                </div>
+            </div>
+            <div class="col-l-4 col-m-12 col-s-12 portfolio-image" style="background: url(./assets/img/portfolio/{{this.ref}}.png) 50% 50% / cover no-repeat;">
+                <div class="title">
+                    {{this.title}}
+                </div>
+            </div>
+        {{/is}}
     </a>
     {{/each}}
 </section>
