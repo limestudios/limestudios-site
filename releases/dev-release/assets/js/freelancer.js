@@ -45,9 +45,9 @@ $('.navbar-collapse ul li a').click(function() {
 function imageLoader() {
   var el = document.querySelector(".img-change");
   var rand = Math.floor(Math.random()*6)
-  el.style.background = 'url(./assets/img/gifolio/'+rand+'.png) 50% 50% / cover no-repeat';
+  el.style.background = 'url(./assets/img/gifolio/'+rand+'.png) 50% 50% / cover no-repeat hsl(200,50%,50%)';
 }
 
 window.setInterval(function(){
   imageLoader();
-}, 1000);
+}, 5000);
