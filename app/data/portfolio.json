@@ -3,7 +3,14 @@
 		{
 			"title" : "Project Arrhythmia",
 			"ref" : "arrhythmia",
-			"description" : "A game all about music.",
+			"ref-next" : "simplysusan",
+			"images" : {
+				"main" : "arrhythmia-main.png",
+				"secondary" : "arrhythmia-secondary.jpg",
+				"small" : "arrhythmia-small.png"
+			},
+			"description" : "A game all about music and other stuff.",
+			"readmore-link" : "http://limestudios.net/arrhythmia",
 			"client" : {
 				"name" : "Lime Studios",
 				"link" : "http://limestudios.net/arrhythmia"
@@ -15,7 +22,14 @@
 		{
 			"title" : "Simply Susan",
 			"ref" : "simplysusan",
+			"ref-next" : "tableflip",
+			"images" : {
+				"main" : "simplysusan-main.png",
+				"secondary" : "arrhythmia-secondary.jpg",
+				"small" : "arrhythmia-small.png"
+			},
 			"description" : "Organizing Solutions for your Home and Office.",
+			"readmore-link" : "http://limestudios.net/arrhythmia",
 			"client" : {
 				"name" : "Simply Susan",
 				"link" : "http://simplysusansite.com/"
@@ -27,7 +41,9 @@
 		{
 			"title" : "Table Flip Podcast",
 			"ref" : "tableflip",
+			"ref-next" : "youtube",
 			"description" : "A PODCAST ON DESIGN, TECHNOLOGY AND WEB DEVELOPMENT.",
+			"readmore-link" : "http://limestudios.net/arrhythmia",
 			"client" : {
 				"name" : "Lime Studios",
 				"link" : "http://tableflip.ninja"
@@ -39,7 +55,9 @@
 		{
 			"title" : "Youtube",
 			"ref" : "youtube",
+			"ref-next" : "arrhythmia",
 			"description" : "My personal Youtube channel where I post updates on all my current projects.",
+			"readmore-link" : "http://limestudios.net/arrhythmia",
 			"client" : {
 				"name" : "Lime Studios",
 				"link" : "https://www.youtube.com/user/studioslime"
