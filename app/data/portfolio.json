@@ -10,11 +10,7 @@
 			},
 			"date" : "Ongoing",
 			"service" : "Game Development",
-			"display" : {
-				"width-l" : "6",
-				"width-m" : "6",
-				"width-s" : "12"
-			}
+			"display" : "middle"
 		},
 		{
 			"title" : "Simply Susan",
@@ -26,11 +22,7 @@
 			},
 			"date" : "Dec 2014",
 			"service" : "Web Development",
-			"display" : {
-				"width-l" : "3",
-				"width-m" : "6",
-				"width-s" : "12"
-			}
+			"display" : "right"
 		},
 		{
 			"title" : "Table Flip Podcast",
@@ -42,11 +34,7 @@
 			},
 			"date" : "Ongoing",
 			"service" : "Web Development / Podcast",
-			"display" : {
-				"width-l" : "3",
-				"width-m" : "6",
-				"width-s" : "12"
-			}
+			"display" : "left"
 		},
 		{
 			"title" : "Youtube",
@@ -58,11 +46,7 @@
 			},
 			"date" : "Ongoing",
 			"service" : "Game Development / Web Development / Misc",
-			"display" : {
-				"width-l" : "3",
-				"width-m" : "6",
-				"width-s" : "12"
-			}
+			"display" : "right"
 		}
 	]
 }
