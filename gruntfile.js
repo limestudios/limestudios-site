@@ -3,7 +3,7 @@ module.exports = function (grunt) {
   require('jit-grunt')(grunt);
 
   var options = {
-    prod: 'C:/Users/limestudios/Documents/Web Docs/limestudios.github.io',
+    prod: 'C:/Users/limestudios/Documents/Web Docs/limestudios.github.io/dev',
     dev: './releases/dev-release/',
     src: './app/',
     assets: './dist/assets/',
@@ -26,26 +26,26 @@ module.exports = function (grunt) {
       options: {
         port: opt.devPort,
         hostname: opt.devHostname,
-        livereload: 35728  
+        livereload: 35728
       },
-      livereload: {  
-        options: {  
-          open: true,  
-          base: opt.dev  
-        }  
-      }  
+      livereload: {
+        options: {
+          open: true,
+          base: opt.dev
+        }
+      }
     },
 
-    watch: {  
-      assemble: {  
-        files: [  
-            opt.src + 'content/blog/*.{hbs,md}',  
-            opt.src + 'content/pages/*.{hbs,md}',  
-            opt.src + 'layouts/*.{hbs,md}',  
+    watch: {
+      assemble: {
+        files: [
+            opt.src + 'content/blog/*.{hbs,md}',
+            opt.src + 'content/pages/*.{hbs,md}',
+            opt.src + 'layouts/*.{hbs,md}',
             opt.src + 'partials/*.{hbs,md}',
             opt.src + 'data/*.{json,yml}'
-        ],  
-        tasks: ['assemble']  
+        ],
+        tasks: ['assemble']
       },
       styles: {
         files: [opt.src + 'assets/less/**/*.less'], // which files to watch
@@ -55,16 +55,16 @@ module.exports = function (grunt) {
         files: [opt.src + 'assets/js/**/*.js'], // which files to watch
         tasks: ['copy:js']
       },
-      livereload: {  
-        options: {  
-          livereload: '<%= connect.options.livereload %>'  
-        },  
-        files: [  
+      livereload: {
+        options: {
+          livereload: '<%= connect.options.livereload %>'
+        },
+        files: [
           opt.dev + '*.html',
-          opt.dev + 'assets/css/*.css'  
-        ]  
-      },  
-    },  
+          opt.dev + 'assets/css/*.css'
+        ]
+      },
+    },
 
     /*
     ** grunt dev to start task
@@ -218,7 +218,7 @@ module.exports = function (grunt) {
   });
 
   /* grunt tasks */
-  grunt.registerTask('default', ['connect:livereload','assemble','less','autoprefixer','copy','watch']); 
+  grunt.registerTask('default', ['connect:livereload','assemble','less','autoprefixer','copy','watch']);
   //grunt.registerTask('default', ['assemble', 'connect']);
   //grunt.registerTask('default', ['less', 'autoprefixer', 'watch']);
   grunt.registerTask('styles', ['less', 'autoprefixer','watch']);
