@@ -1,6 +1,5 @@
 .main-header {
 
-	background-color: blue;
 	width: 100vw;
 	height: 100vh;
 	display: flex;
@@ -12,12 +11,13 @@
 		padding-bottom: 64px;
 		.logo-svg {
 			svg {
-				fill: @primary-color @important;
+				fill: @white @important;
 			}
 		}
 
 		.description {
-			background-color: fade(@divider-color, 75%);
+			color: @white;
+			//background-color: fade(@divider-color, 75%);
 			padding: 8px;
 		}
 	}
@@ -27,6 +27,7 @@
 	width: 100vw;
 	height: 100vh;
 	position: absolute;
+	background-color: @primary-color;
 
-	filter: saturate(0.25) opacity(0.75);
+	//filter: grayscale(100%) blur(10px);
 }
