@@ -3,7 +3,7 @@ module.exports = function (grunt) {
   require('jit-grunt')(grunt);
 
   var options = {
-    prod: 'C:/Users/limestudios/Documents/Web Docs/limestudios.github.io/dev',
+    prod: 'C:/Users/limestudios/Documents/Web_Docs/limestudios.github.io/dev',
     dev: './releases/dev-release/',
     src: './app/',
     assets: './dist/assets/',
