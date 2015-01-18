@@ -1,10 +1,10 @@
 .nav-main {
-	height: 64px;
+	height: 10vh;
 	.logo {
 		float: left;
 		svg {
-			width: 64px;
-			height: 64px;
+			width: 10vh;
+			height: 10vh;
 			fill: @primary-color;
 		}
 		//padding: 0 20px 0 0;
@@ -27,7 +27,7 @@
 	}
 }
 
-@media only screen and (min-width: 0) and (max-width: @screen-medium) {
+@media only screen and (min-width: 0) and (max-width: @screen-widephone) {
 	.nav-main {
 		.logo {
 			padding: 0;
@@ -70,7 +70,7 @@ ul.menu-small {
 			svg {
 				fill: @primary-color;
 			}
-			
+
 			~ .nav-content {
 				max-height: 400px;
 			}
