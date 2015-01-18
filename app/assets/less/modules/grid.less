@@ -14,27 +14,30 @@
   padding: 0;
   *zoom: 1;
 
-  &:before, 
+  &:before,
   &:after {
     content: " ";
-    display: table; 
+    display: table;
   }
 
   &:after {
     clear: both;
   }
 
-  &.row-small { 
-    max-width: @screen-small;
+  &.row-phone {
+    max-width: @screen-phone;
   }
-  &.row-medium { 
-    max-width: @screen-medium; 
+  &.row-widephone {
+    max-width: @screen-widephone;
   }
-  &.row-large { 
-    max-width: @screen-large; 
+  &.row-tablet {
+    max-width: @screen-tablet;
   }
-  &.row-full-width { 
-    max-width: 100%; 
+  &.row-widetablet {
+    max-width: @screen-widetablet;
+  }
+  &.row-full-width {
+    max-width: 100%;
   }
 
 }
@@ -53,110 +56,162 @@
   .clearfix();
   outline: solid @debug-border black;
 }
-[class*='col'] + 
-[class*='col']:last-child { 
-  //float: right; 
+[class*='col'] +
+[class*='col']:last-child {
+  //float: right;
 }
 
 /**
  * @function grid-small
  * @description Generate classes for each of the columns of the small grid.
  * @param {number} n The number of columns to generate
- * @param {number} i 
+ * @param {number} i
  */
-.grid-small(@n,@i:1) when (@i =< @n) {
-  .col-s-@{i} {
+.grid-phone(@n,@i:1) when (@i =< @n) {
+  .col-p-@{i} {
     width: (@i * 100% / @n);
     //outline: solid @debug-border red;
-    box-shadow:inset 0px 0px 0px @debug-border red;
+    box-shadow:inset 0px 0px 0px @debug-border #FFEB3B;
     float:left;
   }
-  .col-push-s-@{i} {
+  .col-push-p-@{i} {
     margin-left: (@i * 100% / @n);
   }
-  .col-pull-s-@{i} {
+  .col-pull-p-@{i} {
     margin-right: (@i * 100% / @n);
   }
-  .grid-small(@n, (@i + 1));
+  .grid-phone(@n, (@i + 1));
 }
 
 /**
  * @function grid-medium
  * @description Generate classes for each of the columns of the large grid.
  * @param {number} n The number of columns to generate
- * @param {number} i 
+ * @param {number} i
  */
-.grid-medium(@n,@i:1) when (@i =< @n) {
-  .col-m-@{i} {
+.grid-widephone(@n,@i:1) when (@i =< @n) {
+  .col-wp-@{i} {
     width: (@i * 100% / @n);
     //outline: solid @debug-border green;
-    box-shadow:inset 0px 0px 0px @debug-border green;
+    box-shadow:inset 0px 0px 0px @debug-border #4CAF50;
     float:left;
   }
-  .col-push-m-@{i} {
+  .col-push-wp-@{i} {
     margin-left: (@i * 100% / @n);
   }
-  .col-pull-m-@{i} {
+  .col-pull-wp-@{i} {
     margin-right: (@i * 100% / @n);
   }
-  .grid-medium(@n, (@i + 1));
+  .grid-widephone(@n, (@i + 1));
 }
 
 /**
  * @function grid-large
  * @description Generate classes for each of the columns of the large grid.
  * @param {number} n The number of columns to generate
- * @param {number} i 
+ * @param {number} i
  */
-.grid-large(@n,@i:1) when (@i =< @n) {
-  .col-l-@{i} {
+.grid-tablet(@n,@i:1) when (@i =< @n) {
+  .col-t-@{i} {
     width: (@i * 100% / @n);
     //outline: solid @debug-border blue;
-    box-shadow:inset 0px 0px 0px @debug-border blue;
+    box-shadow:inset 0px 0px 0px @debug-border #2196F3;
     float:left;
   }
-  .col-push-l-@{i} {
+  .col-push-t-@{i} {
     margin-left: (@i * 100% / @n);
   }
-  .col-pull-l-@{i} {
+  .col-pull-t-@{i} {
     margin-right: (@i * 100% / @n);
   }
-  .grid-large(@n, (@i + 1));
+  .grid-tablet(@n, (@i + 1));
 }
 
-@media only screen and (min-width: 0) and (max-width: @screen-small) {
-  .grid-small(12);
-  .hide-on-small {
+/**
+* @function grid-large
+* @description Generate classes for each of the columns of the large grid.
+* @param {number} n The number of columns to generate
+* @param {number} i
+*/
+.grid-widetablet(@n,@i:1) when (@i =< @n) {
+  .col-wt-@{i} {
+    width: (@i * 100% / @n);
+    //outline: solid @debug-border blue;
+    box-shadow:inset 0px 0px 0px @debug-border #9C27B0;
+    float:left;
+  }
+  .col-push-wt-@{i} {
+    margin-left: (@i * 100% / @n);
+  }
+  .col-pull-wt-@{i} {
+    margin-right: (@i * 100% / @n);
+  }
+  .grid-widetablet(@n, (@i + 1));
+}
+/**
+* @function grid-large
+* @description Generate classes for each of the columns of the large grid.
+* @param {number} n The number of columns to generate
+* @param {number} i
+*/
+.grid-computer(@n,@i:1) when (@i =< @n) {
+  .col-c-@{i} {
+    width: (@i * 100% / @n);
+    //outline: solid @debug-border blue;
+    box-shadow:inset 0px 0px 0px @debug-border #f44336;
+    float:left;
+  }
+  .col-push-c-@{i} {
+    margin-left: (@i * 100% / @n);
+  }
+  .col-pull-c-@{i} {
+    margin-right: (@i * 100% / @n);
+  }
+  .grid-computer(@n, (@i + 1));
+}
+
+@media only screen and (min-width: 0) and (max-width: @screen-phone) {
+  .grid-phone(12);
+  .hide-on-p {
     display: none @important;
   }
-  .show-on-small {
+  .show-on-p {
     display: block;
   }
 }
-@media only screen and (min-width: @screen-small) and (max-width: @screen-medium) {
-  .grid-small(12);
-  .hide-on-small {
+@media only screen and (min-width: @screen-phone) and (max-width: @screen-widephone) {
+  .grid-widephone(12);
+  .hide-on-wp {
     display: none @important;
   }
-  .show-on-small {
+  .show-on-wp {
     display: block;
   }
 }
-@media only screen and (min-width: @screen-medium) and (max-width: @screen-large) {
-  .grid-medium(12);
-  .hide-on-medium {
+@media only screen and (min-width: @screen-widephone) and (max-width: @screen-tablet) {
+  .grid-tablet(12);
+  .hide-on-t {
     display: none @important;
   }
-  .show-on-medium {
+  .show-on-t {
     display: block;
   }
 }
-@media only screen and (min-width: @screen-large) {
-  .grid-large(12);
-  .hide-on-large {
+@media only screen and (min-width: @screen-tablet) and (max-width: @screen-widetablet) {
+  .grid-widetablet(12);
+  .hide-on-wt {
     display: none @important;
   }
-  .show-on-large {
+  .show-on-wt {
+    display: block;
+  }
+}
+@media only screen and (min-width: @screen-widetablet) {
+  .grid-computer(12);
+  .hide-on-c {
+    display: none @important;
+  }
+  .show-on-c {
     display: block;
   }
 }
