@@ -9,8 +9,7 @@
               </div>
               <div class="description text-body-1">
                 {{this.description}}
-              </div>
-              <div class="col readmore">
+                <a href="{{this.readmore-link}}" class="readmore button primary">Read More</a>
               </div>
               <div class="small-image" style="background: url(./assets/img/portfolio/{{this.images.small}}) 50% 50% / cover no-repeat;"></div>
             </div>
@@ -24,23 +23,21 @@
                 </div>
                 <div class="description text-body-1">
                   {{this.description}}
-                </div>
-                <div class="col readmore">
+                  <a href="{{this.readmore-link}}" class="readmore button primary">Read More</a>
                 </div>
                 <div class="hide-on-p hide-on-wp small-image" style="background: url(./assets/img/portfolio/{{this.images.small}}) 50% 50% / cover no-repeat;"></div>
               </div>
               <div class="hide-on-p hide-on-wp hide-on-t col-wt-3 col-c-4 portfolio-image" style="background: url(./assets/img/portfolio/{{this.images.secondary}}) 50% 50% / cover no-repeat;"></div>
           {{/is}}
           {{#is this.display 'right'}}
-            <div class="col-l-8 col-m-12 col-s-12 portfolio-image" style="background: url(./assets/img/portfolio/{{this.images.main}}) 50% 50% / cover no-repeat;"></div>
-            <div class="col-l-4 col-m-12 col-s-12 caption">
+            <div class="col-p-12 col-wp-12 col-t-12 col-wt-8 col-c-8 portfolio-image" style="background: url(./assets/img/portfolio/{{this.images.main}}) 50% 50% / cover no-repeat;"></div>
+            <div class="col-p-12 col-wp-12 col-t-12 col-wt-4 col-c-4 caption">
               <div class="logo text-center text-title">
                 {{this.title}}
               </div>
               <div class="description text-body-1">
                 {{this.description}}
-              </div>
-              <div class="col readmore">
+                <a href="{{this.readmore-link}}" class="readmore button primary">Read More</a>
               </div>
               <div class="small-image" style="background: url(./assets/img/portfolio/{{this.images.small}}) 50% 50% / cover no-repeat;"></div>
             </div>

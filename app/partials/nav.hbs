@@ -1,29 +1,15 @@
 <!-- Navigation -->
-<nav class="nav-main col-l-12 col-m-12 col-s-12 background-white fixed-nav-bar">
-    <div class="logo">
-        {{> logo-circle}}
+<nav id="top" class="nav-main col-l-12 col-m-12 col-s-12 background-white fixed-nav-bar">
+    <div class="nav-collapse">
+      <div class="logo">
+          {{> logo-circle}}
+      </div>
+      <ul class="menu hide-on-small">
+          {{#each site.nav}}
+              <li>
+                  <a href="{{this.link}}" class="text-button nav-item">{{this.name}}</a>
+              </li>
+          {{/each}}
+      </ul>
     </div>
-    <ul class="menu hide-on-small">
-        {{#each site.nav}}
-            <li>
-                <a href="{{this.link}}" class="text-button nav-item">{{this.name}}</a>
-            </li>
-        {{/each}}
-    </ul>
-    <ul class="menu-small hide-on-medium hide-on-large">
-        <li>
-            <a href="#" class="hamburger-menu">{{> hamburger-menu}}</a>
-            <div class="nav-content">
-                <div class="nav-sub">
-                    <ul>
-                        {{#each site.nav}}
-                            <li>
-                                <a href="{{this.link}}" class="text-button">{{this.name}}</a>
-                            </li>
-                        {{/each}}
-                    </ul>
-                </div>
-            </div>
-        </li>
-    </ul>
 </nav>

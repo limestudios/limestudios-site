@@ -1,13 +1,13 @@
 button,
 .btn {
-  
+
   display: block;
   width: 100%;
   max-width: 500px;
   margin: 1rem auto;
-  
+
   text-align: center;
-  
+
   -webkit-appearance: none;
   width: 100%;
   max-width: 500px;
@@ -24,18 +24,18 @@ button,
 
 
   .box-sizing();
-  
+
   &:hover,
-  &:active { 
-    outline: 0; 
+  &:active {
+    outline: 0;
   }
   &.no-hover {
-    &:hover { 
+    &:hover {
       cursor: default;
-      opacity: 1; 
+      opacity: 1;
     }
   }
-  
+
 }
 
 a.btn {
@@ -51,7 +51,7 @@ a.btn {
 
 .btn-white {
   border: .125rem solid @white;
-  background: @white; 
+  background: @white;
   &:hover {
     color: @white;
     background: transparent;
@@ -70,12 +70,39 @@ a.btn {
     }
   }
 
-  &.btn-white { 
-    color: @white; 
+  &.btn-white {
+    color: @white;
     &:hover {
       background: @white;
       color: @black;
     }
   }
 
+}
+
+.button {
+  border: 0 none;
+  border-radius: 2px 2px 2px 2px;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Arial,sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 20px;
+  margin-bottom: 0;
+  margin-top: 10px;
+  padding: 7px 10px;
+  text-transform: none;
+  transition: all 0.3s ease 0s;
+  width: 100px;
+  text-align: center; /* DELETE WHEN WIDTH AUTO */
+  &.primary {
+    background: none repeat scroll 0 0 @primary-color;
+    color: @white;
+    &:hover {
+      background: none repeat scroll 0 0 @dark-primary-color;
+      color: @white;
+    }
+  }
 }

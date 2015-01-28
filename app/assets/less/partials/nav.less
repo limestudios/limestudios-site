@@ -1,40 +1,85 @@
 .nav-main {
-	height: 10vh;
-	.logo {
-		float: left;
-		svg {
-			width: 10vh;
-			height: 10vh;
-			fill: @primary-color;
+	background: rgba(0, 0, 0, 0.05);
+	transition: all 0.1 ease;
+	.clearfix();
+	@media only screen and (max-width: @screen-widephone) {
+		padding: 16px 16px 0 16px @important;
+		.nav-collapse {
+			.clearfix();
+			padding: 0 @important;
+			.logo {
+				//height: 48px @important;
+				display: block @important;
+				float: none @important;
+				margin: 0 auto .5rem auto @important;
+
+				svg {
+					padding: 10px @important;
+				}
+			}
+
+			> ul {
+				.clearfix();
+				display: block @important;
+				float: none @important;
+				width: 100% @important;
+				text-align: center @important;
+				margin-bottom: .5rem @important;
+
+				> li {
+					line-height: 16px @important;
+				}
+			}
 		}
-		//padding: 0 20px 0 0;
 	}
 
-	> ul {
-		float: left;
-
-		margin: 0;
-		padding: 0;
-		list-style-type: none;
-		line-height: 64px;
-
-		> li {
-			list-style-type: none;
-			float: left;
-			margin: 0;
-			padding: 0;
-		}
-	}
-}
-
-@media only screen and (min-width: 0) and (max-width: @screen-widephone) {
-	.nav-main {
+	.nav-collapse {
+		border-bottom: 2px solid rgba(0, 0, 0, 0.15);
+		max-width: @screen-widetablet;
+		margin: 0 auto;
+		padding: 0 48px;
+		min-height: 90px;
 		.logo {
-			padding: 0;
+			margin: 0;
+			width: 90px;
+			height: 90px;
+			display: inline-block;
+			float: left;
+			position: relative;
+
+			svg {
+				padding: 20px;
+				width: 90px;
+				height: 90px;
+				fill: @primary-color;
+			}
+		}
+
+		> ul {
+			margin: 0;
+			float: right;
+			margin-bottom: 0;
+			margin-top: 0;
+			list-style-type: none;
+
+			> li {
+				line-height: 90px;
+				font-size: 16px;
+				letter-spacing: 1px;
+				text-align: right;
+				display: inline-block;
+				position: relative;
+				margin: 0 0 0 2em;
+			}
+
+			> li:first-child {
+				margin: 0;
+			}
 		}
 	}
 }
 
+/*
 ul.menu {
 	.nav-item {
 		display: inline-block;
@@ -117,11 +162,11 @@ ul.menu-small {
 			}
 		}
 	}
-}
+}*/
 
 .fixed-nav-bar {
-	position: fixed;
-	top: 0;
-	left: 0;
-	z-index: 9999;
+	//position: fixed;
+	//top: 0;
+	//left: 0;
+	//z-index: 9999;
 }

@@ -1,7 +1,7 @@
 section.portfolio {
 
 	@border-amount: 0px;
-	@caption-background: #9E9E9E;
+	@caption-background: @white;//#9E9E9E;
 
 	section.portfolio-element {
 		//background: red;
@@ -9,33 +9,31 @@ section.portfolio {
 		position: relative;
 
 		.caption {
-			transition: .25s ease;
+			//transition: .25s ease;
 			position: relative;
 			background-color: @caption-background @important;
-			color: @white;
 			.logo {
-				color: @white;
+				color: @black;
 				padding-top: 16px;
 				height: 100px;
 				border: @border-amount solid red;
 			}
 
 			.description {
-				color: @white;
+				color: @black;
 				padding: 8px 16px;
-				height: 350px;
+				height: 300px;
 				border: @border-amount solid green;
-			}
 
-			.readmore {
-				height: 75px;
-				border: @border-amount solid yellow;
-				position: absolute;
-				margin-top: -75px;
+				.readmore {
+					display: block @important;
+					white-space: nowrap;
+					margin: 16px auto 0 auto;
+				}
 			}
 
 			.small-image {
-				height: 150px;
+				height: 200px;
 				border: @border-amount solid blue;
 			}
 		}
