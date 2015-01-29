@@ -1,0 +1,10 @@
+<!-- Blog -->
+<section id="blog-posts" class="blog-posts">
+  <ul>
+    {{#withSort post 'data.posted'}}
+      {{#each this.pages }}
+      <li>{{ this.data.title }}</li>
+      {{/each}}
+    {{/withSort}}
+  </ul>
+</section>

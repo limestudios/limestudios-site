@@ -6,6 +6,7 @@ module.exports = function (grunt) {
     prod: 'C:/Users/limestudios/Documents/Web_Docs/limestudios.github.io/dev',
     dev: './releases/dev-release/',
     src: './app/',
+    posts: './app/content/blog/',
     assets: './dist/assets/',
     config: 'data/config/',
     expand: true,
@@ -75,20 +76,39 @@ module.exports = function (grunt) {
         flatten: true,
         data: [opt.config+'*.{json,yml}', 'package.json', opt.src + 'data/*.{json,yml}'],
       	assets: opt.assets,
-        layout: 'app/layouts/default.hbs',
-        partials: 'app/partials/**/*.hbs'
+        layoutdir: opt.src + 'layouts/',
+        layout: 'default.hbs',
+        partials: opt.src + 'partials/**/*.hbs',
+        plugins: [
+          'permalinks'
+        ],
+        collections: [
+          {
+            name: 'post',
+            sortby: 'date',
+            sortorder: 'descending',
+            pages: [opt.posts]
+          }
+        ],
+        compose: {
+          cwd: opt.posts
+        },
+        permalinks: {
+          structure: ':basename/index.html'
+        }
       },
       blog: {
+        options: {
+          layout: 'article.hbs',
+          permalinks: {
+            structure: ':year/:basename/index.html'
+          }
+        },
         files: {
-          'releases/dev-release/blog/': ['./app/content/blog/*.{hbs,md}' ],
+          'releases/dev-release/': ['./app/content/blog/**/*.{hbs,md}' ],
         }
       },
       pages: {
-      	options: {
-	      permalinks: {
-	        structure: ':basename/index.html'
-	      }
-	    },
         files: {
           'releases/dev-release/': ['./app/content/pages/*.{hbs,md}' ],
         }
