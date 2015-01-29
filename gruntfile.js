@@ -6,7 +6,7 @@ module.exports = function (grunt) {
     prod: 'C:/Users/limestudios/Documents/Web_Docs/limestudios.github.io/dev',
     dev: './releases/dev-release/',
     src: './app/',
-    posts: './app/content/blog/',
+    posts: './app/content/blog',
     assets: './dist/assets/',
     config: 'data/config/',
     expand: true,
@@ -40,11 +40,11 @@ module.exports = function (grunt) {
     watch: {
       assemble: {
         files: [
-            opt.src + 'content/blog/*.{hbs,md}',
-            opt.src + 'content/pages/*.{hbs,md}',
-            opt.src + 'layouts/*.{hbs,md}',
-            opt.src + 'partials/*.{hbs,md}',
-            opt.src + 'data/*.{json,yml}'
+            opt.src + 'content/blog/**/*.{hbs,md}',
+            opt.src + 'content/pages/**/*.{hbs,md}',
+            opt.src + 'layouts/**/*.{hbs,md}',
+            opt.src + 'partials/**/*.{hbs,md}',
+            opt.src + 'data/**/*.{json,yml}'
         ],
         tasks: ['assemble']
       },
@@ -80,7 +80,14 @@ module.exports = function (grunt) {
         layout: 'default.hbs',
         partials: opt.src + 'partials/**/*.hbs',
         plugins: [
-          'permalinks'
+          'assemble-contrib-permalinks'
+        ],
+        helpers: [
+          'handlebars-helpers',
+          'handlebars-helper-compose',
+          'handlebars-helper-moment',
+          'handlebars-helper-inarray',
+          opt.src + 'helpers/**/*.js'
         ],
         collections: [
           {
@@ -97,22 +104,34 @@ module.exports = function (grunt) {
           structure: ':basename/index.html'
         }
       },
-      blog: {
+
+      pages: {
+        files: [
+          {
+            src: opt.src+ 'content/pages/*.{hbs,md}',
+            dest: opt.dev
+          }
+        ]
+      },
+
+      posts: {
         options: {
           layout: 'article.hbs',
           permalinks: {
             structure: ':year/:basename/index.html'
           }
         },
-        files: {
-          'releases/dev-release/': ['./app/content/blog/**/*.{hbs,md}' ],
-        }
-      },
-      pages: {
-        files: {
-          'releases/dev-release/': ['./app/content/pages/*.{hbs,md}' ],
-        }
-      },
+        files: [
+          {
+            src: opt.src + 'content/blog/**/*.{hbs,md}',
+            dest: opt.dev
+          },
+          {
+            src: opt.src + 'content/pages/index.hbs',
+            dest: opt.dev
+          }
+        ]
+      }
     },
 
     /*
@@ -127,7 +146,7 @@ module.exports = function (grunt) {
           optimization: 2
         },
         files: {
-          "./releases/dev-release/assets/css/styles.css": "./app/assets/less/styles.less" // destination file and source file
+          "./releases/dev-release/assets/css/styles.css": "./app/assets/less/styles.less"
         }
       }
     },
@@ -146,6 +165,34 @@ module.exports = function (grunt) {
         src: opt.dev + '/assets/css/*.css',
         dest: opt.dev + '/assets/css/'
       },
+    },
+
+
+    htmlmin: {
+      options: {
+        removeComments: true,
+        collapseWhitespace: true,
+        removeAttributeQuotes: true,
+        removeOptionalTags: true,
+        minifyJS: true
+      },
+      dist: {
+        files: [{
+          expand: true,
+          cwd: opt.dev,
+          src: '**/*.html',
+          dest: opt.prod
+        }]
+      },
+    },
+
+    clean: {
+      dev: {
+        src: ['./releases/dev-release']
+      },
+      prod: {
+        src: [opt.prod]
+      }
     },
 
     /*

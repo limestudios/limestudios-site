@@ -1,29 +1,26 @@
 section.portfolio {
 
-	@border-amount: 0px;
-	@caption-background: @white;//#9E9E9E;
-
 	section.portfolio-element {
 		//background: red;
 		//outline: 2px solid blue;
 		position: relative;
+		margin-bottom: 24px;
 
 		.caption {
+			border: solid 1px @divider-color @important;
 			//transition: .25s ease;
 			position: relative;
-			background-color: @caption-background @important;
+			background-color: @white @important;
 			.logo {
 				color: @black;
 				padding-top: 16px;
 				height: 100px;
-				border: @border-amount solid red;
 			}
 
 			.description {
 				color: @black;
 				padding: 8px 16px;
-				height: 300px;
-				border: @border-amount solid green;
+				height: 398px;
 
 				.readmore {
 					display: block @important;
@@ -34,13 +31,17 @@ section.portfolio {
 
 			.small-image {
 				height: 200px;
-				border: @border-amount solid blue;
 			}
 		}
 
+		.padding {
+			height: 500px;
+		}
+
 		.portfolio-image {
-			height: 600px;
-			border: @border-amount solid black;
+			background-color: @white @important;
+			border: solid 1px @divider-color @important;
+			height: 500px;
 		}
 
 		@media only screen and (min-width: @screen-phone) and (max-width: @screen-widephone) {
@@ -48,20 +49,5 @@ section.portfolio {
 				height: 350px;
 			}
 		}
-
-		.next-element {
-			position: absolute;
-			margin-top: 90vh;
-			margin-left: -100%;
-			height: 10vh;
-			background-color: rgba(0,0,0,.5);
-		}
-	}
-
-	section.portfolio-buffer {
-		height: 2px;
-		width: 50%;
-		background-color: rgb(100,100,100);
-		margin: 32px auto;
 	}
 }

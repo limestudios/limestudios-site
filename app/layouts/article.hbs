@@ -1,8 +1,12 @@
-{{>open}} 
-  
-<body>
-	<div class="change">Change Div</div> 
-	{{>scripts}}
+{{>open}}
+
+<body id="page-top">
+  {{> nav }}
+  {{#markdown}}
+    {{> body}}
+  {{/markdown}}
+  {{> footer }}
+  {{> scripts }}
 </body>
 
 {{>close}}
