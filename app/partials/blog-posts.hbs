@@ -1,0 +1,30 @@
+<!-- Blog -->
+<section id="blog-posts" class="blog-posts">
+  {{#withSort post 'this.data.date'}}
+        {{#each this.pages}}
+
+        <article id="" class="article-preview article-preview-long-form">
+          <header class="article-preview-header">
+            <a href="{{href this.dest 'releases/dev-release' ''}}" rel="prefetch" title="{{this.data.title}}" rel=prefetch role=link>
+              {{this.data.title}}
+            </a>
+          </header>
+          <section class="article-preview-excerpt">
+            <blockquote>
+              {{#if this.data.description}}
+                {{this.data.description}}
+              {{else}}
+                There is no description for this article.
+              {{/if}}
+            </blockquote>
+          </section>
+          <footer class="article-preview-footer">
+            <div>Published on <time>{{date this.data.date-published}}</time></div>
+            {{#if this.data.date-updated}}
+              <div>Last updated in <time>{{date this.data.date-updated}}</time></div>
+            {{/if}}
+          </footer>
+        </article>
+        {{/each ~}}
+      {{/withSort ~}}
+</section>
