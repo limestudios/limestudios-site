@@ -1,7 +1,7 @@
 <!-- Portfolio Grid Section -->
-<section id="portfolio" class="portfolio">
+<section id="portfolio" class="portfolio row row-widetablet">
     {{#each portfolio.works}}
-      <section id="{{this.ref}}" class="row row-full-width portfolio-element {{this.ref}}" data-toggle="modal">
+      <!--<section id="{{this.ref}}" class="portfolio-element {{this.ref}}" data-toggle="modal">
           {{#is this.display 'left'}}
             <div class="col-p-12 col-wp-12 col-t-12 col-wt-4 col-c-22 caption">
               <div class="logo text-center text-title">
@@ -20,7 +20,7 @@
                 <a href="{{this.readmore-link}}" class="readmore button primary">Read More</a>
               </div>
               <!--<div class="small-image" style="background: url(./assets/img/portfolio/{{this.images.small}}) 50% 50% / cover no-repeat;"></div>-->
-            </div>
+            <!--</div>
             <div class="padding col-c-1"></div>
             <div class="col-p-12 col-wp-12 col-t-12 col-wt-8 col-c-41 portfolio-image" style="background: url(./assets/img/portfolio/{{this.images.main}}) 50% 50% / cover no-repeat;"></div>
           {{/is}}
@@ -36,7 +36,7 @@
                   <a href="{{this.readmore-link}}" class="readmore button primary">Read More</a>
                 </div>
                 <!--<div class="hide-on-p hide-on-wp small-image" style="background: url(./assets/img/portfolio/{{this.images.small}}) 50% 50% / cover no-repeat;"></div>-->
-              </div>
+              <!--</div>
               <div class="padding hide-on-p hide-on-wp hide-on-t col-wt-1 col-c-1"></div>
               <div class="hide-on-p hide-on-wp hide-on-t col-wt-18 col-c-20 portfolio-image" style="background: url(./assets/img/portfolio/{{this.images.secondary}}) 50% 50% / cover no-repeat;"></div>
           {{/is}}
@@ -52,9 +52,58 @@
                 <a href="{{this.readmore-link}}" class="readmore button primary">Read More</a>
               </div>
               <!--<div class="small-image" style="background: url(./assets/img/portfolio/{{this.images.small}}) 50% 50% / cover no-repeat;"></div>-->
-            </div>
+            <!--</div>
+          {{/is}}-->
+
+          {{#is this.display 'large'}}
+            <section id="{{this.ref}}" class="col-p-12 col-wp-12 col-t-12 col-wt-12 col-c-12 portfolio-element {{this.ref}}" data-toggle="modal">
+              <div class="caption-bg col" style="background-color: {{this.color}};">
+                <object class="icon" data="./assets/img/portfolio/{{this.ref}}/{{this.ref}}.svg" type="image/svg+xml"></object>
+              </div>
+              <div class="caption col">
+                <div class="logo text-center text-title">
+                  {{this.title}}
+                </div>
+                <div class="description text-body-1">
+                  {{this.description}}
+                  <a href="{{this.readmore-link}}" class="readmore button primary">Read More</a>
+                </div>
+              </div>
+            </section>
           {{/is}}
-      </section>
+          {{#is this.display 'medium'}}
+            <section id="{{this.ref}}" class="col-p-12 col-wp-12 col-t-12 col-wt-12 col-c-6 portfolio-element {{this.ref}}" data-toggle="modal">
+              <div class="caption-bg col" style="background-color: {{this.color}};">
+                <object class="icon" data="./assets/img/portfolio/{{this.ref}}/{{this.ref}}.svg" type="image/svg+xml"></object>
+              </div>
+              <div class="caption col">
+                <div class="logo text-center text-title">
+                  {{this.title}}
+                </div>
+                <div class="description text-body-1">
+                  {{this.description}}
+                  <a href="{{this.readmore-link}}" class="readmore button primary">Read More</a>
+                </div>
+              </div>
+            </section>
+          {{/is}}
+          {{#is this.display 'small'}}
+            <section id="{{this.ref}}" class="col-p-12 col-wp-12 col-t-12 col-wt-12 col-c-3 portfolio-element {{this.ref}}" data-toggle="modal">
+              <div class="caption-bg col" style="background-color: {{this.color}};">
+                <object class="icon" data="./assets/img/portfolio/{{this.ref}}/{{this.ref}}.svg" type="image/svg+xml"></object>
+              </div>
+              <div class="caption col">
+                <div class="logo text-center text-title">
+                  {{this.title}}
+                </div>
+                <div class="description text-body-1">
+                  {{this.description}}
+                  <a href="{{this.readmore-link}}" class="readmore button primary">Read More</a>
+                </div>
+              </div>
+            </section>
+          {{/is}}
+      <!--</section>-->
     {{/each}}
 </section>
 

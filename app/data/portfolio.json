@@ -3,7 +3,6 @@
 		{
 			"title" : "Project Arrhythmia",
 			"ref" : "arrhythmia",
-			"ref-next" : "simplysusan",
 			"images" : {
 				"main" : "arrhythmia-main.png",
 				"secondary" : "arrhythmia-secondary.jpg",
@@ -17,12 +16,12 @@
 			},
 			"date" : "Ongoing",
 			"service" : "Game Development",
-			"display" : "middle"
+			"color" : "rgb(238,145,148)",
+			"display" : "medium"
 		},
 		{
 			"title" : "Simply Susan",
 			"ref" : "simplysusan",
-			"ref-next" : "tableflip",
 			"images" : {
 				"main" : "simplysusan-main.png",
 				"secondary" : "arrhythmia-secondary.jpg",
@@ -36,12 +35,12 @@
 			},
 			"date" : "Dec 2014",
 			"service" : "Web Development",
-			"display" : "right"
+			"color" : "rgb(68,138,255)",
+			"display" : "small"
 		},
 		{
 			"title" : "Table Flip Podcast",
 			"ref" : "tableflip",
-			"ref-next" : "youtube",
 			"description" : "A PODCAST ON DESIGN, TECHNOLOGY AND WEB DEVELOPMENT.",
 			"readmore-link" : "http://limestudios.net/arrhythmia",
 			"client" : {
@@ -50,12 +49,12 @@
 			},
 			"date" : "Ongoing",
 			"service" : "Web Development / Podcast",
-			"display" : "left"
+			"color" : "rgb(10,10,11)",
+			"display" : "small"
 		},
 		{
 			"title" : "Youtube",
 			"ref" : "youtube",
-			"ref-next" : "arrhythmia",
 			"description" : "My personal Youtube channel where I post updates on all my current projects.",
 			"readmore-link" : "http://limestudios.net/arrhythmia",
 			"client" : {
@@ -64,7 +63,8 @@
 			},
 			"date" : "Ongoing",
 			"service" : "Game Development / Web Development / Misc",
-			"display" : "right"
+			"color" : "rgb(179,18,23)",
+			"display" : "large"
 		}
 	]
 }
