@@ -2,9 +2,12 @@
 
 <body id="page-top">
   {{> nav }}
-  {{#markdown}}
-    {{> body}}
-  {{/markdown}}
+  {{> article-header }}
+  <section class="article-body {{this.title}} row row-widetablet">
+    {{#markdown}}
+      {{> body}}
+    {{/markdown}}
+  </section>
   {{> footer }}
   {{> scripts }}
 </body>

@@ -4,8 +4,10 @@ introduction : Hi, I'm Liam Craver.
 tagline      : Developer and Designer from New Orleans
 description  : Web and print designer, CSS developer, and front-end expert from New Orleans currently available for work on projects of all size.
 keywords     : New Orleans,Liam Craver,Lime Studios,web design,print design,graphic design,front end,HTML,CSS
-copyright    : 2014 Lime Studios (Liam Craver)
+copyright    : Lime Studios (Liam Craver)
+author       : Liam Craver
 nav :
-- {"name":"Portfolio", "link":"#portfolio"}
-- {"name":"About", "link":"#about"}
-- {"name":"Contact", "link":"#contact"}
+- {"name":"Work", "link":"/"}
+- {"name":"Writing", "link":"/writing"}
+- {"name":"About", "link":"/about"}
+- {"name":"Contact", "link":"/contact"}

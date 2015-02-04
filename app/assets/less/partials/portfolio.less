@@ -1,49 +1,20 @@
 section.portfolio {
-
 	section.portfolio-element {
-		//background: red;
-		//outline: 2px solid blue;
 		position: relative;
-		//margin-bottom: 24px;
+		overflow: hidden;
 
 		.caption {
+			float: none !important;
 			opacity: 0;
 			height: 400px;
-			transition: all 0.25s ease-out;
-			//border: solid 1px @divider-color @important;
+			transition: opacity 0.25s ease-out;
+			width: 101%;
+			position: absolute;
+			background-color: @white @important;
+			padding: 16px;
 
 			&:hover {
-				animation-timing-function:linear;
-				animation-fill-mode:forwards;
-				animation-iteration-count: 1;
 				opacity: 0.8;
-			}
-
-			//border: solid 1px @divider-color @important;
-			//transition: .25s ease;
-			position: absolute;
-			top: 0;
-			left: 0;
-			background-color: @white @important;
-			.logo {
-				color: @black;
-				padding-top: 16px;
-				min-height: 100px;
-			}
-
-			.description {
-				color: @black;
-				padding: 8px 16px;
-
-				.readmore {
-					display: block @important;
-					white-space: nowrap;
-					margin: 16px auto 0 auto;
-				}
-			}
-
-			.small-image {
-				height: 200px;
 			}
 		}
 
@@ -51,20 +22,22 @@ section.portfolio {
 			display: flex;
 			align-items: center;
 			justify-content: center;
-			//border: solid 1px @divider-color @important;
 			height: 400px;
+			width: 101%;
+
+			span.title {
+				color: @black;
+				padding: 16px;
+				border: 2px solid @black;
+			}
 
 			.icon {
-				transition: all 0.25s ease-in;
-				min-width: 80%;
-				max-height: 380px;
+				//transition: opacity 0.0s ease-in;
+				width: 98%;
 				margin: 0 auto;
-			}
-		}
-
-		@media only screen and (min-width: @screen-phone) and (max-width: @screen-widephone) {
-			.portfolio-image {
-				height: 350px;
+				height: 75%;
+				max-height: 200px;
+				max-width: 200px;
 			}
 		}
 	}

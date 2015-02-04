@@ -9,7 +9,6 @@
 				"small" : "arrhythmia-small.png"
 			},
 			"description" : "A game all about music and other stuff. And Crazy stuffz! :D",
-			"readmore-link" : "http://limestudios.net/arrhythmia",
 			"client" : {
 				"name" : "Lime Studios",
 				"link" : "http://limestudios.net/arrhythmia"
@@ -17,7 +16,8 @@
 			"date" : "Ongoing",
 			"service" : "Game Development",
 			"color" : "rgb(238,145,148)",
-			"display" : "medium"
+			"display" : "medium",
+			"tag" : "game development"
 		},
 		{
 			"title" : "Simply Susan",
@@ -28,7 +28,6 @@
 				"small" : "arrhythmia-small.png"
 			},
 			"description" : "Organizing Solutions for your Home and Office.",
-			"readmore-link" : "http://limestudios.net/arrhythmia",
 			"client" : {
 				"name" : "Simply Susan",
 				"link" : "http://simplysusansite.com/"
@@ -36,13 +35,13 @@
 			"date" : "Dec 2014",
 			"service" : "Web Development",
 			"color" : "rgb(68,138,255)",
-			"display" : "small"
+			"display" : "medium",
+			"tag" : "web design"
 		},
 		{
 			"title" : "Table Flip Podcast",
 			"ref" : "tableflip",
 			"description" : "A PODCAST ON DESIGN, TECHNOLOGY AND WEB DEVELOPMENT.",
-			"readmore-link" : "http://limestudios.net/arrhythmia",
 			"client" : {
 				"name" : "Lime Studios",
 				"link" : "http://tableflip.ninja"
@@ -50,21 +49,50 @@
 			"date" : "Ongoing",
 			"service" : "Web Development / Podcast",
 			"color" : "rgb(10,10,11)",
-			"display" : "small"
+			"display" : "small",
+			"tag" : "misc"
 		},
 		{
-			"title" : "Youtube",
-			"ref" : "youtube",
-			"description" : "My personal Youtube channel where I post updates on all my current projects.",
-			"readmore-link" : "http://limestudios.net/arrhythmia",
+			"title" : "Tumblr",
+			"ref" : "tumblr",
+			"description" : "My personal tumblr.",
 			"client" : {
 				"name" : "Lime Studios",
 				"link" : "https://www.youtube.com/user/studioslime"
 			},
 			"date" : "Ongoing",
 			"service" : "Game Development / Web Development / Misc",
-			"color" : "rgb(179,18,23)",
-			"display" : "large"
+			"color" : "#36465d",
+			"display" : "small",
+			"tag" : "tumblr"
+		},
+		{
+			"title" : "Youtube",
+			"ref" : "youtube",
+			"description" : "My personal Youtube channel where I post updates on all my current projects.",
+			"client" : {
+				"name" : "Lime Studios",
+				"link" : "https://www.youtube.com/user/studioslime"
+			},
+			"date" : "Ongoing",
+			"service" : "Game Development / Web Development / Misc",
+			"color" : "rgb(205,32,31)",
+			"display" : "small",
+			"tag" : "youtube"
+		},
+		{
+			"title" : "Dribbble",
+			"ref" : "dribbble",
+			"description" : "My personal dribbble.",
+			"client" : {
+				"name" : "Lime Studios",
+				"link" : "https://www.youtube.com/user/studioslime"
+			},
+			"date" : "Ongoing",
+			"service" : "Game Development / Web Development / Misc",
+			"color" : "#ea4c89",
+			"display" : "small",
+			"tag" : "dribbble"
 		}
 	]
 }

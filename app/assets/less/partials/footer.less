@@ -1,4 +1,37 @@
-footer {
-	padding-top: 25px;
-	padding-bottom: 25px;
+footer.page-footer {
+	padding: 16px 0;
+	text-transform: uppercase;
+	text-align: center;
+	letter-spacing: 1px;
+	font-size: 14px;
+	line-height: 2.205;
+	-webkit-font-smoothing: subpixel-antialiased;
+
+	small {
+		font-size: 14px;
+		line-height: 2.205;
+		-webkit-font-smoothing: subpixel-antialiased;
+
+		.page-footer-heart {
+			top: 2px;
+			position: relative;
+			display: inline-block;
+			fill: #e65457;
+			-webkit-animation: pulsate 1s ease-out;
+			-webkit-animation-iteration-count: infinite;
+			svg {
+				width: 14px;
+				height: 14px;
+			}
+		}
+	}
+
+	@-webkit-keyframes pulsate {
+		0% {-webkit-transform: scale(1, 1); top: 2px;}
+		80% {-webkit-transform: scale(1, 1); top: 2px;}
+		85% {-webkit-transform: scale(1.1, 1.1); top: 2px;}
+		90% {-webkit-transform: scale(1, 1); top: 2px;}
+		95% {-webkit-transform: scale(1.1, 1.1); top: 2px;}
+		100% {-webkit-transform: scale(1, 1); top: 2px;}
+	}
 }

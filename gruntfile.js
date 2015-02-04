@@ -3,7 +3,7 @@ module.exports = function (grunt) {
   require('jit-grunt')(grunt);
 
   var options = {
-    prod: 'C:/Users/limestudios/Documents/Web_Docs/limestudios.github.io/dev',
+    prod: 'C:/Users/limestudios/Documents/Web_Docs/limestudios.github.io',
     dev: './releases/dev-release/',
     src: './app/',
     posts: './app/content/blog',
@@ -80,7 +80,8 @@ module.exports = function (grunt) {
         layout: 'default.hbs',
         partials: opt.src + 'partials/**/*.hbs',
         plugins: [
-          'assemble-contrib-permalinks'
+          'assemble-contrib-permalinks',
+          'assemble-permalink'
         ],
         helpers: [
           'handlebars-helpers',
@@ -127,7 +128,7 @@ module.exports = function (grunt) {
             dest: opt.dev
           },
           {
-            src: opt.src + 'content/pages/index.hbs',
+            src: opt.src + 'content/pages/writing.hbs',
             dest: opt.dev
           }
         ]

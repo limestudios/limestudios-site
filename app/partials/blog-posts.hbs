@@ -1,30 +1,29 @@
 <!-- Blog -->
-<section id="blog-posts" class="blog-posts">
+<section id="blog-posts" class="blog-posts row row-fullwidth">
   {{#withSort post 'this.data.date'}}
-        {{#each this.pages}}
-
-        <article id="" class="article-preview article-preview-long-form">
-          <header class="article-preview-header">
-            <a href="{{href this.dest 'releases/dev-release' ''}}" rel="prefetch" title="{{this.data.title}}" rel=prefetch role=link>
-              {{this.data.title}}
-            </a>
-          </header>
-          <section class="article-preview-excerpt">
-            <blockquote>
+    {{#each this.pages}}
+      <article class="blog-post col-p-12 col-wp-12 col-t-12 col-wt-12 col-c-3 article">
+        <div class="caption-bg col" style="background-color: {{assignColor this.data.tag}};">
+          <span class="title">{{this.data.title}}</span>
+        </div>
+        <a href="{{href this.dest 'releases/dev-release' ''}}" rel="prefetch" rel=prefetch role=link>
+          <div class="caption col">
+            <header class="article-preview-date">
+              <div class="text">Published on <time>{{date this.data.date-published}}</time></div>
+              {{#if this.data.date-updated}}
+                <div class="text">Last updated in <time>{{date this.data.date-updated}}</time></div>
+              {{/if}}
+            </header>
+            <section class="article-preview-description">
               {{#if this.data.description}}
                 {{this.data.description}}
               {{else}}
-                There is no description for this article.
+                There is no description for this article...
               {{/if}}
-            </blockquote>
-          </section>
-          <footer class="article-preview-footer">
-            <div>Published on <time>{{date this.data.date-published}}</time></div>
-            {{#if this.data.date-updated}}
-              <div>Last updated in <time>{{date this.data.date-updated}}</time></div>
-            {{/if}}
-          </footer>
-        </article>
-        {{/each ~}}
-      {{/withSort ~}}
+            </section>
+          </div>
+        </a>
+      </article>
+    {{/each ~}}
+  {{/withSort ~}}
 </section>

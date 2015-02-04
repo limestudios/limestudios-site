@@ -1,49 +1,26 @@
 .main-header {
 
 	width: 100%;
-	//min-height: 100vh;
 	overflow:hidden;
-	//background: @primary-color;
+	background: @grey;
 
 	section.description {
-		min-height: 13vh;
-		//position: absolute;
-		margin: 2vh 0 0 1vh;
-	}
-
-	@media only screen and (min-width: 0) and (max-width: @screen-phone) {
-		section.description {
-			.text-headline {
-				font-size: 28px;
-			}
-			.text-subhead {
-				font-size: 12x;
-			}
+		padding: 0 16px;
+		color: @black;
+		margin: 64px auto;
+		.text-headline {
+			color: @black;
+			margin: 0;
+			text-align: left;
 		}
-	}
-	@media only screen and (min-width: @screen-phone) and (max-width: @screen-widephone) {
-		section.description {
-			.text-headline {
-				font-size: 28px;
-			}
-			.text-subhead {
-				font-size: 16px;
-			}
-		}
-	}
-	@media only screen and (min-width: @screen-widephone) and (max-width: @screen-tablet) {
-		section.description {
-			.text-headline {
-				font-size: 32px;
-			}
-			.text-subhead {
-				font-size: 24px;
-			}
+		.text-subhead {
+			color: @black;
+			margin: 0;
+			text-align: left;
 		}
 	}
 
 	.logo-wrapper {
-		min-height: 85vh;
 		display: flex;
 		justify-content: center;
 		align-items: center;

@@ -1,4 +1,5 @@
 .nav-main {
+	background-color: @grey;
 	transition: all 0.1 ease;
 	.clearfix();
 	@media only screen and (max-width: @screen-tablet) {
@@ -73,6 +74,12 @@
 
 			> li:first-child {
 				margin: 0;
+			}
+
+			@media only screen and (max-width: @screen-widephone) {
+				> li {
+					margin: 0 0 0 1em;
+				}
 			}
 		}
 	}

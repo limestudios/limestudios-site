@@ -1,13 +1,14 @@
 <!-- Header -->
 <header class="main-header">
-    <section class="description">
-      <span class="text-headline">Hi, I'm <span class="text-bold">Liam Craver</span>.</span>
-      <br>
-      <span class="text-subhead">{{site.tagline}}</span>
+    <section class="description row row-widetablet">
+      {{#if page.headline}}
+        <h1 class="text-headline">{{page.headline}}</h1>
+        <br>
+        <h2 class="text-subhead">{{page.subhead}}</h2>
+      {{else}}
+        <h1 class="text-headline">Hi, I'm <span class="text-bold">Liam Craver</span>.</h1>
+        <br>
+        <h2 class="text-subhead">{{site.tagline}}</h2>
+      {{/if}}
     </section>
-    <!--<section class="logo-wrapper">
-        <div class="logo-svg col-p-12 col-wp-12 col-t-8 col-wt-6 col-c-4">
-            {{> logo-circle}}
-        </div>
-    </section>-->
 </header>
