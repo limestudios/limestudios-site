@@ -2,7 +2,7 @@
 <section id="blog-posts" class="blog-posts row row-fullwidth">
   {{#withSort post 'this.data.date'}}
     {{#each this.pages}}
-      <article class="blog-post col-p-12 col-wp-12 col-t-12 col-wt-12 col-c-3 article">
+      <article class="blog-post col-p-12 col-wp-12 col-t-6 col-wt-4 col-c-3 article">
         <div class="caption-bg col" style="background-color: {{assignColor this.data.tag}};">
           <span class="title">{{this.data.title}}</span>
         </div>
