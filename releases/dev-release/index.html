@@ -95,10 +95,29 @@
   
 <!-- Portfolio Grid Section -->
 <section id="portfolio" class="portfolio row row-fullwidth">
+    <section class="col sorting-buttons">
+      
+      <div class="category-button col-t-6 col-wt-3 col-c-3 text-body-1 active" id="all" style="background-color: #E0E0E0;">All</div>
+      
+      <div class="category-button col-t-6 col-wt-3 col-c-3 text-body-1 " id="game-design" style="background-color: #9575CD;">Game Design</div>
+      
+      <div class="category-button col-t-6 col-wt-3 col-c-3 text-body-1 " id="game-development" style="background-color: #E57373;">Game Development</div>
+      
+      <div class="category-button col-t-6 col-wt-3 col-c-3 text-body-1 " id="web-design" style="background-color: #4FC3F7;">Web Design</div>
+      
+      <div class="category-button col-t-6 col-wt-3 col-c-3 text-body-1 " id="graphic-design" style="background-color: #4DD0E1;">Graphic Design</div>
+      
+      <div class="category-button col-t-6 col-wt-3 col-c-3 text-body-1 " id="Code" style="background-color: white;">Code</div>
+      
+      <div class="category-button col-t-6 col-wt-3 col-c-3 text-body-1 " id="misc" style="background-color: #81C784;">Misc</div>
+      
+      <div class="category-button col-t-6 col-wt-3 col-c-3 text-body-1 " id="social" style="background-color: #81C784;">Social</div>
+      
+    </section>
     
       
       
-        <section id="arrhythmia" class="col-p-12 col-wp-12 col-t-12 col-wt-6 col-c-6 portfolio-element arrhythmia" data-toggle="modal">
+        <section id="arrhythmia" class="col-p-12 col-wp-12 col-t-12 col-wt-6 col-c-6 portfolio-element arrhythmia game-development active" data-toggle="modal">
           <div class="caption-bg col" style="background-color: #E57373;">
             <!--<span class="title">Project Arrhythmia</span>-->
             <object class="icon" data="./assets/img/portfolio/arrhythmia/arrhythmia.svg" type="image/svg+xml"></object>
@@ -119,8 +138,8 @@
     
       
       
-        <section id="simplysusan" class="col-p-12 col-wp-12 col-t-12 col-wt-6 col-c-6 portfolio-element simplysusan" data-toggle="modal">
-          <div class="caption-bg col" style="background-color: #64B5F6;">
+        <section id="simplysusan" class="col-p-12 col-wp-12 col-t-12 col-wt-6 col-c-6 portfolio-element simplysusan web-design active" data-toggle="modal">
+          <div class="caption-bg col" style="background-color: #4FC3F7;">
             <!--<span class="title">Simply Susan</span>-->
             <object class="icon" data="./assets/img/portfolio/simplysusan/simplysusan.svg" type="image/svg+xml"></object>
           </div>
@@ -141,7 +160,7 @@
       
       
       
-        <section id="tableflip" class="col-p-12 col-wp-12 col-t-12 col-wt-3 col-c-3 portfolio-element tableflip" data-toggle="modal">
+        <section id="tableflip" class="col-p-12 col-wp-12 col-t-12 col-wt-3 col-c-3 portfolio-element tableflip misc active" data-toggle="modal">
           <div class="caption-bg col" style="background-color: #81C784;">
             <!--<span class="title">Table Flip Podcast</span>-->
             <object class="icon" data="./assets/img/portfolio/tableflip/tableflip.svg" type="image/svg+xml"></object>
@@ -162,7 +181,7 @@
       
       
       
-        <section id="tumblr" class="col-p-12 col-wp-12 col-t-12 col-wt-3 col-c-3 portfolio-element tumblr" data-toggle="modal">
+        <section id="tumblr" class="col-p-12 col-wp-12 col-t-12 col-wt-3 col-c-3 portfolio-element tumblr tumblr social active" data-toggle="modal">
           <div class="caption-bg col" style="background-color: #7986CB;">
             <!--<span class="title">Tumblr</span>-->
             <object class="icon" data="./assets/img/portfolio/tumblr/tumblr.svg" type="image/svg+xml"></object>
@@ -183,7 +202,7 @@
       
       
       
-        <section id="youtube" class="col-p-12 col-wp-12 col-t-12 col-wt-3 col-c-3 portfolio-element youtube" data-toggle="modal">
+        <section id="youtube" class="col-p-12 col-wp-12 col-t-12 col-wt-3 col-c-3 portfolio-element youtube youtube social active" data-toggle="modal">
           <div class="caption-bg col" style="background-color: #E57373;">
             <!--<span class="title">Youtube</span>-->
             <object class="icon" data="./assets/img/portfolio/youtube/youtube.svg" type="image/svg+xml"></object>
@@ -204,7 +223,7 @@
       
       
       
-        <section id="dribbble" class="col-p-12 col-wp-12 col-t-12 col-wt-3 col-c-3 portfolio-element dribbble" data-toggle="modal">
+        <section id="dribbble" class="col-p-12 col-wp-12 col-t-12 col-wt-3 col-c-3 portfolio-element dribbble dribbble social active" data-toggle="modal">
           <div class="caption-bg col" style="background-color: #F06292;">
             <!--<span class="title">Dribbble</span>-->
             <object class="icon" data="./assets/img/portfolio/dribbble/dribbble.svg" type="image/svg+xml"></object>
@@ -452,6 +471,8 @@
 
   <!-- jQuery -->
 <script src="/assets/js/jquery.js"></script>
+<script src="/assets/js/forms.js"></script>
+<script src="/assets/js/sort.js"></script>
 
 <!-- Bootstrap Core JavaScript -->
 <!--<script src="./assets/js/bootstrap.js"></script>

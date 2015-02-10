@@ -20,3 +20,16 @@ a {
     border-bottom: solid 2px @text-icons-color;
   }
 }
+
+a.block {
+  border-bottom: 1px solid @black;
+  transition: all 0.25s ease-out;
+  background: none;
+  color: @black;
+
+  &:hover {
+    border-bottom: 0px solid @black;
+    background: @black;
+    color: @white;
+  }
+}

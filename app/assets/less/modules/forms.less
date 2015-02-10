@@ -1,12 +1,150 @@
-input {
+form {
+  margin: 48px auto 64px auto;
+  padding: 0 16px;
+}
+
+input, textarea {
+  width: 100% !important;
+  -webkit-font-smoothing: antialiased;
   -webkit-appearance: none;
-  width: 100%;
-  max-width: 500px;
+  background: none;
   border: none;
-  height: 2rem;
-  padding: 0.75rem;
-  font: normal 0.75rem @type-primary;
-  color: @dark-grey;
-  .box-sizing();
-  .transition();
+  //border-bottom: solid 2px @black;
+  color: @black;
+  padding: 15px 40px;
+  display: inline-block;
+
+  &:focus, &:active {
+    outline: none;
+  }
+
+  &[type="submit"] {
+    border: solid 2px @black;
+    &:active {
+      color: @white;
+      background: @black;
+    }
+  }
+}
+
+.input-group {
+  margin: 24px auto 42px auto;
+  display: block;
+  position: relative;
+
+  input, textarea {
+    padding: 12px 0px;
+  }
+
+  label {
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
+    left: 0px;
+    color: @black;
+    pointer-events: none;
+    transition: all 0.1s ease;
+  }
+
+  input:focus + label,
+  input.has-value + label,
+  textarea:focus + label,
+  textarea.has-value + label {
+    top: -2px;
+    font-size: 12px;
+  }
+
+  /* BOTTOM BARS ================================= */
+  .bar {
+    position: relative;
+    display: block;
+  }
+
+  .bar:before, .bar:after {
+    content: '';
+    height: 2px;
+    width: 0;
+    bottom: 0px;
+    position: absolute;
+    background: @black;
+    transition: 0.1s ease all;
+  }
+
+  .bar:before {
+    left: 50%;
+  }
+
+  .bar:after {
+    right: 50%;
+  }
+
+  /* inactive state */
+  input ~ .bar:before, input ~ .bar:after {
+    width: 50%;
+  }
+
+  textarea ~ .bar:before, textarea ~ .bar:after {
+    width: 50%;
+  }
+
+  span.description {
+    opacity: 0;
+    position: absolute;
+    left: 0px;
+    color: @red;
+    pointer-events: none;
+    transition: all 0.1s ease;
+    font-size: 12px;
+  }
+
+  /* invalid state */
+  input:invalid:focus ~ span {
+    opacity: 1;
+    color: @red;
+  }
+
+  textarea:invalid:focus ~ span {
+    opacity: 1;
+    color: @red;
+  }
+
+  input:invalid:focus ~ .bar:before, input:invalid:focus ~ .bar:after {
+    animation: bar-red 0.2s ease-out;
+    animation-fill-mode: forwards;
+  }
+
+  textarea:invalid:focus ~ .bar:before, textarea:invalid:focus ~ .bar:after {
+    animation: bar-red 0.2s ease-out;
+    animation-fill-mode: forwards;
+  }
+
+  /* active state */
+  input:focus ~ .bar:before, input:focus ~ .bar:after {
+    animation: bar 0.2s ease-out;
+    animation-fill-mode: forwards;
+  }
+
+  textarea:focus ~ .bar:before, textarea:focus ~ .bar:after {
+    animation: bar 0.2s ease-out;
+    animation-fill-mode: forwards;
+  }
+}
+
+textarea {
+  height: 100%;
+  resize: none;
+}
+
+@-webkit-keyframes bar {
+  0% { width:50%; }
+  25% { width:0%; background: @black; }
+  26% { background: @primary-color; }
+  100% { background: @primary-color; width:50%; }
+}
+
+@-webkit-keyframes bar-red {
+  0% { width:50%; }
+  25% { width:0%; background: @black; }
+  26% { background: @red; }
+  100% { background: @red; width:50%; }
 }

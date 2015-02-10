@@ -1,8 +1,13 @@
 <!-- Portfolio Grid Section -->
 <section id="portfolio" class="portfolio row row-fullwidth">
+    <section class="col sorting-buttons">
+      {{#each site.tags}}
+      <div class="category-button col-t-6 col-wt-3 col-c-3 text-body-1 {{this.active}}" id="{{this.ref}}" style="background-color: {{assignColor this.ref}};">{{this.name}}</div>
+      {{/each}}
+    </section>
     {{#each portfolio.works}}
       {{#is this.display 'large'}}
-        <section id="{{this.ref}}" class="col-p-12 col-wp-12 col-t-12 col-wt-12 col-c-12 portfolio-element {{this.ref}}" data-toggle="modal">
+        <section id="{{this.ref}}" class="col-p-12 col-wp-12 col-t-12 col-wt-12 col-c-12 portfolio-element {{this.ref}} {{this.tag}} active" data-toggle="modal">
           <div class="caption-bg col" style="background-color: {{assignColor this.tag}};">
             <!--<span class="title">{{this.title}}</span>-->
             <object class="icon" data="./assets/img/portfolio/{{this.ref}}/{{this.ref}}.svg" type="image/svg+xml"></object>
@@ -20,7 +25,7 @@
         </section>
       {{/is}}
       {{#is this.display 'medium'}}
-        <section id="{{this.ref}}" class="col-p-12 col-wp-12 col-t-12 col-wt-6 col-c-6 portfolio-element {{this.ref}}" data-toggle="modal">
+        <section id="{{this.ref}}" class="col-p-12 col-wp-12 col-t-12 col-wt-6 col-c-6 portfolio-element {{this.ref}} {{this.tag}} active" data-toggle="modal">
           <div class="caption-bg col" style="background-color: {{assignColor this.tag}};">
             <!--<span class="title">{{this.title}}</span>-->
             <object class="icon" data="./assets/img/portfolio/{{this.ref}}/{{this.ref}}.svg" type="image/svg+xml"></object>
@@ -38,7 +43,7 @@
         </section>
       {{/is}}
       {{#is this.display 'small'}}
-        <section id="{{this.ref}}" class="col-p-12 col-wp-12 col-t-12 col-wt-3 col-c-3 portfolio-element {{this.ref}}" data-toggle="modal">
+        <section id="{{this.ref}}" class="col-p-12 col-wp-12 col-t-12 col-wt-3 col-c-3 portfolio-element {{this.ref}} {{this.tag}} active" data-toggle="modal">
           <div class="caption-bg col" style="background-color: {{assignColor this.tag}};">
             <!--<span class="title">{{this.title}}</span>-->
             <object class="icon" data="./assets/img/portfolio/{{this.ref}}/{{this.ref}}.svg" type="image/svg+xml"></object>

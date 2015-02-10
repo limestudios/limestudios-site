@@ -1,3 +1,32 @@
 <!-- Contact -->
-<section id="contact">
+<section id="contact" class="row row-tablet text-body-1">
+  <form class="contact-form" action="//formspree.io/liam@limestudios.net" method="POST">
+    <div class="input-group">
+      <input required autofocus type="text" name="name">
+      <label>Your Full Name</label>
+      <span class="description">This is required.</span>
+      <span class="bar"></span>
+    </div>
+
+    <div class="input-group">
+      <input required type="email" name="_replyto">
+      <label>Your Email Address</label>
+      <span class="description">This is required and must be a valid email.</span>
+      <span class="bar"></span>
+    </div>
+
+    <div class="input-group textarea">
+      <textarea required rows="6" name="message"></textarea>
+      <label>What would you like to talk about?</label>
+      <span class="description">This is required.</span>
+      <span class="bar"></span>
+    </div>
+
+    <div class="col">
+      <input type="submit" value="Send">
+    </div>
+
+    <input type="hidden" name="_subject" value="Contact Me Form!" />
+    <input type="text" name="_gotcha" style="display:none" />
+  </form>
 </section>

@@ -11,3 +11,12 @@ nav :
 - {"name":"Writing", "link":"/writing"}
 - {"name":"About", "link":"/about"}
 - {"name":"Contact", "link":"/contact"}
+tags :
+- {"name":"All", "ref":"all", "active":"active"}
+- {"name":"Game Design", "ref":"game-design"}
+- {"name":"Game Development", "ref":"game-development"}
+- {"name":"Web Design", "ref":"web-design"}
+- {"name":"Graphic Design", "ref":"graphic-design"}
+- {"name":"Code", "ref":"Code"}
+- {"name":"Misc", "ref":"misc"}
+- {"name":"Social", "ref":"social"}

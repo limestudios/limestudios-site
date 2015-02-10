@@ -17,7 +17,7 @@
 			"service" : "Game Development",
 			"color" : "rgb(238,145,148)",
 			"display" : "medium",
-			"tag" : "game development"
+			"tag" : "game-development"
 		},
 		{
 			"title" : "Simply Susan",
@@ -36,7 +36,7 @@
 			"service" : "Web Development",
 			"color" : "rgb(68,138,255)",
 			"display" : "medium",
-			"tag" : "web design"
+			"tag" : "web-design"
 		},
 		{
 			"title" : "Table Flip Podcast",
@@ -64,7 +64,7 @@
 			"service" : "Game Development / Web Development / Misc",
 			"color" : "#36465d",
 			"display" : "small",
-			"tag" : "tumblr"
+			"tag" : "tumblr social"
 		},
 		{
 			"title" : "Youtube",
@@ -78,7 +78,7 @@
 			"service" : "Game Development / Web Development / Misc",
 			"color" : "rgb(205,32,31)",
 			"display" : "small",
-			"tag" : "youtube"
+			"tag" : "youtube social"
 		},
 		{
 			"title" : "Dribbble",
@@ -92,7 +92,7 @@
 			"service" : "Game Development / Web Development / Misc",
 			"color" : "#ea4c89",
 			"display" : "small",
-			"tag" : "dribbble"
+			"tag" : "dribbble social"
 		}
 	]
 }

@@ -1,7 +1,35 @@
 section.portfolio {
+
+	section.sorting-buttons {
+		.category-button {
+			transition: all 0.25s ease-out;
+			background: none;
+			border-bottom: 2px solid @black;
+			padding: 6px;
+			text-align: center;
+
+			&:hover, &.active {
+				background: @black !important;
+				color: @white;
+				border-color: @white;
+			}
+		}
+	}
+
 	section.portfolio-element {
 		position: relative;
 		overflow: hidden;
+		transition: all 0.1s linear;
+		max-width: 0px;
+		max-height: 0px;
+		opacity: 0;
+
+		&.active {
+			transition: all 0.5s ease-in;
+			opacity: 1;
+			max-width: 100%;
+			max-height: 100%;
+		}
 
 		.caption {
 			float: none !important;
