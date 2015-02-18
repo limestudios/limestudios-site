@@ -2,9 +2,17 @@
 <section id="blog-posts" class="blog-posts row row-fullwidth">
   {{#withSort post 'this.data.date'}}
     {{#each this.pages}}
-      <article class="blog-post col-p-12 col-wp-12 col-t-6 col-wt-4 col-c-3 article">
+      {{#is this.data.size 'medium'}}
+      <article class="blog-post col-p-12 col-wp-12 col-t-12 col-wt-6 col-c-6 article">
+      {{else}}
+        {{#is this.data.size 'small'}}
+        <article class="blog-post col-p-12 col-wp-12 col-t-6 col-wt-3 col-c-3 article">
+        {{else}}
+        <article class="blog-post col-p-12 col-wp-12 col-t-6 col-wt-3 col-c-3 article">
+        {{/is}}
+      {{/is}}
         <div class="caption-bg col" style="background-color: {{assignColor this.data.tag}};">
-          <span class="title">{{this.data.title}}</span>
+          <span class="text-title">{{this.data.title}}</span>
         </div>
         <a href="{{href this.dest 'releases/dev-release' ''}}" rel="prefetch" rel=prefetch role=link>
           <div class="caption col">

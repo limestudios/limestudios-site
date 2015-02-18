@@ -1,6 +1,6 @@
 <!-- Contact -->
-<section id="contact" class="row row-tablet text-body-1">
-  <form class="contact-form" action="//formspree.io/liam@limestudios.net" method="POST">
+<section id="contact" class="row row-tablet text-body-1 contact">
+  <form class="contact-form col" action="//formspree.io/liam@limestudios.net" method="POST">
     <div class="input-group">
       <input required autofocus type="text" name="name">
       <label>Your Full Name</label>
@@ -22,11 +22,13 @@
       <span class="bar"></span>
     </div>
 
-    <div class="col">
+    <div class="col-p-6 col-wp-6 col-t-3 col-wt-3 col-c-3">
       <input type="submit" value="Send">
     </div>
 
     <input type="hidden" name="_subject" value="Contact Me Form!" />
     <input type="text" name="_gotcha" style="display:none" />
   </form>
+
+  <!--{{> social-media}}-->
 </section>

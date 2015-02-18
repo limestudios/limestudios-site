@@ -1,17 +1,24 @@
 section.portfolio {
 
 	section.sorting-buttons {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
 		.category-button {
 			transition: all 0.25s ease-out;
-			background: none;
-			border-bottom: 2px solid @black;
+			//border-bottom: 2px solid @black;
 			padding: 6px;
 			text-align: center;
+			width: 50px @important;
+			height: 50px;
+			overflow: none;
+			opacity: 1;
 
 			&:hover, &.active {
 				background: @black !important;
 				color: @white;
-				border-color: @white;
+				//border-color: @white;
 			}
 		}
 	}
@@ -44,6 +51,10 @@ section.portfolio {
 			&:hover {
 				opacity: 0.8;
 			}
+
+			@media only screen and (max-width: @screen-widephone) {
+				opacity: 0.8 @important;
+			}
 		}
 
 		.caption-bg {
@@ -53,14 +64,12 @@ section.portfolio {
 			height: 350px;
 			width: 101%;
 
-			span.title {
-				color: @black;
-				padding: 16px;
-				border: 2px solid @black;
+			span.text-title {
+				color: @white;
 			}
 
 			.icon {
-				//transition: opacity 0.0s ease-in;
+				animation: fadein 2s;
 				width: 98%;
 				margin: 0 auto;
 				height: 75%;
@@ -69,4 +78,9 @@ section.portfolio {
 			}
 		}
 	}
+}
+
+@keyframes fadein {
+		from { opacity: 0; }
+		to   { opacity: 1; }
 }

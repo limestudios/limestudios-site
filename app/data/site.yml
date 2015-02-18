@@ -20,3 +20,8 @@ tags :
 - {"name":"Code", "ref":"Code"}
 - {"name":"Misc", "ref":"misc"}
 - {"name":"Social", "ref":"social"}
+social-media :
+- {"name":"Twitter", "ref":"twitter", "link":"http://twitter.com/studioslime"}
+- {"name":"Pixiv", "ref":"twitter", "link":"http://twitter.com/studioslime"}
+- {"name":"Youtube", "ref":"twitter", "link":"http://twitter.com/studioslime"}
+- {"name":"Dribbble", "ref":"twitter", "link":"http://twitter.com/studioslime"}

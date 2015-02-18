@@ -1,5 +1,5 @@
 form {
-  margin: 48px auto 64px auto;
+  margin: 48px auto 48px auto;
   padding: 0 16px;
 }
 
@@ -7,7 +7,7 @@ input, textarea {
   width: 100% !important;
   -webkit-font-smoothing: antialiased;
   -webkit-appearance: none;
-  background: none;
+  background: @grey;
   border: none;
   //border-bottom: solid 2px @black;
   color: @black;
@@ -19,7 +19,14 @@ input, textarea {
   }
 
   &[type="submit"] {
-    border: solid 2px @black;
+    border-bottom: solid 1px @black;
+    transition: all 0.25s ease-out;
+
+    &:hover {
+      background: @black;
+      color: @white;
+    }
+
     &:active {
       color: @white;
       background: @black;
@@ -50,24 +57,30 @@ input, textarea {
   input.has-value + label,
   textarea:focus + label,
   textarea.has-value + label {
-    top: -2px;
+    top: -10px;
     font-size: 12px;
   }
 
-  /* BOTTOM BARS ================================= */
+  /* BOTTOM BARS */
   .bar {
+    z-index: 1000;
     position: relative;
     display: block;
+    //opacity: 0.5 !important;
   }
 
   .bar:before, .bar:after {
     content: '';
-    height: 2px;
+    height: 1px;
     width: 0;
     bottom: 0px;
     position: absolute;
     background: @black;
     transition: 0.1s ease all;
+  }
+
+  textarea ~ .bar:before, textarea ~ .bar:after {
+    bottom: 5px;
   }
 
   .bar:before {

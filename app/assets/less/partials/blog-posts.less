@@ -13,14 +13,14 @@ section.blog-posts {
       position: absolute;
       top: 0;
       left: 0;
-      background-color: @black @important;
+      background-color: @white @important;
       border: 0;
 
       &:hover {
         animation-timing-function:linear;
         animation-fill-mode:forwards;
         animation-iteration-count: 1;
-        opacity: 1;
+        opacity: 0.8;
       }
 
       section.article-preview-description {
@@ -48,10 +48,8 @@ section.blog-posts {
       justify-content: center;
       height: 350px;
 
-      span.title {
-        color: @black;
-        padding: 16px;
-        border: 2px solid @black;
+      span.text-title {
+        color: @white;
       }
     }
   }

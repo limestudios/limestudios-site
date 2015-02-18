@@ -1,93 +1,175 @@
-// HEADER / FOOTER
-body.arrhythmia {
-  section.arrhythmia header {
-      background: @arrhythmia-accent !important;
-  }
+section.project-arrhythmia {
 
-  footer {
-      //background: lighten(@about-accent, 5%) !important;
-  }
+  @article-height: 150px;
 
-// PAGE
+  section.status {
 
-  section.default-content {
-    max-width: 750px;
-  }
-  
-  //max-width: 650px;
-  margin: 0 auto;
-  //background: @light-white-grey;
-  
-  h2.quote {
-      //background: @light-grey;
-      margin: 0 auto;
-      padding: 20px 16px;
-      .font-body-h2();
-      text-align: center;
-      background: @grey;
-      color: @white;
-  }
+    h1 {
+      font-size: 48px;
+      font-weight: 300;
+      margin: 0 auto 12px auto;
+    }
+    h2 {
+      color: @black;
+      font-size: 32px;
+      font-weight: 300;
+      margin: 12px auto 32px auto;
+    }
+    h3 {
+      max-width: none;
+      text-transform: uppercase;
+      font-size: 16px;
+      font-weight: 300;
+    }
 
-  .blurb {
-      //max-width: 650px;
-      padding: 50px 16px;
-      margin: 0 auto;
-      background: @white-grey;
-  }
+    header, section, footer {
+      padding: 32px;
+    }
 
-  .blurb strong {
-      color: lighten(@arrhythmia-accent, 0%);
-  }
+    section.status-in-progress {
+      //background: #AED581;
+      background: #BDBDBD;
 
-  .blurb p {
-      //padding-left: 32px;
-      text-transform: none;
-      .font-body-h3();
-  }
+      article {
+        padding: 16px;
 
-  .blurb p a {
-      color: lighten(@arrhythmia-accent, 0%);
-      .transition();
-  }
+        .padding {
+          padding: 16px;
+          background: @white;
+          height: @article-height;
+          position: relative;
+          transition: all 0.1s ease-out;
+          box-shadow:rgba(0, 0, 0, 0.3) 0 0px 0px 0;
 
-  .blurb p a:hover {
-      color: darken(@arrhythmia-accent, 10%);
-      border-bottom: 2px solid;
-  }
+          &:hover {
+            z-index: 1000;
+            box-shadow:rgba(0, 0, 0, 0.3) 0 8px 8px 0;
+          }
+        }
 
-  #mc_embed_signup {
-    margin: 0 auto;
+        .labels {
+          z-index: 1001;
+          position: absolute;
+          top: 16px;
+          left: 20px;
+          pointer-events: none;
 
-    #mc_embed_signup_scroll {
-      h2 {
-        .font-body-h2();
+          .label {
+            margin-left: 4px;
+            height: 4px;
+          }
+        }
       }
     }
 
-    label {
-      .font-body-h4();
+    section.status-planned {
+      //background: #FFD54F;
+      background: #E0E0E0;
+
+      article {
+        padding: 16px;
+
+        .padding {
+          padding: 16px;
+          background: @white;
+          height: @article-height;
+          position: relative;
+          transition: all 0.1s ease;
+          box-shadow:rgba(0, 0, 0, 0.3) 0 0px 0px 0;
+
+          &:hover {
+            z-index: 1000;
+            box-shadow:rgba(0, 0, 0, 0.3) 0 8px 8px 0;
+          }
+        }
+
+        .labels {
+          z-index: 1001;
+          position: absolute;
+          top: 16px;
+          left: 20px;
+          pointer-events: none;
+
+          .label {
+            margin-left: 4px;
+            height: 4px;
+          }
+        }
+      }
     }
 
-    input {
-      .font-body-h4() !important;
-      border-radius: 0px !important;
+    section.status-bugs{
+      background: #BDBDBD;
+
+      article {
+        padding: 16px;
+
+        .padding {
+          padding: 16px;
+          background: @white;
+          height: @article-height;
+          position: relative;
+          transition: all 0.1s ease;
+          box-shadow:rgba(0, 0, 0, 0.3) 0 0px 0px 0;
+
+          &:hover {
+            z-index: 1000;
+            box-shadow:rgba(0, 0, 0, 0.3) 0 8px 8px 0;
+          }
+        }
+
+        .labels {
+          z-index: 1001;
+          position: absolute;
+          top: 16px;
+          left: 20px;
+          pointer-events: none;
+
+          .label {
+            margin-left: 4px;
+            height: 4px;
+          }
+        }
+      }
     }
   }
 }
 
-@media screen and (max-width: 650px) {
-  body.arrhythmia {
-    
-    section.default-content {
-      padding: 0px;
-    }
-
-    h2.quote {
-      margin: 0 auto;
-    }
-    
-    .blurb p {
-        padding-left: 0;
-    }
+.loader {
+  margin: 6em auto;
+  font-size: 10px;
+  position: relative;
+  text-indent: -9999em;
+  border-top: 1.1em solid rgba(255, 255, 255, 0.2);
+  border-right: 1.1em solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1.1em solid rgba(255, 255, 255, 0.2);
+  border-left: 1.1em solid #ffffff;
+  -webkit-animation: load8 1.1s infinite linear;
+  animation: load8 1.1s infinite linear;
+}
+.loader,
+.loader:after {
+  border-radius: 50%;
+  width: 5em;
+  height: 5em;
+}
+@-webkit-keyframes load8 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes load8 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }

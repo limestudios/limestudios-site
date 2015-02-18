@@ -1,0 +1,7 @@
+<section class="social-media row">
+  {{#each site.social-media}}
+  <div class="col col-p-6 col-wp-3 col-t-3 col-wt-3 col-c-3 {{this.ref}}">
+    <a href="{{this.link}}" class="">{{this.name}}</a>
+  </div>
+  {{/each}}
+</section>

@@ -10,6 +10,7 @@
 		<!--[if lte IE 8]><script src="/assets/js/ie.js"></script><![endif]-->
 		<!--<script src=/assets/js/bundle.js></script>-->
 		<!--<script src=/assets/js/components.js></script>-->
+		<meta name="theme-color" content="#689f38">
 		<meta name=keywords content="New Orleans,Liam Craver,Lime Studios,web design,print design,graphic design,front end,HTML,CSS">
 		<meta name=author content=" ">
 		<meta name=google-site-verification content=7RrfJovl477GocUkq4QOPIybas99RN2zebN46jgN_Lo>
@@ -48,7 +49,7 @@
 <body id="page-top">
   <!-- Navigation -->
 <nav id="top" class="nav-main col-l-12 col-m-12 col-s-12 fixed-nav-bar">
-    <div class="nav-collapse">
+    <div class="nav-collapse row row-tablet">
       <div class="logo">
           <a href="/"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
 <g id="Icon_3">
@@ -62,19 +63,19 @@
       <ul class="menu hide-on-small">
           
               <li>
-                  <a href="/" class="text-button nav-item">Work</a>
+                  <a href="/" class="text-button nav-item block">Work</a>
               </li>
           
               <li>
-                  <a href="/writing" class="text-button nav-item">Writing</a>
+                  <a href="/writing" class="text-button nav-item block">Writing</a>
               </li>
           
               <li>
-                  <a href="/about" class="text-button nav-item">About</a>
+                  <a href="/about" class="text-button nav-item block">About</a>
               </li>
           
               <li>
-                  <a href="/contact" class="text-button nav-item">Contact</a>
+                  <a href="/contact" class="text-button nav-item block">Contact</a>
               </li>
           
       </ul>
@@ -83,7 +84,7 @@
 
   <!-- Header -->
 <header class="main-header">
-    <section class="description row row-widetablet">
+    <section class="description row row-tablet">
       
         <h1 class="text-headline">Hi, I'm <span class="text-bold">Liam Craver</span>.</h1>
         <br>
@@ -95,7 +96,7 @@
   
 <!-- Portfolio Grid Section -->
 <section id="portfolio" class="portfolio row row-fullwidth">
-    <section class="col sorting-buttons">
+    <!--<section class="col sorting-buttons">
       
       <div class="category-button col-t-6 col-wt-3 col-c-3 text-body-1 active" id="all" style="background-color: #E0E0E0;">All</div>
       
@@ -113,16 +114,20 @@
       
       <div class="category-button col-t-6 col-wt-3 col-c-3 text-body-1 " id="social" style="background-color: #81C784;">Social</div>
       
-    </section>
+    </section>-->
     
       
+        
+          <section id="arrhythmia" class="col-p-12 col-wp-12 col-t-12 col-wt-6 col-c-6 portfolio-element arrhythmia game-development active" data-toggle="modal">
+        
       
-        <section id="arrhythmia" class="col-p-12 col-wp-12 col-t-12 col-wt-6 col-c-6 portfolio-element arrhythmia game-development active" data-toggle="modal">
           <div class="caption-bg col" style="background-color: #E57373;">
-            <!--<span class="title">Project Arrhythmia</span>-->
-            <object class="icon" data="./assets/img/portfolio/arrhythmia/arrhythmia.svg" type="image/svg+xml"></object>
+            
+            <img class="icon" src="./assets/img/portfolio/arrhythmia/arrhythmia.svg"></img>
+            
+            
           </div>
-          <a href="/arrhythmia">
+          <a href="http://limestudios.net/arrhythmia">
             <div class="caption col">
               <div class="logo text-title">
                 Project Arrhythmia
@@ -133,17 +138,19 @@
             </div>
           </a>
         </section>
-      
-      
     
       
+        
+          <section id="simplysusan" class="col-p-12 col-wp-12 col-t-12 col-wt-6 col-c-6 portfolio-element simplysusan web-design active" data-toggle="modal">
+        
       
-        <section id="simplysusan" class="col-p-12 col-wp-12 col-t-12 col-wt-6 col-c-6 portfolio-element simplysusan web-design active" data-toggle="modal">
           <div class="caption-bg col" style="background-color: #4FC3F7;">
-            <!--<span class="title">Simply Susan</span>-->
-            <object class="icon" data="./assets/img/portfolio/simplysusan/simplysusan.svg" type="image/svg+xml"></object>
+            
+            <img class="icon" src="./assets/img/portfolio/simplysusan/simplysusan.svg"></img>
+            
+            
           </div>
-          <a href="/simplysusan">
+          <a href="http://simplysusansite.com/">
             <div class="caption col">
               <div class="logo text-title">
                 Simply Susan
@@ -154,18 +161,19 @@
             </div>
           </a>
         </section>
-      
-      
     
       
+        
+          <section id="tableflip" class="col-p-12 col-wp-12 col-t-12 col-wt-6 col-c-6 portfolio-element tableflip code active" data-toggle="modal">
+        
       
-      
-        <section id="tableflip" class="col-p-12 col-wp-12 col-t-12 col-wt-3 col-c-3 portfolio-element tableflip misc active" data-toggle="modal">
-          <div class="caption-bg col" style="background-color: #81C784;">
-            <!--<span class="title">Table Flip Podcast</span>-->
-            <object class="icon" data="./assets/img/portfolio/tableflip/tableflip.svg" type="image/svg+xml"></object>
+          <div class="caption-bg col" style="background-color: #7986CB;">
+            
+            
+              <span class="text-title">Table Flip Podcast</span>
+            
           </div>
-          <a href="/tableflip">
+          <a href="http://tableflip.ninja">
             <div class="caption col">
               <div class="logo text-title">
                 Table Flip Podcast
@@ -176,38 +184,17 @@
             </div>
           </a>
         </section>
-      
     
       
+        <section id="youtube" class="col-p-12 col-wp-12 col-t-6 col-wt-3 col-c-3 portfolio-element youtube youtube social active" data-toggle="modal">
       
-      
-        <section id="tumblr" class="col-p-12 col-wp-12 col-t-12 col-wt-3 col-c-3 portfolio-element tumblr tumblr social active" data-toggle="modal">
-          <div class="caption-bg col" style="background-color: #7986CB;">
-            <!--<span class="title">Tumblr</span>-->
-            <object class="icon" data="./assets/img/portfolio/tumblr/tumblr.svg" type="image/svg+xml"></object>
-          </div>
-          <a href="/tumblr">
-            <div class="caption col">
-              <div class="logo text-title">
-                Tumblr
-              </div>
-              <div class="description text-body-1">
-                My personal tumblr.
-              </div>
-            </div>
-          </a>
-        </section>
-      
-    
-      
-      
-      
-        <section id="youtube" class="col-p-12 col-wp-12 col-t-12 col-wt-3 col-c-3 portfolio-element youtube youtube social active" data-toggle="modal">
           <div class="caption-bg col" style="background-color: #E57373;">
-            <!--<span class="title">Youtube</span>-->
-            <object class="icon" data="./assets/img/portfolio/youtube/youtube.svg" type="image/svg+xml"></object>
+            
+            
+              <span class="text-title">Youtube</span>
+            
           </div>
-          <a href="/youtube">
+          <a href="https://www.youtube.com/user/studioslime">
             <div class="caption col">
               <div class="logo text-title">
                 Youtube
@@ -218,17 +205,17 @@
             </div>
           </a>
         </section>
-      
     
       
+        <section id="dribbble" class="col-p-12 col-wp-12 col-t-6 col-wt-3 col-c-3 portfolio-element dribbble dribbble social active" data-toggle="modal">
       
-      
-        <section id="dribbble" class="col-p-12 col-wp-12 col-t-12 col-wt-3 col-c-3 portfolio-element dribbble dribbble social active" data-toggle="modal">
           <div class="caption-bg col" style="background-color: #F06292;">
-            <!--<span class="title">Dribbble</span>-->
-            <object class="icon" data="./assets/img/portfolio/dribbble/dribbble.svg" type="image/svg+xml"></object>
+            
+            <img class="icon" src="./assets/img/portfolio/dribbble/dribbble.svg"></img>
+            
+            
           </div>
-          <a href="/dribbble">
+          <a href="https://dribbble.com/limestudios">
             <div class="caption col">
               <div class="logo text-title">
                 Dribbble
@@ -239,222 +226,8 @@
             </div>
           </a>
         </section>
-      
     
 </section>
-
-<!-- Portfolio Modals -->
-<!--
-<div class="portfolio-modal modal fade" id="portfolioModal0" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-content">
-        <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-                <div class="rl">
-                </div>
-            </div>
-        </div>
-        <div class="col">
-            <div class="col-push-l-2 col-l-8">
-                <div class="modal-body">
-                    <h2>Project Arrhythmia</h2>
-                    <img src="./assets/img/portfolio/arrhythmia.png" class="img-responsive img-centered" alt="Project Arrhythmia">
-                    <p>A game all about music and other stuff. And Crazy stuffz! :D</p>
-                    <section class="modal-footer">
-                        <div>
-                            Client:
-                            <a href="http://limestudios.net/arrhythmia">Lime Studios</a>
-                        </div>
-                        <div>
-                            Date:
-                            <a href="http://limestudios.net/arrhythmia">Ongoing</a>
-                        </div>
-                        <div>
-                            Service:
-                            <a href="http://limestudios.net/arrhythmia">Game Development</a>
-                        </div>
-                    </section>
-                    <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-content">
-        <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-                <div class="rl">
-                </div>
-            </div>
-        </div>
-        <div class="col">
-            <div class="col-push-l-2 col-l-8">
-                <div class="modal-body">
-                    <h2>Simply Susan</h2>
-                    <img src="./assets/img/portfolio/simplysusan.png" class="img-responsive img-centered" alt="Simply Susan">
-                    <p>Organizing Solutions for your Home and Office.</p>
-                    <section class="modal-footer">
-                        <div>
-                            Client:
-                            <a href="http://simplysusansite.com/">Simply Susan</a>
-                        </div>
-                        <div>
-                            Date:
-                            <a href="http://simplysusansite.com/">Dec 2014</a>
-                        </div>
-                        <div>
-                            Service:
-                            <a href="http://simplysusansite.com/">Web Development</a>
-                        </div>
-                    </section>
-                    <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-content">
-        <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-                <div class="rl">
-                </div>
-            </div>
-        </div>
-        <div class="col">
-            <div class="col-push-l-2 col-l-8">
-                <div class="modal-body">
-                    <h2>Table Flip Podcast</h2>
-                    <img src="./assets/img/portfolio/tableflip.png" class="img-responsive img-centered" alt="Table Flip Podcast">
-                    <p>A PODCAST ON DESIGN, TECHNOLOGY AND WEB DEVELOPMENT.</p>
-                    <section class="modal-footer">
-                        <div>
-                            Client:
-                            <a href="http://tableflip.ninja">Lime Studios</a>
-                        </div>
-                        <div>
-                            Date:
-                            <a href="http://tableflip.ninja">Ongoing</a>
-                        </div>
-                        <div>
-                            Service:
-                            <a href="http://tableflip.ninja">Web Development / Podcast</a>
-                        </div>
-                    </section>
-                    <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-content">
-        <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-                <div class="rl">
-                </div>
-            </div>
-        </div>
-        <div class="col">
-            <div class="col-push-l-2 col-l-8">
-                <div class="modal-body">
-                    <h2>Tumblr</h2>
-                    <img src="./assets/img/portfolio/tumblr.png" class="img-responsive img-centered" alt="Tumblr">
-                    <p>My personal tumblr.</p>
-                    <section class="modal-footer">
-                        <div>
-                            Client:
-                            <a href="https://www.youtube.com/user/studioslime">Lime Studios</a>
-                        </div>
-                        <div>
-                            Date:
-                            <a href="https://www.youtube.com/user/studioslime">Ongoing</a>
-                        </div>
-                        <div>
-                            Service:
-                            <a href="https://www.youtube.com/user/studioslime">Game Development / Web Development / Misc</a>
-                        </div>
-                    </section>
-                    <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-content">
-        <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-                <div class="rl">
-                </div>
-            </div>
-        </div>
-        <div class="col">
-            <div class="col-push-l-2 col-l-8">
-                <div class="modal-body">
-                    <h2>Youtube</h2>
-                    <img src="./assets/img/portfolio/youtube.png" class="img-responsive img-centered" alt="Youtube">
-                    <p>My personal Youtube channel where I post updates on all my current projects.</p>
-                    <section class="modal-footer">
-                        <div>
-                            Client:
-                            <a href="https://www.youtube.com/user/studioslime">Lime Studios</a>
-                        </div>
-                        <div>
-                            Date:
-                            <a href="https://www.youtube.com/user/studioslime">Ongoing</a>
-                        </div>
-                        <div>
-                            Service:
-                            <a href="https://www.youtube.com/user/studioslime">Game Development / Web Development / Misc</a>
-                        </div>
-                    </section>
-                    <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-content">
-        <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-                <div class="rl">
-                </div>
-            </div>
-        </div>
-        <div class="col">
-            <div class="col-push-l-2 col-l-8">
-                <div class="modal-body">
-                    <h2>Dribbble</h2>
-                    <img src="./assets/img/portfolio/dribbble.png" class="img-responsive img-centered" alt="Dribbble">
-                    <p>My personal dribbble.</p>
-                    <section class="modal-footer">
-                        <div>
-                            Client:
-                            <a href="https://www.youtube.com/user/studioslime">Lime Studios</a>
-                        </div>
-                        <div>
-                            Date:
-                            <a href="https://www.youtube.com/user/studioslime">Ongoing</a>
-                        </div>
-                        <div>
-                            Service:
-                            <a href="https://www.youtube.com/user/studioslime">Game Development / Web Development / Misc</a>
-                        </div>
-                    </section>
-                    <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
 
 
   <!-- Footer -->
@@ -465,14 +238,16 @@
 </svg>
 </span> in New Orleans<br>
     </span>
-    <div class="page-footer-legal">©<script>document.write((new Date).getFullYear());</script> - Liam Craver</div>
+    <div class="page-footer-legal"><span class="copyright">&copy; </span><script>document.write((new Date).getFullYear());</script> - Liam Craver</div>
   </small>
 </footer>
 
   <!-- jQuery -->
 <script src="/assets/js/jquery.js"></script>
+<script src="/assets/js/jquery.timeago.js"></script>
 <script src="/assets/js/forms.js"></script>
-<script src="/assets/js/sort.js"></script>
+<!--<script src="/assets/js/sort.js"></script>-->
+<script src="/assets/js/arrhythmia.js"></script>
 
 <!-- Bootstrap Core JavaScript -->
 <!--<script src="./assets/js/bootstrap.js"></script>
@@ -490,41 +265,6 @@
 <!--<script src="./assets/js/freelancer.js"></script>
 
 <!--<script src="./assets/js/animatedHeader.js"></script>-->
-
-<div class="hidden">
-	<script type="text/javascript">
-		<!--//--><![CDATA[//><!--
-			//var images = new Array()
-			//function preload() {
-				//for (i = 0; i < preload.arguments.length; i++) {
-					//images[i] = new Image()
-					//images[i].src = preload.arguments[i]
-				//}
-			//}
-			//preload(
-				//"./assets/img/gifolio/0.png",
-				//"./assets/img/gifolio/1.png",
-				//"./assets/img/gifolio/2.png",
-				//"./assets/img/gifolio/3.png",
-				//"./assets/img/gifolio/4.png",
-				//"./assets/img/gifolio/5.png"
-			//)
-		//--><!]]>
-
-		$("a[href*=#]:not([href=#])").click(function() {
-			if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-				var target = $(this.hash);
-				target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-				if (target.length) {
-					$('html,body').animate({
-						scrollTop: target.offset().top //- ($(window).height() / 10)
-					}, 1000);
-					return false;
-				}
-			}
-		});
-	</script>
-</div>
 
 </body>
 

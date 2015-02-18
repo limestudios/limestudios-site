@@ -54,7 +54,7 @@ module.exports = function (grunt) {
       },
       js: {
         files: [opt.src + 'assets/js/**/*.js'], // which files to watch
-        tasks: ['copy:js']
+        tasks: ['copy:js','assemble']
       },
       livereload: {
         options: {

@@ -1,9 +1,9 @@
 .nav-main {
-	background-color: @grey;
+	background-color: @white;
 	transition: all 0.1 ease;
 	.clearfix();
 	@media only screen and (max-width: @screen-tablet) {
-		padding: 16px 16px 0 16px @important;
+		padding: 0 16px 16px 16px !important;
 		.nav-collapse {
 			.clearfix();
 			padding: 0 @important;
@@ -11,7 +11,7 @@
 				//height: 48px @important;
 				display: block @important;
 				float: none @important;
-				margin: 0 auto .5rem auto @important;
+				margin: 0 auto @important;
 
 				svg {
 					padding: 10px @important;
@@ -34,10 +34,9 @@
 	}
 
 	.nav-collapse {
-		border-bottom: 2px solid rgba(0, 0, 0, 0.15);
-		max-width: @screen-widetablet;
+		//border-bottom: 2px solid rgba(0, 0, 0, 0.15);
 		margin: 0 auto;
-		padding: 0 48px;
+		padding: 0 32px 0 0;
 		min-height: 90px;
 		.logo {
 			margin: 0;

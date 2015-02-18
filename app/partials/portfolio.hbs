@@ -1,18 +1,29 @@
 <!-- Portfolio Grid Section -->
 <section id="portfolio" class="portfolio row row-fullwidth">
-    <section class="col sorting-buttons">
+    <!--<section class="col sorting-buttons">
       {{#each site.tags}}
       <div class="category-button col-t-6 col-wt-3 col-c-3 text-body-1 {{this.active}}" id="{{this.ref}}" style="background-color: {{assignColor this.ref}};">{{this.name}}</div>
       {{/each}}
-    </section>
+    </section>-->
     {{#each portfolio.works}}
-      {{#is this.display 'large'}}
-        <section id="{{this.ref}}" class="col-p-12 col-wp-12 col-t-12 col-wt-12 col-c-12 portfolio-element {{this.ref}} {{this.tag}} active" data-toggle="modal">
+      {{#is this.display.size 'small'}}
+        <section id="{{this.ref}}" class="col-p-12 col-wp-12 col-t-6 col-wt-3 col-c-3 portfolio-element {{this.ref}} {{this.tag}} active" data-toggle="modal">
+      {{else}}
+        {{#is this.display.size 'medium'}}
+          <section id="{{this.ref}}" class="col-p-12 col-wp-12 col-t-12 col-wt-6 col-c-6 portfolio-element {{this.ref}} {{this.tag}} active" data-toggle="modal">
+        {{else}}
+          <section id="{{this.ref}}" class="col-p-12 col-wp-12 col-t-12 col-wt-12 col-c-12 portfolio-element {{this.ref}} {{this.tag}} active" data-toggle="modal">
+        {{/is}}
+      {{/is}}
           <div class="caption-bg col" style="background-color: {{assignColor this.tag}};">
-            <!--<span class="title">{{this.title}}</span>-->
-            <object class="icon" data="./assets/img/portfolio/{{this.ref}}/{{this.ref}}.svg" type="image/svg+xml"></object>
+            {{#is this.display.kind 'svg'}}
+            <img class="icon" src="./assets/img/portfolio/{{this.ref}}/{{this.ref}}.svg"></img>
+            {{/is}}
+            {{#is this.display.kind 'text'}}
+              <span class="text-title">{{this.title}}</span>
+            {{/is}}
           </div>
-          <a href="/{{this.ref}}">
+          <a href="{{this.client.link}}">
             <div class="caption col">
               <div class="logo text-title">
                 {{this.title}}
@@ -23,80 +34,5 @@
             </div>
           </a>
         </section>
-      {{/is}}
-      {{#is this.display 'medium'}}
-        <section id="{{this.ref}}" class="col-p-12 col-wp-12 col-t-12 col-wt-6 col-c-6 portfolio-element {{this.ref}} {{this.tag}} active" data-toggle="modal">
-          <div class="caption-bg col" style="background-color: {{assignColor this.tag}};">
-            <!--<span class="title">{{this.title}}</span>-->
-            <object class="icon" data="./assets/img/portfolio/{{this.ref}}/{{this.ref}}.svg" type="image/svg+xml"></object>
-          </div>
-          <a href="/{{this.ref}}">
-            <div class="caption col">
-              <div class="logo text-title">
-                {{this.title}}
-              </div>
-              <div class="description text-body-1">
-                {{this.description}}
-              </div>
-            </div>
-          </a>
-        </section>
-      {{/is}}
-      {{#is this.display 'small'}}
-        <section id="{{this.ref}}" class="col-p-12 col-wp-12 col-t-12 col-wt-3 col-c-3 portfolio-element {{this.ref}} {{this.tag}} active" data-toggle="modal">
-          <div class="caption-bg col" style="background-color: {{assignColor this.tag}};">
-            <!--<span class="title">{{this.title}}</span>-->
-            <object class="icon" data="./assets/img/portfolio/{{this.ref}}/{{this.ref}}.svg" type="image/svg+xml"></object>
-          </div>
-          <a href="/{{this.ref}}">
-            <div class="caption col">
-              <div class="logo text-title">
-                {{this.title}}
-              </div>
-              <div class="description text-body-1">
-                {{this.description}}
-              </div>
-            </div>
-          </a>
-        </section>
-      {{/is}}
     {{/each}}
 </section>
-
-<!-- Portfolio Modals -->
-<!--{{#each portfolio.works}}
-<div class="portfolio-modal modal fade" id="portfolioModal{{@index}}" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-content">
-        <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-                <div class="rl">
-                </div>
-            </div>
-        </div>
-        <div class="col">
-            <div class="col-push-l-2 col-l-8">
-                <div class="modal-body">
-                    <h2>{{this.title}}</h2>
-                    <img src="./assets/img/portfolio/{{this.ref}}.png" class="img-responsive img-centered" alt="{{this.title}}">
-                    <p>{{this.description}}</p>
-                    <section class="modal-footer">
-                        <div>
-                            Client:
-                            <a href="{{this.client.link}}">{{this.client.name}}</a>
-                        </div>
-                        <div>
-                            Date:
-                            <a href="{{this.client.link}}">{{this.date}}</a>
-                        </div>
-                        <div>
-                            Service:
-                            <a href="{{this.client.link}}">{{this.service}}</a>
-                        </div>
-                    </section>
-                    <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-{{/each}}

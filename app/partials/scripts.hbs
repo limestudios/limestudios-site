@@ -1,7 +1,9 @@
 <!-- jQuery -->
 <script src="/assets/js/jquery.js"></script>
+<script src="/assets/js/jquery.timeago.js"></script>
 <script src="/assets/js/forms.js"></script>
-<script src="/assets/js/sort.js"></script>
+<!--<script src="/assets/js/sort.js"></script>-->
+<script src="/assets/js/arrhythmia.js"></script>
 
 <!-- Bootstrap Core JavaScript -->
 <!--<script src="./assets/js/bootstrap.js"></script>
@@ -19,38 +21,3 @@
 <!--<script src="./assets/js/freelancer.js"></script>
 
 <!--<script src="./assets/js/animatedHeader.js"></script>-->
-
-<div class="hidden">
-	<script type="text/javascript">
-		<!--//--><![CDATA[//><!--
-			//var images = new Array()
-			//function preload() {
-				//for (i = 0; i < preload.arguments.length; i++) {
-					//images[i] = new Image()
-					//images[i].src = preload.arguments[i]
-				//}
-			//}
-			//preload(
-				//"./assets/img/gifolio/0.png",
-				//"./assets/img/gifolio/1.png",
-				//"./assets/img/gifolio/2.png",
-				//"./assets/img/gifolio/3.png",
-				//"./assets/img/gifolio/4.png",
-				//"./assets/img/gifolio/5.png"
-			//)
-		//--><!]]>
-
-		$("a[href*=#]:not([href=#])").click(function() {
-			if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-				var target = $(this.hash);
-				target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-				if (target.length) {
-					$('html,body').animate({
-						scrollTop: target.offset().top //- ($(window).height() / 10)
-					}, 1000);
-					return false;
-				}
-			}
-		});
-	</script>
-</div>
