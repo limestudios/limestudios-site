@@ -12,23 +12,25 @@
         {{/is}}
       {{/is}}
         <div class="caption-bg col" style="background-color: {{assignColor this.data.tag}};">
-          <span class="text-title">{{this.data.title}}</span>
+          <span class="text-title hide-on-p hide-on-wp">{{this.data.title}}</span>
         </div>
         <a href="{{href this.dest 'releases/dev-release' ''}}" rel="prefetch" rel=prefetch role=link>
           <div class="caption col">
-            <header class="article-preview-date">
-              <div class="text">Published on <time>{{date this.data.date-published}}</time></div>
-              {{#if this.data.date-updated}}
-                <div class="text">Last updated in <time>{{date this.data.date-updated}}</time></div>
-              {{/if}}
-            </header>
-            <section class="article-preview-description">
+            <span class="col text-title hide-on-t hide-on-wt hide-on-c">{{this.data.title}}</span>
+            <section class="col article-preview-description text-body-1">
               {{#if this.data.description}}
                 {{this.data.description}}
               {{else}}
                 There is no description for this article...
               {{/if}}
             </section>
+            <section class="col article-date">
+              {{#if this.data.date-updated}}
+                <p class="text">Published on <time>{{date this.data.date-published}}</time> [Updated on <time>{{date this.data.date-updated}}</time>]</p>
+                {{else}}
+                <p class="text">Published on <time>{{date this.data.date-published}}</time></p>
+              {{/if}}
+          </section>
           </div>
         </a>
       </article>

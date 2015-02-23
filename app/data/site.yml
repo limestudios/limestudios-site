@@ -22,6 +22,6 @@ tags :
 - {"name":"Social", "ref":"social"}
 social-media :
 - {"name":"Twitter", "ref":"twitter", "link":"http://twitter.com/studioslime"}
-- {"name":"Pixiv", "ref":"twitter", "link":"http://twitter.com/studioslime"}
-- {"name":"Youtube", "ref":"twitter", "link":"http://twitter.com/studioslime"}
-- {"name":"Dribbble", "ref":"twitter", "link":"http://twitter.com/studioslime"}
+- {"name":"Pixiv", "ref":"pixiv", "link":"http://www.pixiv.net/member.php?id=11808038"}
+- {"name":"Youtube", "ref":"youtube", "link":"https://www.youtube.com/studioslime"}
+- {"name":"Dribbble", "ref":"dribbble", "link":"https://dribbble.com/limestudios"}

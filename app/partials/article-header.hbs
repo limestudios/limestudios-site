@@ -1,5 +1,18 @@
-<header class="article">
-  <div class="title text-headline" style="border-color: {{assignColor this.tag}}; color: {{assignColor this.tag}};">
-    {{this.title}}
-  </div>
+<!-- Header -->
+<header class="article-header">
+    <section class="description row row-tablet">
+      <h1 class="title text-headline" style="color: {{assignColor this.tag}};">{{this.title}}</h1>
+      <br>
+      <h2 class="text-subhead">
+      {{#if this.subtitle}}
+        {{this.subtitle}}
+        {{else}}
+          {{#if this.description}}
+            {{this.description}}
+          {{else}}
+            There is no description for this article...
+          {{/if}}
+      {{/if}}
+      </h2>
+    </section>
 </header>

@@ -93,7 +93,7 @@ module.exports = function (grunt) {
         collections: [
           {
             name: 'post',
-            sortby: 'date',
+            sortby: 'date-published',
             sortorder: 'descending',
             pages: [opt.posts]
           }

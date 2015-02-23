@@ -1,7 +1,7 @@
-<section class="social-media row">
+<section class="social-media row text-body-1">
   {{#each site.social-media}}
-  <div class="col col-p-6 col-wp-3 col-t-3 col-wt-3 col-c-3 {{this.ref}}">
-    <a href="{{this.link}}" class="">{{this.name}}</a>
-  </div>
+  <a href="{{this.link}}" class="col col-p-6 col-wp-3 col-t-3 col-wt-3 col-c-3 {{this.ref}} social-media-element">
+    {{this.name}}
+  </a>
   {{/each}}
 </section>

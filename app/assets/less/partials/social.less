@@ -1,25 +1,40 @@
 section.social-media {
-  margin-top: 48px;
-  div {
+  padding: 0 16px;
+  .social-media-element {
+    border-bottom: solid 1px @black;
+    transition: all 0.25s ease-out;
     padding: 16px;
-    a {
-      line-height: 75px;
-      text-align: center;
-      border-radius: 100%;
-      display: block;
-      height: 75px;
-      width: 75px;
-      margin: 0 auto;
+    color: @white;
+
+    &.twitter {
+      background: #55ACEE;
+    }
+
+    &.pixiv {
+      background: rgb(2,151,219);
+    }
+
+    &.youtube {
+      background: #e52d27;
+    }
+
+    &.dribbble {
+      background: #ea4c89;
+    }
+
+    &:hover {
       background: @black;
       color: @white;
-      transition: all 0.2s ease-out;
-      box-shadow:rgba(0, 0, 0, 0.3) 0 0px 0px 0;
+    }
 
-      &:hover {
-        box-shadow:rgba(0, 0, 0, 0.3) 0 8px 8px 0;
-        background: @white;
-        color: @black;
-      }
+    &:active {
+      color: @white;
+      background: @black;
+    }
+
+    @media only screen and (max-width: @screen-widephone) {
+      padding: 16px 0;
+      text-align: center;
     }
   }
 }

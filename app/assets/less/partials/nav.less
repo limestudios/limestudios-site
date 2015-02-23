@@ -39,6 +39,12 @@
 		padding: 0 32px 0 0;
 		min-height: 90px;
 		.logo {
+			a {
+				border-bottom: none !important;
+				&:hover {
+					background: none;
+				}
+			}
 			margin: 0;
 			width: 90px;
 			height: 90px;
@@ -46,7 +52,14 @@
 			float: left;
 			position: relative;
 
+			&:hover {
+				svg {
+					fill: @black @important;
+				}
+			}
+
 			svg {
+				transition: all 0.1s ease-out;
 				padding: 20px;
 				width: 90px;
 				height: 90px;

@@ -7,12 +7,12 @@
     </section>-->
     {{#each portfolio.works}}
       {{#is this.display.size 'small'}}
-        <section id="{{this.ref}}" class="col-p-12 col-wp-12 col-t-6 col-wt-3 col-c-3 portfolio-element {{this.ref}} {{this.tag}} active" data-toggle="modal">
+        <section id="{{this.ref}}" class="col-p-12 col-wp-12 col-t-6 col-wt-3 col-c-3 portfolio-element {{this.ref}} {{this.tag}}">
       {{else}}
         {{#is this.display.size 'medium'}}
-          <section id="{{this.ref}}" class="col-p-12 col-wp-12 col-t-12 col-wt-6 col-c-6 portfolio-element {{this.ref}} {{this.tag}} active" data-toggle="modal">
+          <section id="{{this.ref}}" class="col-p-12 col-wp-12 col-t-12 col-wt-6 col-c-6 portfolio-element {{this.ref}} {{this.tag}}">
         {{else}}
-          <section id="{{this.ref}}" class="col-p-12 col-wp-12 col-t-12 col-wt-12 col-c-12 portfolio-element {{this.ref}} {{this.tag}} active" data-toggle="modal">
+          <section id="{{this.ref}}" class="col-p-12 col-wp-12 col-t-12 col-wt-12 col-c-12 portfolio-element {{this.ref}} {{this.tag}}">
         {{/is}}
       {{/is}}
           <div class="caption-bg col" style="background-color: {{assignColor this.tag}};">
@@ -20,7 +20,7 @@
             <img class="icon" src="./assets/img/portfolio/{{this.ref}}/{{this.ref}}.svg"></img>
             {{/is}}
             {{#is this.display.kind 'text'}}
-              <span class="text-title">{{this.title}}</span>
+              <span class="text-title hide-on-p hide-on-wp">{{this.title}}</span>
             {{/is}}
           </div>
           <a href="{{this.client.link}}">

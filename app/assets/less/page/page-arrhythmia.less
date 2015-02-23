@@ -2,6 +2,20 @@ section.project-arrhythmia {
 
   @article-height: 150px;
 
+  section.youtube-videos {
+    padding: 0 16px;
+    margin-top: 48px;
+    iframe {
+      width: 100%;
+
+      @media only screen and (max-width: @screen-tablet) {
+        height: 50vw @important;
+      }
+
+      height: 420px;
+    }
+  }
+
   section.status {
 
     h1 {
@@ -28,94 +42,29 @@ section.project-arrhythmia {
 
     section.status-in-progress {
       //background: #AED581;
-      background: #BDBDBD;
-
-      article {
-        padding: 16px;
-
-        .padding {
-          padding: 16px;
-          background: @white;
-          height: @article-height;
-          position: relative;
-          transition: all 0.1s ease-out;
-          box-shadow:rgba(0, 0, 0, 0.3) 0 0px 0px 0;
-
-          &:hover {
-            z-index: 1000;
-            box-shadow:rgba(0, 0, 0, 0.3) 0 8px 8px 0;
-          }
-        }
-
-        .labels {
-          z-index: 1001;
-          position: absolute;
-          top: 16px;
-          left: 20px;
-          pointer-events: none;
-
-          .label {
-            margin-left: 4px;
-            height: 4px;
-          }
-        }
-      }
+      //background: #BDBDBD;
     }
 
     section.status-planned {
       //background: #FFD54F;
-      background: #E0E0E0;
-
-      article {
-        padding: 16px;
-
-        .padding {
-          padding: 16px;
-          background: @white;
-          height: @article-height;
-          position: relative;
-          transition: all 0.1s ease;
-          box-shadow:rgba(0, 0, 0, 0.3) 0 0px 0px 0;
-
-          &:hover {
-            z-index: 1000;
-            box-shadow:rgba(0, 0, 0, 0.3) 0 8px 8px 0;
-          }
-        }
-
-        .labels {
-          z-index: 1001;
-          position: absolute;
-          top: 16px;
-          left: 20px;
-          pointer-events: none;
-
-          .label {
-            margin-left: 4px;
-            height: 4px;
-          }
-        }
-      }
+      //background: #E0E0E0;
     }
 
     section.status-bugs{
-      background: #BDBDBD;
+      //background: #BDBDBD;
+    }
 
+    section {
       article {
         padding: 16px;
 
         .padding {
           padding: 16px;
-          background: @white;
+          background: @grey;
           height: @article-height;
           position: relative;
-          transition: all 0.1s ease;
-          box-shadow:rgba(0, 0, 0, 0.3) 0 0px 0px 0;
-
-          &:hover {
-            z-index: 1000;
-            box-shadow:rgba(0, 0, 0, 0.3) 0 8px 8px 0;
-          }
+          transition: all 0.1s ease-out;
+          border-bottom: 1px solid @black;
         }
 
         .labels {

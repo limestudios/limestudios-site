@@ -20,25 +20,20 @@ section.blog-posts {
         animation-timing-function:linear;
         animation-fill-mode:forwards;
         animation-iteration-count: 1;
-        opacity: 0.8;
+        opacity: 0.8 @important;
       }
 
-      section.article-preview-description {
-        color: @white @important;
-        text-align: left;
-        padding: 16px 0 0 0;
+      @media only screen and (max-width: @screen-widephone) {
+        opacity: 0.6 @important;
       }
 
-      header.article-preview-date {
-        color: @white;
-        border: 2px solid @white;
-        padding: 16px;
-        background-color: transparent;
-        margin:0;
-        div {
-          text-align: left;
-        }
-        text-align: left;
+      .article-preview-description {
+        color: @black @important;
+        text-align: left @important;
+      }
+
+      .article-date {
+        color: @black;
       }
     }
 

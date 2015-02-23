@@ -3,14 +3,13 @@
 		{
 			"title" : "Project Arrhythmia",
 			"ref" : "arrhythmia",
-			"description" : "A game all about music and other stuff. And Crazy stuffz! :D",
+			"description" : "A game about music and heart! You take on the role of a father trying to bring back his daughter with the very technology she was creating that made him disown her.",
 			"client" : {
 				"name" : "Lime Studios",
-				"link" : "http://limestudios.net/arrhythmia"
+				"link" : "/arrhythmia"
 			},
 			"date" : "Ongoing",
 			"service" : "Game Development",
-			"color" : "rgb(238,145,148)",
 			"display" : {
 				"size": "medium",
 				"kind": "svg"
@@ -36,7 +35,7 @@
 		{
 			"title" : "Table Flip Podcast",
 			"ref" : "tableflip",
-			"description" : "A PODCAST ON DESIGN, TECHNOLOGY AND WEB DEVELOPMENT.",
+			"description" : "A podcast on design, technology and web development.",
 			"client" : {
 				"name" : "Lime Studios",
 				"link" : "http://tableflip.ninja"
@@ -50,22 +49,6 @@
 			"tag" : "code"
 		},
 		{
-			"title" : "Youtube",
-			"ref" : "youtube",
-			"description" : "My personal Youtube channel where I post updates on all my current projects.",
-			"client" : {
-				"name" : "Lime Studios",
-				"link" : "https://www.youtube.com/user/studioslime"
-			},
-			"date" : "Ongoing",
-			"service" : "Game Development / Web Development / Misc",
-			"display" : {
-				"size": "small",
-				"kind": "text"
-			},
-			"tag" : "youtube social"
-		},
-		{
 			"title" : "Dribbble",
 			"ref" : "dribbble",
 			"description" : "My personal dribbble.",
@@ -76,7 +59,7 @@
 			"date" : "Ongoing",
 			"service" : "Game Development / Web Development / Misc",
 			"display" : {
-				"size": "small",
+				"size": "medium",
 				"kind": "svg"
 			},
 			"tag" : "dribbble social"
