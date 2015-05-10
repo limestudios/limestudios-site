@@ -3,7 +3,7 @@
 		{
 			"title" : "Project Arrhythmia",
 			"ref" : "arrhythmia",
-			"description" : "A game about music and heart! You take on the role of a father trying to bring back his daughter with the very technology she was creating that made him disown her.",
+			"description" : "A rhythmic adventure in which all things beautiful are deadly! You take on the role of a father trying to bring back his daughter with the very technology she was creating that made him disown her.",
 			"client" : {
 				"name" : "Lime Studios",
 				"link" : "/arrhythmia"
@@ -12,57 +12,61 @@
 			"service" : "Game Development",
 			"display" : {
 				"size": "medium",
-				"kind": "svg"
+				"kind": "svg",
+				"color": "rgb(255,198,155)"
 			},
 			"tag" : "game-development"
 		},
 		{
-			"title" : "Simply Susan",
-			"ref" : "simplysusan",
-			"description" : "Organizing Solutions for your Home and Office.",
+			"title" : "Lawn Chair Studios",
+			"ref" : "lawnchairstudios",
+			"description" : "",
 			"client" : {
-				"name" : "Simply Susan",
-				"link" : "http://simplysusansite.com/"
-			},
-			"date" : "Dec 2014",
-			"service" : "Web Development",
-			"display" : {
-				"size": "medium",
-				"kind": "svg"
-			},
-			"tag" : "web-design"
-		},
-		{
-			"title" : "Table Flip Podcast",
-			"ref" : "tableflip",
-			"description" : "A podcast on design, technology and web development.",
-			"client" : {
-				"name" : "Lime Studios",
-				"link" : "http://tableflip.ninja"
+				"name" : "Lawn Chair Studios",
+				"link" : "/arrhythmia"
 			},
 			"date" : "Ongoing",
-			"service" : "Web Development / Podcast",
+			"service" : "Lawn Chair Studios",
 			"display" : {
 				"size": "medium",
-				"kind": "text"
+				"kind": "svg",
+				"color": "rgb(104,107,108)"
 			},
-			"tag" : "code"
+			"tag" : "Lawn Chair Studios"
 		},
 		{
-			"title" : "Dribbble",
-			"ref" : "dribbble",
-			"description" : "My personal dribbble.",
+			"title" : "Twitter",
+			"ref" : "twitter",
+			"description" : "My personal twitter.",
 			"client" : {
 				"name" : "Lime Studios",
-				"link" : "https://dribbble.com/limestudios"
+				"link" : "https://twitter.com/studioslime"
 			},
 			"date" : "Ongoing",
-			"service" : "Game Development / Web Development / Misc",
+			"service" : "twitter",
 			"display" : {
 				"size": "medium",
-				"kind": "svg"
+				"kind": "svg",
+				"color": "#4FC3F7"
 			},
-			"tag" : "dribbble social"
+			"tag" : "twitter"
+		},
+		{
+			"title" : "Youtube",
+			"ref" : "youtube",
+			"description" : "My personal youtube.",
+			"client" : {
+				"name" : "Lime Studios",
+				"link" : "https://youtube.com/studioslime"
+			},
+			"date" : "Ongoing",
+			"service" : "youtube",
+			"display" : {
+				"size": "medium",
+				"kind": "svg",
+				"color": "#E57373"
+			},
+			"tag" : "youtube"
 		}
 	]
 }

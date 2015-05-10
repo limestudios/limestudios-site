@@ -6,7 +6,9 @@ module.exports.register = function (Handlebars, options) {
 
     var tags = [
       ["youtube", "#E57373"],
+      ["twitter", "#55ACEE"],
       ["dribbble", "#F06292"],
+      ["Lawn Chair Studios", "#F06292"],
       ["tumblr", "#7986CB"],
       ["all","#E0E0E0"],
       ["game-design", "#9575CD"],

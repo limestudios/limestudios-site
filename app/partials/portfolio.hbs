@@ -15,7 +15,7 @@
           <section id="{{this.ref}}" class="col-p-12 col-wp-12 col-t-12 col-wt-12 col-c-12 portfolio-element {{this.ref}} {{this.tag}}">
         {{/is}}
       {{/is}}
-          <div class="caption-bg col" style="background-color: {{assignColor this.tag}};">
+          <div class="caption-bg col" style="background-color: {{this.display.color}};">
             {{#is this.display.kind 'svg'}}
             <img class="icon" src="./assets/img/portfolio/{{this.ref}}/{{this.ref}}.svg"></img>
             {{/is}}
