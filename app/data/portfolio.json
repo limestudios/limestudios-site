@@ -35,12 +35,12 @@
 			"tag" : "Lawn Chair Studios"
 		},
 		{
-			"title" : "Twitter",
+			"title" : "Personal Twitter",
 			"ref" : "twitter",
 			"description" : "My personal twitter.",
 			"client" : {
 				"name" : "Lime Studios",
-				"link" : "https://twitter.com/studioslime"
+				"link" : "https://twitter.com/_limestudios"
 			},
 			"date" : "Ongoing",
 			"service" : "twitter",
