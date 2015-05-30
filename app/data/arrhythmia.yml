@@ -1,0 +1,16 @@
+nav-links :
+- {"name": "download", "link": "http://download.projectarrhythmia.com/"}
+- {"name": "dev blog", "link": "http://blog.projectarrhythmia.com/"}
+- {"name": "press kit", "link": "http://presskit.projectarrhythmia.com/"}
+- {"name": "contact", "link": "http://contact.projectarrhythmia.com/"}
+screenshots :
+- 1
+- 2
+- 3
+- 4
+- 7
+- 8
+- 9
+- 11
+- 13
+- 14

@@ -27,7 +27,7 @@
 		<meta property=og:site_name content="{{site.title}}">
 		<meta property=og:profile:first_name content={{author.name.first}}>
 		<meta property=og:profile:last_name content={{author.name.last}}>
-		<meta property=og:image content="{{#if featuredImage}}/assets/{{featuredImage}}{{else ~}}/assets/img/site/icon/og.png">
+		<meta property=og:image content="{{#if featuredImage}}/assets/{{featuredImage}}{{else ~}}/assets/img/site/icon/48.png">
 		<meta property=og:image:type content=image/png>
 		<meta property=og:image:width content=1024>
 		<meta property=og:image:height content=1024>{{/if ~}}
@@ -36,18 +36,19 @@
 		<meta name=twitter:title content="{{page.title}}">
 		<meta name=twitter:description content="{{#if page.description}}{{page.description}}{{else ~}}{{site.description}}{{/if ~}}">
 		<meta name=twitter:creator content="{{author.name.first}} {{author.name.last}}">
-		<meta name=twitter:image:src content="{{#if featuredImage}}/assets/{{featuredImage}}{{else ~}}/assets/img/site/icon/card.png{{/if ~}}">
-		<meta name=twitter:domain content="the Web">
+		<meta name=twitter:image:src content="{{#if featuredImage}}/assets/{{featuredImage}}{{else ~}}/assets/img/site/icon/48.png{{/if ~}}">
+		<meta name="twitter:domain"" content="the Web">
 		<link rel=apple-touch-icon-precomposed href=/assets/img/site/icon/60.png>
-		<link rel=icon href=/assets/img/site/icon/16.png size=16x16>
-		<link rel=icon href=/assets/img/site/icon/32.png size=32x32>
-		<link rel=icon href=/assets/img/site/icon/48.png size=48x48>
-		<link rel=icon href=/assets/img/site/icon/64.png size=64x64>
-		<link rel=icon href=/assets/img/site/icon/128.png size=128x128>
+		<link rel="icon" href="/assets/img/site/icon/16.png" size="16x16">
+		<link rel="icon" href="/assets/img/site/icon/32.png" size="32x32">
+		<link rel="icon" href="/assets/img/site/icon/48.png" size="48x48">
+		<link rel="icon" href="/assets/img/site/icon/64.png" size="64x64">
+		<link rel="icon" href="/assets/img/site/icon/128.png" size="128x128">
 
-		<link rel="icon" type="image/png" href="/assets/img/site/icon/favicon.png">
+		<link rel="icon" type="image/png" href="/assets/img/site/icon/32.png">
 		<!-- [if IE]><link rel="shortcut icon" href="/assets/img/site/icon/ie.ico"><![endif]-->
 		<script>
 			//document.getElementById("date").innerHTML = new Date().getTime();
 		</script>
 	</head>
+<body id="page-top" class="{{page.ref}}">

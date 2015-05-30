@@ -3,39 +3,73 @@
 @ObjCol3: rgb(255,106,134); // LIGHT RED
 @ObjCol4: rgb(194,65,95); // RED
 
+@arrhythmia-background: #f7f7f7;
+
 @BgCol1: rgb(255,242,232); // PEACH 1
 @BgCol2: rgb(255,232,215); // PEACH 2
 @BgCol3: rgb(255,221,195); // PEACH 3
 @BgCol4: rgb(255,210,175); // PEACH 4
 @BgCol5: rgb(255,198,155); // PEACH 5
 
-body {
+body.arrhythmia,
+body.press-kit {
   font-family: 'Futura', @font-stack !important;
-  background-color: @BgCol1;
+  background-color: @arrhythmia-background;
 }
 
 header.arrhythmia {
   position: relative;
 
   .logo {
-    height: 200px;
-    width: 200px;
+    height: 100px;
+    width: 100px;
     background-color: white;
     background-image: url(/assets/img/arrhythmia/logo.png);
-    background-size: 180px 180px;
+    background-size: 80px 80px;
     background-position: center;
     background-repeat: no-repeat;
     border-radius: 100%;
-    margin: 32px auto;
+    margin: 48px auto 16px;
   }
 
   .title {
     text-align: center;
+    text-transform: uppercase;
+    margin: 16px;
   }
 
   .subtitle {
     text-align: center;
     margin: 0 16px;
+    color: @text-primary-color;
+    font-weight: 400;
+    font-size: 16px;
+    font-family: 'Akzidenz', @font-stack !important;
+  }
+  
+  hr {
+    margin: 32px 0 8px;
+  }
+  
+  nav {
+    a {
+      font-family: 'Akzidenz', @font-stack !important;
+      text-align: center;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-weight: 700;
+      color: @ObjCol4;
+      transition: all .1s ease-in-out;
+      
+      &.active {
+        background-color: black;
+      }
+      
+      &:hover {
+        background-color: @ObjCol4;
+        color: @arrhythmia-background;
+      }
+    }
   }
 }
 
@@ -52,24 +86,42 @@ h5 {
   letter-spacing: 4px;
 }
 
-.trailer {
-  height: 200px;
-  width: 100%;
-  background-color: #333;
-
-  /* Larger than mobile */
-  @media (min-width: @mobile) {
+.trailer-container {
+  margin: 48px 16px 0px;
+  .trailer {
     height: 200px;
+    width: 100%;
+    
+    iframe {
+      transition: pop 2s;
+      background-color: white;
+    }
+  
+    /* Larger than mobile */
+    @media (min-width: @mobile) {
+      height: 200px;
+    }
+  
+    /* Larger than phablet */
+    @media (min-width: @phablet) {
+      height: 300px;
+    }
+  
+    /* Larger than tablet */
+    @media (min-width: @tablet) {
+      height: 400px;
+    }
   }
+}
 
-  /* Larger than phablet */
-  @media (min-width: @phablet) {
-    height: 300px;
+@keyframes pop {
+  0% {
+    opacity: 0;
+    transform: scale(.5);
   }
-
-  /* Larger than tablet */
-  @media (min-width: @tablet) {
-    height: 400px;
+  100% {
+    opacity: 1;
+    transform: scale(1);
   }
 }
 
@@ -93,6 +145,29 @@ h5 {
   }
 }
 
+.arrhythmia-pics {
+  margin: 48px 16px;
+  figure {
+    transition: all 0.1s ease-in-out;
+    margin: 0;
+    opacity: 0;
+    transform: scale(.5);
+    
+    &.is-showing {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  img {
+    transition: all 0.1s ease-in-out;
+    &:hover {
+      transform: scale(0.95);
+      outline: 1px solid black;
+    }
+  }
+}
+
 img {
   max-width: 100%;
 }
@@ -102,53 +177,27 @@ img {
 }
 
 body.press-kit {
-  background-color: white;
-  .press-kit {
-
-    .column,
-    .columns,
-    .row,
-    .container {
-      //outline: 1px solid black;
-    }
-
-    .nav {
-
-      h4 {
-        font-weight: 700;
-        letter-spacing: 4px;
-      }
-
-      h6 {
-        font-weight: 400;
-        letter-spacing: 4px;
-      }
-
-      ul {
-        list-style: none;
-        li {
-          .button {
-            min-width: 200px;
-          }
+  .press-kit-container {
+    margin: 48px 16px;
+    
+    .sidebar {
+      a {
+        transition: all .1s ease-in-out;
+        text-decoration: none;
+        font-family: 'Akzidenz', @font-stack !important;
+        color: @ObjCol4;
+        margin: 8px auto;
+        padding: 0 8px;
+        
+        &:hover {
+          background-color: @ObjCol4;
+          color: @arrhythmia-background;
         }
       }
     }
-
-    .factsheet {
-      margin: 32px 0;
-    }
-
-    .construction {
-      background-color: @ObjCol3;
-      color: white;
-      text-align: center;
-      padding: 16px !important;
-    }
-
-    .content {
-      section {
-        .clearfix();
-      }
+    
+    p {
+      font-family: 'Akzidenz', @font-stack !important;
     }
   }
 }

@@ -1,20 +1,27 @@
 ---
 layout: arrhythmia.hbs
+ref: arrhythmia
 title: Project Arrhythmia
-headline: Project Arrhythmia
-subhead: A game about music and heart.
+subtitle: A rhythmic adventure in which all things beautiful are deadly.
 css: arrhythmia-styles
+js-close: 
+- jquery
+- arrhythmia-functions
 ---
-<div class="container">
-  <div class="row">
-    <iframe class="trailer" src="https://www.youtube.com/embed/KaudaGKUZDg" frameborder="0" allowfullscreen></iframe>
+<div class="trailer-container">
+  <div class="row row-tablet">
+    <iframe class="trailer" src="https://www.youtube.com/embed/IN_XVGlvNhg?theme=light" frameborder="0" allowfullscreen></iframe>
   </div>
 </div>
-<div class="container second-font">
-  <div class="row">
-    <a href="http://limestudios.itch.io/project-arrhythmia" class="three columns button button-primary">Itch.io</a>
-    <a href="http://blog.projectarrhythmia.com" class="three columns button button-primary">Blog</a>
-    <a href="/arrhythmia-press-kit" class="three columns button button-primary">Press Kit</a>
-    <a href="/contact" class="three columns button button-primary">Contact Us</a>
+
+<div class="arrhythmia-pics">
+  <div class="row row-tablet">
+    {{#each arrhythmia.screenshots}}
+      <figure class="col-p-12 col-wp-12 col-t-6 col-wt-6 col-c-6">
+        <a href="/assets/img/arrhythmia/screenshots/{{this}}.png">
+          <img src="/assets/img/arrhythmia/screenshots/{{this}}.png"></img>
+        </a>
+      </figure>
+    {{/each}}
   </div>
 </div>

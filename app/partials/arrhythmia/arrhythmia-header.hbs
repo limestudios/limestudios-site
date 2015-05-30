@@ -1,5 +1,11 @@
 <header class="arrhythmia">
-  <div class="logo"></div>
-  <h1 class="title">Project Arrhythmia</h1>
-  <h5 class="subtitle">A rhythmic adventure in which all things beautiful are deadly.</h5>
+  <a href="http://projectarrhythmia.com"><div class="logo"></div></a>
+  <h1 class="title">{{page.title}}</h1>
+  <h5 class="subtitle">{{page.subtitle}}</h5>
+  <hr>
+  <nav class="row row-tablet">
+    {{#each arrhythmia.nav-links}}
+      <a class="col-p-12 col-wp-12 col-t-3 col-wt-3 col-c-3" href="{{this.link}}">{{this.name}}</a>
+    {{/each}}
+  </nav>
 </header>
