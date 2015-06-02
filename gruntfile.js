@@ -237,6 +237,16 @@ module.exports = function (grunt) {
             dest: opt.dev + '/assets/'
           }
         ]
+      },
+      files: {
+        files: [
+          {
+            expand: opt.expand,
+            cwd: opt.src + '/assets/',
+            src: ['files/**/**/**'],
+            dest: opt.dev + '/assets/'
+          }
+        ]
       }
     },
 
