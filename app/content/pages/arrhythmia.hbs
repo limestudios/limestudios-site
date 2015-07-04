@@ -7,16 +7,7 @@ css: arrhythmia-styles
 js-close: 
 - jquery
 - arrhythmia-functions
-- jquery.fancybox
-- jquery.fancybox.pack
-- jquery.fancybox-buttons
-- jquery.fancybox-media
-- jquery.fancybox-thumbs
-- jquery.fancybox-activate
 ---
-<link rel="stylesheet" href="../assets/css/jquery.fancybox.css" type="text/css" media="screen" />
-<link rel="stylesheet" href="../assets/css/jquery.fancybox-buttons.css" type="text/css" media="screen" />
-<link rel="stylesheet" href="../assets/css/jquery.fancybox-thumbs.css" type="text/css" media="screen" />
 <div class="trailer-container">
   <div class="row row-tablet">
     <iframe class="trailer" src="https://www.youtube.com/embed/IN_XVGlvNhg?theme=light" frameborder="0" allowfullscreen></iframe>
@@ -27,7 +18,7 @@ js-close:
   <div class="row row-tablet">
     {{#each arrhythmia.screenshots}}
       <figure class="col-p-12 col-wp-12 col-t-6 col-wt-6 col-c-6">
-        <a class="fancybox" rel="arrhythmia" href="/assets/img/arrhythmia/screenshots/{{this}}.png">
+        <a href="/assets/img/arrhythmia/screenshots/{{this}}.png">
           <img src="/assets/img/arrhythmia/screenshots/{{this}}.png"></img>
         </a>
       </figure>
