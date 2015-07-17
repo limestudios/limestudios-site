@@ -1,190 +1,23 @@
-// HEADER / FOOTER
+section.about {
+  margin: 4em auto;
 
-section.about header {
-    background: @about-accent !important;
-}
-
-footer {
-    //background: lighten(@about-accent, 5%) !important;
-}
-
-// PAGE
-
-section.about section.default-content section {
-  position: relative;
-}
-
-.face-lockup {
-    max-width: 960px;
-    margin: 0 auto;
-    font-size: 0;
-}
-
-.face-lockup br {
-    display: none;
-}
-
-.face-lockup .face-img {
-    .square(160px) !important;
-    border-radius: 50%;
-    background: url(/assets/img/site/liam.jpg) center center;
-    background-size: cover;
-    order: 3;
-  margin: 0 auto !important;
-}
-
-[class^="icon-"] {
-    .square(80px);
-    background: @about-accent;
-    //border-radius: 50%;
-}
-
-[class^="icon-"] svg {
-    margin: 25%;
-    max-width: 50%;
-    max-height: 50%;
-}
-
-[class^="icon-"] svg path {
-    fill: @white;
-}
-
-
-[class^="icon-"] img {
-    max-width: 60%;
-    margin: 20%;
-}
-
-.icon-pencil {
-    order: 1;
-}
-
-.icon-code {
-    order: 2;
-}
-
-p.break {
-  display: none;
-}
-
-.icon-browser {
-    order: 4;
-}
-
-.icon-video {
-    order: 5;
-}
-
-section.about .blurb {
-    max-width: 960px;
-    padding: 0 10px;
-    margin: 50px auto;
-}
-
-section.about .blurb strong {
-    font-weight: @font-weight-medium;
-    color: @grey;
-}
-
-section.about .blurb p {
-    //padding-left: 32px;
-    font-size: 20px;
-    text-transform: none;
-    color: @dark-grey;
-    .font-body-h3();
-}
-
-.skill-lockup {
-    max-width: 650px;
-    margin: 100px auto;
-    padding: 0 10px;
-    color: @grey;
-    .clearfix();
-}
-
-.skill-lockup .skill-unit {
-    width: 230px;
-    float: left;
-    margin: 0 47.5px;
-}
-
-.skill-lockup .skill-label{
-    .font-body-h3();
-}
-
-.skill-lockup .skill-icon {
-    font-size: 0;
-    margin: 10px 0 10px;
-}
-
-.skill-lockup .skill-icon span {
-    display: inline-block;
-    .square(18px);
-    background-color: @about-accent;
-    margin-right: 5px;
-    //border-radius: 50%;
-    opacity: 0.8;
-}
-
-.skill-lockup .skill-icon span:after {
-    //content: '';
-    display: block;
-    .square(10px);
-    background: @white;
-    //border-radius: 50%;
-    margin: 2px;
-}
-
-.generate-skills(10);
-
-.generate-skills(@n, @i: 1, @j: 2) when (@i =< @n) {
-  .skill-lockup .skill-@{i} span:nth-child(n+@{j}) {
-    background: @light-grey;
+  .image-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    img.me {
+      margin: 16px;
+      max-width: 200px;
+      max-height: 200px;
+      width: 50vw;
+      height: 50vw;
+      border-radius: 100%;
+      animation: fadein 2s;
+    }
   }
-  .generate-skills(@n, (@i + 1), (@j + 1));
-}
 
-    .face-lockup {
-        display: block;
-        text-align: center;
-        padding: 20px 0 0;
-        .clearfix();
-    }
-    
-    .face-lockup div {
-        display: inline-block;
-      //float: left;
-    }
-    
-    .face-lockup .face-img {
-        display: block;
-        background-position: center center;
-        background-repeat: no-repeat;
-        margin: 0px auto;
-    }
-    
-    [class^="icon-"] {
-        margin: 20px;
-    }
-
-@media screen and (max-width: 700px) {
-    .blurb {
-        margin-top: 20px;
-    }
-    
-    .blurb p {
-        padding-left: 0;
-    }
-  
-  .skill-lockup {
-        margin: 50px auto;
-      width: 230px;
-  }
-}
-
-@media screen and (max-width: 800px) {
-  .skill-lockup .skill-unit {
-    float: none;
-    margin: 0 auto;
+  .about-text {
+    padding: 0 16px;
   }
 }

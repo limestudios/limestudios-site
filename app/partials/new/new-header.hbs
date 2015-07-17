@@ -1,0 +1,20 @@
+<header class="header">
+	<div class="header-wrapper">
+		<div class="logo-wrapper">
+			<div class="logo">
+				{{> logo-square}}
+			</div>
+			<div class="text">
+				Studios
+			</div>
+		</div>
+		<nav class="nav">
+			<ul>
+				<a href="/"><li class="{{isActive page.active "work"}}">Work</li></a>
+				<a href="/writing"><li class="{{isActive page.active "writing"}}">Writing</li></a>
+				<a href="/about"><li class="{{isActive page.active "about"}}">About</li></a>
+				<a href="/contact"><li class="{{isActive page.active "contact"}}">Contact</li></a>
+			</ul>
+		</nav>
+	</div>
+</header>

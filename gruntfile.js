@@ -148,7 +148,7 @@ module.exports = function (grunt) {
         },
         files: {
           "./releases/dev-release/assets/css/styles.css": "./app/assets/less/styles.less",
-          "./releases/dev-release/assets/css/arrhythmia-styles.css": "./app/assets/less/arrhythmia-styles.less"
+          "./releases/dev-release/assets/css/arrhythmia-styles.css": "./app/assets/less/arrhythmia-styles.less",
         }
       }
     },
@@ -217,7 +217,7 @@ module.exports = function (grunt) {
           {
             expand: opt.expand,
             cwd: opt.dev,
-            src: ['**/**'],
+            src: ['**/**', '!**/**.db'],
             dest: opt.prod
           }
         ]
@@ -227,13 +227,13 @@ module.exports = function (grunt) {
           {
             expand: opt.expand,
             cwd: opt.src + '/assets/less',
-            src: ['fonts/**'],
+            src: ['fonts/**', '!**/**.db'],
             dest: opt.dev + '/assets/css'
           },
           {
             expand: opt.expand,
             cwd: opt.src + '/assets/',
-            src: ['img/**/**/**'],
+            src: ['img/**/**/**', '!**/**.db'],
             dest: opt.dev + '/assets/'
           }
         ]
