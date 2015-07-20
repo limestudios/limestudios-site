@@ -1,0 +1,33 @@
+---
+component: sticky-header
+---
+<div class="header" id="header">
+  <div class="header-wrapper row row-widetablet">    
+    <div class="title">
+      <div class="logo">{{> lime}}</div>
+      <div class="text">{{site.title}}</div>
+      <div class="text-small">Studios</div>
+    </div>
+    
+    <nav>
+      <ul class="nav-items">
+        <li class="nav-item">
+          <a href="/">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a href="/social">Social</a>
+          {{!-- Streams / Talks / Blog --}}
+        </li>
+        <li class="nav-item">
+          <a href="/notes">Notes</a>
+        </li>
+        <li class="nav-item">
+          <a href="/contact">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a href="/presskit">Presskit</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</div>

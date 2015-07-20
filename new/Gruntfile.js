@@ -21,15 +21,19 @@ module.exports = function(grunt) {
 
     watch: {
       assemble: {
-        files: ['<%= config.src %>/{content,data,templates}/{,*/}*.{md,hbs,yml}'],
-        tasks: ['build-new-content']
+        files: ['<%= config.src %>/{content,data}/{,*/}*.{md,hbs,yml}'],
+        tasks: ['newer:assemble']
+      },
+      templates: {
+        files: ['<%= config.src %>/templates/**/*.{md,hbs,yml}'],
+        tasks: ['assemble']
       },
       styles: {
         files: ['<%= config.src %>/assets/css/**/*.less'], // which files to watch
-        tasks: ['build-new-styles']
+        tasks: ['styles']
       },
       js: {
-        files: ['<%= config.src %>/assets/js/**/*.js'], // which files to watch
+        files: ['<%= config.src %>/assets/js/*.js'], // which files to watch
         tasks: ['copy:js']
       },
       livereload: {
@@ -67,7 +71,7 @@ module.exports = function(grunt) {
           assets: '<%= config.dist %>/assets',
           layout: '<%= config.src %>/templates/layouts/default.hbs',
           data: '<%= config.src %>/data/*.{json,yml}',
-          partials: '<%= config.src %>/templates/partials/*.hbs',
+          partials: '<%= config.src %>/templates/partials/**/*.hbs',
           plugins: ['assemble-contrib-permalinks','assemble-contrib-sitemap'],
           permalinks: {
             structure: ':basename/index.html'
@@ -93,6 +97,29 @@ module.exports = function(grunt) {
         dest: '<%= config.dist %>/assets/css/'
       }
     },*/
+    
+    copy: {
+      fonts: {
+        files: [
+          {
+            expand: true,
+            cwd: '<%= config.src %>/assets/css/typography/fonts/',
+            src: ['**'],
+            dest: '<%= config.dist %>/assets/css/fonts'
+          }
+        ]
+      },
+      js: {
+        files: [
+          {
+            expand: true,
+            cwd: '<%= config.src %>/assets/js/',
+            src: ['**'],
+            dest: '<%= config.dist %>/assets/js'
+          }
+        ]
+      }
+    },
     
     less: {
       development: {
@@ -127,12 +154,10 @@ module.exports = function(grunt) {
 
   });
 
-  grunt.registerTask('server', ['build', 'connect:livereload', 'watch']);
+  grunt.registerTask('server', ['copy:fonts', 'build', 'connect:livereload', 'watch']);
   
-  grunt.registerTask('styles-new', ['newer:less', 'newer:autoprefixer']);
   grunt.registerTask('styles', ['less', 'autoprefixer']);
-  
-  grunt.registerTask('build-new-styles', ['styles-new']);
+
   grunt.registerTask('build-new-content', ['newer:assemble']);
   grunt.registerTask('build-new', ['styles-new', 'newer:assemble']);
   grunt.registerTask('build', ['clean', 'styles', 'assemble']);
