@@ -1,0 +1,38 @@
+<div class="projects-wrapper row">
+  <div class="projects row row-widecomputer">
+    {% for proj in site.projects %}
+      <div class="project col-c-6 col-wt-6 col-t-12 col-wp-12 col-p-12" style="background: url(/assets/img/projects/{{proj.ref}}/bg.png); background-size: cover;">
+        <a href="{{proj.link}}">
+          <div class="left col-c-7">
+            <div class="icon"><img src="/assets/img/projects/{{proj.ref}}/icon.png"/></div>
+            <div class="title">{{proj.title}}</div>
+          </div>
+        </a>
+        <div class="right col-c-5">
+          <a href="{{proj.right-top-link}}">
+            <div class="top">
+              <div class="primary">
+                {{proj.right-top-text-primary}}
+              </div>
+              <div class="secondary">
+                {{proj.right-top-text-secondary}}
+              </div>
+            </div>
+          </a>
+          <a href="{{proj.right-botom-link}}">
+            <div class="bottom" style="background-color: {{proj.color}}">
+              {{proj.right-botom-text}}
+            </div>
+          </a>
+        </div>
+        <div class="bottom col-c-12">
+          <div class="articles sources{{ proj.sources | size }}">
+            {% for source in proj.sources %}
+              <a href="{{source.source-link}}"><article>{{source.blurb}}<br><span class="quote"> {{source.source-name}}</span></article></a>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</div>

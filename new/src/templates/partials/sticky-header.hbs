@@ -1,15 +1,14 @@
 ---
 component: sticky-header
 ---
-<div class="header" id="header">
-  <div class="header-wrapper row row-widetablet">    
-    <div class="title">
+<div class="header" id="header" >
+  <div class="header-wrapper row row-computer">    
+    <div class="title col col-c-6 col-wt-6 col-t-2">
       <div class="logo">{{> lime}}</div>
-      <div class="text">{{site.title}}</div>
-      <div class="text-small">Studios</div>
+      <div class="text">studios</div>
     </div>
     
-    <nav>
+    <nav class="col col-c-6 col-wt-6 col-t-10 hide-on-wp hide-on-p">
       <ul class="nav-items">
         <li class="nav-item">
           <a href="/">Projects</a>

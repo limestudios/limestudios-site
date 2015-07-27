@@ -1,42 +1,36 @@
 div.header {
+	z-index: 1000;
 	background-color: #8BC34A;
-	
-	min-width: 100%;
+	margin: 0;
 	position: fixed;
-	top: 0px;
-	padding: 10px;
+	top: 0;
+	left: 0;
+	right: 0;
+	
+	@media(max-width: @screen-widephone) {
+		position: unset;
+	}
 	
 	div.header-wrapper {
-		transition: all .1s ease;
-		height: 256px;
-		display: flex;
-		align-items: flex-start;
-		justify-content: space-between;
-		
+		padding: 0 1em;
 		nav {
-			margin-right: 20px;
-			padding: 16px;
-			
+			display: flex;
+			align-content: center;
+			height: 100%;
 			ul.nav-items {
-				margin: 0;	
 				padding: 0;
-				list-style: none;
-				float: right;
-				
+				display: flex;
+				justify-content: flex-end;
+				flex-direction: row;
+				width: 100%;
+				height: 100%;
 				li.nav-item {
-					margin: 0;	
-					padding: 0 0 0 20px;
-					float: left;
-					font-weight: 600;
-					font-size: 16px;
-					
+					list-style: none;
+					margin-left: 16px;
 					a {
-						text-decoration: none;
 						color: white;
-						border-bottom: 0px solid white;
-						
-						transition: all 0.1s ease;
-						
+						font-weight: 600;
+						text-decoration: none;
 						&:hover {
 							border-bottom: 2px solid white;
 						}
@@ -46,81 +40,33 @@ div.header {
 		}
 		
 		div.title {
-			margin-top: 100px;
-			display: flex;
-			flex-direction: row;
+			padding: 1em 0;
 			div.logo {
-				min-width: 80px;
+				width: 64px;
 				svg {
-					width: 80px;
-					height: 80px;
+					width: 64px;
+					height: 64px;
 					fill: white;
 				}
-				display: none;
 			}
 			
 			div.text {
-				font-family: Roboto Mono;
 				color: white;
-				font-weight: 400;
-				font-size: 64px;
+				text-transform: uppercase;
 			}
 			
-			div.text-small {
-				display: none;
+			@media (max-width: @screen-widephone) {
+				div.logo {
+					margin: 0 auto;
+				}
+				
+				div.text {
+					text-align: center;
+				}
 			}
-		}
-		
-		@media (max-width: @screen-widephone) {
-		  display: block;
-		  
-		  div.title {
-			  margin-top: 26px;
-		  }
 		}
 	}
 	
 	&.smaller {
-		div.header-wrapper {
-			display: flex !important;
-			align-items: center;
-			height: 80px;
-			div.title {
-				margin-top: 0;
-				display: flex;
-				flex-direction: column;
-				
-				div.logo {
-					min-width: 64px;
-					svg {
-						width: 64px;
-						height: 64px;
-					}
-					display: block;
-				}
-				
-				div.text {
-					display: none;
-				}
-				
-				div.text-small {
-					color: white;
-					display: block;
-					text-transform: uppercase;
-				}
-			}
-			
-			nav {				
-				ul.nav-items {
-					margin: 0;	
-					padding: 0;
-					list-style: none;
-					float: right;
-					
-					li.nav-item {
-					}
-				}
-			}
-		}
 	}
 }

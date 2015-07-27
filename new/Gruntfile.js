@@ -29,7 +29,7 @@ module.exports = function(grunt) {
         tasks: ['assemble']
       },
       styles: {
-        files: ['<%= config.src %>/assets/css/**/*.less'], // which files to watch
+        files: ['<%= config.src %>/assets/css/**/**/*.less'], // which files to watch
         tasks: ['styles']
       },
       js: {
@@ -124,7 +124,7 @@ module.exports = function(grunt) {
     less: {
       development: {
         options: {
-          compress: false,
+          compress: false
         },
         files: {
           "<%= config.dist %>/assets/css/styles.css": "<%= config.src %>/assets/css/*.less"

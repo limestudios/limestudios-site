@@ -1,0 +1,30 @@
+// ---- Color Variables ---- //
+$dark-primary-color: $blue-grey-900;
+$primary-color: $grey-800;
+$light-primary-color: $grey-300;
+$text-color: $grey-50;
+$accent-color: $green-500;
+$primary-text-color: $grey-900;
+$secondary-text-color: $grey-700;
+$divider-text-color: $grey-400;
+
+// ---- Font Variables ---- //
+
+$font-stack: Helvetica Neue, Helvetica, Arial, sans-serif;
+$type-primary: 'Roboto Mono', $font-stack;
+$type-secondary: 'Open Sans', $font-stack;
+
+// ---- Screen Variables ---- //
+
+$screen-phone: 321px;
+$screen-widephone: 481px;
+$screen-tablet: 769px;
+$screen-widetablet: 1025px;
+$screen-computer: 1300px;
+$screen-widecomputer: 1680px;
+$screen-full: 100%;
+
+// ---- Grid Variables ---- //
+
+$debug-border: 0px;
+$grid-columns: 12;

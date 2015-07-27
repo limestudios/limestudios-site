@@ -1,0 +1,119 @@
+name: Lime Studios
+title: Lime Studios
+markdown: redcarpet
+exclude: ["node_modules", "gulpfile.js", "package.json"]
+
+projects: [
+  {
+    title: "Project Arrhythmia",
+    ref: "project-arrhythmia",
+    link: "http://projectarrhythmia.com",
+    color: "rgba(244, 67, 54, 0.8)",
+    right-top-link: "http://blog.projectarrhythmia.com/post/124876293359/project-arrhythmia-by-lime-studios",
+    right-top-text-primary: "<span>V</span>1.2.0",
+    right-top-text-secondary: "Updated: July 23",
+    right-botom-text: "Download the Game",
+    right-botom-link: "http://download.projectarrhythmia.com",
+    sources: [
+      {
+        source-name: "Alpha Beta Gamer",
+        source-link: "http://www.alphabetagamer.com/project-arrhythmia-alpha-download/",
+        blurb: "The excellent audio tracks are complemented perfectly by the pulsing visuals, making Project Arrhythmia a gloriously hypnotic audio/visual experience.  A super cool rhythmic dodge-em-up."
+      },
+      {
+        source-name: "Click Indie",
+        source-link: "http://clickindie.com/project-arrhythmia-a-music-game-worth-watching/",
+        blurb: "The game is pretty to look at, in fact, I spent a lot more time playing and replaying this short demo than I intended to, simply because of how good the game looks."
+      }
+    ]
+  },
+  {
+    title: "Segment",
+    ref: "segment",
+    link: "http://segment.social/",
+    color: "rgba(241, 90, 64, 0.8)",
+    right-top-link: "http://blog.lawnchair.io/post/124107258667/segment-product-update-2",
+    right-top-text-primary: "Alpha",
+    right-top-text-secondary: "Updated: July 14",
+    right-botom-text: "Sign Up",
+    right-botom-link: "http://download.projectarrhythmia.com",
+    sources: [
+      {
+        source-name: "Segment Team",
+        source-link: "#",
+        blurb: "We are done with everything ending up in one news feed and getting lost in the noise. We are building a social network that enables you to choose where your content belongs."
+      }
+    ]
+  }
+]
+
+social: [
+  {
+    title: "Twitter",
+    ref: "twitter",
+    link: "https://twitter.com/liamcraver",
+    links: [
+      {
+        name: "Personal",
+        link: "http://www.alphabetagamer.com/project-arrhythmia-alpha-download/",
+        color: "rgba(85, 172, 238, 0.8)"
+      },
+      {
+        name: "Lime Studios",
+        link: "http://www.alphabetagamer.com/project-arrhythmia-alpha-download/",
+        color: "rgba(76,175,80, 0.8)"
+      },
+      {
+        name: "Project Arrhythmia",
+        link: "http://www.alphabetagamer.com/project-arrhythmia-alpha-download/",
+        color: "rgba(244, 67, 54, 0.8)"
+      }
+    ],
+    sources: [
+      {
+        source-name: "@liamcraver",
+        source-link: "http://www.alphabetagamer.com/project-arrhythmia-alpha-download/",
+        blurb: "Working on my revamped site! The bottom white part will show random articles for each project. #webdev"
+      },
+      {
+        source-name: "@IndivisibleRPG",
+        source-link: "http://clickindie.com/project-arrhythmia-a-music-game-worth-watching/",
+        blurb: "Heading into the weekend, we’ve got another bit of #IndivisibleRPG animation for you!"
+      }
+    ]
+  },
+  {
+    title: "Tumblr",
+    ref: "tumblr",
+    link: "https://twitter.com/liamcraver",
+    links: [
+      {
+        name: "Personal",
+        link: "http://www.alphabetagamer.com/project-arrhythmia-alpha-download/",
+        color: "rgba(85, 172, 238, 0.8)"
+      },
+      {
+        name: "Lime Studios",
+        link: "http://www.alphabetagamer.com/project-arrhythmia-alpha-download/",
+        color: "rgba(76,175,80, 0.8)"
+      },
+      {
+        name: "Project Arrhythmia",
+        link: "http://www.alphabetagamer.com/project-arrhythmia-alpha-download/",
+        color: "rgba(244, 67, 54, 0.8)"
+      }
+    ],
+    sources: [
+      {
+        source-name: "@liamcraver",
+        source-link: "http://www.alphabetagamer.com/project-arrhythmia-alpha-download/",
+        blurb: "Working on my revamped site! The bottom white part will show random articles for each project. #webdev"
+      },
+      {
+        source-name: "@IndivisibleRPG",
+        source-link: "http://clickindie.com/project-arrhythmia-a-music-game-worth-watching/",
+        blurb: "Heading into the weekend, we’ve got another bit of #IndivisibleRPG animation for you!"
+      }
+    ]
+  }
+]

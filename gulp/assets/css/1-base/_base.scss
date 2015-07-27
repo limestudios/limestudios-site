@@ -1,0 +1,29 @@
+body {
+  background-color: white;
+  font-size: 14px;
+  line-height: 1.6;
+  font-family: $type-primary;
+  color: #666;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+
+  .content {
+    position: relative;
+    top: 110px;
+    width: 100%;
+
+		@media (max-width: $screen-tablet) {
+			top: 0;
+		}
+  }
+
+  .footer {
+    position: relative;
+    top: 110px;
+    width: 100%;
+
+		@media (max-width: $screen-tablet) {
+			top: 0;
+		}
+  }
+}

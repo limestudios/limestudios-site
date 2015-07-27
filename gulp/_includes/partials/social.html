@@ -1,0 +1,30 @@
+<div class="projects-wrapper row">
+  <div class="projects row row-widecomputer">
+    {% for social in site.social %}
+      <div class="project col-c-6 col-wt-6 col-t-12 col-wp-12 col-p-12" style="background: url(/assets/img/social/{{social.ref}}/bg.png); background-size: cover;">
+        <a href="{{social.link}}">
+          <div class="left col-c-7">
+            <div class="icon"><img src="/assets/img/social/{{social.ref}}/icon.png"/></div>
+            <div class="title">{{social.title}}</div>
+          </div>
+        </a>
+        <div class="right col-c-5">
+          {% for link in social.links %}
+            <a href="{{link.link}}">
+              <div class="part links{{ social.links | size }}" style="background-color: {{link.color}}">
+                {{link.name}}
+              </div>
+            </a>
+          {% endfor %}
+        </div>
+        <div class="bottom col-c-12">
+          <div class="articles sources{{ social.sources | size }}">
+            {% for source in social.sources %}
+              <a href="{{source.source-link}}"><article>{{source.blurb}}<br><span> {{source.source-name}}</span></article></a>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</div>

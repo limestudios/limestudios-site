@@ -1,7 +1,19 @@
+*,*:before, *:after { box-sizing: border-box }
+
 body {
 	font-family: Open Sans;
 	font-weight: 300;
 	margin: 0;
-	
 	min-height: 2000px;
+	
+	.content {
+		position: absolute @important;
+		top: 123px;
+		left: 0;
+		right: 0;
+		
+		@media (min-width: @screen-widephone) {
+			position: unset;
+		}
+	}
 }
