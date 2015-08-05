@@ -8,12 +8,30 @@
     <nav class="col col-c-6 col-wt-6 col-t-10 col-wp-12 col-p-12">
       <ul class="nav-items col-c-12 col-wt-12 col-t-12 col-wp-12 col-p-12">
 
-        {% if page.current == "projects" %}
+        {% if page.current == "presskit" %}
         <li class="nav-item current">
         {% else %}
         <li class="nav-item">
         {% endif %}
-          <a href="/">Projects</a>
+          <a href="/about">Presskit</a>
+        </li>
+
+        <!--
+        {% if page.current == "notes" %}
+        <li class="nav-item current">
+        {% else %}
+        <li class="nav-item">
+        {% endif %}
+          <a href="/notes">Notes</a>
+        </li>
+        -->
+
+        {% if page.current == "contact" %}
+        <li class="nav-item current">
+        {% else %}
+        <li class="nav-item">
+        {% endif %}
+          <a href="/contact">Contact</a>
         </li>
 
         {% if page.current == "social" %}
@@ -25,28 +43,12 @@
           {{!-- Streams / Talks / Blog --}}
         </li>
 
-        {% if page.current == "notes" %}
+        {% if page.current == "projects" %}
         <li class="nav-item current">
         {% else %}
         <li class="nav-item">
         {% endif %}
-          <a href="/notes">Notes</a>
-        </li>
-
-        {% if page.current == "contact" %}
-        <li class="nav-item current">
-        {% else %}
-        <li class="nav-item">
-        {% endif %}
-          <a href="/contact">Contact</a>
-        </li>
-
-        {% if page.current == "presskit" %}
-        <li class="nav-item current">
-        {% else %}
-        <li class="nav-item">
-        {% endif %}
-          <a href="/presskit">Presskit</a>
+          <a href="/">Projects</a>
         </li>
       </ul>
     </nav>

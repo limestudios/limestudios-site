@@ -14,15 +14,11 @@ div.header {
 
 		nav {
       padding: 0 1em;
-			display: flex;
-			align-content: center;
 			height: 100%;
 			ul.nav-items {
 				padding: 0;
-				display: flex;
-				justify-content: flex-end;
-				flex-direction: row;
 				li.nav-item {
+					float: right;
 					list-style: none;
 					margin-left: 16px;
 					padding-bottom: 8px;
@@ -84,6 +80,9 @@ div.header {
 		div.header-wrapper {
 			nav {
 				ul.nav-items {
+					display: flex;
+					justify-content: flex-end;
+					flex-direction: row-reverse;
 					justify-content: space-around;
 					li.nav-item {
 						margin-left: 0;
@@ -96,6 +95,6 @@ div.header {
 
 @media(max-width: $screen-tablet) {
 	div.header {
-		position: unset;
+		position: relative;
 	}
 }

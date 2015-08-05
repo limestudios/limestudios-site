@@ -8,7 +8,7 @@ projects: [
     title: "Project Arrhythmia",
     ref: "project-arrhythmia",
     link: "http://projectarrhythmia.com",
-    color: "rgba(244, 67, 54, 0.8)",
+    color: "rgba(238, 83, 80, 0.9)",
     right-top-link: "http://blog.projectarrhythmia.com/post/124876293359/project-arrhythmia-by-lime-studios",
     right-top-text-primary: "<span>V</span>1.2.0",
     right-top-text-secondary: "Updated: July 23",
@@ -28,20 +28,61 @@ projects: [
     ]
   },
   {
+    title: "Streams",
+    ref: "streams",
+    link: "https://www.livecoding.tv/lcraver/",
+    color: "rgba(139, 195, 74, 0.9)",
+    right-top-link: "https://www.livecoding.tv/lcraver/",
+    right-top-text-primary: "Coding",
+    right-top-text-secondary: "Mon / Wen / Fri",
+    right-botom-text: "Follow me",
+    right-botom-link: "https://www.livecoding.tv/lcraver/",
+    sources: [
+      {
+        source-name: "Liam",
+        source-link: "https://www.livecoding.tv/lcraver/",
+        blurb: "I stream regularly on monday, wednesday and friday. Also randomly on the weekends. Anything from game development to web development."
+      }
+    ]
+  },
+  {
     title: "Segment",
     ref: "segment",
     link: "http://segment.social/",
-    color: "rgba(241, 90, 64, 0.8)",
+    color: "rgba(241, 90, 64, 0.9)",
     right-top-link: "http://blog.lawnchair.io/post/124107258667/segment-product-update-2",
     right-top-text-primary: "Alpha",
     right-top-text-secondary: "Updated: July 14",
     right-botom-text: "Sign Up",
-    right-botom-link: "http://download.projectarrhythmia.com",
+    right-botom-link: "http://segment.social",
     sources: [
       {
         source-name: "Segment Team",
-        source-link: "#",
+        source-link: "http://segment.social",
         blurb: "We are done with everything ending up in one news feed and getting lost in the noise. We are building a social network that enables you to choose where your content belongs."
+      }
+    ]
+  },
+  {
+    title: "Talks",
+    ref: "talks",
+    link: "http://lcraver.tumblr.com/search/talks",
+    color: "rgba(85, 172, 238, 0.9)",
+    right-top-link: "http://lcraver.tumblr.com/post/125228361953/a-talk-on-creating-your-first-game",
+    right-top-text-primary: "GameDev",
+    right-top-text-secondary: "Updated: Oct 16",
+    right-botom-text: "View All",
+    right-botom-link: "http://lcraver.tumblr.com/search/talks",
+    sources: [
+      {
+        source-name: "Liam",
+        source-link: "http://lcraver.tumblr.com/post/125228361953/a-talk-on-creating-your-first-game",
+        blurb: "Keep it simple, keep it small! Scope creep can really hurt your first project. Your second project is almost guaranteed to go smoother than your first. The experience you will gain from the first, however, will be invaluable."
+      },
+      {
+        source-name: "Liam",
+        source-link: "http://lcraver.tumblr.com/post/125228361953/a-talk-on-creating-your-first-game",
+        blurb: "Develop your own version control system early on! It will save you a lot of time and work later down the road. Even if you don’t think you need it immediately, trust me you do. You will avoid many headaches."
       }
     ]
   }
@@ -56,17 +97,17 @@ social: [
       {
         name: "Personal",
         link: "http://www.alphabetagamer.com/project-arrhythmia-alpha-download/",
-        color: "rgba(85, 172, 238, 0.8)"
+        color: "rgba(85, 172, 238, 0.9)"
       },
       {
         name: "Lime Studios",
         link: "http://www.alphabetagamer.com/project-arrhythmia-alpha-download/",
-        color: "rgba(76,175,80, 0.8)"
+        color: "rgba(139, 195, 74, 0.9)"
       },
       {
         name: "Project Arrhythmia",
         link: "http://www.alphabetagamer.com/project-arrhythmia-alpha-download/",
-        color: "rgba(244, 67, 54, 0.8)"
+        color: "rgba(238, 83, 80, 0.9)"
       }
     ],
     sources: [
@@ -90,17 +131,17 @@ social: [
       {
         name: "Personal",
         link: "http://www.alphabetagamer.com/project-arrhythmia-alpha-download/",
-        color: "rgba(85, 172, 238, 0.8)"
+        color: "rgba(85, 172, 238, 0.9)"
       },
       {
         name: "Lime Studios",
         link: "http://www.alphabetagamer.com/project-arrhythmia-alpha-download/",
-        color: "rgba(76,175,80, 0.8)"
+        color: "rgba(139, 195, 74, 0.9)"
       },
       {
         name: "Project Arrhythmia",
         link: "http://www.alphabetagamer.com/project-arrhythmia-alpha-download/",
-        color: "rgba(244, 67, 54, 0.8)"
+        color: "rgba(238, 83, 80, 0.9)"
       }
     ],
     sources: [

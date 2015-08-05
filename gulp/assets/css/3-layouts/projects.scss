@@ -33,10 +33,11 @@
       }
 
       .icon {
-        display: flex;
-        justify-content: center;
         img{
-          max-height: 175px;
+          display: block;
+          margin: 0 auto;
+          height: 175px;
+          width: 175px;
         }
       }
 
