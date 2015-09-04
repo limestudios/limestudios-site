@@ -1,0 +1,98 @@
+.home-wrap {
+  display: flex;
+  min-height: 100vh;
+
+  @media (max-width: $screen-mobile) {
+    display: block;
+  }
+}
+
+.home-sections{
+  flex: 1;
+
+  section {
+    padding: 50px 0;
+  }
+
+  // FLEX CLASSES
+
+  .flex {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .flex--center {
+    justify-content: center;
+  }
+
+  .flex--space-around {
+    justify-content: space-around;
+  }
+
+  .order-first {
+    order: -1;
+  }
+}
+
+
+// COLUMN CLASSES
+.col-1 {
+  max-width: 300px;
+  margin: 0 10px;
+  min-width: 300px;
+}
+
+.col-2 {
+  max-width: 620px;
+  margin: 0 10px;
+}
+
+.col-50 {
+  width: 50%;
+}
+
+.col-1 h1,
+.col-2 h1,
+.col-50 h1 {
+  line-height: 1.1;
+  font-family: $type-primary;
+  font-size: 36px;
+  font-weight: 400;
+}
+
+.col-1 p,
+.col-2 p,
+.col-50 p {
+  font-family: $type-secondary;
+}
+
+.push-right {
+  margin-left: 330px;
+}
+
+@media (max-width: 640px) {
+  .home-sections .flex {
+    display: block;
+  }
+
+  .col-1 {
+    max-width: 100%;
+    min-width: 100px;
+  }
+
+  .col-50 {
+    width: auto;
+  }
+
+  .push-right{
+    margin-left: 10px;
+  }
+}
+
+// Typography
+
+.home-lead {
+  font-family: $type-secondary;
+  font-size: 36px;
+  line-height: 1.1;
+}

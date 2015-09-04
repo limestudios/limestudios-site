@@ -8,6 +8,19 @@ $primary-text-color: $grey-900;
 $secondary-text-color: $grey-700;
 $divider-text-color: $grey-400;
 
+$arrhythmia-blue: rgb(52,97,136);
+$arrhythmia-light-blue: rgb(81,122,158);
+$arrhythmia-light-red: rgb(255,106,134);
+$arrhythmia-red: rgb(194,65,95);
+
+$arrhythmia-background: #f7f7f7;
+
+$arrhythmia-peach-1: rgb(255,242,232);
+$arrhythmia-peach-2: rgb(255,232,215);
+$arrhythmia-peach-3: rgb(255,221,195);
+$arrhythmia-peach-4: rgb(255,210,175);
+$arrhythmia-peach-5: rgb(255,198,155);
+
 // ---- Font Variables ---- //
 
 $font-stack: Helvetica Neue, Helvetica, Arial, sans-serif;
@@ -23,6 +36,8 @@ $screen-widetablet: 1025px;
 $screen-computer: 1300px;
 $screen-widecomputer: 1680px;
 $screen-full: 100%;
+
+$screen-mobile: 775px;
 
 // ---- Grid Variables ---- //
 

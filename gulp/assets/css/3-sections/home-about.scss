@@ -1,0 +1,30 @@
+section.about {
+  background-image: url(/assets/img/site/intro.gif);
+  background-position: center bottom;
+  background-size: cover;
+
+  h2 {
+    color: $grey-900;
+    font-size: 60px;
+    font-weight: 100;
+    line-height: 1;
+    margin-left: -320px;
+    margin-top: 0;
+  }
+
+  .home-lead {
+    padding-bottom: 180px;
+    font-weight: 400;
+    color: $grey-800;
+  }
+}
+
+@media (max-width: 640px) {
+  section.about {
+    h2, .home-lead {
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 300px;
+    }
+  }
+}

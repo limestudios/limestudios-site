@@ -55,7 +55,7 @@ gulp.task('sass', function () {
  * Compile files from _scss into both _site/css (for live injecting) and site (for future jekyll builds)
  */
 gulp.task('img', function () {
-    gulp.src('assets/img/**/**/*.{png,jpg,svg}')
+    gulp.src('assets/img/**/**/*.{png,jpg,svg,gif}')
     .pipe(gulp.dest('_site/assets/img'));
 });
 

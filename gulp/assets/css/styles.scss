@@ -1,13 +1,18 @@
 @import '0-tools/normalize';
 @import '0-tools/colors';
-@import '0-tools/grid';
 
+@import '1-base/_vars';
 @import '1-base/_base';
 @import '1-base/_typography';
 @import '1-base/_links';
+@import '1-base/_mixins';
 
-@import '3-layouts/navbar';
-@import '3-layouts/projects';
-@import '3-layouts/about';
-@import '3-layouts/contact';
-@import '3-layouts/footer';
+@import '2-modules/buttons';
+@import '2-modules/flex-video';
+
+@import '3-sections/header';
+@import '3-sections/home-about';
+@import '3-sections/home-arrhythmia';
+@import '3-sections/home-talks';
+
+@import '4-layouts/home';
