@@ -8,11 +8,9 @@
 }
 
 .home-sections{
+  max-width: 1680px;
+  margin: 0 auto;
   flex: 1;
-
-  section {
-    padding: 50px 0;
-  }
 
   // FLEX CLASSES
 
@@ -32,19 +30,26 @@
   .order-first {
     order: -1;
   }
+
+  &.home-sections-normal {
+    position: relative;
+    top: 256px;
+  }
+
+  &.home-sections-shrink {
+    position: relative;
+    top: 96px;
+  }
 }
 
 
 // COLUMN CLASSES
 .col-1 {
-  max-width: 300px;
-  margin: 0 10px;
-  min-width: 300px;
+  max-width: 840px;
 }
 
 .col-2 {
-  max-width: 620px;
-  margin: 0 10px;
+  max-width: 1680px;
 }
 
 .col-50 {
@@ -67,10 +72,10 @@
 }
 
 .push-right {
-  margin-left: 330px;
+  margin-left: 840px;
 }
 
-@media (max-width: 640px) {
+@media (max-width: 840px) {
   .home-sections .flex {
     display: block;
   }

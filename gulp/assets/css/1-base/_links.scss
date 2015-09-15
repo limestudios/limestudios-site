@@ -79,3 +79,14 @@ a.norm {
     }
   }
 }
+
+a.line {
+  transition: 0.1s all ease-in-out;
+  padding-bottom: 22px;
+  padding-left: 8px;
+  padding-right: 8px;
+  border-bottom: 2px solid transparent;
+  &:hover {
+    border-bottom: 2px solid black;
+  }
+}

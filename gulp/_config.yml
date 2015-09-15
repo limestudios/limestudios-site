@@ -5,11 +5,10 @@ exclude: ["node_modules", "gulpfile.js", "package.json"]
 
 home-nav: [
   {link: "#about", text: "About"},
-  {link: "#arrhythmia", text: "Project Arrhythmia"},
-  {link: "#streams", text: "Streams"},
-  {link: "#talks", text: "Talks"},
+  {link: "#games", text: "Games"},
+  {link: "#designs", text: "Designs"},
+  {link: "#Streams", text: "Streams"},
   {link: "#blogs", text: "Blogs"},
-  {link: "#newsletter", text: "Newsletter"},
   {link: "#contact", text: "Contact"},
   {link: "#presskit", text: "Presskit"}
 ]

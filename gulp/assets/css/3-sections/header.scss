@@ -1,130 +1,74 @@
 .home-wrap {
   header {
-    width: 135px;
-    background: white;
-    padding: 30px 0;
+    z-index: 100;
 
     .header-position {
+      background: white;
       position: fixed;
-      top: 20px;
-      left: 0;
-      bottom: 20px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      width: 135px;
-    }
+      left: 0px;
+      right: 0px;
+      height: 256px;
+      padding: 0 20px;
+      box-shadow: 0px 10px 8px 0px rgba(0,0,0,0.2);
 
-    .logo {
-      color: transparent;
-      max-width: 135px;
-      background-image: url(/assets/img/site/logo.svg);
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: contain;
-      height: 96px;
-      padding: 0;
-      margin: 0;
-    }
+      .header-wrapper {
+        margin: 0 auto;
+        max-width: 1680px;
+        height: 100%;
+      }
 
-    .home-nav {
-      ul {
-        list-style: none;
-        margin: 20px 0;
-        padding: 0 20px 0 0;
-        text-align: right;
+      .logo-wrapper {
+        height: 100%;
 
-        li {
-          margin-bottom: 10px;
+        display: flex;
+        align-items: center;
 
-          &:last-child {
-            margin-bottom: 0px;
-          }
+        .logo {
+          height: 100%;
+          max-width: 96px;
+          margin: 0;
+          padding: 0;
+          float: left;
+        }
 
-          a {
-            color: $grey-900;
+        .text {
+          transition: 0.1s all ease-in-out;
+          padding-left: 20px;
+          float: left;
+          font-family: $type-primary;
+          font-weight: 400;
+          font-size: 56px;
+          margin: 0;
+          line-height: 1;
+          -webkit-font-smoothing: antialiased;
+        }
+      }
+
+      .home-nav {
+        float: right;
+        ul {
+          list-style: none;
+          margin: 20px 20px 0 0;
+
+          li {
+            margin: 0;
+            float: left;
+            font-size: 16px;
+
+            &:last-child {
+              padding-right: 0px;
+            }
+
+            a {
+              color: $grey-900;
+            }
           }
         }
       }
-    }
 
-    .email-link {
-      display: block;
-      text-align: right;
-      padding: 0 20px 0 0;
-    }
-
-    .mobile-nav-toggle {
-      display: none;
-      width: 45px;
-      height: 45px;
-      margin-right: 20px;
-      align-items: center;
-      cursor: pointer;
-
-      span,
-      span:before,
-      span:after {
-        content: "";
-        display: block;
-        width: 45px;
-        height: 4px;
-        background: $grey-800;
-        position: relative;
-
-        transition: all 0.15s ease-in-out;
-      }
-
-      span:before {
-        top: 15px;
-      }
-
-      span:after {
-        bottom: 19px;
-      }
-
-      &.is-open span {
-        background: transparent;
-      }
-
-      &.is-open span:after,
-      &.is-open span:before {
-        transform-origin: center;
-        transform: rotate(45deg);
-        top: 0;
-      }
-
-      &.is-open span:after {
-        transform: rotate(-45deg);
-        top: -4px;
-      }
-    }
-  }
-
-  .mobile-nav {
-    display: none;
-    position: absolute;
-    width: 100%;
-    background: white;
-    padding: 30px 0 20px 0;
-    transform: translateY(-100%);
-    transition: all 0.15s ease-in-out;
-
-    ul {
-      list-style: none;
-      margin: 0;
-      padding: 0;
-
-      li {
-        text-align: center;
-        margin-bottom: 10px;
-
-        &:last-child {
-          margin-bottom: 0px;
-        }
-
-        a {
-          color: $grey-900;
+      &.small {
+        .text {
+          font-size: 32px;
         }
       }
     }
@@ -134,35 +78,6 @@
     header {
       width: auto;
       padding: 20px 0;
-
-      .header-position {
-        width: auto;
-        position: relative;
-        top: auto;
-        bottom: auto;
-        left: auto;
-        flex-direction: row;
-        align-items: center;
-      }
-
-      .home-nav,
-      .email-link {
-        display: none;
-      }
-
-      .logo {
-        height: 45px;
-        width: 135px;
-      }
-
-      .mobile-nav-toggle {
-        display: flex;
-      }
-    }
-
-    .mobile-nav.is-open {
-      display: block;
-      transform: translateY(0);
     }
   }
 }

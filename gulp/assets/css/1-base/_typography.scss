@@ -1,11 +1,13 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,300,600,700,800,400);
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900,400italic,300italic);
 @import url(http://fonts.googleapis.com/css?family=Roboto+Mono:400,300italic,100italic,100,300,400italic,500,700);
 
 //	Headings
 .gigantic, .huge, .large, .bigger, .big,
 h1, h2, h3, h4, h5, h6 {
   color: #222;
-  font-weight: bold;
+  font-weight: 400;
+  font-family: $type-primary;
 }
 
 .gigantic {
@@ -60,4 +62,8 @@ hr {
   clear: both;
   margin: 10px 0 30px;
   height: 0;
+}
+
+h2 {
+  font-size: 24px;
 }

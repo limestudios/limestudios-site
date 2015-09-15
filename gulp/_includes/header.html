@@ -1,27 +1,17 @@
-<div class="mobile-nav">
-  <ul>
-    {% for element in site.home-nav %}
-      <li><a href="{{element.link}}">{{element.text}}</a></li>
-    {% endfor %}
-  </ul>
-</div>
-
 <header>
   <div class="header-position">
-    <h1 class="logo"></h1>
-
-    <nav class="home-nav">
-      <ul>
-        {% for element in site.home-nav %}
-          <li><a href="{{element.link}}">{{element.text}}</a></li>
-        {% endfor %}
-      </ul>
-    </nav>
-
-    <a class="email-link" href="mailto:liam@limestudios.net">+Email Me</a>
-
-    <div class="mobile-nav-toggle">
-      <span></span>
+    <div class="header-wrapper">
+      <nav class="home-nav">
+        <ul>
+          {% for element in site.home-nav %}
+            <li><a class="line" href="{{element.link}}">{{element.text}}</a></li>
+          {% endfor %}
+        </ul>
+      </nav>
+      <div class="logo-wrapper">
+        <img class="logo" src="/assets/img/site/logo.svg"/>
+        <div class="text">Studios</div>
+      </div>
     </div>
   </div>
 </header>
