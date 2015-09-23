@@ -987,6 +987,139 @@ a.line {
     background: white;
     color: black !important; }
 
+.card-container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+  .card-container a.card {
+    text-decoration: none;
+    display: block; }
+    .card-container a.card:hover {
+      box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+      z-index: 1000; }
+    .card-container a.card.full-card {
+      -webkit-transition: box-shadow 0.1s ease-in-out;
+              transition: box-shadow 0.1s ease-in-out;
+      max-height: 640px;
+      height: 50vw;
+      display: block;
+      overflow: hidden;
+      width: 100%; }
+      @media (max-width: 775px) {
+        .card-container a.card.full-card {
+          height: 100vw; } }
+    .card-container a.card.half-card {
+      -webkit-transition: box-shadow 0.1s ease-in-out;
+              transition: box-shadow 0.1s ease-in-out;
+      max-height: 640px;
+      height: 50vw;
+      display: block;
+      overflow: hidden;
+      width: 50%; }
+      @media (max-width: 775px) {
+        .card-container a.card.half-card {
+          height: 100vw; } }
+    .card-container a.card .dark, .card-container a.card .light {
+      position: relative;
+      width: 100%;
+      height: 100%; }
+    .card-container a.card .dark {
+      background-color: #212121; }
+      .card-container a.card .dark .title {
+        color: #fafafa; }
+      .card-container a.card .dark .tag {
+        color: #fafafa; }
+      .card-container a.card .dark .link-icon svg path {
+        fill: #fafafa; }
+    .card-container a.card .light {
+      background-color: #fafafa; }
+      .card-container a.card .light .title {
+        color: #424242; }
+      .card-container a.card .light .tag {
+        color: #424242; }
+      .card-container a.card .light .link-icon svg path {
+        fill: #424242; }
+    .card-container a.card .title {
+      padding: 0 0 0 20px;
+      position: absolute;
+      top: 24px;
+      letter-spacing: 0px;
+      font-size: 28px;
+      font-weight: 400;
+      z-index: 100; }
+    .card-container a.card .card-content {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0; }
+      .card-container a.card .card-content img {
+        position: absolute;
+        -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+        display: block; }
+        .card-container a.card .card-content img.center-small {
+          top: calc(50% - 128px);
+          left: calc(50% - 128px);
+          margin: 128px;
+          max-width: 128px;
+          max-height: 128px; }
+        .card-container a.card .card-content img.center-medium {
+          top: calc(50% - 64px);
+          left: calc(50% - 64px);
+          margin: 64px;
+          max-width: 256px;
+          max-height: 256px; }
+        .card-container a.card .card-content img.center-large {
+          top: calc(50% - 32px);
+          left: calc(50% - 32px);
+          margin: 32px;
+          max-width: 512px;
+          max-height: 512px; }
+        .card-container a.card .card-content img.center-full {
+          top: 50%;
+          left: 50%;
+          margin: 0px;
+          min-height: 100%; }
+    .card-container a.card .tag {
+      padding: 0 0 0 20px;
+      margin-bottom: 14px;
+      position: absolute;
+      bottom: 0;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      z-index: 100; }
+    .card-container a.card .link-icon {
+      margin-bottom: 14px;
+      position: absolute;
+      bottom: 0;
+      right: 20px;
+      width: 24px;
+      height: 24px; }
+      .card-container a.card .link-icon svg {
+        width: 24px;
+        height: 24px; }
+  @media (max-width: 775px) {
+    .card-container {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column; }
+      .card-container a.card.half-card {
+        width: 100%; } }
+
 .flex-video {
   height: 0;
   overflow: hidden;
@@ -1004,7 +1137,7 @@ a.line {
   left: 0; }
 
 .home-wrap header {
-  z-index: 100; }
+  z-index: 1001; }
   .home-wrap header .header-position {
     background: white;
     position: fixed;
@@ -1012,7 +1145,7 @@ a.line {
     right: 0px;
     height: 256px;
     padding: 0 20px;
-    box-shadow: 0px 10px 8px 0px rgba(0, 0, 0, 0.2); }
+    box-shadow: 0px 10px 8px 0px rgba(0, 0, 0, 0.1); }
     .home-wrap header .header-position .header-wrapper {
       margin: 0 auto;
       max-width: 1680px;
@@ -1061,24 +1194,20 @@ a.line {
       font-size: 32px; }
 
 @media (max-width: 775px) {
-  .home-wrap header {
-    z-index: 2000; }
-    .home-wrap header .header-position {
-      z-index: 2000; }
-      .home-wrap header .header-position .home-nav {
-        float: right;
-        width: calc(100% - 96px) !important; }
-        .home-wrap header .header-position .home-nav ul {
-          margin: 10px; }
-          .home-wrap header .header-position .home-nav ul li a:hover {
-            padding-bottom: 0px; }
-      .home-wrap header .header-position .logo-wrapper {
-        max-width: 96px;
-        margin: 0px; }
-        .home-wrap header .header-position .logo-wrapper .logo {
-          float: left; }
-        .home-wrap header .header-position .logo-wrapper .text {
-          display: none; } }
+  .home-wrap header .header-position .home-nav {
+    float: right;
+    width: calc(100% - 96px) !important; }
+    .home-wrap header .header-position .home-nav ul {
+      margin: 10px; }
+      .home-wrap header .header-position .home-nav ul li a:hover {
+        padding-bottom: 0px; }
+  .home-wrap header .header-position .logo-wrapper {
+    max-width: 96px;
+    margin: 0px; }
+    .home-wrap header .header-position .logo-wrapper .logo {
+      float: left; }
+    .home-wrap header .header-position .logo-wrapper .text {
+      display: none; } }
 
 section.designs .dribbble {
   background-color: pink; }
