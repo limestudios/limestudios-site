@@ -76,8 +76,41 @@
 
   @media (max-width: $screen-mobile) {
     header {
-      width: auto;
-      padding: 20px 0;
+      z-index: 2000;
+      //padding: 20px 0;
+      
+      .header-position {
+        z-index: 2000;
+        
+        .home-nav {
+          float: right;
+          width: calc(100% - 96px) !important;
+          
+          ul {
+            margin: 10px;
+            li {
+              a {
+                &:hover {
+                  padding-bottom: 0px;
+                }
+              }
+            }
+          }
+        }
+        
+        .logo-wrapper {
+          max-width: 96px;
+          margin: 0px;
+          
+          .logo {
+            float: left;
+          }
+          
+          .text {
+            display: none;
+          }
+        }
+      }
     }
   }
 }
