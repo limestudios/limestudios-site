@@ -1028,7 +1028,7 @@ a.line {
       @media (max-width: 775px) {
         .card-container a.card.half-card {
           height: 100vw; } }
-    .card-container a.card .dark, .card-container a.card .light {
+    .card-container a.card .dark, .card-container a.card .light, .card-container a.card .green {
       position: relative;
       width: 100%;
       height: 100%; }
@@ -1048,6 +1048,14 @@ a.line {
         color: #424242; }
       .card-container a.card .light .link-icon svg path {
         fill: #424242; }
+    .card-container a.card .green {
+      background-color: #9ccc65; }
+      .card-container a.card .green .title {
+        color: #424242; }
+      .card-container a.card .green .tag {
+        color: #424242; }
+      .card-container a.card .green .link-icon svg path {
+        fill: #424242; }
     .card-container a.card .title {
       padding: 0 0 0 20px;
       position: absolute;
@@ -1062,35 +1070,46 @@ a.line {
       bottom: 0;
       left: 0;
       right: 0; }
-      .card-container a.card .card-content img {
+      .card-container a.card .card-content img, .card-container a.card .card-content section {
         position: absolute;
         -webkit-transform: translate(-50%, -50%);
             -ms-transform: translate(-50%, -50%);
                 transform: translate(-50%, -50%);
         display: block; }
-        .card-container a.card .card-content img.center-small {
+        .card-container a.card .card-content img.center-small, .card-container a.card .card-content section.center-small {
           top: calc(50% - 128px);
           left: calc(50% - 128px);
           margin: 128px;
           max-width: 128px;
           max-height: 128px; }
-        .card-container a.card .card-content img.center-medium {
+        .card-container a.card .card-content img.center-medium, .card-container a.card .card-content section.center-medium {
           top: calc(50% - 64px);
           left: calc(50% - 64px);
           margin: 64px;
           max-width: 256px;
           max-height: 256px; }
-        .card-container a.card .card-content img.center-large {
+        .card-container a.card .card-content img.center-large, .card-container a.card .card-content section.center-large {
           top: calc(50% - 32px);
           left: calc(50% - 32px);
           margin: 32px;
           max-width: 512px;
           max-height: 512px; }
-        .card-container a.card .card-content img.center-full {
+        .card-container a.card .card-content img.center-full, .card-container a.card .card-content section.center-full {
           top: 50%;
           left: 50%;
           margin: 0px;
           min-height: 100%; }
+        .card-container a.card .card-content img.svg-light svg, .card-container a.card .card-content section.svg-light svg {
+          fill: #fafafa; }
+        .card-container a.card .card-content img.svg-light path, .card-container a.card .card-content section.svg-light path {
+          fill: #fafafa; }
+        .card-container a.card .card-content img.svg-dark svg, .card-container a.card .card-content section.svg-dark svg {
+          fill: #424242; }
+        .card-container a.card .card-content img.svg-dark path, .card-container a.card .card-content section.svg-dark path {
+          fill: #424242; }
+        .card-container a.card .card-content img svg, .card-container a.card .card-content section svg {
+          width: 100%;
+          height: 100%; }
     .card-container a.card .tag {
       padding: 0 0 0 20px;
       margin-bottom: 14px;

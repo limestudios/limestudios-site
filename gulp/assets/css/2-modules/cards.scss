@@ -55,7 +55,7 @@ $full-padding: 0px;
       width: 50%;
     }
 
-    .dark, .light {
+    .dark, .light, .green {
       position: relative;
       width: 100%;
       height: 100%;
@@ -89,6 +89,20 @@ $full-padding: 0px;
       }
     }
 
+    .green {
+      background-color: $light-green-400;
+
+      .title {
+        color: $card-text-color-light;
+      }
+      .tag {
+        color: $card-text-color-light;
+      }
+      .link-icon svg path {
+        fill: $card-text-color-light;
+      }
+    }
+
     .title {
       padding: 0 0 0 20px;
       position: absolute;
@@ -107,7 +121,7 @@ $full-padding: 0px;
       left: 0;
       right: 0;
 
-      img {
+      img, section {
         position: absolute;
         transform: translate(-50%, -50%);
         display: block;
@@ -141,6 +155,29 @@ $full-padding: 0px;
           left: 50%;
           margin: 0px;
           min-height: 100%;
+        }
+
+        &.svg-light {
+          svg {
+            fill: $card-text-color-dark;
+          }
+          path {
+            fill: $card-text-color-dark;
+          }
+        }
+
+        &.svg-dark {
+          svg {
+            fill: $card-text-color-light;
+          }
+          path {
+            fill: $card-text-color-light;
+          }
+        }
+
+        svg {
+          width: 100%;
+          height: 100%;
         }
       }
     }
