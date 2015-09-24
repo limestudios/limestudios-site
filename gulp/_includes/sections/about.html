@@ -1,35 +1,9 @@
 <section class="about card-container" id="about">
-  <a class="card full-card" href="localhost:3000">
-    <div class="dark">
-      <h3 class="title">Meet Lime Studios</h3>
-      <div class="card-content">
-        <section class="center-medium svg-light"/>
-          {% include svg/lime.html %}
-        </section>
-      </div>
-      <p class="tag">Article</p>
-      <p class="link-icon" href="">
-        {% include svg/chevron-right.html %}
-      </p>
-    </div>
-  </a>
-  <a class="card full-card" href="localhost:3000">
-    <div class="light">
-      <h3 class="title">Meet Lime Studios</h3>
-      <div class="card-content">
-        <img class="center-medium" src="/assets/img/site/logo.svg"/>
-      </div>
-      <p class="tag">Article</p>
-      <p class="link-icon" href="">
-        {% include svg/chevron-right.html %}
-      </p>
-    </div>
-  </a>
-  <a class="card full-card" href="localhost:3000">
+  <a class="card full-card" href="{% post_url /article/2014-04-20-meet-limestudios %}">
     <div class="green">
       <h3 class="title">Meet Lime Studios</h3>
       <div class="card-content">
-        <section class="center-medium svg-light"/>
+        <section class="center-large svg-light"/>
           {% include svg/lime.html %}
         </section>
       </div>

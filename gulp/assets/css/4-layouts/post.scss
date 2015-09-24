@@ -1,4 +1,4 @@
-.home-wrap {
+.post-wrap {
   display: flex;
   //min-height: 100vh;
 
@@ -7,7 +7,7 @@
   }
 }
 
-.home-sections{
+.post-sections{
   max-width: 1680px;
   margin: 0 auto;
   flex: 1;
@@ -31,12 +31,12 @@
     order: -1;
   }
 
-  &.home-sections-normal {
+  &.post-sections-normal {
     position: relative;
     top: 256px;
   }
 
-  &.home-sections-shrink {
+  &.post-sections-shrink {
     position: relative;
     top: 96px;
   }
