@@ -64,10 +64,7 @@ $full-padding: 0px;
     .dark {
       background-color: $grey-900;
 
-      .title {
-        color: $card-text-color-dark;
-      }
-      .tag {
+      .title, .tag, p.text {
         color: $card-text-color-dark;
       }
       .link-icon svg path {
@@ -78,10 +75,7 @@ $full-padding: 0px;
     .light {
       background-color: $grey-50;
 
-      .title {
-        color: $card-text-color-light;
-      }
-      .tag {
+      .title, .tag, p.text {
         color: $card-text-color-light;
       }
       .link-icon svg path {
@@ -92,10 +86,7 @@ $full-padding: 0px;
     .green {
       background-color: $light-green-400;
 
-      .title {
-        color: $card-text-color-light;
-      }
-      .tag {
+      .title, .tag, p.text {
         color: $card-text-color-light;
       }
       .link-icon svg path {
@@ -120,6 +111,12 @@ $full-padding: 0px;
       bottom: 0;
       left: 0;
       right: 0;
+      
+      p.text {
+        position: absolute;
+        top: 96px;
+        left: 20px;
+      }
 
       img, section {
         position: absolute;
@@ -155,6 +152,7 @@ $full-padding: 0px;
           left: 50%;
           margin: 0px;
           min-height: 100%;
+          min-width: 100%;
         }
 
         &.svg-light {

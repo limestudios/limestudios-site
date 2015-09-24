@@ -1034,25 +1034,19 @@ a.line {
       height: 100%; }
     .card-container a.card .dark {
       background-color: #212121; }
-      .card-container a.card .dark .title {
-        color: #fafafa; }
-      .card-container a.card .dark .tag {
+      .card-container a.card .dark .title, .card-container a.card .dark .tag, .card-container a.card .dark p.text {
         color: #fafafa; }
       .card-container a.card .dark .link-icon svg path {
         fill: #fafafa; }
     .card-container a.card .light {
       background-color: #fafafa; }
-      .card-container a.card .light .title {
-        color: #424242; }
-      .card-container a.card .light .tag {
+      .card-container a.card .light .title, .card-container a.card .light .tag, .card-container a.card .light p.text {
         color: #424242; }
       .card-container a.card .light .link-icon svg path {
         fill: #424242; }
     .card-container a.card .green {
       background-color: #9ccc65; }
-      .card-container a.card .green .title {
-        color: #424242; }
-      .card-container a.card .green .tag {
+      .card-container a.card .green .title, .card-container a.card .green .tag, .card-container a.card .green p.text {
         color: #424242; }
       .card-container a.card .green .link-icon svg path {
         fill: #424242; }
@@ -1070,6 +1064,10 @@ a.line {
       bottom: 0;
       left: 0;
       right: 0; }
+      .card-container a.card .card-content p.text {
+        position: absolute;
+        top: 96px;
+        left: 20px; }
       .card-container a.card .card-content img, .card-container a.card .card-content section {
         position: absolute;
         -webkit-transform: translate(-50%, -50%);
@@ -1098,7 +1096,8 @@ a.line {
           top: 50%;
           left: 50%;
           margin: 0px;
-          min-height: 100%; }
+          min-height: 100%;
+          min-width: 100%; }
         .card-container a.card .card-content img.svg-light svg, .card-container a.card .card-content section.svg-light svg {
           fill: #fafafa; }
         .card-container a.card .card-content img.svg-light path, .card-container a.card .card-content section.svg-light path {
