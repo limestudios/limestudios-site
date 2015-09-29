@@ -14,7 +14,7 @@ author: Liam Craver
   <iframe class="trailer" src="https://www.youtube.com/embed/kOEa4X3nmqA?theme=light" frameborder="0" allowfullscreen=""></iframe>
 </section>
 
-Project Arrhythmia is a game a rhythmic adventure in which all things beautiful are deadly. Avoid the musically timed pulse of blocks and bars, and in the process you might just find out what this mysterious "Project Arrhythmia" is.
+Project Arrhythmia is a rhythmic adventure in which all things beautiful are deadly. Avoid the musically timed pulse of blocks and bars, and in the process you might just find out what this mysterious "Project Arrhythmia" is.
 
 ##Background
 Project Arrhythmia came to be after I found myself frustrated with the lack of any "true" audio bound games. I have always been interested in games like soundodger+, 140 and OSU! where music is a core part of the gameplay however I've also always found the gameplay didn't react to the music as tightly as I wanted it to. So I set out to make a game where every sound from a chiptune beep to a guitar rift could be perfectly represented within the game.

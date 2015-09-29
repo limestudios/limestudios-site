@@ -15,7 +15,7 @@ INK is a fast-paced, abstract platformer about discovering the world around you,
 It is a small, but challenging game that Zack Bell put together post-Ludem Dare 32 upon seeing Dittomat's game entry.
 INK is currently only available on the Windows platform. Keyboard and Gamepad controls are supported.
 
-[TL;DR?](#-8-0-overall-verdict)
+<a class="line-s" href="#end">TL;DR?</a>
 
 ![Screenshot 1](/assets/img/posts/{{page.ref}}/screenshot1.gif "Screenshot 1")
 
@@ -46,8 +46,8 @@ The audio was nothing special but it did the job. It didn't get on my nerves and
 
 ![Screenshot 3](/assets/img/posts/{{page.ref}}/screenshot3.gif "Screenshot 3")
 
-###[8.0] Overall Verdict
+<h3 id="end">[8.0] Overall Verdict</h3>
 INK was an enjoyable game! It was a refreshing take on the paint the environment trope and a great platformer. With its
 stunning graphics and tight controls it should be a contender for your time!
 
-[Download The Game](http://zackbellgames.itch.io/ink)
+<a class="line-s" href="http://zackbellgames.itch.io/ink">Download The Game</a>
