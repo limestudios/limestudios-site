@@ -8,7 +8,8 @@ body {
   -webkit-text-size-adjust: 100%;
 
   .content {
-    position: relative;
+    @include clearfix();
+    position: absolute;
     top: 110px;
     width: 100%;
 
@@ -18,12 +19,7 @@ body {
   }
 
   .footer {
-    position: relative;
-    top: 110px;
+    @include clearfix();
     width: 100%;
-
-		@media (max-width: $screen-tablet) {
-			top: 0;
-		}
   }
 }

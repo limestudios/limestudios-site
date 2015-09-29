@@ -1,0 +1,20 @@
+---
+layout: home
+title: Articles
+---
+<section class="card-container" id="about">
+  {% for post in site.categories.article %}
+      <a class="card half-card" href="{{ post.url }}">
+        <div class="{{ post.theme }}">
+          <h3 class="title">{{ post.title }}</h3>
+          <div class="card-content">
+            <img class="center-{{post.image}}" src="{{ post.cover-image }}"/>
+          </div>
+          <p class="tag">{{ post.tags }}</p>
+          <p class="link-icon" href="">
+            {% include svg/chevron-right.html %}
+          </p>
+        </div>
+      </a>
+  {% endfor %}
+</section>

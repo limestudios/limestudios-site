@@ -90,3 +90,59 @@ a.line {
     border-bottom: 2px solid black;
   }
 }
+
+a.line-s {
+  color: $grey-900;
+  transition: 0.1s border-color ease-in-out;
+  padding-bottom: 2px;
+  padding-left: 4px;
+  padding-right: 4px;
+  border-bottom: 2px solid;
+  border-color: transparent;
+
+  &:hover {
+    border-color: $grey-900;
+  }
+}
+
+a.arrhythmia {
+  color: $arrhythmia-red;
+  &:hover {
+    border-color: $arrhythmia-red;
+  }
+}
+
+a.limestudios {
+  color: $accent-color;
+  &:hover {
+    border-color: $accent-color;
+  }
+}
+
+a.lcraver {
+  color: $blue-500;
+  &:hover {
+    border-color: $blue-500;
+  }
+}
+
+a.twitter {
+  color: $blue-300;
+  &:hover {
+    border-color: $blue-300;
+  }
+}
+
+a.tumblr {
+  color: $blue-900;
+  &:hover {
+    border-color: $blue-900;
+  }
+}
+
+a.github {
+  color: $grey-500;
+  &:hover {
+    border-color: $grey-500;
+  }
+}

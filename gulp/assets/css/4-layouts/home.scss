@@ -1,9 +1,18 @@
 .home-wrap {
   display: flex;
+  @include clearfix();
   //min-height: 100vh;
 
   @media (max-width: $screen-mobile) {
     display: block;
+  }
+
+  &.small {
+    margin-bottom: 64px;
+  }
+
+  &.normal {
+    margin-bottom: 256px;
   }
 }
 
@@ -12,32 +21,13 @@
   margin: 0 auto;
   flex: 1;
 
-  // FLEX CLASSES
-
-  .flex {
-    display: flex;
-    flex-direction: row;
-  }
-
-  .flex--center {
-    justify-content: center;
-  }
-
-  .flex--space-around {
-    justify-content: space-around;
-  }
-
-  .order-first {
-    order: -1;
-  }
-
-  &.home-sections-normal {
+  &.normal {
     position: relative;
     top: 256px;
   }
 
-  &.home-sections-shrink {
+  &.small {
     position: relative;
-    top: 96px;
+    top: 64px;
   }
 }

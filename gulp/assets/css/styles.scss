@@ -1,3 +1,5 @@
+@import '1-base/_mixins';
+
 @import '0-tools/normalize';
 @import '0-tools/skeleton';
 @import '0-tools/colors';
@@ -6,7 +8,6 @@
 @import '1-base/_base';
 @import '1-base/_typography';
 @import '1-base/_links';
-@import '1-base/_mixins';
 
 @import '2-modules/buttons';
 @import '2-modules/cards';
@@ -18,3 +19,4 @@
 
 @import '4-layouts/home';
 @import '4-layouts/post';
+@import '4-layouts/footer';

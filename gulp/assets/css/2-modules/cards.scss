@@ -97,10 +97,10 @@ $full-padding: 0px;
     .title {
       padding: 0 0 0 20px;
       position: absolute;
-      top: 24px;
-      letter-spacing: 0px;
-      font-size: 28px;
-      font-weight: 400;
+      top: 16px;
+      letter-spacing: 1px;
+      font-size: 24px;
+      font-weight: 300;
 
       z-index: 100;
     }
@@ -111,7 +111,7 @@ $full-padding: 0px;
       bottom: 0;
       left: 0;
       right: 0;
-      
+
       p.text {
         position: absolute;
         top: 96px;

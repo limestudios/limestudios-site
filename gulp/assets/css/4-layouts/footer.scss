@@ -1,66 +1,103 @@
-div.footer {
-	z-index: 0;
-	background-color: $dark-primary-color;
-	margin: 0;
+.footer {
+	@include clearfix();
+	position: relative;
 
-	div.footer-wrapper {
-    padding: 0;
-		z-index: 100000;
+	.footer-top {
+		background-color: $grey-100;
+		padding: 0 16px;
+		.footer-social {
+			height: 220px;
+			position: relative;
+			max-width: 1680px;
+			margin: 0 auto;
 
-		div.title {
-			padding: 1em 0 0.5em 1em;
-			div.logo {
-				width: 64px;
-				height: 64px;
-				svg {
-					width: 64px;
-					height: 64px;
-					fill: white;
-				}
-			}
 
-			div.text {
-				color: white;
-				text-transform: uppercase;
-				font-weight: 100;
-				font-size: 15.5px;
-			}
+			.icon-wrapper {
+				//background-color: pink;
+				position: absolute;
+				bottom: 24px;
+				right: 0px;
 
-			@media (max-width: $screen-widephone) {
+				a {
+					margin: 0 8px;
 
-        padding: 1em 0 0.5em;
+					&:last-child {
+						margin: 0 0 0 8px;
+					}
 
-				div.logo {
-					margin: 0 auto;
-				}
+					&.twitter:hover svg path
+					{
+						fill: $blue-300;
+					}
 
-				div.text {
-					text-align: center;
-				}
-			}
-		}
-	}
-}
+					&.github:hover svg path
+					{
+						fill: $grey-500;
+					}
 
-@media(max-width: $screen-widephone) {
-	div.header {
-		position: unset;
+					&.dribbble:hover svg path
+					{
+						fill: $pink-300;
+					}
 
-		div.header-wrapper {
-			nav {
-				ul.nav-items {
-					justify-content: space-around;
-					li.nav-item {
-						margin-left: 0;
+					&.youtube:hover svg path
+					{
+						fill: $red-500;
+					}
+
+					svg {
+						width: 24px;
+
+						path {
+							transition: all 0.1s ease-in-out;
+							fill: $dark-primary-color;
+						}
 					}
 				}
 			}
 		}
 	}
-}
 
-@media(max-width: $screen-tablet) {
-	div.header {
-		position: unset;
+	.footer-bottom {
+		background-color: $dark-primary-color;
+
+		.footer-wrap {
+			height: 128px;
+			max-width: 1680px;
+			margin: 0 auto;
+			display: block;
+			position: relative;
+
+			.svg-icon {
+				display: block;
+				position: absolute;
+				top: 50%;
+				transform: translateY(-50%);
+				left: 16px;
+				height: 48px;
+				width: 48px;
+
+				path {
+					fill: $grey-50;
+				}
+			}
+
+			.copyright {
+				color: $grey-50;
+				letter-spacing: 1px;
+				font-size: 12px;
+				text-transform: uppercase;
+				position: absolute;
+				right: 16px;
+				top: 50%;
+				transform: translateY(-50%);
+				display: block;
+				font-weight: 300;
+
+				.red {
+					color: $red-500;
+				}
+			}
+		}
 	}
 }
