@@ -4,7 +4,7 @@ ref: project-arrhythmia
 title:  Project Arrhythmia
 categories: game
 tags: article / game
-color: "#fff"
+color: rgb(255,242,232)
 theme: light
 cover-image: /assets/img/posts/game/project-arrhythmia/cover.png
 image: large

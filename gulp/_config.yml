@@ -4,7 +4,8 @@ markdown: redcarpet
 exclude: ["node_modules", "gulpfile.js", "package.json"]
 
 home-nav: [
-  {link: "/article/meet-limestudios", text: "About"},
+  {link: "/", text: "Home"},
+  {link: "/page/about", text: "About"},
   {link: "/games", text: "Games"},
   {link: "/articles", text: "Articles"},
   {link: "/page/contact", text: "Contact"},

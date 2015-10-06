@@ -1,11 +1,17 @@
 ---
 layout: home
-title: Articles
+title: Games
 ---
-<section class="card-container" id="about">
+<section class="card-container transition" id="about">
   {% for post in site.categories.game %}
+    {% capture total %}{{ site.categories.game | size }}{% endcapture %}
+    {% assign value = total | modulo:2 %}
+    {% if value == 1 and forloop.first %}
+      <a class="card full-card" href="{{ post.url }}">
+    {% else %}
       <a class="card half-card" href="{{ post.url }}">
-        <div class="{{ post.theme }}">
+    {% endif %}
+        <div class="{{ post.theme }}" style="background-color: {{post.color}}">
           <h3 class="title">{{ post.title }}</h3>
           <div class="card-content">
             <img class="center-{{post.image}}" src="{{ post.cover-image }}"/>

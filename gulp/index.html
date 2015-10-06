@@ -1,11 +1,13 @@
 ---
 layout: home
 title: Home
+resize-header: true
 ---
-
-{% include sections/about.html %}
-{% include sections/games.html %}
-{% include sections/streams.html %}
-{% include sections/social.html %}
-{% include sections/contact.html %}
-{% include sections/presskit.html %}
+<section class="card-container transition">
+  {% include sections/about.html %}
+  {% include sections/games.html %}
+  {% include sections/streams.html %}
+  {% include sections/social.html %}
+  {% include sections/contact.html %}
+  {% include sections/presskit.html %}
+</section>

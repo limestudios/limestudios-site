@@ -6,7 +6,7 @@ categories: article
 tags: article / review
 color: "#fff"
 theme: dark
-cover-image: /assets/img/posts/ink-review/cover.jpg
+cover-image: /assets/img/posts/article/ink-review/cover.jpg
 image: full
 author: Liam Craver
 ---
@@ -17,7 +17,7 @@ INK is currently only available on the Windows platform. Keyboard and Gamepad co
 
 <a class="line-s" href="#end">TL;DR?</a>
 
-![Screenshot 1](/assets/img/posts/{{page.ref}}/screenshot1.gif "Screenshot 1")
+![Screenshot 1](/assets/img/posts/article/{{page.ref}}/screenshot1.gif "Screenshot 1")
 
 ##Individual Ratings
 
@@ -36,7 +36,7 @@ it was never so bad that it totally ruined the experience. Thought that is the m
 ###[8.0] Gameplay
 As mentioned prior the gameplay is definitely interesting. Although we have seen a similar mechanic used before, INK definitely put its own spin on the “use paint to uncover areas of the map” trope. It felt as if I was truly exploring. It gave a similar feeling as exploring a cave with a small flashlight. However, I must say that the feeling of uncertainty and isolation is quick to go away. As soon as you die a few times in the level it becomes mostly revealed and stays that way. The paint is permanent so it changes from an exploratory platformer to simply another platformer. Although this is not exactly a bad thing, seeing as the platforming in the game is amazing as well. But, it still makes me miss the feeling that the beginning of each level gives you.
 
-![Screenshot 2](/assets/img/posts/{{page.ref}}/screenshot2.gif "Screenshot 2")
+![Screenshot 2](/assets/img/posts/article/{{page.ref}}/screenshot2.gif "Screenshot 2")
 
 ###[8.5] Graphics
 The graphics for this game are stunning. It simply is pretty to look at, in fact I found myself sitting there every once and a while looking at the beautiful mess I had created on the screen. It was clear the color pallet and the way the color splashes on the walls was tweaked till it was as pleasing to the eyes as it could possibly be. Even the menus carry the theme of the game perfectly. It just oozes polish on the graphics side. The screenshots should speak for themselves...
@@ -44,7 +44,7 @@ The graphics for this game are stunning. It simply is pretty to look at, in fact
 ###[7.0] Audio
 The audio was nothing special but it did the job. It didn't get on my nerves and helped me get sucked into the game. I only found myself getting distracted by it a few times. Overall nothing special but nothing bad, just average.
 
-![Screenshot 3](/assets/img/posts/{{page.ref}}/screenshot3.gif "Screenshot 3")
+![Screenshot 3](/assets/img/posts/article/{{page.ref}}/screenshot3.gif "Screenshot 3")
 
 <h3 id="end">[8.0] Overall Verdict</h3>
 INK was an enjoyable game! It was a refreshing take on the paint the environment trope and a great platformer. With its

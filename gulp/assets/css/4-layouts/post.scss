@@ -10,17 +10,24 @@
   width: 100%;
   overflow: hidden;
   box-shadow: 0 0 20px 0 rgba(0,0,0,0.2),0 5px 5px 0 rgba(0,0,0,0.24);
-  animation: slidein 0.25s;
+  animation: slidein calc(0.25s * (1 / #{$tranSpeed})) ease-out;
   position: relative;
   top: 64px;
-  margin-bottom: 64px;
+  margin-bottom: 32px;
+  background-repeat: no-repeat;
+  background-position: center center;
 
   &.full {
-    background-size: cover !important;
+    background-size: cover;
+  }
+
+  &.large {
+    background-size: auto;
   }
 
   @media (max-width: $screen-mobile) {
     height: 100vw;
+    margin-bottom: 0px;
   }
 
   .post-text {
@@ -33,8 +40,8 @@
       padding-top: 16px;
       padding-left: 32px;
       opacity: 0;
-      animation: fadein 0.25s;
-      animation-delay: 0.25s;
+      animation: fadein calc(0.3s * (1 / #{$tranSpeed})) ease-out;
+      animation-delay: calc(0.25s * (1 / #{$tranSpeed}));
       animation-fill-mode: forwards;
 
       letter-spacing: 1px;
@@ -61,8 +68,8 @@
       padding-left: 32px;
       opacity: 0;
 
-      animation: fadein 0.25s;
-      animation-delay: 0.5s;
+      animation: fadein calc(0.3s * (1 / #{$tranSpeed})) ease-out;
+      animation-delay: calc(0.5s * (1 / #{$tranSpeed}));
       animation-fill-mode: forwards;
 
       color: $grey-900;
@@ -105,12 +112,15 @@
   max-width: 1680px;
   margin: 0 auto;
 
+  opacity: 0;
+  animation: slidein calc(0.25s * (1 / #{$tranSpeed})) ease-out;
+  animation-delay: 0.1s;
+  animation-fill-mode: forwards;
+
   .post-content {
-    padding-top: 48px;
-    opacity: 0;
-    animation: slidein 0.25s;
-    //animation-delay: 0.25s;
-    animation-fill-mode: forwards;
+
+    //overflow: hidden;
+    @include clearfix();
 
     max-width: 760px;
     margin: 0 auto;
@@ -176,6 +186,12 @@
       }
     }
 
+    .image-wrapper {
+      margin: 48px auto 48px auto;
+      display: block;
+      overflow: hidden;
+    }
+
     img {
       margin: 32px auto;
       max-width: 100%;
@@ -185,22 +201,85 @@
         margin-left: auto;
         margin-right: auto;
         display: block;
+
+        &.small {
+          max-width: 128px;
+        }
+
+        &.medium {
+          max-width: 256px;
+        }
+
+        &.large {
+          max-width: 512px;
+        }
+
+        &.full-width {
+          max-width: 100%;
+        }
       }
 
-      &.small {
-        max-width: 128px;
-      }
+      &.float {
+        float: left;
+        margin: 0;
+        padding: 0;
+        @include clearfix();
 
-      &.medium {
-        max-width: 256px;
-      }
+        &.small {
+          max-width: 25%;
 
-      &.large {
-        max-width: 512px;
-      }
+          &.border {
+            max-width: calc(25% - 16px);
+            padding: 8px;
+          }
 
-      &.full-width {
-        max-width: 100%;
+          @media (max-width: $screen-tablet) {
+            max-width: 33.333%;
+
+            &.border {
+              max-width: calc(33.333% - 16px);
+              padding: 8px;
+            }
+          }
+        }
+
+        &.medium {
+          max-width: 33.333%;
+
+          &.border {
+            max-width: calc(33.333% - 16px);
+            padding: 8px;
+          }
+
+          @media (max-width: $screen-tablet) {
+            max-width: 50%;
+
+            &.border {
+              max-width: calc(50% - 16px);
+              padding: 8px;
+            }
+          }
+        }
+
+        &.large {
+          max-width: 50%;
+
+          &.border {
+            max-width: calc(50% - 16px);
+            padding: 8px;
+          }
+
+          @media (max-width: $screen-tablet) {
+            max-width: 100%;
+
+            &.border {
+            }
+          }
+        }
+
+        &.full-width {
+          max-width: 100%;
+        }
       }
 
       &.round {
@@ -217,5 +296,6 @@
 
 @keyframes slidein {
     0%   { opacity: 0; transform: translateY(200px); }
+    80%  { transform: translateY(0px); }
     100% { opacity: 1; }
 }

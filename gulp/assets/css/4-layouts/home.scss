@@ -6,28 +6,10 @@
   @media (max-width: $screen-mobile) {
     display: block;
   }
-
-  &.small {
-    margin-bottom: 64px;
-  }
-
-  &.normal {
-    margin-bottom: 256px;
-  }
 }
 
 .home-sections{
   max-width: 1680px;
   margin: 0 auto;
   flex: 1;
-
-  &.normal {
-    position: relative;
-    top: 256px;
-  }
-
-  &.small {
-    position: relative;
-    top: 64px;
-  }
 }
