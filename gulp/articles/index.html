@@ -12,11 +12,18 @@ title: Articles
       <a class="card half-card" href="{{ post.url }}">
     {% endif %}
         <div class="{{ post.theme }}" style="background-color: {{post.color}}">
-          <h3 class="title">{{ post.title }}</h3>
+          <section class="heading">
+            <h3 class="title">{{ post.title }}</h3>
+            {% if post.subtitle %}
+              <p class="subtitle">{{ post.subtitle }}</p>
+            {% endif %}
+          </section>
           <div class="card-content">
             <img class="center-{{post.image}}" src="{{ post.cover-image }}"/>
           </div>
-          <p class="tag">{{ post.tags }}</p>
+          {% capture posttags %}{{ post.tags }}{% endcapture %}
+          {% assign tags = posttags | split: '/' %}
+          <p class="tag">{% for tag in tags %}{{ tag }} {% if forloop.last %}{% else %} / {% endif %} {% endfor %}</p>
           <p class="link-icon" href="">
             {% include svg/chevron-right.html %}
           </p>

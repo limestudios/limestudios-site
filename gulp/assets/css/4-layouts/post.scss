@@ -10,7 +10,7 @@
   width: 100%;
   overflow: hidden;
   box-shadow: 0 0 20px 0 rgba(0,0,0,0.2),0 5px 5px 0 rgba(0,0,0,0.24);
-  animation: slidein calc(0.25s * (1 / #{$tranSpeed})) ease-out;
+  animation: slidein 0.25s ease-out;
   position: relative;
   top: 64px;
   margin-bottom: 32px;
@@ -36,12 +36,12 @@
 
     h2 {
       font-family: $type-primary;
-      font-weight: 400;
+      font-weight: normal;
       padding-top: 16px;
       padding-left: 32px;
       opacity: 0;
-      animation: fadein calc(0.3s * (1 / #{$tranSpeed})) ease-out;
-      animation-delay: calc(0.25s * (1 / #{$tranSpeed}));
+      animation: fadein 0.3s ease-out;
+      animation-delay: 0.25s;
       animation-fill-mode: forwards;
 
       letter-spacing: 1px;
@@ -52,12 +52,14 @@
       line-height: 48px;
 
       @media (max-width: $screen-tablet) {
+        line-height: 26px;
         font-size: 24px;
         padding-left: 24px;
         padding-top: 8px;
       }
 
       @media (max-width: $screen-mobile) {
+        line-height: 26px;
         font-size: 20px;
         padding-left: 16px;
         padding-top: 0px;
@@ -68,8 +70,8 @@
       padding-left: 32px;
       opacity: 0;
 
-      animation: fadein calc(0.3s * (1 / #{$tranSpeed})) ease-out;
-      animation-delay: calc(0.5s * (1 / #{$tranSpeed}));
+      animation: fadein 0.3s ease-out;
+      animation-delay: 0.4s;
       animation-fill-mode: forwards;
 
       color: $grey-900;
@@ -113,7 +115,7 @@
   margin: 0 auto;
 
   opacity: 0;
-  animation: slidein calc(0.25s * (1 / #{$tranSpeed})) ease-out;
+  animation: slidein 0.25s ease-out;
   animation-delay: 0.1s;
   animation-fill-mode: forwards;
 
@@ -158,15 +160,47 @@
       line-height: 32px;
     }
 
-    p {
-      padding-bottom: 24px;
+    p, ul, ol, .button  {
+      padding: 0 0 24px 40px;
       margin: 0 auto;
       font-weight: 300;
       -webkit-font-smoothing: antialiased;
       line-height: 32px;
       font-size: 17px;
       font-family: $type-secondary;
-      color: $grey-900;
+      color: $grey-800;
+    }
+
+    p {
+      padding: 0 0 24px 0;
+    }
+
+    .highlight {
+      background-color: $grey-900;
+      padding: 24px;
+      margin: 0 auto;
+      font-weight: 300;
+      -webkit-font-smoothing: antialiased;
+      line-height: 32px;
+      font-size: 17px;
+      font-family: $type-secondary;
+      color: $grey-100;
+
+      pre {
+        margin: 0;
+
+        .k {
+          color: $blue-400;
+        }
+
+        .nc, .n {
+          color: $teal-300;
+        }
+
+        .s {
+          color: $deep-orange-200;
+        }
+      }
     }
 
     .flex-video {
@@ -187,13 +221,73 @@
     }
 
     .image-wrapper {
-      margin: 48px auto 48px auto;
+      margin: 0 auto;
       display: block;
       overflow: hidden;
     }
 
+    .button-wrapper {
+      margin: 0 auto;
+      display: block;
+      @include clearfix();
+
+      a {
+        margin: 24px auto;
+        width: 100%;
+        display: block;
+        background-color: $grey-900;
+        padding: 16px;
+        font-size: 17px;
+        color: $grey-100;
+        transition: all 0.1s ease-in-out;
+        text-transform: uppercase;
+        font-weight: 400;
+        text-align: center;
+
+        &:hover {
+          box-shadow: 0 0 20px 0 rgba(0,0,0,0.2),0 5px 5px 0 rgba(0,0,0,0.24);
+          z-index: 1000;
+        }
+
+        &.float {
+          float: left;
+          margin: 0;
+          padding: 16px 0;
+          @include clearfix();
+
+          &.two {
+            max-width: 50%;
+
+            &.border {
+              max-width: calc(50% - 16px);
+              margin: 8px;
+            }
+          }
+
+          &.three {
+            max-width: 50%;
+            &:first-child {
+              max-width: 100%;
+            }
+
+            &.border {
+              max-width: calc(50% - 16px);
+              &:first-child {
+                max-width: calc(100% - 16px);
+              }
+              margin: 8px;
+            }
+          }
+
+          &.full-width {
+            max-width: 100%;
+          }
+        }
+      }
+    }
+
     img {
-      margin: 32px auto;
+      margin: 24px auto;
       max-width: 100%;
       display: block;
 
@@ -215,7 +309,7 @@
         }
 
         &.full-width {
-          max-width: 100%;
+          width: 100%;
         }
       }
 

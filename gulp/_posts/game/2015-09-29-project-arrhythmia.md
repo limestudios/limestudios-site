@@ -1,7 +1,8 @@
 ---
 layout: posts
 ref: project-arrhythmia
-title:  Project Arrhythmia
+title: Project Arrhythmia
+subtitle: Project Arrhythmia is a rhythmic adventure in which all things beautiful are deadly.
 categories: game
 tags: article / game
 color: rgb(255,242,232)
@@ -20,10 +21,14 @@ Project Arrhythmia is a rhythmic adventure in which all things beautiful are dea
 Project Arrhythmia came to be after I found myself frustrated with the lack of any "true" audio bound games. I have always been interested in games like soundodger+, 140 and OSU! where music is a core part of the gameplay however I've also always found the gameplay didn't react to the music as tightly as I wanted it to. So I set out to make a game where every sound from a chiptune beep to a guitar rift could be perfectly represented within the game.
 
 ##Demo Builds
-The alpha 1.2 of Project Arrhythmia is currently available for free over on <a class="line-s arrhythmia" href="http://limestudios.itch.io/project-arrhythmia">Itch.io</a>.
+The alpha 1.2 of Project Arrhythmia is currently available...
+<div class="button-wrapper">
+<a class="float border" href="http://limestudios.itch.io/project-arrhythmia">Download the Demo</a>
+</div>
 
-To follow the development of the game follow us on twitter
-<br>
-<a class="line-s lcraver" href="http://twitter.com/liamcraver">@liamcraver</a>
-<a class="line-s arrhythmia" href="http://twitter.com/projarrhythmia">@projarrhythmia</a>
-<a class="line-s limestudios" href="http://twitter.com/_limestudios">@_limestudios</a>
+To follow the development of the game follow us on twitter...
+<div class="button-wrapper">
+<a class="float three border" href="http://twitter.com/projarrhythmia">@projarrhythmia</a>
+<a class="float three border" href="http://twitter.com/liamcraver">@liamcraver</a>
+<a class="float three border" href="http://twitter.com/_limestudios">@_limestudios</a>
+</div>

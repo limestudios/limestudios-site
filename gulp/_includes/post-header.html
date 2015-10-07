@@ -1,19 +1,19 @@
-<section class="post-header {{ page.image }}  {{ page.theme }}" style="background-image: url({{ page.cover-image }}); background-color: {{ page.color }}">
+<section class="post-header {{ page.image }} {{ page.theme }}" style="background-image: url({{ page.cover-image }}); background-color: {{ page.color }}">
   <div class="post-text">
-    <h2>{{ page.title }}</h2>
+    <h2><span>{{ page.title }}</span></h2>
     {% if page.categories contains 'page' %}
     {% else %}
       {% if page.author %}
         {% if page.updated %}
-          <p>Updated by {{ page.author }} on {{ page.date | date: '%B %d, %Y' }}</p>
+          <p><span>Updated by {{ page.author }} on {{ page.date | date: '%B %d, %Y' }}</span></p>
         {% else %}
-          <p>Written by {{ page.author }} on {{ page.date | date: '%B %d, %Y' }}</p>
+          <p><span>Written by {{ page.author }} on {{ page.date | date: '%B %d, %Y' }}</span></p>
         {% endif %}
       {% else %}
         {% if page.updated %}
-          <p>Updated on {{ page.date | date: '%B %d, %Y' }}</p>
+          <p><span>Updated on {{ page.date | date: '%B %d, %Y' }}</span></p>
         {% else %}
-          <p>Written on {{ page.date | date: '%B %d, %Y' }}</p>
+          <p><span>Written on {{ page.date | date: '%B %d, %Y' }}</span></p>
         {% endif %}
       {% endif %}
     {% endif %}
