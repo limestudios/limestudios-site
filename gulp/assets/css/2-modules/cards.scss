@@ -20,7 +20,7 @@ $full-padding: 0px;
 
   &.transition .card {
     opacity: 0;
-    animation: slidein calc(0.25s * (1 / #{$tranSpeed})) ease-in-out;
+    animation: slidein 0.2s ease-in-out;
     animation-fill-mode: forwards;
   }
 
@@ -47,6 +47,11 @@ $full-padding: 0px;
   a.card {
     text-decoration: none;
     display: block;
+    transition: box-shadow 0.1s ease-in-out;
+    max-height: 640px;
+    height: $max-card-height;
+    display: block;
+    overflow: hidden;
 
     &:hover {
       box-shadow: 0 0 20px 0 rgba(0,0,0,0.2),0 5px 5px 0 rgba(0,0,0,0.24);
@@ -54,30 +59,16 @@ $full-padding: 0px;
     }
 
     &.full-card {
-      transition: box-shadow 0.1s ease-in-out;
-      max-height: 640px;
-      height: $max-card-height;
-      display: block;
-      overflow: hidden;
-
       @media (max-width: $screen-mobile) {
         height: $max-card-height-mobile;
       }
-
       width: 100%;
     }
 
     &.half-card {
-      transition: box-shadow 0.1s ease-in-out;
-      max-height: 640px;
-      height: $max-card-height;
-      display: block;
-      overflow: hidden;
-
       @media (max-width: $screen-mobile) {
         height: $max-card-height-mobile;
       }
-
       width: 50%;
     }
 
@@ -90,7 +81,7 @@ $full-padding: 0px;
     .dark {
       background-color: $grey-900;
 
-      .title, .tag, p.text {
+      .title, .subtitle, .tag, p.text {
         color: $card-text-color-dark;
       }
       .link-icon svg path {
@@ -101,7 +92,7 @@ $full-padding: 0px;
     .light {
       background-color: $grey-50;
 
-      .title, .tag, p.text {
+      .title, .subtitle, .tag, p.text {
         color: $card-text-color-light;
       }
       .link-icon svg path {
@@ -112,7 +103,7 @@ $full-padding: 0px;
     .green {
       background-color: $light-green-400;
 
-      .title, .tag, p.text {
+      .title, .subtitle, .tag, p.text {
         color: $card-text-color-light;
       }
       .link-icon svg path {
@@ -120,15 +111,33 @@ $full-padding: 0px;
       }
     }
 
-    .title {
-      padding: 0 0 0 20px;
-      position: absolute;
-      top: 16px;
-      letter-spacing: 1px;
-      font-size: 24px;
-      font-weight: 300;
+    .heading {
+      padding: 24px;
+      @media (max-width: $screen-mobile) {
+        padding: 16px;
+      }
 
-      z-index: 100;
+      .title {
+        position: relative;
+        margin: 0;
+        padding: 0;
+        font-size: 24px;
+        font-weight: 400;
+        z-index: 100;
+      }
+
+      .subtitle {
+        width: 80%;
+        line-height: 24px;
+        position: relative;
+        margin: 0;
+        padding: 10px 0 14px 0;
+        letter-spacing: 1px;
+        font-size: 14px;
+        font-weight: 400;
+        z-index: 100;
+        font-family: $type-secondary;
+      }
     }
 
     .card-content {
@@ -207,10 +216,14 @@ $full-padding: 0px;
     }
 
     .tag {
-      padding: 0 0 0 20px;
-      margin-bottom: 14px;
+      margin: 0;
+      padding: 24px;
+      @media (max-width: $screen-mobile) {
+        padding: 16px;
+      }
       position: absolute;
-      bottom: 0;
+      bottom: 0px;
+      left: 0px;
       font-size: 12px;
       text-transform: uppercase;
       letter-spacing: 1px;
@@ -219,10 +232,14 @@ $full-padding: 0px;
     }
 
     .link-icon {
-      margin-bottom: 14px;
+      padding: 19px;
+      @media (max-width: $screen-mobile) {
+        padding: 12px;
+      }
+      margin: 0;
       position: absolute;
       bottom: 0;
-      right: 20px;
+      right: 0;
 
       width: 24px;
       height: 24px;
@@ -238,6 +255,9 @@ $full-padding: 0px;
     flex-direction: column;
 
     a.card {
+      .heading .subtitle {
+        display: none;
+      }
       &.half-card {
         width: 100%;
       }
