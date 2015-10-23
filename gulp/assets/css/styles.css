@@ -1022,8 +1022,17 @@ header {
       font-style: normal;
       font-variant: normal;
       line-height: 32px; }
-    .post-sections .post-content p, .post-sections .post-content ul, .post-sections .post-content ol, .post-sections .post-content .button, .post-sections .post-content li {
+    .post-sections .post-content p, .post-sections .post-content ol, .post-sections .post-content .button, .post-sections .post-content li {
       padding: 0 0 24px 40px;
+      margin: 0 auto;
+      font-weight: 300;
+      -webkit-font-smoothing: antialiased;
+      line-height: 32px;
+      font-size: 17px;
+      font-family: "Roboto", Helvetica Neue, Helvetica, Arial, sans-serif;
+      color: #424242; }
+    .post-sections .post-content ul {
+      padding: 0 0 24px 16px !important;
       margin: 0 auto;
       font-weight: 300;
       -webkit-font-smoothing: antialiased;

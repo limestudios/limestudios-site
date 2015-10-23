@@ -27,11 +27,13 @@ author: Liam Craver
 <h3>Planned Features</h3>
 <div class="col-wrapper small">
   <div class="col col-2">
-    <li>Single Player Story Mode</li>
-    <li>Multiplayer Party Mode</li>
-    <li>Fantastic Soundtrack</li>
-    <li>Hard and Addicting Gameplay</li>
-    <li>Level Editor</li>
+    <ul>
+      <li>Single Player Story Mode</li>
+      <li>Multiplayer Party Mode</li>
+      <li>Fantastic Soundtrack</li>
+      <li>Hard and Addicting Gameplay</li>
+      <li>Level Editor</li>
+    </ul>
   </div>
 </div>
 

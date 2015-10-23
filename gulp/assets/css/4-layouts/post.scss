@@ -172,8 +172,19 @@
       line-height: 32px;
     }
 
-    p, ul, ol, .button, li  {
+    p, ol, .button, li  {
       padding: 0 0 24px 40px;
+      margin: 0 auto;
+      font-weight: 300;
+      -webkit-font-smoothing: antialiased;
+      line-height: 32px;
+      font-size: 17px;
+      font-family: $type-secondary;
+      color: $grey-800;
+    }
+
+    ul  {
+      padding: 0 0 24px 16px !important;
       margin: 0 auto;
       font-weight: 300;
       -webkit-font-smoothing: antialiased;
