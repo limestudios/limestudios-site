@@ -26,6 +26,8 @@ jQuery(function($) {
         header.height(64);
         header.removeClass("resize-").addClass("resize-false");
         header.removeClass("normal").addClass("small");
+
+        contentWrap.removeClass("resize-").addClass("resize-false");
         contentWrap.addClass("small");
 
         if(scroll >= 64)
