@@ -9,16 +9,18 @@ body {
 
   .content-wrap {
 
-    &.normal {
+    &.normal, &.small {
       position: relative;
       top: 256px;
       padding-bottom: 256px;
     }
 
-    &.small {
-      position: relative;
-      top: 64px;
-      padding-bottom: 64px;
+    &.resize-false {
+      &.small {
+        position: relative;
+        top: 64px;
+        padding-bottom: 64px;
+      }
     }
   }
 }
