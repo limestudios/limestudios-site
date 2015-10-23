@@ -27,7 +27,6 @@
 
   @media (max-width: $screen-mobile) {
     height: 100vw;
-    margin-bottom: 0px;
   }
 
   .post-text {
@@ -134,6 +133,19 @@
       width: calc(100% - 32px);
     }
 
+    h1 {
+      color: $grey-800;
+      font-size: 32px;
+      -webkit-font-smoothing: antialiased;
+      font-family: $type-primary;
+      font-weight: 400;
+      padding: 84px 0 24px 0;
+      margin: 0 auto;
+      font-style: normal;
+      font-variant: normal;
+      line-height: 40px;
+    }
+
     h2 {
       color: $grey-800;
       font-size: 24px;
@@ -160,8 +172,18 @@
       line-height: 32px;
     }
 
-    p, ul, ol, .button  {
+    p, ul, ol, .button, li  {
       padding: 0 0 24px 40px;
+      margin: 0 auto;
+      font-weight: 300;
+      -webkit-font-smoothing: antialiased;
+      line-height: 32px;
+      font-size: 17px;
+      font-family: $type-secondary;
+      color: $grey-800;
+    }
+
+    a {
       margin: 0 auto;
       font-weight: 300;
       -webkit-font-smoothing: antialiased;
@@ -173,6 +195,21 @@
 
     p {
       padding: 0 0 24px 0;
+    }
+
+    span {
+      &.left {
+          text-align: left;
+          display: block;
+      }
+      &.center {
+          text-align: center;
+          display: block;
+      }
+      &.right {
+          text-align: right;
+          display: block;
+      }
     }
 
     .highlight {
@@ -199,6 +236,67 @@
 
         .s {
           color: $deep-orange-200;
+        }
+      }
+    }
+
+    .col-wrapper {
+      margin: 0 auto;
+      display: flex;
+      @include clearfix();
+
+      @media (max-width: $screen-mobile) {
+        display: block;
+        .col {
+          width: 100% !important;
+        }
+      }
+
+      .col-1 {
+        //background-color: pink;
+        width: 25%;
+      }
+
+      .col-2 {
+        //background-color: blue;
+        width: 50%;
+      }
+
+      .col-3 {
+        //background-color: red;
+        width: 75%;
+      }
+
+      .col-4 {
+        //background-color: orange;
+        width: 100%;
+      }
+
+      &.small {
+
+        h2 {
+          padding: 24px 0 0 0;
+        }
+
+        h3 {
+          padding: 24px 0 0 0;
+        }
+
+        p, ul, ol, .button, a, li {
+          padding: 0;
+          line-height: 21px;
+        }
+
+        a {
+          font-weight: 400;
+          color: $grey-900;
+          transition: 0.1s border-color ease-in-out;
+          border-bottom: 2px solid;
+          border-color: transparent;
+
+          &:hover {
+            border-color: $grey-900;
+          }
         }
       }
     }
@@ -238,7 +336,7 @@
         background-color: $grey-900;
         padding: 16px;
         font-size: 17px;
-        color: $grey-100;
+        color: $grey-100 !important;
         transition: all 0.1s ease-in-out;
         text-transform: uppercase;
         font-weight: 400;
