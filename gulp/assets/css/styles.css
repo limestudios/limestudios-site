@@ -1285,6 +1285,142 @@ header {
   100% {
     opacity: 1; } }
 
+form {
+  margin: 48px auto 48px auto;
+  font-family: "Roboto", Helvetica Neue, Helvetica, Arial, sans-serif; }
+
+input, textarea {
+  height: 64px;
+  font-size: 17px;
+  -webkit-font-smoothing: antialiased;
+  -webkit-appearance: none;
+  background: #e0e0e0;
+  border: none;
+  color: #212121;
+  padding: 0 40px;
+  width: 98%; }
+  input:focus, input:active, textarea:focus, textarea:active {
+    outline: none;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24); }
+  input[type="submit"], textarea[type="submit"] {
+    margin: 24px auto;
+    width: 100%;
+    display: block;
+    background-color: #212121;
+    font-size: 17px;
+    color: #f5f5f5 !important;
+    -webkit-transition: all 0.1s ease-in-out;
+            transition: all 0.1s ease-in-out;
+    text-transform: uppercase;
+    font-weight: 400;
+    text-align: center;
+    height: 64px; }
+    input[type="submit"]:active, input[type="submit"]:hover, textarea[type="submit"]:active, textarea[type="submit"]:hover {
+      box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+      z-index: 1000; }
+
+textarea {
+  height: 500px !important; }
+
+.input-group {
+  margin: 24px auto 42px auto;
+  display: block;
+  position: relative;
+  /* BOTTOM BARS */
+  /* inactive state */
+  /* invalid state */
+  /* active state */ }
+  .input-group input, .input-group textarea {
+    padding: 0; }
+  .input-group label {
+    position: absolute;
+    -webkit-transform: translateY(-10px);
+        -ms-transform: translateY(-10px);
+            transform: translateY(-10px);
+    top: 32px;
+    left: 16px;
+    color: #212121;
+    pointer-events: none;
+    -webkit-transition: all 0.15s ease;
+            transition: all 0.15s ease;
+    font-family: "Roboto", Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    font-size: 17px; }
+  .input-group input:focus + label,
+  .input-group input.has-value + label,
+  .input-group textarea:focus + label,
+  .input-group textarea.has-value + label {
+    top: -14px;
+    left: 0px;
+    font-size: 17px; }
+  .input-group .bar::before {
+    content: '';
+    height: 100%;
+    bottom: 0px;
+    right: 0px;
+    position: absolute;
+    background: #212121;
+    -webkit-transition: 0.1s ease all;
+            transition: 0.1s ease all; }
+  .input-group input ~ .bar:before, .input-group input ~ .bar:after {
+    width: 2%; }
+  .input-group textarea ~ .bar:before, .input-group textarea ~ .bar:after {
+    width: 2%; }
+  .input-group span.description {
+    opacity: 0;
+    position: absolute;
+    top: 110%;
+    left: 0px;
+    color: #f44336;
+    pointer-events: none;
+    -webkit-transition: all 0.1s ease;
+            transition: all 0.1s ease;
+    font-size: 12px; }
+  .input-group span.description-textarea {
+    top: 101%; }
+  .input-group input:invalid:focus ~ span {
+    opacity: 1;
+    color: #f44336; }
+  .input-group textarea:invalid:focus ~ span {
+    opacity: 1;
+    color: #f44336; }
+  .input-group input:invalid:focus ~ .bar:before, .input-group input:invalid:focus ~ .bar:after {
+    -webkit-animation: bar-red 0.2s ease-out;
+            animation: bar-red 0.2s ease-out;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards; }
+  .input-group textarea:invalid:focus ~ .bar:before, .input-group textarea:invalid:focus ~ .bar:after {
+    -webkit-animation: bar-red 0.2s ease-out;
+            animation: bar-red 0.2s ease-out;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards; }
+  .input-group input:focus ~ .bar:before, .input-group input:focus ~ .bar:after {
+    -webkit-animation: bar 0.2s ease-out;
+            animation: bar 0.2s ease-out;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards; }
+  .input-group textarea:focus ~ .bar:before, .input-group textarea:focus ~ .bar:after {
+    -webkit-animation: bar 0.2s ease-out;
+            animation: bar 0.2s ease-out;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards; }
+
+textarea {
+  height: 100%;
+  resize: none; }
+
+@-webkit-keyframes bar {
+  0% {
+    background: #212121; }
+  100% {
+    background: #4caf50; } }
+
+@-webkit-keyframes bar-red {
+  0% {
+    background: #212121; }
+  100% {
+    background: #f44336; } }
+
 .footer {
   *zoom: 1;
   position: relative; }

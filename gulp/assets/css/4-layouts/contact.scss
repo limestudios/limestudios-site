@@ -1,19 +1,19 @@
 form {
   margin: 48px auto 48px auto;
-  padding: 0 16px;
   font-family: $type-secondary;
 }
 
 input, textarea {
-  height: 24px;
+  height: 64px;
+  font-size: 17px;
   -webkit-font-smoothing: antialiased;
   -webkit-appearance: none;
   background: $light-primary-color;
   border: none;
   //border-bottom: solid 2px @black;
   color: $primary-text-color;
-  padding: 15px 40px;
-  width: 100%;
+  padding: 0 40px;
+  width: 98%;
 
   &:focus, &:active {
     outline: none;
@@ -21,13 +21,21 @@ input, textarea {
   }
 
   &[type="submit"] {
-    transition: all 0.25s ease-out;
-    height: 48px;
+    margin: 24px auto;
+    width: 100%;
+    display: block;
+    background-color: $grey-900;
+    font-size: 17px;
+    color: $grey-100 !important;
+    transition: all 0.1s ease-in-out;
+    text-transform: uppercase;
+    font-weight: 400;
+    text-align: center;
+    height: 64px;
 
     &:active, &:hover {
-      background: $primary-text-color;
       box-shadow: 0 0 20px 0 rgba(0,0,0,0.2),0 5px 5px 0 rgba(0,0,0,0.24);
-      color: $light-primary-color;
+      z-index: 1000;
     }
   }
 }
@@ -42,26 +50,29 @@ textarea {
   position: relative;
 
   input, textarea {
-    padding: 12px 0px;
+    padding: 0;
   }
 
   label {
     position: absolute;
-    transform: translateY(-12px);
-    top: 24px;
+    transform: translateY(-10px);
+    top: 32px;
     left: 16px;
     color: $primary-text-color;
     pointer-events: none;
     transition: all 0.15s ease;
+    font-family: $type-secondary;
+    font-weight: 300;
+    font-size: 17px;
   }
 
   input:focus + label,
   input.has-value + label,
   textarea:focus + label,
   textarea.has-value + label {
-    top: -10px;
+    top: -14px;
     left: 0px;
-    font-size: 12px;
+    font-size: 17px;
   }
 
   /* BOTTOM BARS */
@@ -78,22 +89,26 @@ textarea {
 
   /* inactive state */
   input ~ .bar:before, input ~ .bar:after {
-    width: 15%;
+    width: 2%;
   }
 
   textarea ~ .bar:before, textarea ~ .bar:after {
-    width: 15%;
+    width: 2%;
   }
 
   span.description {
     opacity: 0;
     position: absolute;
-    top: 100%;
+    top: 110%;
     left: 0px;
     color: $red-500;
     pointer-events: none;
     transition: all 0.1s ease;
     font-size: 12px;
+  }
+
+  span.description-textarea {
+    top: 101%;
   }
 
   /* invalid state */
@@ -135,15 +150,11 @@ textarea {
 }
 
 @-webkit-keyframes bar {
-  0% { width:10%; }
-  25% { width:0%; background: $primary-text-color; }
-  26% { background: $green-500; }
-  100% { background: $green-500; width:10%; }
+  0% { background: $primary-text-color; }
+  100% { background: $green-500; }
 }
 
 @-webkit-keyframes bar-red {
-  0% { width:10%; }
-  25% { width:0%; background: $primary-text-color; }
-  26% { background: $red-500; }
-  100% { background: $red-500; width:10%; }
+  0% { background: $primary-text-color; }
+  100% { background: $red-500; }
 }
