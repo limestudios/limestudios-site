@@ -7,8 +7,8 @@ categories: game
 tags: article / game
 color: rgb(255,242,232)
 theme: light
-cover-image: /assets/img/posts/game/project-arrhythmia/cover.png
-image: large
+cover-image: /assets/img/posts/game/project-arrhythmia/logo.png
+image: medium
 author: Liam Craver
 ---
 <div class="button-wrapper">
