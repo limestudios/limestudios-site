@@ -172,6 +172,30 @@
       line-height: 32px;
     }
 
+    span {
+      &.block::after {
+        color: $grey-50;
+        content: attr(text);
+        padding: 10px;
+      }
+
+      &.block.lime::after {
+        background-color: $green-400;
+      }
+
+      &.block.great::after {
+        background-color: $blue-300;
+      }
+
+      &.block.average::after {
+        background-color: $orange-300;
+      }
+
+      &.block.not-good::after {
+        background-color: $red-400;
+      }
+    }
+
     p, ol, .button, li  {
       padding: 0 0 24px 40px;
       margin: 0 auto;

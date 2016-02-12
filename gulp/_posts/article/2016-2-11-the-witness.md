@@ -24,14 +24,15 @@ The Witnes is the first game from Thekla Inc., however they have a veteran on th
 
 ##Grading Categories
 
-###[9.5] Gameplay
+###Gameplay
+I want to keep this part brief cause any real detail would lead to numerous spoilers. That being said I want to say the gameplay for The Witness is extremely solid. There is a core mechanic that keeps evolving with the player as you play and it is one of the most gratifying puzzle games I've ever played. Technically any puzzle you come across you can solve...but some require further learning. The game never gives you random walls or blocks to progress everything is open and free to explore. This is for good reason cause without that element of exploration and wonder the game would not be nearly as engaging.
 
 <a href="/assets/img/posts/article/{{page.ref}}/screenshot (2).png">
     <img class="center full" src="/assets/img/posts/article/{{page.ref}}/screenshot (2).png"/>
 </a>
 
-###[10] Graphical Aesthetic
-I think the rest of the screenshots should speak for themselves.
+###Graphical Aesthetic
+The rest of the screenshots should speak for themselves. This is a beautifully designed game. Everything is clearly accounted for including the actual architecture of the island itself. There is this disconnect that something so pretty couldn't exist yet it all is so perfectly crafted it feels like just maybe it could exist.
 
 <div class="image-wrapper">
 {% for i in (3..10) %}
@@ -41,10 +42,10 @@ I think the rest of the screenshots should speak for themselves.
 {% endfor %}
 </div>
 
-###[10] Sound Aesthetic
-Every action you make in the game is almost always accompanied by a very satisfying sound. It was clear that the sound was thought about
+###Sound Aesthetic
+Every action you make in the game is almost always accompanied by a very satisfying sound. It was clear that sound was a priority for this project. Which without going into more detail is a very good thing.
 
-<h3 id="verdict">[9.0] Verdict : Certified Awesome<a href="/article/rating-system"><sup>(?)</sup></a></h3>
+<h3 id="verdict">[9.0] Verdict : <span class="block lime" text="Lime Certified"></span><a href="/article/rating-system"><sup>(?)</sup></a></h3>
 You will be cursing Blow one minute and praising his genius the next. This is a game that knows how to push the player but never unfairly. If you're looking for a nice challenge and a game with mystery and no hand holding, Johnathon Blow along with the rest of Thekla have got you covered. Grab your pen and paper!
 
 <div class="button-wrapper">

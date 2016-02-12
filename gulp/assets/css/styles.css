@@ -1009,6 +1009,18 @@ header {
       font-style: normal;
       font-variant: normal;
       line-height: 32px; }
+    .post-sections .post-content span.block::after {
+      color: #fafafa;
+      content: attr(text);
+      padding: 10px; }
+    .post-sections .post-content span.block.lime::after {
+      background-color: #66bb6a; }
+    .post-sections .post-content span.block.great::after {
+      background-color: #64b5f6; }
+    .post-sections .post-content span.block.average::after {
+      background-color: #ffb74d; }
+    .post-sections .post-content span.block.not-good::after {
+      background-color: #ef5350; }
     .post-sections .post-content p, .post-sections .post-content ol, .post-sections .post-content .button, .post-sections .post-content li {
       padding: 0 0 24px 40px;
       margin: 0 auto;
