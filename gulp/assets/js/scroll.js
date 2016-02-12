@@ -5,60 +5,19 @@ jQuery(function($) {
     var contentWrap = $(".content-wrap");
 
     $(document).ready(function() {
-      if(header.hasClass("resize-true") && $(window).width() >= 775)
-      {
-        header.height(Math.max(64, Math.min(256-scroll, 256)));
-        if(header.height() <= 65) {
-          header.removeClass("normal").addClass("small");
-          contentWrap.removeClass("normal").addClass("small");
-        } else {
-          header.removeClass("small").addClass("normal");
-          contentWrap.removeClass("small").addClass("normal");
-        }
-
-        if(scroll >= 192)
-          header.removeClass("fade-in").addClass("fade-out");
-        else
-          header.removeClass("fade-out").addClass("fade-in");
-      }
-      else
-      {
         header.height(64);
-        header.removeClass("resize-").addClass("resize-false");
-        header.removeClass("normal").addClass("small");
-
-        contentWrap.removeClass("resize-").addClass("resize-false");
-        contentWrap.addClass("small");
-
         if(scroll >= 64)
-          header.removeClass("fade-in").addClass("fade-out");
+            header.removeClass("fade-in").addClass("fade-out");
         else
-          header.removeClass("fade-out").addClass("fade-in");
-      }
+            header.removeClass("fade-out").addClass("fade-in");
     });
 
     $(window).scroll(function() {
-      scroll = $(window).scrollTop();
-      if(header.hasClass("resize-true") && $(window).width() >= 775) {
-        header.height(Math.max(64, Math.min(256-scroll, 256)));
-        if(header.height() <= 65) {
-          header.removeClass("normal").addClass("small");
-          contentWrap.removeClass("normal").addClass("small");
-        } else {
-          header.removeClass("small").addClass("normal");
-          contentWrap.removeClass("small").addClass("normal");
-        }
-
-        if(scroll >= 192)
-          header.removeClass("fade-in").addClass("fade-out");
-        else
-          header.removeClass("fade-out").addClass("fade-in");
-      } else {
+        scroll = $(window).scrollTop();
         if(scroll >= 64)
-          header.removeClass("fade-in").addClass("fade-out");
+            header.removeClass("fade-in").addClass("fade-out");
         else
-          header.removeClass("fade-out").addClass("fade-in");
-      }
+            header.removeClass("fade-out").addClass("fade-in");
     });
 
   // handle links with @href started with '#' only

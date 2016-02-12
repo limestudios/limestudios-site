@@ -8,19 +8,8 @@ body {
   -webkit-text-size-adjust: 100%;
 
   .content-wrap {
-
-    &.normal, &.small {
-      position: relative;
-      top: 256px;
-      padding-bottom: 256px;
-    }
-
-    &.resize-false {
-      &.small {
         position: relative;
         top: 64px;
         padding-bottom: 64px;
-      }
-    }
   }
 }

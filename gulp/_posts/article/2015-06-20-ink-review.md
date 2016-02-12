@@ -43,8 +43,8 @@ As mentioned prior the gameplay is definitely interesting. Although we have seen
   <img class="center full-width" src="/assets/img/posts/article/{{page.ref}}/screenshot2.gif">
 </div>
 
-###[8.5] Graphics
-The graphics for this game are stunning. It simply is pretty to look at, in fact I found myself sitting there every once and a while looking at the beautiful mess I had created on the screen. It was clear the color pallet and the way the color splashes on the walls was tweaked till it was as pleasing to the eyes as it could possibly be. Even the menus carry the theme of the game perfectly. It just oozes polish on the graphics side. The screenshots should speak for themselves...
+###[8.5] Aesthetic
+The aesthetic for this game is great. It simply is pretty to look at, in fact I found myself sitting there every once and a while looking at the beautiful mess I had created on the screen. It was clear the color pallet and the way the color splashes on the walls was tweaked till it was as pleasing to the eyes as it could possibly be. Even the menus carry the theme of the game perfectly. It just oozes polish. The screenshots should speak for themselves...
 
 ###[7.0] Audio
 The audio was nothing special but it did the job. It didn't get on my nerves and helped me get sucked into the game. I only found myself getting distracted by it a few times. Overall nothing special but nothing bad, just average.
@@ -53,7 +53,7 @@ The audio was nothing special but it did the job. It didn't get on my nerves and
   <img class="center full-width" src="/assets/img/posts/article/{{page.ref}}/screenshot3.gif">
 </div>
 
-<h3 id="end">[8.0] Overall Verdict</h3>
+<h3 id="end">[8.0] Verdict : Certified Interesting<a href="/article/rating-system"><sup>(?)</sup></a></h3>
 INK was an enjoyable game! It was a refreshing take on the paint the environment trope and a great platformer. With its
 stunning graphics and tight controls it should be a contender for your time!
 

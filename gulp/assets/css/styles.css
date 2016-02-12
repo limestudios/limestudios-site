@@ -362,11 +362,7 @@ body {
   color: #666;
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%; }
-  body .content-wrap.normal, body .content-wrap.small {
-    position: relative;
-    top: 256px;
-    padding-bottom: 256px; }
-  body .content-wrap.resize-false.small {
+  body .content-wrap {
     position: relative;
     top: 64px;
     padding-bottom: 64px; }
@@ -487,7 +483,7 @@ a.norm {
 a.line {
   -webkit-transition: 0.1s all ease-in-out;
           transition: 0.1s all ease-in-out;
-  padding-bottom: 22px;
+  padding-bottom: 20px;
   padding-left: 8px;
   padding-right: 8px;
   border-bottom: 2px solid transparent; }
@@ -739,8 +735,8 @@ header {
     padding: 0 16px;
     box-shadow: 0px 10px 8px 0px rgba(0, 0, 0, 0.1);
     opacity: 0;
-    -webkit-animation: fadein 0.25s ease-out;
-            animation: fadein 0.25s ease-out;
+    -webkit-animation: slideintop 0.25s ease-out;
+            animation: slideintop 0.25s ease-out;
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards;
     -webkit-transition: background-color 0.2s ease-in-out;
@@ -753,8 +749,6 @@ header {
       background-color: rgba(255, 255, 255, 0.9); }
       header .header-position.fade-out .header-wrapper {
         opacity: 0.9; }
-    header .header-position.small .logo-wrapper .text {
-      font-size: 28px; }
     header .header-position .header-wrapper {
       margin: 0 auto;
       max-width: 1680px;
@@ -785,18 +779,17 @@ header {
                 align-items: center; }
         header .header-position .logo-wrapper a .logo {
           padding: 9px 0;
-          height: calc(100% - 18px);
-          max-width: 96px;
+          height: 64px;
+          width: 64px;
           margin: 0;
           float: left;
-          display: block;
-          width: 100%; }
+          display: block; }
         header .header-position .logo-wrapper a .text {
           padding-left: 20px;
           float: left;
           font-family: "Roboto Mono", Helvetica Neue, Helvetica, Arial, sans-serif;
           font-weight: 300;
-          font-size: 56px;
+          font-size: 28px;
           margin: 0;
           -webkit-font-smoothing: antialiased;
           text-decoration: none;
@@ -831,27 +824,21 @@ header {
         header .header-position .home-nav ul li a {
           padding-left: 4px;
           padding-right: 4px;
-          padding-bottom: 24px;
+          padding-bottom: 20px;
           font-size: 12px;
           font-weight: 400; }
     header .header-position .logo-wrapper {
-      max-width: 96px;
-      margin: 0px;
       display: none; } }
 
 @-webkit-keyframes slideintop {
   0% {
-    opacity: 0;
-    -webkit-transform: translateY(-64px);
-            transform: translateY(-64px); }
+    opacity: 0; }
   100% {
     opacity: 1; } }
 
 @keyframes slideintop {
   0% {
-    opacity: 0;
-    -webkit-transform: translateY(-64px);
-            transform: translateY(-64px); }
+    opacity: 0; }
   100% {
     opacity: 1; } }
 

@@ -12,8 +12,7 @@ image: large
 author: Liam Craver
 ---
 <div class="button-wrapper">
-  <a class="float two border" href="http://steamcommunity.com/sharedfiles/filedetails/?id=495702057">Support on Steam Greenlight</a>
-  <a class="float two border" href="http://limestudios.itch.io/project-arrhythmia">Download the Prototype</a>
+  <a class="float one border" href="http://limestudios.itch.io/project-arrhythmia">Download the Prototype</a>
 </div>
 <br>
 
