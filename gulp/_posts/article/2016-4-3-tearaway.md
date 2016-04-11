@@ -1,21 +1,20 @@
 ---
 layout: posts
-ref: the-witness
-title: The Witness
-subtitle: The Witness is a 3D puzzle video game developed and published by Thekla, Inc.
+ref: tearaway-unfolded
+title: Tearaway Unfolded
+subtitle: A mesmerizing and enigmatic adventure through a magical world of paper.
 categories: article
 tags: article / review
 color: rgb(200,200,200)
-theme: light
-cover-image: /assets/img/posts/article/the-witness/cover.png
+theme: dark
+cover-image: /assets/img/posts/article/tearaway-unfolded/cover.jpg
 image: full
 author: Liam Craver
-platforms: PC / PS4
+platforms: PS4
 ---
-<center><h3>I tried to keep this review spoiler free but read on with caution.</h3></center>
 
 ##Introduction
-The Witness is the first game from Thekla Inc., however they have a veteran on their side. Johnathon Blow creator of Braid a indie hit back in a time before that was almost commonplace.
+Tearaway Unfolded originally had it's debut on the PS Vita with simply "Tearaway". On it's initial release it was praised for it's unique and fun gameplay. With the PS4 "reimagining" I think it retains everything that made the original an amazing experience while adding creative and interesting new ways of interacting with the player. From this point on I'm going to exclusively talk about the PS4 version.
 
 <a class="line-s" href="#verdict">TL;DR? - Skip to the Final Verdict</a>
 
@@ -26,7 +25,7 @@ The Witness is the first game from Thekla Inc., however they have a veteran on t
 ##Grading Categories
 
 ###Gameplay
-I want to keep this part brief cause any real detail would lead to numerous spoilers. That being said I want to say the gameplay for The Witness is extremely solid. There is a core mechanic that keeps evolving with the player as you play and it is one of the most gratifying puzzle games I've ever played. Technically any puzzle you come across you can solve...but some require further learning. The game never gives you random walls or blocks to progress everything is open and free to explore. This is for good reason cause without that element of exploration and wonder the game would not be nearly as engaging.
+The gameplay in Tearaway Unfolded is a weird mix of standard 3D platformer and arts and crafts game. A one of the best uses of motion controls I've ever seen.
 
 <a href="/assets/img/posts/article/{{page.ref}}/screenshot (2).png">
     <img class="center full" src="/assets/img/posts/article/{{page.ref}}/screenshot (2).png"/>

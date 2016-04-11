@@ -16,7 +16,11 @@
 		<!--[if lte IE 8]><script src="{{site.url}}/assets/js/ie.js"></script><![endif]-->
 		<!--<script src=/assets/js/bundle.js></script>-->
 		<!--<script src=/assets/js/components.js></script>-->
-		<meta name="theme-color" content="#689f38">
+		{% if page.theme-color %}
+			<meta name="theme-color" content="{{ page.theme-color }}">
+		{% else %}
+			<meta name="theme-color" content="#689f38">
+		{% endif %}
 		<meta name=keywords content="{{#if page.keywords}}{{page.keywords}},Liam Craver,Lime Studios,Lime,Studios,web design,graphic design,css,html{{else~}}{{site.keywords}}{{/if ~}}">
 		<meta name=author content="{{author.name.first}} {{author.name.last}}">
 		<meta name=google-site-verification content=7RrfJovl477GocUkq4QOPIybas99RN2zebN46jgN_Lo>

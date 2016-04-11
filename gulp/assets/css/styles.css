@@ -6,6 +6,7 @@
  */
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900,400italic,300italic);
 @import url(http://fonts.googleapis.com/css?family=Roboto+Mono:400,300italic,100italic,100,300,400italic,500,700);
+@import url(https://fonts.googleapis.com/css?family=Inconsolata:400,700);
 html {
   font-family: sans-serif;
   /* 1 */
@@ -724,6 +725,32 @@ a.github {
       .card-container a.card.half-card {
         width: 100%; } }
 
+.flex-video {
+  position: relative;
+  padding-bottom: 56.2%;
+  height: 0;
+  margin-bottom: 16px;
+  overflow: hidden; }
+
+.flex-video.widescreen {
+  padding-bottom: 57.25%; }
+
+.flex-video.vimeo {
+  padding-top: 0; }
+
+.flex-video iframe,
+.flex-video object,
+.flex-video embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
+
+@media only screen and (max-device-width: 800px), only screen and (device-width: 1024px) and (device-height: 600px), only screen and (width: 1280px) and (orientation: landscape), only screen and (device-width: 800px), only screen and (max-width: 767px) {
+  .flex-video {
+    padding-top: 0; } }
+
 header {
   z-index: 1001; }
   header .header-position {
@@ -866,6 +893,128 @@ header {
       -ms-flex: 1;
           flex: 1; }
 
+.arrhythmia-wrap {
+  padding: 0 16px;
+  max-width: 1000px;
+  margin: 0 auto;
+  font-family: "Inconsolata", Helvetica Neue, Helvetica, Arial, sans-serif; }
+  .arrhythmia-wrap h3 {
+    font-family: "Inconsolata", Helvetica Neue, Helvetica, Arial, sans-serif; }
+  .arrhythmia-wrap .logo {
+    width: 100%;
+    height: 128px; }
+    .arrhythmia-wrap .logo img {
+      max-height: 128px;
+      padding-right: 16px;
+      float: left; }
+    .arrhythmia-wrap .logo h2 {
+      font-family: "Inconsolata", Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-weight: 400;
+      letter-spacing: 8px;
+      font-size: 32px;
+      line-height: 32px;
+      padding: 32px 0;
+      text-transform: uppercase; }
+    @media (max-width: 481px) {
+      .arrhythmia-wrap .logo {
+        height: 64px; }
+        .arrhythmia-wrap .logo img {
+          float: left;
+          max-height: 64px; }
+        .arrhythmia-wrap .logo h2 {
+          font-size: 16px;
+          line-height: 16px;
+          padding: 16px 0; } }
+  .arrhythmia-wrap .trailer {
+    margin: 32px 0px; }
+  .arrhythmia-wrap .social br {
+    display: none; }
+  @media (max-width: 481px) {
+    .arrhythmia-wrap .social {
+      margin-top: -6px; }
+      .arrhythmia-wrap .social br {
+        display: block; } }
+  .arrhythmia-wrap a.arrhythmia-button {
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 32px;
+    height: 32px;
+    padding: 0 8px;
+    font-family: "Inconsolata", Helvetica Neue, Helvetica, Arial, sans-serif !important;
+    background-color: #e0e0e0;
+    display: inline-block;
+    color: #212121;
+    display: inline-block; }
+    .arrhythmia-wrap a.arrhythmia-button:hover {
+      background-color: #e57373 !important;
+      color: white !important;
+      box-shadow: none; }
+    @media (max-width: 1150px) {
+      .arrhythmia-wrap a.arrhythmia-button {
+        margin: 8px 0px; } }
+  .arrhythmia-wrap form {
+    margin: 0 0;
+    padding: 0 !important;
+    max-width: 640px; }
+    .arrhythmia-wrap form input[type=email] {
+      font-size: 14px;
+      line-height: 14px;
+      height: 16px;
+      text-indent: 8px !important;
+      max-width: 300px;
+      float: left;
+      font-family: "Inconsolata", Helvetica Neue, Helvetica, Arial, sans-serif !important;
+      border-radius: 0px !important;
+      border: none !important; }
+    .arrhythmia-wrap form input[type=submit] {
+      letter-spacing: 2px;
+      font-size: 14px;
+      line-height: 40px;
+      height: 40px;
+      padding: 0 8px !important;
+      font-family: "Inconsolata", Helvetica Neue, Helvetica, Arial, sans-serif !important;
+      background-color: #e0e0e0 !important;
+      display: inline-block;
+      color: #212121 !important;
+      border-radius: 0px !important;
+      margin-top: 16px !important;
+      -webkit-transition: 0s !important;
+              transition: 0s !important; }
+      .arrhythmia-wrap form input[type=submit]:hover {
+        background-color: #e57373 !important;
+        color: white !important;
+        box-shadow: none; }
+    .arrhythmia-wrap form div.mce_inline_error {
+      margin: 0 0 0 8px !important;
+      border: 2px solid #e57373;
+      line-height: 20px;
+      background-color: #e57373 !important;
+      color: white !important;
+      height: 18px !important;
+      font-family: "Inconsolata", Helvetica Neue, Helvetica, Arial, sans-serif !important;
+      border-radius: 0px !important;
+      margin-bottom: 0px !important; }
+    .arrhythmia-wrap form .mc-field-group {
+      padding-bottom: 0px !important;
+      margin-bottom: 0px !important;
+      min-height: 0px !important; }
+    .arrhythmia-wrap form #mce-responses {
+      margin: 0px !important; }
+    @media (max-width: 1150px) {
+      .arrhythmia-wrap form .mc-field-group {
+        width: 100% !important; }
+      .arrhythmia-wrap form input[type=email] {
+        max-width: 320px;
+        width: 100% !important;
+        float: none; }
+      .arrhythmia-wrap form div.mce_inline_error {
+        margin: 8px 0 0 0 !important;
+        padding-right: 8px !important; } }
+    @media (max-width: 481px) {
+      .arrhythmia-wrap form input[type=email] {
+        max-width: 100%; } }
+
 .post-wrap {
   display: block;
   margin-bottom: 64px; }
@@ -948,6 +1097,27 @@ header {
     color: #fafafa; }
   .post-header.dark p {
     color: #fafafa; }
+  .post-header .post-platforms {
+    width: 100%;
+    bottom: 24px;
+    position: absolute;
+    text-align: center; }
+    @media (max-width: 1150px) {
+      .post-header .post-platforms {
+        bottom: 16px; } }
+    @media (max-width: 775px) {
+      .post-header .post-platforms {
+        bottom: 8px; } }
+    .post-header .post-platforms h2 {
+      font-size: 32px;
+      padding: 0;
+      margin: 0; }
+      @media (max-width: 1150px) {
+        .post-header .post-platforms h2 {
+          font-size: 24px; } }
+      @media (max-width: 775px) {
+        .post-header .post-platforms h2 {
+          font-size: 16px; } }
 
 .post-sections {
   width: 100%;
@@ -1157,37 +1327,39 @@ header {
                 transition: all 0.1s ease-in-out;
         text-transform: uppercase;
         font-weight: 400;
-        text-align: center; }
+        text-align: center;
+        float: left;
+        margin: 0;
+        padding: 16px 0;
+        *zoom: 1; }
         .post-sections .post-content .button-wrapper a:hover {
           box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
           z-index: 1000; }
-        .post-sections .post-content .button-wrapper a.float {
-          float: left;
-          margin: 0;
-          padding: 16px 0;
-          *zoom: 1; }
-          .post-sections .post-content .button-wrapper a.float:before,
-          .post-sections .post-content .button-wrapper a.float:after {
-            content: " ";
-            display: table; }
-          .post-sections .post-content .button-wrapper a.float:after {
-            clear: both; }
-          .post-sections .post-content .button-wrapper a.float.two {
-            max-width: 50%; }
-            .post-sections .post-content .button-wrapper a.float.two.border {
-              max-width: calc(50% - 16px);
-              margin: 8px; }
-          .post-sections .post-content .button-wrapper a.float.three {
-            max-width: 50%; }
-            .post-sections .post-content .button-wrapper a.float.three:first-child {
-              max-width: 100%; }
-            .post-sections .post-content .button-wrapper a.float.three.border {
-              max-width: calc(50% - 16px);
-              margin: 8px; }
-              .post-sections .post-content .button-wrapper a.float.three.border:first-child {
-                max-width: calc(100% - 16px); }
-          .post-sections .post-content .button-wrapper a.float.full-width {
-            max-width: 100%; }
+        .post-sections .post-content .button-wrapper a:before,
+        .post-sections .post-content .button-wrapper a:after {
+          content: " ";
+          display: table; }
+        .post-sections .post-content .button-wrapper a:after {
+          clear: both; }
+        .post-sections .post-content .button-wrapper a.b-1 {
+          max-width: 100%;
+          max-width: calc(100% - 4px);
+          margin: 2px; }
+        .post-sections .post-content .button-wrapper a.b-2 {
+          max-width: 50%;
+          max-width: calc(50% - 4px);
+          margin: 2px; }
+        .post-sections .post-content .button-wrapper a.b-3 {
+          max-width: 33.3333%; }
+          .post-sections .post-content .button-wrapper a.b-3.border {
+            max-width: calc(33.3333% - 4px);
+            margin: 2px; }
+        .post-sections .post-content .button-wrapper a.b-4 {
+          max-width: 25%;
+          max-width: calc(25% - 4px);
+          margin: 2px; }
+        .post-sections .post-content .button-wrapper a.full-width {
+          max-width: 100%; }
     .post-sections .post-content img {
       margin: 24px auto;
       max-width: 100%;

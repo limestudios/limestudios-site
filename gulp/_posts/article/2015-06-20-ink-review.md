@@ -10,6 +10,7 @@ theme: dark
 cover-image: /assets/img/posts/article/ink-review/cover.jpg
 image: full
 author: Liam Craver
+platforms: PC
 ---
 ##Game Info
 INK is a fast-paced, abstract platformer about discovering the world around you, using paint.
@@ -55,5 +56,5 @@ The audio was nothing special but it did the job. It didn't get on my nerves and
 INK was an enjoyable game! It was a refreshing take on the paint the environment trope and a great platformer. With it's stunning graphics and tight controls it should be a contender for your time!
 
 <div class="button-wrapper">
-<a class="float one border" href="http://zackbellgames.itch.io/ink">Download The Game</a>
+  <a class="b-1" href="http://zackbellgames.itch.io/ink">Download The Game</a>
 </div>
