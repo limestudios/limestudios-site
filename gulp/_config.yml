@@ -15,5 +15,5 @@ home-nav: [
 
 # This is the default format.
 # For more see: https://github.com/mojombo/jekyll/wiki/Permalinks
-permalink: /:categories/:title
+permalink: /:categories/:title/
 post_dirs: false
