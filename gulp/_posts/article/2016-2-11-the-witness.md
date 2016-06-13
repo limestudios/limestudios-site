@@ -6,8 +6,8 @@ subtitle: The Witness is a 3D puzzle video game developed and published by Thekl
 categories: article
 tags: article / review
 color: rgb(200,200,200)
-theme: light
-cover-image: /assets/img/posts/article/the-witness/cover.png
+theme: dark
+cover-image: /assets/img/posts/article/the-witness/cover.jpg
 image: full
 author: Liam Craver
 platforms: PC / PS4
