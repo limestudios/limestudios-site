@@ -1,0 +1,28 @@
+section.designs {
+
+  .dribbble {
+    background-color: pink;
+  }
+
+  .twitter {
+    background-color: blue;
+  }
+
+  .design-img-link {
+    display: block;
+    float: left;
+    width: calc(50% - 14px);
+    border: 2px solid white;
+    margin: 5px;
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+  }
+
+  .cf {
+    clear: both;
+    margin-bottom: 20px;
+  }
+}

@@ -1,0 +1,33 @@
+---
+layout: home
+title: Games
+---
+<section class="card-container transition" id="about">
+  {% for post in site.categories.game %}
+    {% capture total %}{{ site.categories.game | size }}{% endcapture %}
+    {% assign value = total | modulo:2 %}
+    {% if value == 1 and forloop.first %}
+      <a class="card full-card" href="{{ post.url }}">
+    {% else %}
+      <a class="card half-card" href="{{ post.url }}">
+    {% endif %}
+        <div class="{{ post.theme }}" style="background-color: {{post.color}}">
+          <section class="heading">
+            <h3 class="title">{{ post.title }}</h3>
+            {% if post.subtitle %}
+              <p class="subtitle">{{ post.subtitle }}</p>
+            {% endif %}
+          </section>
+          <div class="card-content">
+            <img class="center-{{post.image}}" src="{{ post.cover-image }}"/>
+          </div>
+          {% capture posttags %}{{ post.tags }}{% endcapture %}
+          {% assign tags = posttags | split: '/' %}
+          <p class="tag">{% for tag in tags %}{{ tag }} {% if forloop.last %}{% else %} / {% endif %} {% endfor %}</p>
+          <p class="link-icon" href="">
+            {% include svg/chevron-right.html %}
+          </p>
+        </div>
+      </a>
+  {% endfor %}
+</section>

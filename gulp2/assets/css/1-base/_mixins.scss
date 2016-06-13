@@ -1,0 +1,19 @@
+@mixin clearfix {
+  *zoom: 1;
+  &:before,
+  &:after {
+    content: " ";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+@mixin calc($property, $variable, $operation, $value, $fallback) {
+   #{$property}: $fallback; //for browsers that don't support calc function
+   #{$property}: -mox-calc(#{$variable} #{$operation} #{$value});
+   #{$property}: -o-calc(#{$variable} #{$operation} #{$value});
+   #{$property}: -webkit-calc(#{$variable} #{$operation} #{$value});
+   #{$property}: calc(#{$variable} #{$operation} #{$value});
+ }

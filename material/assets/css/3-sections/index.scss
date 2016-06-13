@@ -1,0 +1,82 @@
+$debug: false !default;
+
+span {
+  color: $grey-50;
+  &.show {
+    background-color: $blue-grey-800;
+    &._xs { background-color: $blue-200; }
+    &._s { background-color: $blue-400; }
+    &._m { background-color: $blue-600; }
+    &._l { background-color: $blue-800; }
+    &._xl { background-color: $blue-900; }
+  }
+}
+
+[class*='block'] {
+  background-color: #fff;
+  border-radius: 2px;
+  color: $grey-700;
+}
+
+@for $i from 1 through 64 {
+  .block-#{$i} { height: #{4 * $i}px !important; }
+}
+
+
+.grid-debug {
+  pointer-events: none;
+  position: fixed;
+  top: 0px;
+  margin: 0px;
+  z-index: 2000;
+
+  .block {
+    height: 100vh;
+    @if $debug {
+      background-color: fade-out($blue-800, 0.8);
+    }
+    @else {
+      background-color: transparent;
+    }
+  }
+}
+
+.debug {
+  @if $debug == false {
+    display: none;
+  }
+  pointer-events: none;
+  position: fixed;
+  top: 0px;
+  margin: 0px;
+  z-index: 2001;
+
+  div {
+    float: left;
+    span {
+      padding: 0 8px;
+    }
+  }
+}
+
+.light-pink {
+  background-color: $pink-a200;
+}
+
+.pink {
+  background-color: $pink-a400;
+}
+
+.grey {
+  background-color: $grey-700;
+}
+
+.header {
+  .icon {
+    float: left;
+    height: 40px;
+    width: 40px;
+    background-color: $grey-500;
+    border-radius: 100%;
+  }
+}

@@ -1,0 +1,21 @@
+.about-wrapper {
+  .about {
+    img.icon {
+      display: block;
+      margin: 0 auto 48px auto;
+      max-width: 256px;
+      border-radius: 100%;
+    }
+
+    p {
+      font-family: $type-secondary;
+      color: $primary-text-color;
+      font-size: 16px;
+      letter-spacing: 1px;
+      line-height: 26px;
+      margin: 32px 48px;
+    }
+
+    margin: 48px auto;
+  }
+}

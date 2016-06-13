@@ -1,0 +1,439 @@
+---
+layout: base
+title: Home
+---
+<!--<div class="row">
+  <div class="dividers">
+    <div class="show xsmall _0"><span>0</span><div class="bar"></div></div>
+    <div class="show xsmall _480"><span>480</span><div class="bar"></div></div>
+    <div class="show small _600"><span>600</span><div class="bar"></div></div>
+  </div>
+  <div class="window">
+    <div class="label">window</div>
+    <div class="show xsmall"><span>xsmall</span></div>
+    <div class="show small"><span>small</span></div>
+    <div class="show medium"><span>medium</span></div>
+    <div class="show large"><span>large</span></div>
+    <div class="show xlarge"><span>xlarge</span></div>
+  </div>
+</div>-->
+
+<div class="debug row">
+  <div class="current-columns">
+    <span class="show _4">columns : 4</span>
+    <span class="show _8">columns : 8</span>
+    <span class="show _12">columns : 12</span>
+  </div>
+  <div class="current-window">
+    <span class="show _xs">window : xsmall</span>
+    <span class="show _s">window : small</span>
+    <span class="show _m">window : medium</span>
+    <span class="show _l">window : large</span>
+    <span class="show _xl">window : xlarge</span>
+  </div>
+</div>
+
+<div class="row_12 gutters-40 grid-debug">
+  {% for i in (1..12) %}
+  <div class="col-12-1 block"></div>
+  {% endfor %}
+</div>
+
+<div class="row_8 gutters-40 grid-debug">
+  {% for i in (1..8) %}
+  <div class="col-8-1 block"></div>
+  {% endfor %}
+</div>
+
+<div class="row_4 gutters-40 grid-debug">
+  {% for i in (1..4) %}
+  <div class="col-4-1 block"></div>
+  {% endfor %}
+</div>
+
+<button class="fab depth-4"><i class="material-icons icon-normal">add</i></button>
+
+<!-- LARGE -->
+<div class="row_12 gutters-24 light-bg">
+  <div class="col-12-3 margin-t-16 margin-b-16"><button class="light flat">normal</button></div>
+  <div class="col-12-3 margin-t-16 margin-b-16"><button class="light flat focused">focused</button></div>
+  <div class="col-12-3 margin-t-16 margin-b-16"><button class="light flat pressed">pressed</button></div>
+  <div class="col-12-3 margin-t-16 margin-b-16"><button class="light flat disabled">disabled</button></div>
+</div>
+<div class="row_12 gutters-24 dark-bg">
+  <div class="col-12-3 margin-t-16 margin-b-16"><button class="dark flat">normal</button></div>
+  <div class="col-12-3 margin-t-16 margin-b-16"><button class="dark flat focused">ACTION</button></div>
+  <div class="col-12-3 margin-t-16 margin-b-16"><button class="dark flat pressed">pressed</button></div>
+  <div class="col-12-3 margin-t-16 margin-b-16"><button class="dark flat disabled">disabled</button></div>
+</div>
+<div class="row_12 gutters-24 light-bg">
+  <div class="col-12-3 margin-t-16 margin-b-16"><button class="light raised">normal</button></div>
+  <div class="col-12-3 margin-t-16 margin-b-16"><button class="light raised focused">focused</button></div>
+  <div class="col-12-3 margin-t-16 margin-b-16"><button class="light raised pressed">pressed</button></div>
+  <div class="col-12-3 margin-t-16 margin-b-16"><button class="light raised disabled">disabled</button></div>
+</div>
+<div class="row_12 gutters-24 dark-bg">
+  <div class="col-12-3 margin-t-16 margin-b-16"><button class="dark raised">normal</button></div>
+  <div class="col-12-3 margin-t-16 margin-b-16"><button class="dark raised focused">focused</button></div>
+  <div class="col-12-3 margin-t-16 margin-b-16"><button class="dark raised pressed">pressed</button></div>
+  <div class="col-12-3 margin-t-16 margin-b-16"><button class="dark raised disabled">disabled</button></div>
+</div>
+<div class="row_12 gutters-24">
+  <div class="col-12-6 white-bg padding-16 depth-8">
+    <div class="text-dark bold title margin-b-16">
+      Use Google's location service?
+    </div>
+    <div class="text-normal body-1 margin-b-24">
+      Let Google help apps determine location. This means sending anonymous location data to Google, even when no apps are running.
+    </div>
+    <div class="float-r margin-l-8"><button class="light flat">agree</button></div>
+    <div class="float-r"><button class="light flat">disagree</button></div>
+  </div>
+  <div class="col-12-6 white-bg padding-16 depth-8">
+    <div class="text-dark bold title margin-b-16">
+      Use Google's location service?
+    </div>
+    <div class="text-normal body-1 margin-b-24">
+      Let Google help apps determine location. This means sending anonymous location data to Google, even when no apps are running.
+    </div>
+    <div class="float-r margin-l-8"><button class="light raised">agree</button></div>
+    <div class="float-r"><button class="light raised">disagree</button></div>
+  </div>
+</div>
+<div class="row_12 gutters-24">
+  <div class="col-12-4 depth-2-8 block">
+
+    <div class="row_12">
+      <div class="col-12-12 gutters-16 block-10">
+        <div class="header">
+          <img class="icon margin-r-16"></img>
+          <span class="subhead bold text-dark">Title</span><br>
+          <span class="subhead text-normal">Subhead</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="row_12 block-48 grey">
+    </div>
+
+    <div class="row_12 gutters-16">
+      <span class="text-dark body-1">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      </span>
+    </div>
+
+    <div class="row_12 gutters-8">
+      <div class="float margin-r-8"><button class="flat light">ACTION</button></div>
+      <div class="float"><button class="flat light">ACTION</button></div>
+    </div>
+
+  </div>
+
+  <div class="col-12-4 depth-2-8 block">
+
+    <div class="row_12">
+      <div class="col-12-12 gutters-16 block-10">
+        <div class="header">
+          <img class="icon margin-r-16"></img>
+          <span class="subhead bold text-dark">Title</span><br>
+          <span class="subhead text-normal">Subhead</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="row_12 block-48 grey">
+    </div>
+
+    <div class="row_12 gutters-16">
+      <span class="text-dark body-1">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      </span>
+    </div>
+
+    <div class="row_12 gutters-8">
+      <div class=""><button class="flat light">ACTION</button></div>
+      <div class="margin-t-4"><button class="flat light">ACTION</button></div>
+    </div>
+
+  </div>
+
+  <div class="col-12-4 depth-2-8 block">
+
+    <div class="row_12 block-48 grey">
+    </div>
+
+    <div class="row_12 gutters-16">
+      <span class="text-dark headline">
+        Title goes here
+      </span><br>
+      <span class="text-normal subhead">
+        Subtitle here
+      </span>
+    </div>
+
+    <div class="row_12 gutters-8">
+      <div class="float margin-r-8"><button class="flat light">ACTION</button></div>
+      <div class="float"><button class="flat light">ACTION</button></div>
+    </div>
+
+  </div>
+</div>
+
+<!-- MEDIUM -->
+<div class="row_8 gutters-24 light-bg">
+  <div class="col-8-2 margin-t-16 margin-b-16"><button class="light flat">normal</button></div>
+  <div class="col-8-2 margin-t-16 margin-b-16"><button class="light flat focused">focused</button></div>
+  <div class="col-8-2 margin-t-16 margin-b-16"><button class="light flat pressed">pressed</button></div>
+  <div class="col-8-2 margin-t-16 margin-b-16"><button class="light flat disabled">disabled</button></div>
+</div>
+<div class="row_8 gutters-24 dark-bg">
+  <div class="col-8-2 margin-t-16 margin-b-16"><button class="dark flat">normal</button></div>
+  <div class="col-8-2 margin-t-16 margin-b-16"><button class="dark flat focused">ACTION</button></div>
+  <div class="col-8-2 margin-t-16 margin-b-16"><button class="dark flat pressed">pressed</button></div>
+  <div class="col-8-2 margin-t-16 margin-b-16"><button class="dark flat disabled">disabled</button></div>
+</div>
+<div class="row_8 gutters-24 light-bg">
+  <div class="col-8-2 margin-t-16 margin-b-16"><button class="light raised">normal</button></div>
+  <div class="col-8-2 margin-t-16 margin-b-16"><button class="light raised focused">focused</button></div>
+  <div class="col-8-2 margin-t-16 margin-b-16"><button class="light raised pressed">pressed</button></div>
+  <div class="col-8-2 margin-t-16 margin-b-16"><button class="light raised disabled">disabled</button></div>
+</div>
+<div class="row_8 gutters-24 dark-bg">
+  <div class="col-8-2 margin-t-16 margin-b-16"><button class="dark raised">normal</button></div>
+  <div class="col-8-2 margin-t-16 margin-b-16"><button class="dark raised focused">focused</button></div>
+  <div class="col-8-2 margin-t-16 margin-b-16"><button class="dark raised pressed">pressed</button></div>
+  <div class="col-8-2 margin-t-16 margin-b-16"><button class="dark raised disabled">disabled</button></div>
+</div>
+<div class="row_8 gutters-24">
+  <div class="col-8-4 white-bg padding-16 depth-8">
+    <div class="text-dark bold title margin-b-16">
+      Use Google's location service?
+    </div>
+    <div class="text-normal body-1 margin-b-24">
+      Let Google help apps determine location. This means sending anonymous location data to Google, even when no apps are running.
+    </div>
+    <div class="float-r margin-l-8"><button class="light flat">agree</button></div>
+    <div class="float-r"><button class="light flat">disagree</button></div>
+  </div>
+  <div class="col-8-4 white-bg padding-16 depth-8">
+    <div class="text-dark bold title margin-b-16">
+      Use Google's location service?
+    </div>
+    <div class="text-normal body-1 margin-b-24">
+      Let Google help apps determine location. This means sending anonymous location data to Google, even when no apps are running.
+    </div>
+    <div class="float-r margin-l-8"><button class="light raised">agree</button></div>
+    <div class="float-r"><button class="light raised">disagree</button></div>
+  </div>
+</div>
+<div class="row_8 gutters-24">
+  <div class="col-8-4 depth-2-8 block">
+
+    <div class="row_8">
+      <div class="col-8-8 gutters-16 block-10">
+        <div class="header">
+          <img class="icon margin-r-16"></img>
+          <span class="subhead bold text-dark">Title</span><br>
+          <span class="subhead text-normal">Subhead</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="row_8 block-48 grey">
+    </div>
+
+    <div class="row_8 gutters-16">
+      <span class="text-dark body-1">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      </span>
+    </div>
+
+    <div class="row_8 gutters-8">
+      <div class="float margin-r-8"><button class="flat light">ACTION</button></div>
+      <div class="float"><button class="flat light">ACTION</button></div>
+    </div>
+
+  </div>
+
+  <div class="col-8-4 depth-2-8 block">
+
+    <div class="row_8">
+      <div class="col-8-8 gutters-16 block-10">
+        <div class="header">
+          <img class="icon margin-r-16"></img>
+          <span class="subhead bold text-dark">Title</span><br>
+          <span class="subhead text-normal">Subhead</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="row_8 block-48 grey">
+    </div>
+
+    <div class="row_8 gutters-16">
+      <span class="text-dark body-1">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      </span>
+    </div>
+
+    <div class="row_8 gutters-8">
+      <div class=""><button class="flat light">ACTION</button></div>
+      <div class="margin-t-4"><button class="flat light">ACTION</button></div>
+    </div>
+
+  </div>
+</div>
+
+<div class="row_8 gutters-24">
+  <div class="col-8-4 depth-2-8 block">
+
+    <div class="row_8 block-48 grey">
+    </div>
+
+    <div class="row_8 gutters-16">
+      <span class="text-dark headline">
+        Title goes here
+      </span><br>
+      <span class="text-normal subhead">
+        Subtitle here
+      </span>
+    </div>
+
+    <div class="row_8 gutters-8">
+      <div class="float margin-r-8"><button class="flat light">ACTION</button></div>
+      <div class="float"><button class="flat light">ACTION</button></div>
+    </div>
+
+  </div>
+</div>
+
+<!-- SMALL -->
+<div class="row_4 gutters-24 light-bg">
+  <div class="col-4-1 margin-t-16 margin-b-16"><button class="light flat">normal</button></div>
+  <div class="col-4-1 margin-t-16 margin-b-16"><button class="light flat focused">focused</button></div>
+  <div class="col-4-1 margin-t-16 margin-b-16"><button class="light flat pressed">pressed</button></div>
+  <div class="col-4-1 margin-t-16 margin-b-16"><button class="light flat disabled">disabled</button></div>
+</div>
+<div class="row_4 gutters-24 dark-bg">
+  <div class="col-4-1 margin-t-16 margin-b-16"><button class="dark flat">normal</button></div>
+  <div class="col-4-1 margin-t-16 margin-b-16"><button class="dark flat focused">ACTION</button></div>
+  <div class="col-4-1 margin-t-16 margin-b-16"><button class="dark flat pressed">pressed</button></div>
+  <div class="col-4-1 margin-t-16 margin-b-16"><button class="dark flat disabled">disabled</button></div>
+</div>
+<div class="row_4 gutters-24 light-bg">
+  <div class="col-4-1 margin-t-16 margin-b-16"><button class="light raised">normal</button></div>
+  <div class="col-4-1 margin-t-16 margin-b-16"><button class="light raised focused">focused</button></div>
+  <div class="col-4-1 margin-t-16 margin-b-16"><button class="light raised pressed">pressed</button></div>
+  <div class="col-4-1 margin-t-16 margin-b-16"><button class="light raised disabled">disabled</button></div>
+</div>
+<div class="row_4 gutters-24 dark-bg">
+  <div class="col-4-1 margin-t-16 margin-b-16"><button class="dark raised">normal</button></div>
+  <div class="col-4-1 margin-t-16 margin-b-16"><button class="dark raised focused">focused</button></div>
+  <div class="col-4-1 margin-t-16 margin-b-16"><button class="dark raised pressed">pressed</button></div>
+  <div class="col-4-1 margin-t-16 margin-b-16"><button class="dark raised disabled">disabled</button></div>
+</div>
+<div class="row_4 gutters-24">
+  <div class="col-4-4 white-bg padding-16 depth-8">
+    <div class="text-dark bold title margin-b-16">
+      Use Google's location service?
+    </div>
+    <div class="text-normal body-1 margin-b-24">
+      Let Google help apps determine location. This means sending anonymous location data to Google, even when no apps are running.
+    </div>
+    <div class="float-r margin-l-8"><button class="light flat">agree</button></div>
+    <div class="float-r"><button class="light flat">disagree</button></div>
+  </div>
+</div>
+<div class="row_4 gutters-24">
+  <div class="col-4-4 white-bg padding-16 depth-8">
+    <div class="text-dark bold title margin-b-16">
+      Use Google's location service?
+    </div>
+    <div class="text-normal body-1 margin-b-24">
+      Let Google help apps determine location. This means sending anonymous location data to Google, even when no apps are running.
+    </div>
+    <div class="float-r margin-l-8"><button class="light raised">agree</button></div>
+    <div class="float-r"><button class="light raised">disagree</button></div>
+  </div>
+</div>
+<div class="row_4 gutters-24">
+  <div class="col-4-4 depth-2-8 block">
+
+    <div class="row_4">
+      <div class="col-4-4 gutters-16 block-10">
+        <div class="header">
+          <img class="icon margin-r-16"></img>
+          <span class="subhead bold text-dark">Title</span><br>
+          <span class="subhead text-normal">Subhead</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="row_4 block-48 grey">
+    </div>
+
+    <div class="row_4 gutters-16">
+      <span class="text-dark body-1">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      </span>
+    </div>
+
+    <div class="row_4 gutters-8">
+      <div class="float margin-r-8"><button class="flat light">ACTION</button></div>
+      <div class="float"><button class="flat light">ACTION</button></div>
+    </div>
+
+  </div>
+</div>
+<div class="row_4 gutters-24">
+  <div class="col-4-4 depth-2-8 block">
+
+    <div class="row_4">
+      <div class="col-4-4 gutters-16 block-10">
+        <div class="header">
+          <img class="icon margin-r-16"></img>
+          <span class="subhead bold text-dark">Title</span><br>
+          <span class="subhead text-normal">Subhead</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="row_4 block-48 grey">
+    </div>
+
+    <div class="row_4 gutters-16">
+      <span class="text-dark body-1">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      </span>
+    </div>
+
+    <div class="row_4 gutters-8">
+      <div class=""><button class="flat light">ACTION</button></div>
+      <div class="margin-t-4"><button class="flat light">ACTION</button></div>
+    </div>
+
+  </div>
+</div>
+
+<div class="row_4 gutters-24">
+  <div class="col-4-4 depth-2-8 block">
+
+    <div class="row_4 block-48 grey">
+    </div>
+
+    <div class="row_4 gutters-16">
+      <span class="text-dark headline">
+        Title goes here
+      </span><br>
+      <span class="text-normal subhead">
+        Subtitle here
+      </span>
+    </div>
+
+    <div class="row_4 gutters-8">
+      <div class="float margin-r-8"><button class="flat light">ACTION</button></div>
+      <div class="float"><button class="flat light">ACTION</button></div>
+    </div>
+
+  </div>
+</div>

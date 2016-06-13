@@ -1,0 +1,21 @@
+body {
+  background-color: $grey-200;
+  font-size: 18px;
+  line-height: 1.6;
+  font-family: $type-secondary;
+  color: #666;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+}
+
+.light-bg {
+  background-color: $grey-200;
+}
+
+.white-bg {
+  background-color: $grey-50;
+}
+
+.dark-bg {
+  background-color: $grey-800;
+}

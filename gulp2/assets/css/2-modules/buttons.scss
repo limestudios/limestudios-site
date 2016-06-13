@@ -1,0 +1,19 @@
+.home-cta {
+  font-size: 28px;
+  display: block;
+  color: white;
+  background: black;
+  text-align: center;
+  padding: 0.4em 0;
+  line-height: 1.25;
+  border-radius: 4px;
+  transition: all 0.15s ease-in-out;
+  font-weight: 100 !important;
+  font-family: $type-secondary !important;
+
+  &:hover {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+    background: white;
+    color: black !important;
+  }
+}
