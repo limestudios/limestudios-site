@@ -33,25 +33,30 @@
 		<meta property=og:site_name content="{{site.title}}">
 		<meta property=og:profile:first_name content={{author.name.first}}>
 		<meta property=og:profile:last_name content={{author.name.last}}>
-		<meta property=og:image content="{{#if featuredImage}}/assets/{{featuredImage}}{{else ~}}/assets/img/site/icon/48.png">
+		<meta property=og:image content="/assets/img/site/icon/logo128.png">
 		<meta property=og:image:type content=image/png>
-		<meta property=og:image:width content=1024>
-		<meta property=og:image:height content=1024>{{/if ~}}
+		<meta property=og:image:width content=128>
+		<meta property=og:image:height content=128>{{/if ~}}
 		<meta name=twitter:card content="summary">
 		<meta name=twitter:site content="{{site.title}}">
 		<meta name=twitter:title content="{{page.title}}">
 		<meta name=twitter:description content="{{#if page.description}}{{page.description}}{{else ~}}{{site.description}}{{/if ~}}">
 		<meta name=twitter:creator content="{{author.name.first}} {{author.name.last}}">
-		<meta name=twitter:image:src content="{{#if featuredImage}}/assets/{{featuredImage}}{{else ~}}/assets/img/site/icon/48.png{{/if ~}}">
-		<meta name="twitter:domain"" content="the Web">
-		<link rel=apple-touch-icon-precomposed href=/assets/img/site/icon/60.png>
-		<link rel="icon" href="/assets/img/site/icon/16.png" size="16x16">
-		<link rel="icon" href="/assets/img/site/icon/32.png" size="32x32">
-		<link rel="icon" href="/assets/img/site/icon/48.png" size="48x48">
-		<link rel="icon" href="/assets/img/site/icon/64.png" size="64x64">
-		<link rel="icon" href="/assets/img/site/icon/128.png" size="128x128">
+		<meta name=twitter:image:src content="/assets/img/site/icon/logo.png">
+		<meta name="twitter:domain" content="the Web">
+		<link rel="apple-touch-icon-precomposed" href="/assets/img/site/icon/logo.png">
+		<link rel="icon" href="/assets/img/site/icon/logo16.png" size="16x16">
+		<link rel="icon" href="/assets/img/site/icon/logo32.png" size="32x32">
+		<link rel="icon" href="/assets/img/site/icon/logo48.png" size="48x48">
+		<link rel="icon" href="/assets/img/site/icon/logo64.png" size="64x64">
+		<link rel="icon" href="/assets/img/site/icon/logo128.png" size="128x128">
 
-		<link rel="icon" type="image/png" href="/assets/img/site/icon/32.png">
+		<link rel="icon" type="image/png" href="/assets/img/site/icon/logo64.png">
+
+		<link rel="icon" sizes="192x192" href="/assets/img/site/icon/logo192.png">
+		<link rel="apple-touch-icon" href="/assets/img/site/icon/logo64.png">
+		<meta name="msapplication-square310x310logo" content="/assets/img/site/icon/logo310.png">
+
 		<!-- [if IE]><link rel="shortcut icon" href="/assets/img/site/icon/ie.ico"><![endif]-->
 		<script>
 			//document.getElementById("date").innerHTML = new Date().getTime();

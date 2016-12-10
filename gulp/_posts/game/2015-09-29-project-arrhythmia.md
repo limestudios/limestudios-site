@@ -20,8 +20,26 @@ theme-color: "#e57373"
 </div>
 
 <div class="trailer">
-  <div class="flex-video">
-    <iframe src="https://www.youtube.com/embed/G9zGxwaSy8s?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+  <div class="flex-video" onclick='this.innerHTML = "<iframe src=\"https://www.youtube.com/embed/G9zGxwaSy8s?rel=0&amp;showinfo=0&amp;autoplay=1\" frameborder=\"0\" allowfullscreen></iframe>"'>
+    <div class="play-button"></div>
+  </div>
+</div>
+
+<div class="preorder">
+  <div class="steam">
+  <iframe src="http://store.steampowered.com/widget/440310/" frameborder="0" width="552" height="190"></iframe>
+  </div>
+
+  <div class="steam small">
+  <iframe src="http://store.steampowered.com/widget/440310/" frameborder="0" width="320" height="190"></iframe>
+  </div>
+
+  <div class="itch">
+  <iframe frameborder="0" src="https://itch.io/embed/21241?linkback=true&amp;bg_color=ffffff&amp;fg_color=222222&amp;link_color=fa5c5c&amp;border_color=bebebe" width="552" height="167"></iframe>
+  </div>
+
+  <div class="itch small">
+  <iframe frameborder="0" src="https://itch.io/embed/21241?linkback=true&amp;bg_color=ffffff&amp;fg_color=222222&amp;link_color=fa5c5c&amp;border_color=bebebe" width="320" height="167"></iframe>
   </div>
 </div>
 
@@ -55,3 +73,10 @@ theme-color: "#e57373"
 {% include partials/newsletter_form.html %}
 {% endcapture %}
 {{ includeGuts | replace: '    ', ''}}
+
+<h3>> Presskits</h3>
+<p class="social">
+  <a class="arrhythmia-button" href="/page/presskit/#ProjectArrhythmia">[Project Arrhythmia]</a>
+  <br>
+  <a class="arrhythmia-button" href="/page/presskit/#LimeStudios">[Lime Studios]</a>
+</p>

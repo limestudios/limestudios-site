@@ -19,8 +19,8 @@ The Witness is the first game from Thekla Inc., however they have a veteran on t
 
 <a class="line-s" href="#verdict">TL;DR? - Skip to the Final Verdict</a>
 
-<a href="/assets/img/posts/article/{{page.ref}}/screenshot (1).png">
-    <img class="center full" src="/assets/img/posts/article/{{page.ref}}/screenshot (1).png"/>
+<a href="/assets/img/posts/article/{{page.ref}}/screenshot (1).jpg">
+    <img class="center full" src="/assets/img/posts/article/{{page.ref}}/screenshot (1).jpg"/>
 </a>
 
 ##Grading Categories
@@ -28,8 +28,8 @@ The Witness is the first game from Thekla Inc., however they have a veteran on t
 ###Gameplay
 I want to keep this part brief cause any real detail would lead to numerous spoilers. That being said I want to say the gameplay for The Witness is extremely solid. There is a core mechanic that keeps evolving with the player as you play and it is one of the most gratifying puzzle games I've ever played. Technically any puzzle you come across you can solve...but some require further learning. The game never gives you random walls or blocks to progress everything is open and free to explore. This is for good reason cause without that element of exploration and wonder the game would not be nearly as engaging.
 
-<a href="/assets/img/posts/article/{{page.ref}}/screenshot (2).png">
-    <img class="center full" src="/assets/img/posts/article/{{page.ref}}/screenshot (2).png"/>
+<a href="/assets/img/posts/article/{{page.ref}}/screenshot (2).jpg">
+    <img class="center full" src="/assets/img/posts/article/{{page.ref}}/screenshot (2).jpg"/>
 </a>
 
 ###Graphical Aesthetic
@@ -37,8 +37,8 @@ The rest of the screenshots should speak for themselves. This is a beautifully d
 
 <div class="image-wrapper">
 {% for i in (3..10) %}
-  <a href="/assets/img/posts/article/{{page.ref}}/screenshot ({{ i }}).png">
-    <img class="float large border" src="/assets/img/posts/article/{{page.ref}}/screenshot ({{ i }}).png"/>
+  <a href="/assets/img/posts/article/{{page.ref}}/screenshot ({{ i }}).jpg">
+    <img class="float large border" src="/assets/img/posts/article/{{page.ref}}/screenshot ({{ i }}).jpg"/>
   </a>
 {% endfor %}
 </div>

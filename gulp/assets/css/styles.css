@@ -925,8 +925,40 @@ header {
           font-size: 16px;
           line-height: 16px;
           padding: 16px 0; } }
+  .arrhythmia-wrap .preorder {
+    width: 552px;
+    margin: 0 auto; }
+    .arrhythmia-wrap .preorder .itch {
+      margin-top: 32px;
+      display: block; }
+    .arrhythmia-wrap .preorder .steam {
+      display: block; }
+    .arrhythmia-wrap .preorder .small {
+      display: none; }
+    @media (max-width: 600px) {
+      .arrhythmia-wrap .preorder {
+        width: 320px; }
+        .arrhythmia-wrap .preorder .itch, .arrhythmia-wrap .preorder .steam {
+          display: none; }
+        .arrhythmia-wrap .preorder .small {
+          display: block; } }
   .arrhythmia-wrap .trailer {
     margin: 32px 0px; }
+    .arrhythmia-wrap .trailer .play-button {
+      background-image: url(/assets/img/posts/game/project-arrhythmia/play-button.png);
+      position: absolute;
+      top: 0px;
+      bottom: 0px;
+      left: 0px;
+      right: 0px;
+      background-repeat: no-repeat;
+      background-position: center;
+      cursor: pointer; }
+    .arrhythmia-wrap .trailer .flex-video {
+      background-image: url(/assets/img/posts/game/project-arrhythmia/trailer-image.png) !important;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center; }
   .arrhythmia-wrap .social br {
     display: none; }
   @media (max-width: 481px) {

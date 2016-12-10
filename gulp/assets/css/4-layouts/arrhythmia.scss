@@ -45,8 +45,58 @@
     }
   }
 
+.preorder {
+  width: 552px;
+  margin: 0 auto;
+
+  .itch {
+    margin-top: 32px;
+    display: block;
+  }
+
+  .steam {
+    display: block;
+  }
+
+  .small {
+    display: none;
+  }
+
+  @media (max-width: 600px) {
+    width: 320px;
+
+    .itch, .steam {
+      display: none;
+    }
+
+    .small {
+      display: block;
+    }
+  }
+}
+
   .trailer {
     margin: 32px 0px;
+
+    .play-button {
+      background-image: url(/assets/img/posts/game/project-arrhythmia/play-button.png);
+      position: absolute;
+      top: 0px;
+      bottom: 0px;
+      left: 0px;
+      right: 0px;
+      background-repeat: no-repeat;
+      background-position: center;
+      cursor: pointer;
+    }
+
+    .flex-video {
+      background-image: url(/assets/img/posts/game/project-arrhythmia/trailer-image.png) !important;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+      //border: 2px solid $red-300;
+    }
   }
 
   .social {
