@@ -1,0 +1,110 @@
+body {
+  font-family: $type-console;
+}
+
+.terminal-window-wrapper {
+    padding: 5vh 0;
+}
+
+.terminal-window {
+  opacity: 0;
+  text-align: left;
+  height: 600px;
+  margin: 0 auto;
+  position: relative;
+  animation: 0.25s fade-in forwards;
+  animation-delay: 0.25s;
+
+  .grey {
+    color: $grey-500;
+  }
+  .light-green {
+    color: $light-green-500;
+  }
+  .green {
+    color: $green-500;
+  }
+  .red {
+    color: $red-500;
+  }
+  .bold {
+    font-weight: bold;
+  }
+}
+
+@keyframes fade-in{
+    0% { opacity:0; }
+    100% { opacity:1; }
+}
+
+.terminal-window header {
+  background: $grey-600;
+  height: 40px;
+  padding-left: 10px;
+
+  .button {
+    width: 56px;
+    height: 38px;
+    margin: 0;
+    display: inline-block;
+    color: $grey-100;
+    font-size: 18px;
+    text-align: center;
+    line-height: 38px;
+    font-weight: 500;
+    float: right;
+    user-select: none;
+    transition: all 0.2s ease;
+  }
+
+  .button.min {
+
+    &:hover {
+      background-color: $grey-500;
+    }
+  }
+
+  .button.max {
+
+    &:hover {
+      background-color: $grey-500;
+    }
+  }
+
+  .button.close {
+
+    &:hover {
+      background-color: $red-400;
+      z-index: 1000;
+      box-shadow: 0 0 1px $grey-900;
+    }
+  }
+}
+
+.terminal-window section.terminal {
+  color: white;
+  font-family: $type-console;
+  font-size: 16pt;
+  background: $blue-grey-900;
+  padding: 10px;
+  box-sizing: border-box;
+  position: absolute;
+  width: 100%;
+  top: 38px;
+  bottom: 0;
+  overflow: auto;
+}
+
+.terminal-window section.terminal .typed-cursor {
+    opacity: 1;
+    animation: blink 1.5s infinite;
+}
+
+@keyframes blink{
+    0% { opacity:1; }
+    60% { opacity:1; }
+    61% { opacity:0; }
+    100% { opacity:0; }
+}
+
+.terminal-data { display: none; }

@@ -1,0 +1,64 @@
+---
+layout: none
+title: Home
+js-open:
+- terminal
+---
+{% include open.html %}
+<div class="row row-widetablet">
+  <div class="terminal-window-wrapper col col-u-12">
+    <div class="terminal-window">
+      <header>
+        <div class="button close">✕</div>
+        <div class="button max">☐</div>
+        <div class="button min">—</div>
+      </header>
+      <section class="terminal">
+        <div class="history"></div>
+        $&nbsp;<span class="prompt"></span>
+        <span class="typed-cursor"></span>
+      </section>
+    </div>
+
+    <!-- data -->
+    <div class="terminal-data intro">
+    <span class="grey">We are a Game Developer with <span class="bold red">passion</span>.</span><br>
+    </div>
+
+    <div class="terminal-data mimik-run-output">
+     <br>Found 1 feature<br>
+     ----------------------------------------------<br>
+     Feature: Bottles  <span class="gray"># ./features/bottles.feature</span><br><br>
+
+     &nbsp;&nbsp;Scenario: A bottle falls from the wall<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;<span class="green">✓</span> <span class="gray">Given 100 green bottles are standing</span><br>
+     &nbsp;&nbsp;&nbsp;&nbsp;<span class="green">✓</span> <span class="gray">when 1 green bottle accidentally falls</span><br>
+     &nbsp;&nbsp;&nbsp;&nbsp;<span class="green">✓</span> <span class="gray">then there are 99 green bottles standing</span><br>
+     <br>
+        <span class="gray">&nbsp;---------- ----------- ------- -------- --------</span><br>
+    &nbsp;&nbsp;Features&nbsp;&nbsp;&nbsp;Scenarios&nbsp;&nbsp;&nbsp;Steps&nbsp;&nbsp;&nbsp;Passed&nbsp;&nbsp;&nbsp;Failed<br>
+        <span class="gray">&nbsp;---------- ----------- ------- -------- --------</span><br>
+    &nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="green">✓ 4</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0      <br>
+      <br>
+    &nbsp;&nbsp;Completed 1 feature in 0.01s<br>
+      <br>
+    </div>
+
+  </div>
+  <div class="about col col-u-12">
+  <img class="lime" src="/assets/img/site/logo.png"/>
+  <h3>> About Lime Studios</h3>
+  <p>Lime Studios is an independent game development and design studio created back in 2009 by Liam Craver. Lime Studios' current game development project is called <a class="line-s arrhythmia" href="http://projectarrhythmia.com">Project Arrhythmia</a>, a rhythmic dodge-em up. <a class="line-s arrhythmia" href="http://projectarrhythmia.com"></p><p>Project Arrhythmia</a> will be coming to the WiiU, PC and Mac.</p>
+
+  <img class="liam" src="/assets/img/site/liam.png"/>
+  <h3>> Liam Craver [Owner]</h3>
+  <p>My name is Liam Craver; I am a developer and a designer from New Orleans, Louisiana. My passion is technology; I'm always eager to learn about the latest gadgets or the new features that are in the latest patches of my favorite software.</p>
+  <p>I am an alumnus of <a class="line-s" href="http://www.nocca.com/">New Orleans Center for the Creative Arts</a> and <a class="line-s" href="http://www.edline.net/pages/bfhsla">Benjamin Franklin Highschool</a>; currently I am pursuing a computer science degree at the <a class="line-s" href="http://www.louisiana.edu/">University of Louisiana at Lafayette</a>.</p>
+  <p>I work freelance when I can during the school year, but especially during the summer; if you want, check out my <a class="line-s" href="http://limestudios.net">projects page</a> for examples of my work. I'm open to working on projects of all sorts!</p>
+  <p>Most of the time, I am a pretty ordinary person. I say things on <a class="line-s twitter" href="http://www.twitter.com/liamcraver">Twitter</a> and <a class="line-s tumblr" href="http://lcraver.tumblr.com">Tumblr</a>. My code ends up on <a class="line-s github" href="http://github.com/lcraver">GitHub</a> most of the time.</p>
+  <p>The purpose of this website is to serve as an online repository for all my independent work and work done under Lime Studios. The code style guide document, the processes used to build it, and the source can be found on <a class="line-s github" href="http://github.com/limestudios/limestudios-site">GitHub</a>.</p>
+  <p>If you have any questions or feedback, you may want to email me at <a class="line-s limestudios" href="mailto:liam@limestudios.net?subject=LimeStudios Site">liam@limestudios.net</a> —which you should definitely do since I love to talk.</p>
+  </div>
+</div>
+{% include footer.html %}
+{% include close.html %}

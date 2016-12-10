@@ -1,0 +1,191 @@
+@import './1-base/_vars';
+@import './1-base/_mixins';
+
+* { box-sizing: border-box; }
+
+[class*='row_'] {
+  display: none;
+  width: 100%;
+  @include clearfix();
+
+  margin: 0 auto;
+
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+.row_xsmall {
+  max-width: $screen-small;
+}
+
+.row_small {
+  max-width: $screen-medium;
+}
+
+.row_medium {
+  max-width: $screen-large;
+}
+
+.row_large {
+  max-width: $screen-xlarge;
+}
+
+.row_xlarge {
+  max-width: none;
+}
+
+$column-prefix: 'col-' !default;
+$gutters: 4 8 16 24 40;
+
+[class*='#{$column-prefix}'] {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  max-width: none;
+  float: left;
+  @include clearfix();
+  display: none;
+
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+@each $i in $gutters {
+  .margin-#{$i} {
+    margin: #{$i}px #{$i}px #{$i}px #{$i}px;
+  }
+  .margin-t-#{$i} {
+    margin-top: #{$i}px;
+  }
+  .margin-b-#{$i} {
+    margin-bottom: #{$i}px;
+  }
+  .margin-l-#{$i} {
+    margin-left: #{$i}px;
+  }
+  .margin-r-#{$i} {
+    margin-right: #{$i}px;
+  }
+
+  .padding-#{$i} {
+    padding: #{$i}px #{$i}px #{$i}px #{$i}px;
+  }
+  .padding-t-#{$i} {
+    padding-top: #{$i}px;
+  }
+  .padding-b-#{$i} {
+    padding-bottom: #{$i}px;
+  }
+  .padding-l-#{$i} {
+    padding-left: #{$i}px;
+  }
+  .padding-r-#{$i} {
+    padding-right: #{$i}px;
+  }
+}
+
+@each $i in $gutters {
+  [class*='#{$column-prefix}'] { float: left; }
+  .gutters-#{$i} {
+    margin-top: #{$i}px;
+    margin-bottom: #{$i}px;
+    padding-left: #{$i}px;
+    padding-right: #{$i}px;
+  }
+  .gutters-i-#{$i} {
+    margin-top: #{$i}px;
+    margin-bottom: #{$i}px;
+  }
+  .gutters-i-first-#{$i} {
+    margin-bottom: #{$i}px;
+  }
+  .gutters-i-last-#{$i} {
+    margin-top: #{$i}px;
+  }
+  .gutters-i-top-#{$i} {
+    margin-top: #{$i}px;
+    padding-left: #{$i}px;
+    padding-right: #{$i}px;
+  }
+  .gutters-#{$i} [class*='#{$column-prefix}'] {
+    margin-left: #{$i}px;
+
+    &:first-child { margin-left: 0; }
+  }
+}
+
+@mixin grid-setup($number) {
+
+  // Assign percentage-based widths for columns
+  @for $i from 1 through $number {
+    .#{$column-prefix}#{$number}-#{$i} { width: 100% / $number * $i; display: block;}
+  }
+
+  @each $j in $gutters {
+    @for $i from 1 through $number {
+    // Style all but the last column
+      $width: ( 100% / ($number / $i));
+      $gutter: ($j * (($number / $i) - 1)) / ($number / $i);
+      .gutters-#{$j} .#{$column-prefix}#{$number}-#{$i} {
+        width: calc(#{$width} - #{$gutter}px);
+      }
+      .gutters-#{$j} .#{$column-prefix}#{$number}-left-#{$i} {
+        margin-left: calc(#{$width}) !important;
+      }
+      .gutters-#{$j} .#{$column-prefix}#{$number}-right-#{$i} {
+        margin-right: calc(#{$width}) !important;
+      }
+    }
+  }
+}
+
+.show { display: none; }
+
+@media only screen and (min-width: $screen-col-4) and (max-width: $screen-col-8) {
+  // 4 Columns
+  .show { &._4 { display: block; } }
+  .row_4 { display: block; }
+  @include grid-setup(4);
+}
+@media only screen and (min-width: #{$screen-col-8 + 1px}) and (max-width: $screen-col-12) {
+  // 8 Columns
+  .show { &._8 { display: block; } }
+  .row_8 { display: block; }
+  @include grid-setup(8);
+}
+@media only screen and (min-width: #{$screen-col-12 + 1px}) {
+  // 12 Columns
+  .show { &._12 { display: block; } }
+  .row_12 { display: block; }
+  @include grid-setup(12);
+}
+
+@media only screen and (min-width: 0) and (max-width: $screen-small) {
+  .show { &._xs { display: block; } }
+}
+@media only screen and (min-width: #{$screen-small + 1px}) and (max-width: $screen-medium) {
+  .show { &._s { display: block; } }
+}
+@media only screen and (min-width: #{$screen-medium + 1px}) and (max-width: $screen-large) {
+  .show { &._m { display: block; } }
+}
+@media only screen and (min-width: #{$screen-large + 1px}) and (max-width: $screen-xlarge) {
+  .show { &._l { display: block; } }
+}
+@media only screen and (min-width: #{$screen-xlarge + 1px}) {
+  .show { &._xl { display: block; } }
+}
+
+.float-l, .float {
+  float: left;
+}
+
+.float-r {
+  float: right;
+}

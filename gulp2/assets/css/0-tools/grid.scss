@@ -1,0 +1,208 @@
+@import './1-base/_vars';
+@import './1-base/_mixins';
+
+.row,
+.wrapper {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  *zoom: 1;
+
+  &:before,
+  &:after {
+    content: " ";
+    display: table;
+  }
+
+  &:after {
+    clear: both;
+  }
+
+  &.row-small-handset {
+    max-width: $screen-phone !important;
+  }
+  &.row-medium-handset {
+    max-width: $screen-widephone !important;
+  }
+  &.row-large-handset {
+    max-width: $screen-tablet !important;
+  }
+  &.row-widetablet {
+    max-width: $screen-widetablet !important;
+  }
+  &.row-computer {
+    max-width: $screen-computer !important;
+  }
+  &.row-widecomputer {
+    max-width: $screen-widecomputer !important;
+  }
+  &.row-fullwidth {
+    max-width: 100% !important;
+  }
+  &.row-fullheight {
+    height: 100vh;
+  }
+
+  @media only screen and (min-width: 0) and (max-width: $screen-small) {
+    background-color: rgb(123,134,194);
+  }
+}
+
+.col {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  max-width: none;
+  float: left;
+  box-sizing: border-box;
+  outline: solid $debug-border black;
+  display: block;
+  @include clearfix();
+}
+[class*='col'] +
+[class*='col']:last-child {
+  //float: right;
+}
+
+@for $i from 1 through $grid-columns {
+  .col-u-#{$i} {
+    width: ($i * 100% / $grid-columns) !important;
+    //outline: solid $debug-border red;
+    box-shadow:inset 0px 0px 0px $debug-border #FFEB3B;
+    float:left;
+  }
+  .col-push-u-#{$i} {
+    margin-left: ($i * 100% / $grid-columns);
+  }
+  .col-pull-u-#{$i} {
+    margin-right: ($i * 100% / $grid-columns);
+  }
+}
+
+.hide-on-u {
+  display: none !important;
+}
+.show-on-u {
+  display: block;
+}
+
+@media only screen and (min-width: 0) and (max-width: $screen-phone) {
+
+  @for $i from 1 through $grid-columns {
+    .col-p-#{$i} {
+      width: ($i * 100% / $grid-columns);
+      //outline: solid $debug-border red;
+      box-shadow:inset 0px 0px 0px $debug-border #FFEB3B;
+      float:left;
+    }
+    .col-push-p-#{$i} {
+      margin-left: ($i * 100% / $grid-columns);
+    }
+    .col-pull-p-#{$i} {
+      margin-right: ($i * 100% / $grid-columns);
+    }
+  }
+
+  .hide-on-p {
+    display: none !important;
+  }
+  .show-on-p {
+    display: block;
+  }
+}
+@media only screen and (min-width: $screen-phone) and (max-width: $screen-widephone) {
+
+  @for $i from 1 through $grid-columns {
+    .col-wp-#{$i} {
+      width: ($i * 100% / $grid-columns);
+      //outline: solid $debug-border green;
+      box-shadow:inset 0px 0px 0px $debug-border #4CAF50;
+      float:left;
+    }
+    .col-push-wp-#{$i} {
+      margin-left: ($i * 100% / $grid-columns);
+    }
+    .col-pull-wp-#{$i} {
+      margin-right: ($i * 100% / $grid-columns);
+    }
+  }
+
+  .hide-on-wp {
+    display: none !important;
+  }
+  .show-on-wp {
+    display: block;
+  }
+}
+@media only screen and (min-width: $screen-widephone) and (max-width: $screen-tablet) {
+
+  @for $i from 1 through $grid-columns {
+    .col-t-#{$i} {
+      width: ($i * 100% / $grid-columns);
+      //outline: solid $debug-border blue;
+      box-shadow:inset 0px 0px 0px $debug-border #2196F3;
+      float:left;
+    }
+    .col-push-t-#{$i} {
+      margin-left: ($i * 100% / $grid-columns);
+    }
+    .col-pull-t-#{$i} {
+      margin-right: ($i * 100% / $grid-columns);
+    }
+  }
+
+  .hide-on-t {
+    display: none !important;
+  }
+  .show-on-t {
+    display: block;
+  }
+}
+@media only screen and (min-width: $screen-tablet) and (max-width: $screen-widetablet) {
+
+  @for $i from 1 through $grid-columns {
+    .col-wt-#{$i} {
+      width: ($i * 100% / $grid-columns);
+      //outline: solid $debug-border blue;
+      box-shadow:inset 0px 0px 0px $debug-border #9C27B0;
+      float:left;
+    }
+    .col-push-wt-#{$i} {
+      margin-left: ($i * 100% / $grid-columns);
+    }
+    .col-pull-wt-#{$i} {
+      margin-right: ($i * 100% / $grid-columns);
+    }
+  }
+
+  .hide-on-wt {
+    display: none !important;
+  }
+  .show-on-wt {
+    display: block;
+  }
+}
+@media only screen and (min-width: $screen-widetablet) {
+
+  @for $i from 1 through $grid-columns {
+    .col-c-#{$i} {
+      width: ($i * 100% / $grid-columns);
+      //outline: solid $debug-border blue;
+      box-shadow:inset 0px 0px 0px $debug-border #f44336;
+      float:left;
+    }
+    .col-push-c-#{$i} {
+      margin-left: ($i * 100% / $grid-columns);
+    }
+    .col-pull-c-#{$i} {
+      margin-right: ($i * 100% / $grid-columns);
+    }
+  }
+
+  .hide-on-c {
+    display: none !important;
+  }
+  .show-on-c {
+    display: block;
+  }
+}

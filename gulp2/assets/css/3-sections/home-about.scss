@@ -1,0 +1,13 @@
+.about {
+  img {
+    margin: 96px auto 32px auto;
+    display: block;
+    max-width: 256px;
+    max-height: 256px;
+    border-radius: 100%;
+
+    &.lime {
+      margin-top: 64px;
+    }
+  }
+}

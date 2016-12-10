@@ -1,0 +1,56 @@
+<div class="header" id="header">
+  <div class="header-wrapper row row-computer">
+    <div class="title col col-c-6 col-wt-6 col-t-2 col-wp-12 col-p-12">
+      <div class="logo">{% include svg/lime.html %}</div>
+      <div class="text">studios</div>
+    </div>
+
+    <nav class="col col-c-6 col-wt-6 col-t-10 col-wp-12 col-p-12">
+      <ul class="nav-items col-c-12 col-wt-12 col-t-12 col-wp-12 col-p-12">
+
+        {% if page.current == "presskit" %}
+        <li class="nav-item current">
+        {% else %}
+        <li class="nav-item">
+        {% endif %}
+          <a href="/about">Presskit</a>
+        </li>
+
+        <!--
+        {% if page.current == "notes" %}
+        <li class="nav-item current">
+        {% else %}
+        <li class="nav-item">
+        {% endif %}
+          <a href="/notes">Notes</a>
+        </li>
+        -->
+
+        {% if page.current == "contact" %}
+        <li class="nav-item current">
+        {% else %}
+        <li class="nav-item">
+        {% endif %}
+          <a href="/contact">Contact</a>
+        </li>
+
+        {% if page.current == "social" %}
+        <li class="nav-item current">
+        {% else %}
+        <li class="nav-item">
+        {% endif %}
+          <a href="/social">Social</a>
+          {{!-- Streams / Talks / Blog --}}
+        </li>
+
+        {% if page.current == "projects" %}
+        <li class="nav-item current">
+        {% else %}
+        <li class="nav-item">
+        {% endif %}
+          <a href="/">Projects</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</div>

@@ -1,0 +1,103 @@
+.footer {
+	@include clearfix();
+	position: relative;
+
+	.footer-top {
+		background-color: $grey-100;
+		padding: 0 16px;
+		.footer-social {
+			height: 220px;
+			position: relative;
+			max-width: 1680px;
+			margin: 0 auto;
+
+
+			.icon-wrapper {
+				//background-color: pink;
+				position: absolute;
+				bottom: 24px;
+				right: 0px;
+
+				a {
+					margin: 0 8px;
+
+					&:last-child {
+						margin: 0 0 0 8px;
+					}
+
+					&.twitter:hover svg path
+					{
+						fill: $blue-300;
+					}
+
+					&.github:hover svg path
+					{
+						fill: $grey-500;
+					}
+
+					&.dribbble:hover svg path
+					{
+						fill: $pink-300;
+					}
+
+					&.youtube:hover svg path
+					{
+						fill: $red-500;
+					}
+
+					svg {
+						width: 24px;
+
+						path {
+							transition: all 0.1s ease-in-out;
+							fill: $dark-primary-color;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.footer-bottom {
+		background-color: $dark-primary-color;
+
+		.footer-wrap {
+			height: 128px;
+			max-width: 1680px;
+			margin: 0 auto;
+			display: block;
+			position: relative;
+
+			.svg-icon {
+				display: block;
+				position: absolute;
+				top: 50%;
+				transform: translateY(-50%);
+				left: 16px;
+				height: 48px;
+				width: 48px;
+
+				path {
+					fill: $grey-50;
+				}
+			}
+
+			.copyright {
+				color: $grey-50;
+				letter-spacing: 1px;
+				font-size: 12px;
+				text-transform: uppercase;
+				position: absolute;
+				right: 16px;
+				top: 50%;
+				transform: translateY(-50%);
+				display: block;
+				font-weight: 300;
+
+				.red {
+					color: $red-500;
+				}
+			}
+		}
+	}
+}

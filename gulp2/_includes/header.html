@@ -1,0 +1,19 @@
+<header>
+  <div class="header-position">
+    <div class="header-wrapper">
+      <nav class="home-nav">
+        <ul>
+          {% for element in site.home-nav %}
+            <li><a class="line" href="{{element.link}}">{{element.text}}</a></li>
+          {% endfor %}
+        </ul>
+      </nav>
+      <div class="logo-wrapper">
+        <a href="/">
+          <img class="logo" src="/assets/img/site/logo.svg"/>
+          <div class="text">Studios</div>
+        </a>
+      </div>
+    </div>
+  </div>
+</header>

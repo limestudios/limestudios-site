@@ -1,0 +1,13 @@
+{% include open.html %}
+  <div class="post-wrap">
+    {% include header.html %}
+    {% include post-header.html %}
+    <div class="post-sections content-wrap">
+      <section class="post-content">
+        {{ content }}
+      </section>
+    </div>
+    <div data-rodeo></div>
+  </div>
+  {% include footer.html %}
+{% include close.html %}

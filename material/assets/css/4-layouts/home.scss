@@ -1,0 +1,15 @@
+.home-wrap {
+  display: flex;
+  @include clearfix();
+  //min-height: 100vh;
+
+  @media (max-width: $screen-mobile) {
+    display: block;
+  }
+}
+
+.home-sections{
+  max-width: 1680px;
+  margin: 0 auto;
+  flex: 1;
+}

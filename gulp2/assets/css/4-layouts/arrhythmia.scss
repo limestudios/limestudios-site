@@ -1,0 +1,174 @@
+.arrhythmia-wrap {
+  padding: 0 16px;
+  max-width: 1000px;
+  margin: 0 auto;
+  font-family: $type-arrhythmia;
+
+  h3 {
+    font-family: $type-arrhythmia;
+  }
+
+  .logo {
+    width: 100%;
+    height: 128px;
+
+    img {
+      max-height: 128px;
+      padding-right: 16px;
+      float: left;
+    }
+
+    h2 {
+      font-family: $type-arrhythmia;
+      font-weight: 400;
+      letter-spacing: 8px;
+      font-size: 32px;
+      line-height: 32px;
+      padding: 32px 0;
+      text-transform: uppercase;
+    }
+
+    @media (max-width: $screen-widephone) {
+
+      height: 64px;
+
+      img {
+        float: left;
+        max-height: 64px;
+      }
+
+      h2 {
+        font-size: 16px;
+        line-height: 16px;
+        padding: 16px 0;
+      }
+    }
+  }
+
+  .trailer {
+    margin: 32px 0px;
+  }
+
+  .social {
+    br {
+      display: none;
+    }
+
+    @media (max-width: $screen-widephone) {
+      br {
+        display: block;
+      }
+
+      margin-top: -6px;
+    }
+  }
+
+  a.arrhythmia-button {
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 32px;
+    height: 32px;
+    padding: 0 8px;
+    font-family: $type-arrhythmia !important;
+    background-color: $grey-300;
+    display: inline-block;
+    color: $grey-900;
+    display: inline-block;
+
+    &:hover {
+      background-color: $red-300 !important;
+      color: white !important;
+      box-shadow: none;
+    }
+
+    @media (max-width: $screen-tablet) {
+      margin: 8px 0px;
+    }
+  }
+
+  form {
+    margin: 0 0;
+    padding: 0 !important;
+    max-width: 640px;
+
+    input[type=email] {
+      font-size: 14px;
+      line-height: 14px;
+      height:16px;
+      text-indent: 8px !important;
+      max-width: 300px;
+      float: left;
+      font-family: $type-arrhythmia !important;
+      border-radius: 0px !important;
+      border: none !important;
+    }
+
+    input[type=submit] {
+      letter-spacing: 2px;
+      font-size: 14px;
+      line-height: 40px;
+      height: 40px;
+      padding: 0 8px !important;
+      font-family: $type-arrhythmia !important;
+      background-color: $grey-300 !important;
+      display: inline-block;
+      color: $grey-900 !important;
+      border-radius: 0px !important;
+      margin-top: 16px !important;
+      transition: 0s !important;
+
+      &:hover {
+        background-color: $red-300 !important;
+        color: white !important;
+        box-shadow: none;
+      }
+    }
+
+    div.mce_inline_error {
+      margin: 0 0 0 8px !important;
+      border: 2px solid $red-300;
+      line-height: 20px;
+      background-color: $red-300 !important;
+      color: white !important;
+      height: 18px !important;
+      font-family: $type-arrhythmia !important;
+      border-radius: 0px !important;
+      margin-bottom: 0px !important;
+    }
+
+    .mc-field-group {
+      padding-bottom: 0px !important;
+      margin-bottom: 0px !important;
+      min-height: 0px !important;
+    }
+
+    #mce-responses {
+      margin: 0px !important;
+    }
+
+    @media (max-width: $screen-tablet) {
+
+      .mc-field-group {
+        width: 100% !important;
+      }
+
+      input[type=email] {
+        max-width: 320px;
+        width: 100% !important;
+        float: none;
+      }
+
+      div.mce_inline_error {
+        margin: 8px 0 0 0 !important;
+        padding-right: 8px !important;
+      }
+    }
+
+    @media (max-width: $screen-widephone) {
+      input[type=email] {
+        max-width: 100%;
+      }
+    }
+  }
+}
