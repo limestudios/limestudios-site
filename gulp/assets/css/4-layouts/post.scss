@@ -163,6 +163,93 @@
       width: calc(100% - 32px);
     }
 
+    table {
+      width: 100%;
+      display: table;
+    }
+
+    thead {
+      border-bottom: 1px solid #d0d0d0;
+    }
+
+    td, th {
+      padding: 15px 5px;
+      display: table-cell;
+      text-align: left;
+      vertical-align: middle;
+      //border-radius: 2px;
+
+      &.center {
+        text-align: center;
+      }
+
+      &.green {
+        background-color: $green-400;
+        color: $text-color;
+
+        span {
+          padding-left: 16px;
+        }
+      }
+
+      &.blue {
+        background-color: $blue-300;
+        color: $text-color;
+
+        span {
+          padding-left: 16px;
+        }
+      }
+
+      &.orange {
+        background-color: $orange-300;
+        color: $text-color;
+
+        span {
+          padding-left: 16px;
+        }
+      }
+
+      &.red {
+        background-color: $red-400;
+        color: $text-color;
+
+        span {
+          padding-left: 16px;
+        }
+      }
+    }
+
+    .preorder {
+      width: 552px;
+      margin: 0 auto;
+
+      .itch {
+        margin-top: 32px;
+        display: block;
+      }
+
+      .steam {
+        display: block;
+      }
+
+      .small {
+        display: none;
+      }
+
+      @media (max-width: 600px) {
+        width: 320px;
+
+        .itch, .steam {
+          display: none;
+        }
+
+        .small {
+          display: block;
+        }
+      }
+    }
+
     h1 {
       color: $grey-800;
       font-size: 32px;
@@ -226,9 +313,20 @@
       }
     }
 
-    p, ol, .button, li  {
+    p, ol, .button {
       padding: 0 0 24px 40px;
       margin: 0 auto;
+      font-weight: 300;
+      -webkit-font-smoothing: antialiased;
+      line-height: 32px;
+      font-size: 17px;
+      font-family: $type-secondary;
+      color: $grey-800;
+    }
+
+    li {
+      //padding: 0 0 24px 40px;
+      margin: 0 auto 12px 0;
       font-weight: 300;
       -webkit-font-smoothing: antialiased;
       line-height: 32px;

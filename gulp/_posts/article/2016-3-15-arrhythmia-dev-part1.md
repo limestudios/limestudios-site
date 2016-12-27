@@ -14,5 +14,3 @@ published: false
 ---
 ###Description
 In this series of posts I will be going over in general terms how I structured and created Project Arrhythmia in the hopes that I might be able to help some people that are still new to Unity. This post will be on how I handle my data within Project Arrhythmia.
-
-###

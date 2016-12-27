@@ -6,14 +6,11 @@ exclude: ["node_modules", "gulpfile.js", "package.json"]
 home-nav: [
   {link: "/", text: "Home"},
   {link: "/page/about", text: "About"},
-  {link: "/games", text: "Games"},
-  {link: "/articles", text: "Articles"},
+  {link: "/portfolio", text: "Portfolio"},
+  {link: "/blog", text: "Blog"},
   {link: "/page/contact", text: "Contact"},
-  {link: "/page/presskit", text: "Presskit"}
+  {link: "/page/presskit", text: "Press"}
 ]
 
-
-# This is the default format.
-# For more see: https://github.com/mojombo/jekyll/wiki/Permalinks
 permalink: /:categories/:title/
 post_dirs: false
