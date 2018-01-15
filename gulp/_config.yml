@@ -1,6 +1,7 @@
 name: Lime Studios
 title: Lime Studios
 markdown: redcarpet
+icon: "/assets/img/site/icon/logo128.png"
 exclude: ["node_modules", "gulpfile.js", "package.json"]
 
 home-nav: [

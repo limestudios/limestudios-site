@@ -584,6 +584,33 @@
         padding: 0;
         @include clearfix();
 
+        &.xsmall {
+          max-width: 25%;
+
+          &.border {
+            max-width: calc(25% - 16px);
+            padding: 8px;
+          }
+
+          @media (max-width: $screen-tablet) {
+            max-width: 25%;
+
+            &.border {
+              max-width: calc(25% - 16px);
+              padding: 8px;
+            }
+          }
+
+          @media (max-width: $screen-widephone) {
+            max-width: 50%;
+
+            &.border {
+              max-width: calc(50% - 16px);
+              padding: 8px;
+            }
+          }
+        }
+
         &.small {
           max-width: 25%;
 
@@ -643,6 +670,23 @@
 
       &.round {
         border-radius: 100%;
+        object-fit: cover;
+
+        &.small {
+          min-height: 128px;
+        }
+
+        &.medium {
+          min-height: 256px;
+        }
+
+        &.large {
+          min-height: 512px;
+        }
+
+        &.full-width {
+          height: 100%;
+        }
       }
     }
   }

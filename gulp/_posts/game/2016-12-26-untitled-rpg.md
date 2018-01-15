@@ -6,7 +6,7 @@ subtitle: A school project showing off the RPG engine I'm making based off Shin 
 categories: game
 tags: article / game
 color: "#F0F0F0"
-theme: light
+theme: dark
 cover-image: /assets/img/posts/game/untitled-rpg/splash.png
 image: full
 author: Liam Craver

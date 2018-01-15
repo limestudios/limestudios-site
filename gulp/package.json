@@ -12,17 +12,17 @@
     "browser-sync": "^2.8.0",
     "gulp": "^3.9.0",
     "gulp-autoprefixer": "^2.3.1",
-    "gulp-sass": "^2.0.4"
+    "gulp-sass": "^2.3.2"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/limestudios/limestudios-site"
   },
   "keywords": [
-    "jekyll",
+    "browsersync",
     "gulp",
-    "sass",
-    "browsersync"
+    "jekyll",
+    "sass"
   ],
   "bugs": {
     "url": "https://github.com/limestudios/limestudios-site/issues"

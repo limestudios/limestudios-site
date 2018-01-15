@@ -2,12 +2,12 @@
 	<html lang=en xmlns="http://www.w3.org/1999/xhtml">
 	<head>
 		<title>{{site.title}} - {{page.title}}</title>
-		<meta name=description content="{{#if page.description}}{{page.description}}{{else ~}}{{site.description}}{{/if ~}}">
-		<meta charset=UTF-8>
-		<meta http-equiv=X-UA-Compatible content="IE=Edge,chrome=1">
-		<meta name=viewport content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+		<meta name="description" content="{% if page.description %}{{page.description}}{% else %}{{site.description}}{% endif %}">
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
 
-		<link rel=stylesheet href="/assets/css/styles.css">
+		<link rel="stylesheet" href="/assets/css/styles.css">
 
 		<script src="/assets/js/jquery.js"></script>
 		<script src="/assets/js/scroll.js"></script>
@@ -21,29 +21,27 @@
 		{% else %}
 			<meta name="theme-color" content="#689f38">
 		{% endif %}
-		<meta name=keywords content="{{#if page.keywords}}{{page.keywords}},Liam Craver,Lime Studios,Lime,Studios,web design,graphic design,css,html{{else~}}{{site.keywords}}{{/if ~}}">
-		<meta name=author content="{{author.name.first}} {{author.name.last}}">
-		<meta name=google-site-verification content=7RrfJovl477GocUkq4QOPIybas99RN2zebN46jgN_Lo>
-		<meta name=format-detection content="telephone=yes">
-		<meta name=apple-mobile-web-app-title content="{{site.title}}">
-		<meta property=og:type content="website">
-		<meta property=og:title content="{{page.title}}">
-		<meta property=og:description content="{{#if page.description}}{{page.description}}{{else ~}}{{site.description}}{{/if ~}}">
-		<meta property=og:url content="{{site.url}}">
-		<meta property=og:site_name content="{{site.title}}">
-		<meta property=og:profile:first_name content={{author.name.first}}>
-		<meta property=og:profile:last_name content={{author.name.last}}>
-		<meta property=og:image content="/assets/img/site/icon/logo128.png">
-		<meta property=og:image:type content=image/png>
-		<meta property=og:image:width content=128>
-		<meta property=og:image:height content=128>{{/if ~}}
-		<meta name=twitter:card content="summary">
-		<meta name=twitter:site content="{{site.title}}">
-		<meta name=twitter:title content="{{page.title}}">
-		<meta name=twitter:description content="{{#if page.description}}{{page.description}}{{else ~}}{{site.description}}{{/if ~}}">
-		<meta name=twitter:creator content="{{author.name.first}} {{author.name.last}}">
-		<meta name=twitter:image:src content="/assets/img/site/icon/logo.png">
-		<meta name="twitter:domain" content="the Web">
+		<meta name="keywords" content="Liam Craver,Lime Studios,Lime,Studios,web design,graphic design,css,html,{{site.keywords}},{{page.keywords}}">
+		<meta name="author" content="{{author.name.first}} {{author.name.last}}">
+		<meta name="google-site-verification" content="7RrfJovl477GocUkq4QOPIybas99RN2zebN46jgN_Lo">
+		<meta name="format-detection" content="telephone=yes">
+		<meta name="apple-mobile-web-app-title" content="{{site.title}}">
+		<meta property="og:type" content="website">
+		<meta property="og:title" content="{{page.title}}">
+		<meta property="og:description" content="{% if page.subtitle %}{{page.subtitle}}{% else %}{{site.description}}{% endif %}">
+		<meta property="og:url" content="{{site.url}}">
+		<meta property="og:site_name" content="{{site.title}}">
+		<meta property="og:profile:first_name" content="{{author.name.first}}">
+		<meta property="og:profile:last_name" content="{{author.name.last}}">
+		<meta property="og:image" content="{% if page.cover-image %}{{page.cover-image}}{% else %}{{site.icon}}{% endif %}">
+		<!--<meta property="og:image:type" content="image/png">-->
+		<meta name="twitter:card" content="summary">
+		<meta name="twitter:site" content="{{site.title}}">
+		<meta name="twitter:title" content="{{page.title}}">
+		<meta name="twitter:description" content="{% if page.subtitle %}{{page.subtitle}}{% else %}{{site.description}}{% endif %}">
+		<meta name="twitter:creator" content="{{author.name.first}} {{author.name.last}}">
+		<meta name="twitter:image:src" content="{% if page.cover-image %}{{page.cover-image}}{% else %}{{site.icon}}{% endif %}">
+		<meta name="twitter:domain" content="{{site.url}}">
 		<link rel="apple-touch-icon-precomposed" href="/assets/img/site/icon/logo.png">
 		<link rel="icon" href="/assets/img/site/icon/logo16.png" size="16x16">
 		<link rel="icon" href="/assets/img/site/icon/logo32.png" size="32x32">
@@ -52,6 +50,7 @@
 		<link rel="icon" href="/assets/img/site/icon/logo128.png" size="128x128">
 
 		<link rel="icon" type="image/png" href="/assets/img/site/icon/logo64.png">
+		<link rel="shortcut icon" href="/assets/img/site/icon/logo64.png" type="image/x-icon" />
 
 		<link rel="icon" sizes="192x192" href="/assets/img/site/icon/logo192.png">
 		<link rel="apple-touch-icon" href="/assets/img/site/icon/logo64.png">

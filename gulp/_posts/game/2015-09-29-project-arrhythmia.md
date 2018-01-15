@@ -14,6 +14,16 @@ platforms: PC / PS4 / PS Vita
 theme-color: "#e57373"
 ---
 
+<nav class="arrhythmia_top">
+  <ul>
+    <a href="http://steamcommunity.com/games/440310/announcements/"><li>devlog</li></a>
+    <a href="/page/presskit/#ProjectArrhythmia"><li>presskit</li></a>
+    <a href="/game/project-arrhythmia/#social"><li>social</li></a>
+    <a href="/game/project-arrhythmia/#playtesters"><li>playtesters</li></a>
+    <a href="/page/contact/"><li>contact</li></a>
+  </ul>
+</nav>
+
 <div class="logo">
   <img src="/assets/img/posts/game/project-arrhythmia/logo.png"/>
   <h2>Project <br> Arrhythmia</h2>
@@ -38,45 +48,87 @@ theme-color: "#e57373"
   <iframe frameborder="0" src="https://itch.io/embed/21241?linkback=true&amp;bg_color=ffffff&amp;fg_color=222222&amp;link_color=fa5c5c&amp;border_color=bebebe" width="552" height="167"></iframe>
   </div>
 
-  <div class="itch small">
+  <!--<div class="itch small">
   <iframe frameborder="0" src="https://itch.io/embed/21241?linkback=true&amp;bg_color=ffffff&amp;fg_color=222222&amp;link_color=fa5c5c&amp;border_color=bebebe" width="320" height="167"></iframe>
-  </div>
+  </div>-->
+</div>
+
+<h3>> Screenshots</h3>
+
+<div class="image-wrapper">
+{% for i in (0..5) %}
+  <a href="/assets/img/posts/game/{{page.ref}}/screenshots_2/screenshots ({{ i }}).png">
+    <img class="float medium border" src="/assets/img/posts/game/{{page.ref}}/screenshots_2/screenshots ({{ i }}).png"/>
+  </a>
+{% endfor %}
 </div>
 
 <h3>> Description</h3>
 <p>> Project Arrhythmia is a rhythmic adventure in which all things beautiful are deadly. Avoid the musically timed pulse of blocks and bars, and in the process you might just find out what this mysterious "Project Arrhythmia" is.</p>
 
-<h3>> Planned Features</h3>
+<!--<h3>> Planned Features</h3>
   <p>
   \> Single Player Story Mode <br>
   \> Multiplayer Party Mode <br>
   \> Fantastic Soundtrack <br>
   \> Hard and Addicting Gameplay <br>
   \> Level Editor
-  </p>
+  </p>-->
 
 <h3>> Background</h3>
 <p>> Project Arrhythmia came to be after I found myself frustrated with the lack of any "true" audio bound games. I have always been interested in games like soundodger+, 140 and OSU! where music is a core part of the gameplay however I've also always found the gameplay didn't react to the music as tightly as I wanted it to. So I set out to make a game where every sound from a chiptune beep to a guitar rift could be perfectly represented within the game.</p>
 
-<h3>> Social</h3>
+<h3 id="social">> Social</h3>
 <p>> To follow the development of the game follow us on twitter...</p>
 <p class="social">
-  <a class="arrhythmia-button" href="http://twitter.com/projarrhythmia">[@projarrhythmia]</a>
-  <br>
   <a class="arrhythmia-button" href="http://twitter.com/liamcraver">[@liamcraver]</a>
   <br>
   <a class="arrhythmia-button" href="http://twitter.com/_limestudios">[@_limestudios]</a>
 </p>
-<p>> Or subscribe to our monthly email newsletter...</p>
+<p>> Or subscribe to the email newsletter to get important updates on the game!</p>
 
 {% capture includeGuts %}
 {% include partials/newsletter_form.html %}
 {% endcapture %}
 {{ includeGuts | replace: '    ', ''}}
 
-<h3>> Presskits</h3>
+<p id="playtesters">> Or subscribe to the email list for playtesters!</p>
+
+{% capture includeGuts %}
+{% include partials/playtester_form.html %}
+{% endcapture %}
+{{ includeGuts | replace: '    ', ''}}
+
+<h3>> Quotes /  Articles</h3>
+
+<div class="quotes">
+
+<p class="quote">
+<span>"Project Arrhythmia is a gloriously hypnotic audio/visual experience. A super cool rhythmic dodge-em-up."</span></br>
+<a class="arrhythmia-button" href="https://www.alphabetagamer.com/project-arrhythmia-alpha-download/">[Alpha Beta Gamer]</a>
+</p>
+
+<p class="quote">
+<span>An interview with Liam Craver about working on Project Arrhythmia.</span></br>
+<a class="arrhythmia-button" href="http://www.thecolabit.com/2016/05/14/project-arrhythmia-and-its-awesome-music/">[TheColaBit]</a>
+</p>
+
+<p class="quote">
+<span>"Project Arrhythmia is a gorgeously simple rhythm game where up to four players can work side-by-side in avoiding the musically timed pulse of blocks and bars. It’s a nice, calming break from all the first-person shooters and strategy games. Plus, the music is really pretty."</span></br>
+<a class="arrhythmia-button" href="https://www.inverse.com/article/25850-upcoming-multiplayer-games-state-of-decay-ghost-reco">[Inverse]</a>
+</p>
+
+<p class="quote">
+ 
+</p>
+
+</div>
+
+<!--<h3>> Awards</h3>-->
+
+<!--<h3>> Presskits</h3>
 <p class="social">
   <a class="arrhythmia-button" href="/page/presskit/#ProjectArrhythmia">[Project Arrhythmia]</a>
   <br>
   <a class="arrhythmia-button" href="/page/presskit/#LimeStudios">[Lime Studios]</a>
-</p>
+</p>-->

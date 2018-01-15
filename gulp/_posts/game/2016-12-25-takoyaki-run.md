@@ -25,3 +25,15 @@ platforms: PC / MAC
 
 ##About
 Takoyaki Run was a game made by Sabrina Reichel, Ann Tran, and Liam Craver (Me) in 48hrs for the Acadiana Regional Game Jam. It's only a small prototype but I hope you enjoy regardless. We may consider creating a full game from the concept in the future.
+
+
+<div class="image-wrapper">
+{% for i in (2..3) %}
+  <a href="/assets/img/posts/game/{{page.ref}}/octo_{{ i }}.png">
+    <img class="float large border" src="/assets/img/posts/game/{{page.ref}}/octo_{{ i }}.png"/>
+  </a>
+{% endfor %}
+<a href="/assets/img/posts/game/{{page.ref}}/octo_4.gif">
+    <img class="float full border" src="/assets/img/posts/game/{{page.ref}}/octo_4.gif"/>
+  </a>
+</div>
