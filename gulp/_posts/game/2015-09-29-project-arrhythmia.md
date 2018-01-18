@@ -27,6 +27,7 @@ theme-color: "#e57373"
 <div class="logo">
   <img src="/assets/img/posts/game/project-arrhythmia/logo.png"/>
   <h2>Project <br> Arrhythmia</h2>
+  <h4 class="quote">"A rhythmic adventure where all things beautiful are deadly"</h4>
 </div>
 
 <div class="trailer">
@@ -81,9 +82,9 @@ theme-color: "#e57373"
 <h3 id="social">> Social</h3>
 <p>> To follow the development of the game follow us on twitter...</p>
 <p class="social">
-  <a class="arrhythmia-button" href="http://twitter.com/liamcraver">[@liamcraver]</a>
+  <a class="arrhythmia-button twitter" href="http://twitter.com/liamcraver">[@liamcraver]</a>
   <br>
-  <a class="arrhythmia-button" href="http://twitter.com/_limestudios">[@_limestudios]</a>
+  <a class="arrhythmia-button twitter" href="http://twitter.com/_limestudios">[@_limestudios]</a>
 </p>
 <p>> Or subscribe to the email newsletter to get important updates on the game!</p>
 
