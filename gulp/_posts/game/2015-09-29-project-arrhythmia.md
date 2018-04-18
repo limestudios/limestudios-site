@@ -27,6 +27,7 @@ theme-color: "#e57373"
 <div class="logo">
   <img src="/assets/img/posts/game/project-arrhythmia/logo.png"/>
   <h2>Project <br> Arrhythmia</h2>
+  <h4 class="quote">"A rhythmic adventure where all things beautiful are deadly"</h4>
 </div>
 
 <div class="trailer">
@@ -56,11 +57,14 @@ theme-color: "#e57373"
 <h3>> Screenshots</h3>
 
 <div class="image-wrapper">
-{% for i in (0..5) %}
-  <a href="/assets/img/posts/game/{{page.ref}}/screenshots_2/screenshots ({{ i }}).png">
-    <img class="float medium border" src="/assets/img/posts/game/{{page.ref}}/screenshots_2/screenshots ({{ i }}).png"/>
-  </a>
-{% endfor %}
+  <a href="/assets/img/posts/game/project-arrhythmia/screenshots/1.png"><img class="float medium border" src="/assets/img/posts/game/project-arrhythmia/screenshots/1.png"/></a>
+  <a href="/assets/img/posts/game/project-arrhythmia/screenshots_2/screenshots (4).png"><img class="float medium border" src="/assets/img/posts/game/project-arrhythmia/screenshots_2/screenshots (4).png"/></a>
+  <a href="/assets/img/posts/game/project-arrhythmia/screenshots/3.png"><img class="float medium border" src="/assets/img/posts/game/project-arrhythmia/screenshots/3.png"/></a>
+  <a href="/assets/img/posts/game/project-arrhythmia/screenshots/4.png"><img class="float medium border" src="/assets/img/posts/game/project-arrhythmia/screenshots/4.png"/></a>
+  <a href="/assets/img/posts/game/project-arrhythmia/screenshots/5.png"><img class="float medium border" src="/assets/img/posts/game/project-arrhythmia/screenshots/5.png"/></a>
+  <a href="/assets/img/posts/game/project-arrhythmia/screenshots/6.png"><img class="float medium border" src="/assets/img/posts/game/project-arrhythmia/screenshots/6.png"/></a>
+  <a href="/assets/img/posts/game/project-arrhythmia/screenshots/7.png"><img class="float medium border" src="/assets/img/posts/game/project-arrhythmia/screenshots/7.png"/></a>
+  <a href="/assets/img/posts/game/project-arrhythmia/screenshots/8.png"><img class="float medium border" src="/assets/img/posts/game/project-arrhythmia/screenshots/8.png"/></a>
 </div>
 
 <h3>> Description</h3>
@@ -81,21 +85,18 @@ theme-color: "#e57373"
 <h3 id="social">> Social</h3>
 <p>> To follow the development of the game follow us on twitter...</p>
 <p class="social">
-  <a class="arrhythmia-button" href="http://twitter.com/liamcraver">[@liamcraver]</a>
+  <a class="arrhythmia-button twitter" href="http://twitter.com/liamcraver">[@liamcraver]</a>
   <br>
-  <a class="arrhythmia-button" href="http://twitter.com/_limestudios">[@_limestudios]</a>
+  <a class="arrhythmia-button twitter" href="http://twitter.com/_limestudios">[@_limestudios]</a>
+</p>
+<p>> or join our awesome discord...</p>
+<p class="social">
+  <a class="arrhythmia-button discord" href="https://discord.gg/U3cS4">[Discord]</a>
 </p>
 <p>> Or subscribe to the email newsletter to get important updates on the game!</p>
 
 {% capture includeGuts %}
 {% include partials/newsletter_form.html %}
-{% endcapture %}
-{{ includeGuts | replace: '    ', ''}}
-
-<p id="playtesters">> Or subscribe to the email list for playtesters!</p>
-
-{% capture includeGuts %}
-{% include partials/playtester_form.html %}
 {% endcapture %}
 {{ includeGuts | replace: '    ', ''}}
 

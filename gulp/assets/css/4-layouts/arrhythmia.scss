@@ -255,8 +255,17 @@
       letter-spacing: 8px;
       font-size: 32px;
       line-height: 32px;
-      padding: 32px 0;
       text-transform: uppercase;
+      width: calc(40% - 144px);
+      float: left;
+    }
+
+    .quote {
+      float: right;
+      width: 60%;
+      text-align: right;
+      padding: 0px 0px 0px 128px;
+      box-sizing: border-box;
     }
 
     @media (max-width: $screen-widephone) {
@@ -271,7 +280,19 @@
       h2 {
         font-size: 16px;
         line-height: 16px;
-        padding: 16px 0;
+        padding: 0px 0;
+        float: none;
+      }
+    }
+
+    @media (max-width: $screen-tablet) {
+      h2 {
+        float: left;
+        width: auto;
+      }
+
+      .quote {
+        display: none;
       }
     }
   }
@@ -357,11 +378,30 @@
     color: $grey-900;
     display: inline-block;
 
+    &.twitter {
+      background-color: $blue-400;
+      color: white;
+    }
+
+    &.discord {
+      background-color: $indigo-500;
+      color: white;
+    }
+
     &:hover {
       background-color: $red-300 !important;
       color: white !important;
       box-shadow: none;
     }
+
+    &.twitter:hover {
+      background-color: $blue-800 !important;
+    }
+
+    &.discord:hover {
+      background-color: $indigo-900 !important;
+    }
+
 
     @media (max-width: $screen-tablet) {
       margin: 8px 0px;
@@ -372,6 +412,10 @@
     margin: 0 0;
     padding: 0 !important;
     max-width: 640px;
+
+    .clear {
+      clear: none !important;
+    }
 
     input[type=email] {
       font-size: 14px;
@@ -396,7 +440,8 @@
       display: inline-block;
       color: $grey-900 !important;
       border-radius: 0px !important;
-      margin-top: 16px !important;
+      //margin-top: 16px !important;
+      margin: 16px 0 !important;
       transition: 0s !important;
 
       &:hover {

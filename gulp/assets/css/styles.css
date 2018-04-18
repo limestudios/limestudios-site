@@ -389,6 +389,8 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 24px;
   font-weight: 300;
   line-height: 1.14; }
+  .large.no-top-padding, h2.no-top-padding {
+    padding-top: 0px !important; }
 
 .bigger, h3 {
   font-size: 26px;
@@ -1095,8 +1097,15 @@ header {
       letter-spacing: 8px;
       font-size: 32px;
       line-height: 32px;
-      padding: 32px 0;
-      text-transform: uppercase; }
+      text-transform: uppercase;
+      width: calc(40% - 144px);
+      float: left; }
+    .arrhythmia-wrap .logo .quote {
+      float: right;
+      width: 60%;
+      text-align: right;
+      padding: 0px 0px 0px 128px;
+      box-sizing: border-box; }
     @media (max-width: 481px) {
       .arrhythmia-wrap .logo {
         height: 64px; }
@@ -1106,7 +1115,14 @@ header {
         .arrhythmia-wrap .logo h2 {
           font-size: 16px;
           line-height: 16px;
-          padding: 16px 0; } }
+          padding: 0px 0;
+          float: none; } }
+    @media (max-width: 1150px) {
+      .arrhythmia-wrap .logo h2 {
+        float: left;
+        width: auto; }
+      .arrhythmia-wrap .logo .quote {
+        display: none; } }
   .arrhythmia-wrap .preorder {
     width: 552px;
     margin: 0 auto; }
@@ -1160,10 +1176,20 @@ header {
     display: inline-block;
     color: #212121;
     display: inline-block; }
+    .arrhythmia-wrap a.arrhythmia-button.twitter {
+      background-color: #42a5f5;
+      color: white; }
+    .arrhythmia-wrap a.arrhythmia-button.discord {
+      background-color: #3f51b5;
+      color: white; }
     .arrhythmia-wrap a.arrhythmia-button:hover {
       background-color: #e57373 !important;
       color: white !important;
       box-shadow: none; }
+    .arrhythmia-wrap a.arrhythmia-button.twitter:hover {
+      background-color: #1565c0 !important; }
+    .arrhythmia-wrap a.arrhythmia-button.discord:hover {
+      background-color: #1a237e !important; }
     @media (max-width: 1150px) {
       .arrhythmia-wrap a.arrhythmia-button {
         margin: 8px 0px; } }
@@ -1171,6 +1197,8 @@ header {
     margin: 0 0;
     padding: 0 !important;
     max-width: 640px; }
+    .arrhythmia-wrap form .clear {
+      clear: none !important; }
     .arrhythmia-wrap form input[type=email] {
       font-size: 14px;
       line-height: 14px;
@@ -1192,7 +1220,7 @@ header {
       display: inline-block;
       color: #212121 !important;
       border-radius: 0px !important;
-      margin-top: 16px !important;
+      margin: 16px 0 !important;
       -webkit-transition: 0s !important;
               transition: 0s !important; }
       .arrhythmia-wrap form input[type=submit]:hover {
