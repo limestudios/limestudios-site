@@ -6,147 +6,28 @@
 
   .image-wrapper {
     margin: 0 auto;
-    display: block;
-    overflow: hidden;
-  }
-
-  .image-wrapper {
+    display: flex;
+    flex-wrap: wrap;
     img {
-      margin: 24px auto;
-      max-width: 100%;
-      display: block;
+      width: 100%;
+      height: 100%;
+    }
 
-      &.center {
-        margin-left: auto;
-        margin-right: auto;
-        display: block;
+    a {
+      margin: 8px auto;
+      display: flex;
 
-        &.small {
-          max-width: 128px;
-        }
+      flex-basis: calc(33% - 16px);
+      justify-content: space-between;
 
-        &.medium {
-          max-width: 256px;
-        }
-
-        &.large {
-          max-width: 512px;
-        }
-
-        &.full-width {
-          width: 100%;
-        }
+      @media (max-width: $screen-tablet) {
+        flex-basis: calc(50% - 16px);
+        margin: 8px auto;
       }
 
-      &.float {
-        float: left;
-        margin: 0;
-        padding: 0;
-        @include clearfix();
-
-        &.xsmall {
-          max-width: 25%;
-
-          &.border {
-            max-width: calc(25% - 16px);
-            padding: 8px;
-          }
-
-          @media (max-width: $screen-tablet) {
-            max-width: 25%;
-
-            &.border {
-              max-width: calc(25% - 16px);
-              padding: 8px;
-            }
-          }
-
-          @media (max-width: $screen-widephone) {
-            max-width: 50%;
-
-            &.border {
-              max-width: calc(50% - 16px);
-              padding: 8px;
-            }
-          }
-        }
-
-        &.small {
-          max-width: 25%;
-
-          &.border {
-            max-width: calc(25% - 16px);
-            padding: 8px;
-          }
-
-          @media (max-width: $screen-tablet) {
-            max-width: 33.333%;
-
-            &.border {
-              max-width: calc(33.333% - 16px);
-              padding: 8px;
-            }
-          }
-        }
-
-        &.medium {
-          max-width: 33.333%;
-
-          &.border {
-            max-width: calc(33.333% - 16px);
-            padding: 8px;
-          }
-
-          @media (max-width: $screen-tablet) {
-            max-width: 50%;
-
-            &.border {
-              max-width: calc(50% - 16px);
-              padding: 8px;
-            }
-          }
-        }
-
-        &.large {
-          max-width: 50%;
-
-          &.border {
-            max-width: calc(50% - 16px);
-            padding: 8px;
-          }
-
-          @media (max-width: $screen-tablet) {
-            max-width: 100%;
-
-            &.border {
-            }
-          }
-        }
-
-        &.full-width {
-          max-width: 100%;
-        }
-      }
-
-      &.round {
-        border-radius: 100%;
-        object-fit: cover;
-
-        &.small {
-          min-height: 128px;
-        }
-
-        &.medium {
-          min-height: 256px;
-        }
-
-        &.large {
-          min-height: 512px;
-        }
-
-        &.full-width {
-          height: 100%;
-        }
+      @media (max-width: $screen-widephone) {
+        flex-basis: 100%;
+        margin: 8px auto;
       }
     }
   }
@@ -301,6 +182,26 @@
   width: 552px;
   margin: 0 auto;
 
+  .arrhythmia-button
+  {
+    width: 100%;
+    text-align: center;
+    padding: 0;
+    height: 48px;
+    font-size: 24px;
+    line-height: 48px;
+    vertical-align: middle;
+    background-color: #e57373 !important;
+    color: white;
+    transition: 0.2s all ease;
+    margin-top: -8px;
+
+    &:hover {
+      background-color: #e0e0e0 !important;
+      color: #333 !important;
+    }
+  }
+
   .itch {
     margin-top: 32px;
     display: block;
@@ -422,7 +323,6 @@
       height:16px;
       text-indent: 8px !important;
       max-width: 300px;
-      float: left;
       font-family: $type-arrhythmia !important;
       border-radius: 0px !important;
       border: none !important;

@@ -17,9 +17,9 @@ theme-color: "#e57373"
 <nav class="arrhythmia_top">
   <ul>
     <a href="http://steamcommunity.com/games/440310/announcements/"><li>devlog</li></a>
+    <a href="http://discord.gg/projectarrhythmia"><li>community</li></a>
     <a href="/page/presskit/#ProjectArrhythmia"><li>presskit</li></a>
     <a href="/game/project-arrhythmia/#social"><li>social</li></a>
-    <a href="/game/project-arrhythmia/#playtesters"><li>playtesters</li></a>
     <a href="/page/contact/"><li>contact</li></a>
   </ul>
 </nav>
@@ -31,7 +31,7 @@ theme-color: "#e57373"
 </div>
 
 <div class="trailer">
-  <div class="flex-video" onclick='this.innerHTML = "<iframe src=\"https://www.youtube.com/embed/G9zGxwaSy8s?rel=0&amp;showinfo=0&amp;autoplay=1\" frameborder=\"0\" allowfullscreen></iframe>"'>
+  <div class="flex-video" onclick='this.innerHTML = "<iframe src=\"https://www.youtube.com/embed/YtbFFBR9Z-E?rel=0&amp;showinfo=0&amp;autoplay=1\" frameborder=\"0\" allowfullscreen></iframe>"'>
     <div class="play-button"></div>
   </div>
 </div>
@@ -45,26 +45,28 @@ theme-color: "#e57373"
   <iframe src="http://store.steampowered.com/widget/440310/" frameborder="0" width="320" height="190"></iframe>
   </div>
 
-  <div class="itch">
+  <!-- <div class="itch">
   <iframe frameborder="0" src="https://itch.io/embed/21241?linkback=true&amp;bg_color=ffffff&amp;fg_color=222222&amp;link_color=fa5c5c&amp;border_color=bebebe" width="552" height="167"></iframe>
-  </div>
+  </div> -->
 
   <!--<div class="itch small">
   <iframe frameborder="0" src="https://itch.io/embed/21241?linkback=true&amp;bg_color=ffffff&amp;fg_color=222222&amp;link_color=fa5c5c&amp;border_color=bebebe" width="320" height="167"></iframe>
   </div>-->
+
+  <a href="https://limestudios.itch.io/project-arrhythmia" class="arrhythmia-button">Pre-Order</a>
 </div>
 
 <h3>> Screenshots</h3>
 
 <div class="image-wrapper">
-  <a href="/assets/img/posts/game/project-arrhythmia/screenshots/1.png"><img class="float medium border" src="/assets/img/posts/game/project-arrhythmia/screenshots/1.png"/></a>
-  <a href="/assets/img/posts/game/project-arrhythmia/screenshots_2/screenshots (4).png"><img class="float medium border" src="/assets/img/posts/game/project-arrhythmia/screenshots_2/screenshots (4).png"/></a>
-  <a href="/assets/img/posts/game/project-arrhythmia/screenshots/3.png"><img class="float medium border" src="/assets/img/posts/game/project-arrhythmia/screenshots/3.png"/></a>
-  <a href="/assets/img/posts/game/project-arrhythmia/screenshots/4.png"><img class="float medium border" src="/assets/img/posts/game/project-arrhythmia/screenshots/4.png"/></a>
-  <a href="/assets/img/posts/game/project-arrhythmia/screenshots/5.png"><img class="float medium border" src="/assets/img/posts/game/project-arrhythmia/screenshots/5.png"/></a>
-  <a href="/assets/img/posts/game/project-arrhythmia/screenshots/6.png"><img class="float medium border" src="/assets/img/posts/game/project-arrhythmia/screenshots/6.png"/></a>
-  <a href="/assets/img/posts/game/project-arrhythmia/screenshots/7.png"><img class="float medium border" src="/assets/img/posts/game/project-arrhythmia/screenshots/7.png"/></a>
-  <a href="/assets/img/posts/game/project-arrhythmia/screenshots/8.png"><img class="float medium border" src="/assets/img/posts/game/project-arrhythmia/screenshots/8.png"/></a>
+  <a class="float medium border" href="/assets/img/posts/game/project-arrhythmia/screenshots/1.png"><img src="/assets/img/posts/game/project-arrhythmia/screenshots/1.png"/></a>
+  <a class="float medium border" href="/assets/img/posts/game/project-arrhythmia/screenshots_2/screenshots (4).png"><img src="/assets/img/posts/game/project-arrhythmia/screenshots_2/screenshots (4).png"/></a>
+  <a class="float medium border" href="/assets/img/posts/game/project-arrhythmia/screenshots/3.png"><img src="/assets/img/posts/game/project-arrhythmia/screenshots/3.png"/></a>
+  <a class="float medium border" href="/assets/img/posts/game/project-arrhythmia/screenshots/4.png"><img src="/assets/img/posts/game/project-arrhythmia/screenshots/4.png"/></a>
+  <a class="float medium border" href="/assets/img/posts/game/project-arrhythmia/screenshots/5.png"><img src="/assets/img/posts/game/project-arrhythmia/screenshots/5.png"/></a>
+  <a class="float medium border" href="/assets/img/posts/game/project-arrhythmia/screenshots/6.png"><img src="/assets/img/posts/game/project-arrhythmia/screenshots/6.png"/></a>
+  <a class="float medium border" href="/assets/img/posts/game/project-arrhythmia/screenshots/7.png"><img src="/assets/img/posts/game/project-arrhythmia/screenshots/7.png"/></a>
+  <a class="float medium border" href="/assets/img/posts/game/project-arrhythmia/screenshots/8.png"><img src="/assets/img/posts/game/project-arrhythmia/screenshots/8.png"/></a>
 </div>
 
 <h3>> Description</h3>
@@ -105,19 +107,19 @@ theme-color: "#e57373"
 <div class="quotes">
 
 <p class="quote">
+<span>"Project Arrhythmia is a gorgeously simple rhythm game where up to four players can work side-by-side in avoiding the musically timed pulse of blocks and bars. It’s a nice, calming break from all the first-person shooters and strategy games. Plus, the music is really pretty."</span></br>
+<a class="arrhythmia-button" href="https://www.inverse.com/article/25850-upcoming-multiplayer-games-state-of-decay-ghost-reco">[Inverse]</a>
+</p>
+
+<p class="quote">
 <span>"Project Arrhythmia is a gloriously hypnotic audio/visual experience. A super cool rhythmic dodge-em-up."</span></br>
 <a class="arrhythmia-button" href="https://www.alphabetagamer.com/project-arrhythmia-alpha-download/">[Alpha Beta Gamer]</a>
 </p>
 
-<p class="quote">
+<!-- <p class="quote">
 <span>An interview with Liam Craver about working on Project Arrhythmia.</span></br>
 <a class="arrhythmia-button" href="http://www.thecolabit.com/2016/05/14/project-arrhythmia-and-its-awesome-music/">[TheColaBit]</a>
-</p>
-
-<p class="quote">
-<span>"Project Arrhythmia is a gorgeously simple rhythm game where up to four players can work side-by-side in avoiding the musically timed pulse of blocks and bars. It’s a nice, calming break from all the first-person shooters and strategy games. Plus, the music is really pretty."</span></br>
-<a class="arrhythmia-button" href="https://www.inverse.com/article/25850-upcoming-multiplayer-games-state-of-decay-ghost-reco">[Inverse]</a>
-</p>
+</p> -->
 
 <p class="quote">
  

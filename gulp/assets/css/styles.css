@@ -900,95 +900,41 @@ header {
   font-family: "Inconsolata", Helvetica Neue, Helvetica, Arial, sans-serif; }
   .arrhythmia-wrap .image-wrapper {
     margin: 0 auto;
-    display: block;
-    overflow: hidden; }
-  .arrhythmia-wrap .image-wrapper img {
-    margin: 24px auto;
-    max-width: 100%;
-    display: block; }
-    .arrhythmia-wrap .image-wrapper img.center {
-      margin-left: auto;
-      margin-right: auto;
-      display: block; }
-      .arrhythmia-wrap .image-wrapper img.center.small {
-        max-width: 128px; }
-      .arrhythmia-wrap .image-wrapper img.center.medium {
-        max-width: 256px; }
-      .arrhythmia-wrap .image-wrapper img.center.large {
-        max-width: 512px; }
-      .arrhythmia-wrap .image-wrapper img.center.full-width {
-        width: 100%; }
-    .arrhythmia-wrap .image-wrapper img.float {
-      float: left;
-      margin: 0;
-      padding: 0;
-      *zoom: 1; }
-      .arrhythmia-wrap .image-wrapper img.float:before, .arrhythmia-wrap .image-wrapper img.float:after {
-        content: " ";
-        display: table; }
-      .arrhythmia-wrap .image-wrapper img.float:after {
-        clear: both; }
-      .arrhythmia-wrap .image-wrapper img.float.xsmall {
-        max-width: 25%; }
-        .arrhythmia-wrap .image-wrapper img.float.xsmall.border {
-          max-width: calc(25% - 16px);
-          padding: 8px; }
-        @media (max-width: 1150px) {
-          .arrhythmia-wrap .image-wrapper img.float.xsmall {
-            max-width: 25%; }
-            .arrhythmia-wrap .image-wrapper img.float.xsmall.border {
-              max-width: calc(25% - 16px);
-              padding: 8px; } }
-        @media (max-width: 481px) {
-          .arrhythmia-wrap .image-wrapper img.float.xsmall {
-            max-width: 50%; }
-            .arrhythmia-wrap .image-wrapper img.float.xsmall.border {
-              max-width: calc(50% - 16px);
-              padding: 8px; } }
-      .arrhythmia-wrap .image-wrapper img.float.small {
-        max-width: 25%; }
-        .arrhythmia-wrap .image-wrapper img.float.small.border {
-          max-width: calc(25% - 16px);
-          padding: 8px; }
-        @media (max-width: 1150px) {
-          .arrhythmia-wrap .image-wrapper img.float.small {
-            max-width: 33.333%; }
-            .arrhythmia-wrap .image-wrapper img.float.small.border {
-              max-width: calc(33.333% - 16px);
-              padding: 8px; } }
-      .arrhythmia-wrap .image-wrapper img.float.medium {
-        max-width: 33.333%; }
-        .arrhythmia-wrap .image-wrapper img.float.medium.border {
-          max-width: calc(33.333% - 16px);
-          padding: 8px; }
-        @media (max-width: 1150px) {
-          .arrhythmia-wrap .image-wrapper img.float.medium {
-            max-width: 50%; }
-            .arrhythmia-wrap .image-wrapper img.float.medium.border {
-              max-width: calc(50% - 16px);
-              padding: 8px; } }
-      .arrhythmia-wrap .image-wrapper img.float.large {
-        max-width: 50%; }
-        .arrhythmia-wrap .image-wrapper img.float.large.border {
-          max-width: calc(50% - 16px);
-          padding: 8px; }
-        @media (max-width: 1150px) {
-          .arrhythmia-wrap .image-wrapper img.float.large {
-            max-width: 100%; } }
-      .arrhythmia-wrap .image-wrapper img.float.full-width {
-        max-width: 100%; }
-    .arrhythmia-wrap .image-wrapper img.round {
-      border-radius: 100%;
-      -o-object-fit: cover;
-         object-fit: cover; }
-      .arrhythmia-wrap .image-wrapper img.round.small {
-        min-height: 128px; }
-      .arrhythmia-wrap .image-wrapper img.round.medium {
-        min-height: 256px; }
-      .arrhythmia-wrap .image-wrapper img.round.large {
-        min-height: 512px; }
-      .arrhythmia-wrap .image-wrapper img.round.full-width {
-        height: 100%; }
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
+    .arrhythmia-wrap .image-wrapper img {
+      width: 100%;
+      height: 100%; }
+    .arrhythmia-wrap .image-wrapper a {
+      margin: 8px auto;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex-basis: calc(33% - 16px);
+          -ms-flex-preferred-size: calc(33% - 16px);
+              flex-basis: calc(33% - 16px);
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+          -ms-flex-pack: justify;
+              justify-content: space-between; }
+      @media (max-width: 1150px) {
+        .arrhythmia-wrap .image-wrapper a {
+          -webkit-flex-basis: calc(50% - 16px);
+              -ms-flex-preferred-size: calc(50% - 16px);
+                  flex-basis: calc(50% - 16px);
+          margin: 8px auto; } }
+      @media (max-width: 481px) {
+        .arrhythmia-wrap .image-wrapper a {
+          -webkit-flex-basis: 100%;
+              -ms-flex-preferred-size: 100%;
+                  flex-basis: 100%;
+          margin: 8px auto; } }
   .arrhythmia-wrap .quotes {
     display: -webkit-box;
     display: -webkit-flex;
@@ -1126,6 +1072,22 @@ header {
   .arrhythmia-wrap .preorder {
     width: 552px;
     margin: 0 auto; }
+    .arrhythmia-wrap .preorder .arrhythmia-button {
+      width: 100%;
+      text-align: center;
+      padding: 0;
+      height: 48px;
+      font-size: 24px;
+      line-height: 48px;
+      vertical-align: middle;
+      background-color: #e57373 !important;
+      color: white;
+      -webkit-transition: 0.2s all ease;
+              transition: 0.2s all ease;
+      margin-top: -8px; }
+      .arrhythmia-wrap .preorder .arrhythmia-button:hover {
+        background-color: #e0e0e0 !important;
+        color: #333 !important; }
     .arrhythmia-wrap .preorder .itch {
       margin-top: 32px;
       display: block; }
@@ -1205,7 +1167,6 @@ header {
       height: 16px;
       text-indent: 8px !important;
       max-width: 300px;
-      float: left;
       font-family: "Inconsolata", Helvetica Neue, Helvetica, Arial, sans-serif !important;
       border-radius: 0px !important;
       border: none !important; }
